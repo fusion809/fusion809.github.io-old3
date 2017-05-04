@@ -1,0 +1,69 @@
+<div id="galleria">
+  <a href="/images/operating-systems/{{ include.image1 }}" link="_blank">
+    <img
+      src="/images/operating-systems/{{ include.image1 }}"
+      data-big="{{ include.image1 }}"
+      data-title="{{ include.title1 }}"
+      data-description="{{ include.desc1 }}{{ include.description1 }}"
+      style="width: {{ include.width1 }}{{ include.size1 }};"
+    >
+  </a>
+  <a href="/images/operating-systems/{{ include.image2 }}" link="_blank">
+    <img
+      src="/images/operating-systems/{{ include.image2 }}"
+      data-big="{{ include.image2 }}"
+      data-title="{{ include.title2 }}"
+      data-description="{{ include.desc2 }}{{ include.description2 }}"
+      style="width: {{ include.width2 }}{{ include.size2 }};"
+    >
+  </a>
+  {% if include.image3 %}
+  <a href="/images/operating-systems/{{ include.image3 }}" link="_blank">
+    <img
+      src="/images/operating-systems/{{ include.image3 }}"
+      data-big="{{ include.image3 }}"
+      data-title="{{ include.title3 }}"
+      data-description="{{ include.desc3 }}{{ include.description3 }}"
+      style="width: {{ include.width3 }}{{ include.size3 }};"
+    >
+  </a>
+  {% endif %}
+  {% if include.image4 %}
+  <a href="/images/operating-systems/{{ include.image4 }}" link="_blank">
+    <img
+      src="/images/operating-systems/{{ include.image4 }}"
+      data-big="{{ include.image4 }}"
+      data-title="{{ include.title4 }}"
+      data-description="{{ include.desc4 }}{{ include.description4 }}"
+      style="width: {{ include.width4 }}{{ include.size4 }};"
+    >
+  </a>
+  {% endif %}
+  {% if include.image5 %}
+  <a href="/images/operating-systems/{{ include.image5 }}" link="_blank">
+    <img
+      src="/images/operating-systems/{{ include.image5 }}"
+      data-big="{{ include.image5 }}"
+      data-title="{{ include.title5 }}"
+      data-description="{{ include.desc5 }}{{ include.description5 }}"
+      style="width: {{ include.width5 }}{{ include.size5 }};"
+    >
+  </a>
+  {% endif %}
+</div>
+<script>
+
+// Load the classic theme
+Galleria.loadTheme('/galleria/src/themes/classic/galleria.classic.js');
+
+// Initialize Galleria
+Galleria.run('#galleria');
+
+</script>
+<style>
+    .cred{margin-top:20px;font-size:11px;}
+
+    /* This rule is read by Galleria to define the gallery height: */
+    #galleria{height:768px}
+
+</style>

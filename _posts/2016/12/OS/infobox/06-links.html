@@ -1,0 +1,11 @@
+<tr class="green">
+  <td class="title2" colspan="2" style="text-align: center;">Extra Links</td>
+</tr>
+<tr class="green">
+  <td class="title1"><a href="http://distrowatch.com/" link="_blank">DistroWatch</a></td>
+  <td class="green"><a href="http://distrowatch.com/table.php?distribution={{ include.dw }}" link="_blank">Link</a></td>
+</tr>{% if include.wp %}<!-- There is no WP article for deepin anymore-->
+<tr class="green">
+  <td class="title1"><a href="https://en.wikipedia.org/wiki/Main_Page" link="_blank">English Wikipedia</a></td>
+  <td class="green"><a href="https://en.wikipedia.org/wiki/{{ include.wp }}" link="_blank">Link</a></td>
+</tr>{% endif %}

@@ -1,0 +1,163 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;"><caption><strong>Table 1: Options for Emerge</strong></caption>
+<tbody>
+<tr class="green">
+  <td class="title" style="width: 240px;">Long</td>
+  <td class="title" style="width: 50px;">Short</td>
+  <td class="title">Meaning</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--ask</div>
+  </td>
+  <td class="green"><code>-a</code></td>
+  <td class="green">Ask before running the action.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--autounmask [y|n]</div>
+  </td>
+  <td class="green">N/A</td>
+  <td class="green">This option is enabled by default and it basically allows emerge to unmask packages as required and write changes for package.use. Possible forms this option can take on are <code>--autounmask=y</code>, <code>--autounmask=n</code> (which will disable this option and unmasking/package.use changes will not occur) or <code>--autounmask</code>.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--autounmask-write [y|n]</div>
+  </td>
+  <td class="green">N/A</td>
+  <td class="green">This option is similar to <code>--autounmask</code>, except it can write to package.use and other configuration files directly.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--buildpkg [y|n]</div>
+  </td>
+  <td class="green"><code>-b</code></td>
+  <td class="green">By default this option is disabled, but when enabled it causes emerge to install the package(s) and it also creates binary package(s) from the installed package(s) (file format: <code>.tbz2</code>) in <strong>PKGDIR</strong> (which is specified by <code>/etc/portage/make.conf</code>, by default it is <code>/usr/portage/packages</code>).</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--buildpkgonly</div>
+  </td>
+  <td class="green"><code>-B</code></td>
+  <td class="green">This option, which is not enabled by default, will only create binary package(s) and not install the package(s) specified to it.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--changed-use</div>
+  </td>
+  <td class="green"><code>-U</code></td>
+  <td class="green">Tells emerge to include installed packages where USE flags have changed since installation.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--debug</div>
+  </td>
+  <td class="green"><code>-d</code></td>
+  <td class="green">Show more detailed debugging information.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--deep</div>
+  </td>
+  <td class="green"><code>-D</code></td>
+  <td class="green">With this option emerge will look at the entire (or "deep") dependency tree (not just the immediate dependencies of the package it is emerging, which it does by default) for updates.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--emptytree</div>
+  </td>
+  <td class="green"><code>-e</code></td>
+  <td class="green">Reinstalls package and all deep dependencies.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--keep-going [ y | n ]</div>
+  </td>
+  <td class="green">N/A</td>
+  <td class="green">Continue as much as possible after an error.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--newuse</div>
+  </td>
+  <td class="green"><code>-N</code></td>
+  <td class="green">Reinstall packages that have had their USE flags changed since installation. This option is more comprehensive in the packages it reinstalls than <code>--changed-use</code>.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--nodeps</div>
+  </td>
+  <td class="green"><code>-O</code></td>
+  <td class="green">Installs specified packages, without installing any dependencies. This option may cause package breakage.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--noreplace</div>
+  </td>
+  <td class="green"><code>-n</code></td>
+  <td class="green">Skips packages that are already installed.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--oneshot</div>
+  </td>
+  <td class="green"><code>-1</code></td>
+  <td class="green">It will emerge the package as normal, but will not add the packages to the world file for later updating.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--onlydeps</div>
+  </td>
+  <td class="green"><code>-o</code></td>
+  <td class="green">Install the specified package(s) dependencies, only. This is the emerge equivalent to APT's <code>apt-get build-dep</code>.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--pretend</div>
+  </td>
+  <td class="green"><code>-p</code></td>
+  <td class="green">This option causes emerge to display which packages would have been emerged, had the pretend option not been used.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--quiet [y|n]</div>
+  </td>
+  <td class="green"><code>-q</code></td>
+  <td class="green">This option, although results do vary, should minimize the output provided by emerge.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--update</div>
+  </td>
+  <td class="green"><code>-u</code></td>
+  <td class="green">Updates packages to the best version available (not necessarily the latest, however).</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--usepkg [y|n]</div>
+  </td>
+  <td class="green"><code>-k</code></td>
+  <td class="green">Tells <code>emerge</code> to use binary packages (stored in <code>$PKGDIR</code>), if they are available. Otherwise, if binary packages are unavailable for the required package(s), traditional ebuild installs will instead be used.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--usepkgonly [y|n]</div>
+  </td>
+  <td class="green"><code>-K</code></td>
+  <td class="green">Tells <code>emerge</code> to <b>only</b> use binary packages stored in <code>$PKGDIR</code>. If the required binary packages are not available in <code>$PKGDIR</code> then <code>emerge</code> will fail.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--verbose</div>
+  </td>
+  <td class="green"><code>-v</code></td>
+  <td class="green">This option causes more details to be given from ask and pretend commands. These details include GNU info errors and (for the pretend command) it will print USE flags.</td>
+</tr>
+<tr class="green">
+  <td class="green">
+    <div class="code">--with-bdeps [y|n]</div>
+  </td>
+  <td class="green">N/A</td>
+  <td class="green">During dependency calculations, build time dependencies that are not strictly required will be included. For installation actions this defaults to n, while for depclean actions this defaults to y.</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,134 @@
+/**
+ * Div
+ */
+
+$bg-color:          rgba(220,220,220,1.0);
+
+div.code div.syntaxhighlighter {
+  margin:           0 !important;
+  width:            100% !important;
+  border:           1px solid #cccccc !important;
+  border-top:       0px !important;
+  max-height:       350px;
+  overflow-y:       scroll;
+  white-space:      nowrap;
+  border-radius:    3px;
+  box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
+}
+
+.syntaxhighlighter .line .content {
+  border-left: 0 !important;
+}
+
+.code {
+  background-color: rgba(0, 0, 0, 1.0);
+  border-radius:    3px;
+  border:           1px solid rgba(0, 0, 0, 1.0);
+  padding:          3px;
+  color:            rgb(255,255,255);
+  box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
+  margin-bottom:    8px;
+  white-space:      nowrap;
+  overflow:         auto;
+  font-family:      monospace;
+}
+
+.console {
+  background-color: rgba(0, 0, 0, 1.0);
+  border-radius:    3px;
+  border:           1px solid rgba(0, 0, 0, 1.0);
+  box-shadow:       0 1px 3px #353535, 0 1px 2px #1b1b1b;
+  padding:          3px;
+  color:            rgb(255,255,255);
+  margin-bottom:    8px;
+  white-space:      nowrap;
+  overflow:         auto;
+  font-family:      monospace;
+}
+
+/**
+* Span
+*/
+span.coder abbr {
+  color: #ef2929;
+  border-bottom: 0px;
+}
+
+span.codeu abbr {
+  color: #4e9a06;
+  border-bottom: 0px;
+}
+
+span.codeb {
+  color: #729fcf;
+  border-bottom: 0px;
+}
+
+/**
+* Code
+*/
+
+code {
+  color:            rgba(255,255,255,1.0);
+  border-radius:    3px;
+  border:           1px solid rgba(0, 0, 0, 1.0);
+  box-shadow:       0 1px 3px #353535, 0 1px 2px #1b1b1b;
+  padding:          3px;
+  background-color: #000;
+  margin-bottom:    8px;
+  font-family:      monospace;
+}
+
+a code {
+  color:            rgba(100,100,255,1.0);
+  border-radius:    3px;
+  border:           1px solid rgba(0, 0, 0, 1.0);
+  box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
+  padding:          3px;
+  background-color: #000;
+  margin-bottom:    8px;
+  font-family:      monospace;
+}
+
+/**
+* Pre
+*/
+
+pre {
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 1.0);
+  font-family: monospace;
+  color: rgb(255,255,255);
+  box-shadow: 0 1px 3px #757575, 0 1px 2px #5b5b5b;
+
+  code {
+    color:            rgba(255,255,255,1.0);
+    background-color: #000;
+    font-family:      monospace;
+    border-radius:    0px;
+    border:           1px solid rgba(0, 0, 0, 1.0);
+    box-shadow:       0 0px 0px #353535, 0 0px 0px #1b1b1b;
+    padding:          0px;
+    background-color: #000;
+    margin-bottom:    0px;
+  }
+}
+
+div.language-json.highlighter-rouge {
+  background-color:   $bg-color;
+  padding:            0px;
+  border-radius:      3px;
+  border:             1px solid rgba(51, 51, 51, 1.0);
+  box-shadow:         0 1px 3px #757575, 0 1px 2px #5b5b5b;
+  padding:            3px;
+  overflow:           auto;
+  font-family:        monospace;
+
+  pre.highlight {
+    color:            rgba(0,0,0,1.0);
+    margin-bottom:    0px;
+    background-color: $bg-color;
+  }
+}

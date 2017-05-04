@@ -1,0 +1,22 @@
+---
+layout: default2
+---
+
+<div class="home">
+
+  <div style="font-size:18px; background-color: rgb(250,180,250); color: black; border: 5px solid rgb(120,50,120); border-radius: 5px; padding: 5px;">
+    {{ site.extended_description | markdownify }}
+  </div><br/>
+
+  <div class="posts" style="float:left; background-color: rgb(100,250,100);">
+    <h1>Latest Posts</h1>
+
+    <ul>
+      {% for post in site.posts %}
+        <li class="post-meta">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="font-size: 16px;" link="_blank">{{ post.title }}</a> ({{ post.date | date: "%A, %-d %B %Y" }})
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

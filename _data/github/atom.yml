@@ -1,0 +1,222 @@
+caption: "Table 1: An Overview of my Atom Packages and Themes"
+
+body:
+# about-arch
+  - repo:
+            "about"
+    name:
+            "about-arch"
+    fork:
+            "y"
+    orig-user:
+            "atom"
+    orig-repo:
+            "about"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    registered:
+            "n"
+    description:
+            "A package (former Atom package name: `about-arch`) that provides an about page for Atom. I forked it from the official Atom `about` package, to customize it, for my Arch Linux packages and atom-installer builds."
+
+# fusion-ui
+  - repo:
+            "fusion-ui"
+    category:
+            "Atom Themes;"
+    fork:
+            "y"
+    orig-user:
+            "kieranju"
+    orig-repo:
+            "fusion-ui"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "My customized Atom UI theme forked from accents-ui."
+
+# language-archlinux
+  - repo:
+            "language-archlinux"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    registered:
+            "y"
+    permalink:
+            "/language-archlinux/"
+    description:
+            "An Arch Linux development package for the Atom text editor. While it was not forked on GitHub from any existing GitHub repositories, it borrows much of its source code from the [`language-gentoo`](https://atom.io/packages/language-gentoo) package of Nicolas Laurent."
+
+# language-gfm2
+  - repo:
+            "language-gfm2"
+    fork:
+            "y"
+    orig-user:
+            "atom"
+    orig-repo:
+            "language-gfm"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "My `language-gfm2` Atom package. It is essentially just the `language-gfm` package with pull request [#154](https://github.com/atom/language-gfm/pull/154) applied."
+
+# language-ini-desktop
+  - repo:
+            "language-ini-desktop"
+    fork:
+            "y"
+    orig-user:
+            "jacobbednarz"
+    orig-repo:
+            "atom-language-ini"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "My `language-ini-desktop` package, which is a fork of the `language-ini` package with better support for desktop configuration files."
+
+# language-patch2
+  - repo:
+            "language-patch2"
+    fork:
+            "y"
+    orig-user:
+            "hexpunK"
+    orig-repo:
+            "language-patch"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    registered:
+            "n"
+    description:
+            "My `language-patch2` package, which is a fork of the `language-patch` package, with some changes to make it easier to build custom Atom builds with it pre-installed."
+
+# language-solus
+  - repo:
+            "language-solus"
+    fork:
+            "n"
+    license-file:
+            "LICENSE.md"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "The `language-solus` package which provides commands for doing common Solus OS package management actions."
+
+# language-shellscript
+  - repo:
+            "language-shellscript"
+    name:
+            "language-unix-shell"
+    fork:
+            "y"
+    orig-user:
+            "atom"
+    orig-repo:
+            "language-shellscript"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "My `language-unix-shell` package, which in itself is a fork of the core `language-shellscript` package with support for extra shell grammars."
+
+# language-vala-modern
+  - repo:
+            "language-vala-modern"
+    fork:
+            "y"
+    orig-user:
+            "evfool"
+    orig-repo:
+            "language-vala"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "My `language-vala-modern` package, which is a fork of the `language-vala` package, the main difference is that it includes the `scopeName` field in its grammar file, so it automatically syntax-highlights files with `.vala` and `.vapi` file extensions."
+
+# terminal-fusion
+  - repo:
+            "terminal-fusion"
+    fork:
+            "y"
+    orig-user:
+            "platformio"
+    orig-repo:
+            "platformio-ide-terminal"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "My fork of the `platformio-ide-terminal` package, that is localized to Linux platforms. It has lost the platform-independence of its parent package (i.e., `platformio-ide-terminal`), due to a fix for [tensor5/arch-atom#12](https://github.com/tensor5/arch-atom/issues/12) being applied that breaks its macOS and Windows NT compatibility. This fix also gave rise to my [pty.js](https://github.com/fusion809/pty.js) fork."
+
+# toolbar-fusion
+  - repo:
+            "toolbar-fusion"
+    fork:
+            "y"
+    orig-user:
+            "radjivC"
+    orig-repo:
+            "awesome-tool-bar"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "A toolbar to aid in software development, especially for projects written in C, C++ or an interpreted language such as Python."

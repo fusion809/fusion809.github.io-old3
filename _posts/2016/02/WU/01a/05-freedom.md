@@ -1,0 +1,1 @@
+**Freedom**. Linux has far more customizability options, for both the aesthetics of the system and its programs, and how its programs work and behave. You can make your Linux system look like OS X, Windows or something completely different.

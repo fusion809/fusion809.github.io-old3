@@ -1,0 +1,2 @@
+### Software
+A computer's **software** are the non-physical components to the computer, which are stored in the computer's hard drive. It includes the data stored on the hard drive like one's files as well as the computer programs, which are more or less just instructions for the computer's processor. For example, as I am writing this post I am using the Atom text editor, which is a computer program.

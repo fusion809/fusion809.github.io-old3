@@ -1,0 +1,1 @@
+{% if include.package %}On **Mageia**, its package name is [`{{ include.package }}`](http://madb.mageia.org/package/list/t_search/{{ include.package }}) so run <code><span class = "coder"><abbr title="This command is to be run as root user; to enter root run the su command">root #</abbr></span> &nbsp;urpmi {{ include.package }}</code> to install it.{% endif %}

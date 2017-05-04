@@ -1,0 +1,35 @@
+<tr class="green">
+  <td class="title2" colspan="2" style="text-align: center;">Defaults</td>
+</tr>
+<tr class="green">
+  <td class="title1"><abbr title="The default bootloader of this operating system"><a href="https://en.wikipedia.org/wiki/Booting#BOOT-LOADER" link="_blank">Bootloader</a></abbr></td>
+  <td class="green">{% if include.bootloader == "GRUB2" %}<a href="https://en.wikipedia.org/wiki/GNU_GRUB" link="_blank">GRUB2</a>{% elsif include.bootloader == "LILO" %}<a href="https://en.wikipedia.org/wiki/LILO_(boot_loader)" link="_blank">LILO</a>{% else %}{{ include.bootloader }}{% endif %}</td>
+</tr>
+<tr class="green">
+  <td class="title1"><abbr title="The default desktop environment/window manager of this operating system"><a href="https://en.wikipedia.org/wiki/Desktop_environment" link="_blank">Desktop</a></abbr></td>
+  <td class="green">{{ include.desktop }}</td>
+</tr>
+<tr class="green">
+  <td class="title1"><abbr title="The default file system used by this distribution; others may be available, however."><a href="https://en.wikipedia.org/wiki/File_system" link="_blank">File system</a></abbr></td>
+  <td class="green">{{ include.fs }}</td>
+</tr>
+<tr class="green">
+  <td class="title1"><abbr title="The default init system of the latest release of this operating system"><a href="https://en.wikipedia.org/wiki/Init" link="_blank">Init system</a></abbr></td>
+  <td class="green">{% if include.init-system == "systemd" %}<a href='https://en.wikipedia.org/wiki/Systemd' link='_blank'>systemd</a>{% elsif include.init-system == "OpenRC" %}<a href="https://wiki.gentoo.org/wiki/OpenRC" link="_blank">OpenRC</a>{% elsif include.init-system == "SysVinit" %}<a href="https://en.wikipedia.org/wiki/Init#SysV-style" link="_blank">SysVinit</a>{% elsif include.init-system == "BSD-style init system" %}BSD-style <a href="https://en.wikipedia.org/wiki/Init" link="_blank">init</a> system{% else %}{{ include.init-system }}{% endif %}</td>
+</tr>
+<tr class="green">
+  <td class="title1"><abbr title="The default office suite of the latest release of this operating system"><a href="https://en.wikipedia.org/wiki/Office_suite" link="_blank">Office suite</a></abbr></td>
+  <td class="green">{{ include.office-suite }}</td>
+</tr>
+<tr class="green">
+  <td class="title1"><abbr title="The default package manager of the latest release of this operating system"><a href='https://en.wikipedia.org/wiki/Package_manager' link="_blank">Package manager</a></abbr></td>
+  <td class="green">{% if include.package-manager == "APT" %}<a href="https://en.wikipedia.org/wiki/Advanced_Packaging_Tool" link="_blank">APT</a> and <a href="https://en.wikipedia.org/wiki/Dpkg" link="_blank">dpkg</a>.{% elsif include.package-manager == "pacman" %}<a href="https://wiki.archlinux.org/index.php/Pacman" link="_blank">pacman</a>{% elsif include.package-manager == "yum" %}<a href="https://en.wikipedia.org/wiki/Yellowdog_Updater,_Modified" link="_blank">yum</a> and <a href="https://en.wikipedia.org/wiki/RPM_Package_Manager" link="_blank">RPM</a>.{% elsif include.package-manager == "DNF" %}<a href="https://en.wikipedia.org/wiki/DNF_(software)" link="_blank">DNF</a> and <a href="https://en.wikipedia.org/wiki/RPM_Package_Manager" link="_blank">RPM</a>.{% elsif include.package-manager == "pkgtools" %}pkgtools and <a href="https://en.wikipedia.org/wiki/Slackpkg" link="_blank">slackpkg</a>.{% elsif include.package-manager == "urpmi" %}<a href="https://en.wikipedia.org/wiki/Urpmi" link="_blank">urpmi</a> and <a href="https://en.wikipedia.org/wiki/RPM_Package_Manager" link="_blank">RPM</a>.{% elsif include.package-manager == "ZYpp" %}<a href="https://en.wikipedia.org/wiki/ZYpp" link="_blank">ZYpp</a> and <a href="https://en.wikipedia.org/wiki/RPM_Package_Manager" link="_blank">RPM</a>.{% elsif include.package-manager == "Portage" %}<a href="https://en.wikipedia.org/wiki/Portage_(software)" link="_blank">Portage</a>{% elsif include.package-manager == "Entropy and Portage" %}<a href="https://wiki.sabayon.org/index.php?title=En:Entropy" link="_blank">Entropy</a> (binary) and <a href="https://en.wikipedia.org/wiki/Portage_(software)" link="_blank">Portage</a> (source).{% elsif include.package-manager == "Ports (source) and pkg (binary)" %}<a href="https://en.wikipedia.org/wiki/FreeBSD_Ports" link="_blank">Ports</a> (source) and <a href="https://en.wikipedia.org/wiki/FreeBSD_Ports#Packages" link="_blank">pkg</a> (binary).{% elsif include.package-manager == "APT-RPM" %}<a href="https://en.wikipedia.org/wiki/APT-RPM" link="_blank">APT-RPM</a> and <a href="https://en.wikipedia.org/wiki/RPM_Package_Manager" link="_blank">RPM</a>.{% endif %}</td>
+</tr>{% if include.text-editor %}
+<tr class="green">
+  <td class="title1"><abbr title="The default text editor(s) of the latest release of this operating system. There may be several that come pre-installed, if so they will be listed."><a href="https://en.wikipedia.org/wiki/Text_editor" link="_blank">Text editor</a></abbr></td>
+  <td class="green">{{ include.text-editor }}</td>
+</tr>{% endif %}
+<tr class="green">
+  <td class="title1"><abbr title="The default web browser of this operating system, excluding desktop-specific ones like Epiphany and Konqueror"><a href="https://en.wikipedia.org/wiki/Web_browser" link="_blank">Web browser</a></abbr></td>
+  <td class="green">{{ include.browser }}</td>
+</tr>

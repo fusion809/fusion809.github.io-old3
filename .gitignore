@@ -1,0 +1,14 @@
+bin
+_site
+.bundle
+.sass-cache
+.jekyll-metadata
+vendor
+.directory
+*.swp
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.xpm
+*.svg

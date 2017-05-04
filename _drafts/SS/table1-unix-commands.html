@@ -1,0 +1,89 @@
+<table style="width: 100%;" class="green">
+<caption>Table 1: Basic Unix Commands, provided by the GNU Core Utilities Package</caption>
+<tbody>
+<tr>
+<td class = "title">Command</td>
+<td class = "title">Meaning/Usage</td>
+<td class = "title">Example(s)</td>
+<td class = "title">Manpage (HTML)</td>
+</tr>
+<tr>
+<td class="green"><code>cat</code></td>
+<td class="green">Concatenate file. Take file contents and send them to <a href = "https://en.wikipedia.org/wiki/Standard_streams">standard output</a>.</td>
+<td class="green">{% highlight bash %}cat /etc/shells{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="cat.1p" %}</td>
+</tr>
+<tr>
+<td class="green"><code>chmod</code></td>
+<td class="green">Change the permissions of a file</td>
+<td class="green">{% highlight bash %}chmod +x build.sh{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="chmod.1p" %}</td>
+</tr>
+<tr>
+<td class="green"><code>chown</code></td>
+<td class="green">Change the ownership of a file</td>
+<td class="green">{% highlight bash %}chmown apache:apache -R /var/www/localhost/htdocs{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="chown.1p" %}</td>
+</tr>
+<tr>
+<td class="green"><code>chroot</code></td>
+<td class="green">Run a command/interactive shell with a special root directory</td>
+<td class="green">{% highlight bash %}chroot /mnt/sabayon /bin/bash{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="chroot.1" %}</td>
+</tr>
+<tr>
+<td class="green"><code>cp</code></td>
+<td class="green">Copy file</td>
+<td class="green">{% highlight bash %}cp ~/.bashrc ~/GitHub/.bashrc{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="cp.1p" %}</td>
+</tr>
+<tr>
+<td class="green"><code>du</code></td>
+<td class="green">Estimate file space usage</td>
+<td class="green">{% highlight bash %}du -bs tmp.bundle{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="du.1" %}</td>
+</tr>
+<tr>
+<td class="green"><code>echo</code></td>
+<td class="green">Display a line of text</td>
+<td class="green">{% highlight bash %}echo $SHELL{% endhighlight %} returns the current shell's file system location.</td>
+<td class="green">{% include Links/man.html man="echo.1" %}</td>
+</tr>
+<tr>
+<td class="green"><code>ln</code></td>
+<td class="green">Make a link between files</td>
+<td class="green">{% highlight bash %}ln -s /usr/bin/atom /usr/local/bin/atom {% endhighlight %} when Atom is installed from Entropy allows <code>/usr/local/bin/atom</code> to be used to launch Atom.</td>
+<td class="green">{% include Links/man.html man="ln.1p" %}</td>
+</tr>
+<tr>
+<td class="green"><code>ls</code></td>
+<td class="green">List files</td>
+<td class="green">{% highlight bash %}ls{% endhighlight %} lists files and directories in the current directory, except for hidden ones.</td>
+<td class="green">{% include Links/man.html man="ls.1p" %}</td>
+</tr>
+<tr>
+<td class="green"><code>mkdir</code></td>
+<td class="green">Create a new empty directory</td>
+<td class="green">{% highlight bash %}mkdir -p $HOME/Documents/Manpages{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="mkdir.1"%}</td>
+</tr>
+<tr>
+<td class="green"><code>mv</code></td>
+<td class="green">Move file</td>
+<td class="green">{% highlight bash %}mv ~/.bashrc ~/GitHub/sabayon-scripts/{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="mv.1p" %}</td>
+</tr>
+<tr>
+<td class="green"><code>rm</code></td>
+<td class="green">Remove file(s)</td>
+<td class="green">{% highlight bash %}rm $HOME/Documents/Manpages/equo.1.html{% endhighlight %}</td>
+<td class="green">{% include Links/man.html man="rm.1" %}</td>
+</tr>
+<tr>
+<td class="green"><code>uname</code></td>
+<td class="green">Print system information</td>
+<td class="green">{% highlight bash %}uname -r{% endhighlight %} lists the kernel details.</td>
+<td class="green">{% include Links/man.html man="uname.1" %}</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,1 @@
+[{% if include.program %}{{ include.program }}{% else %}{{ include.package }}{% endif %}](https://aur.archlinux.org/packages/{{ include.package }})<sup><abbr title="Arch User Repository">AUR</abbr></sup>

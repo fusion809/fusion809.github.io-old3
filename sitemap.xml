@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://fusion809.github.io/hugo-website/</loc>
+    <lastmod>2016-01-25T17:03:25+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fusion809.github.io/hugo-website/about/</loc>
+    <lastmod>2016-01-25T17:03:25+10:00</lastmod>
+  </url>
+  
+</urlset>

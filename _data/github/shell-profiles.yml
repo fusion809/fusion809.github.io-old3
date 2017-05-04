@@ -1,0 +1,182 @@
+body:
+# arch-scripts
+  - repo:
+            "arch-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts for automating tasks I frequently perform on Arch Linux and other systems using the pacman package manager."
+
+# centos-scripts
+  - repo:
+            "centos-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts automatically loaded (as they are referenced in `~/.bashrc` for both root and standard users) in Bash sessions that are designed to automate common system administration tasks under CentOS (and other systems using the yum package manager) like package management."
+
+# debian-scripts
+  - repo:
+            "debian-scripts"
+    category:
+            "shell-profiles"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts automatically loaded on Bash startup that are designed to automate common tasks, especially package management, under Debian and its derivatives."
+        
+# fedora-scripts
+  - repo:
+            "fedora-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts automatically loaded on Bash/Zsh startup that are designed to automate common command-line tasks on Fedora and other systems using the DNF package manager, including tasks related to package management."
+
+# freebsd-scripts
+  - repo:
+            "freebsd-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts automatically loaded on Zsh startup designed to automate common tasks on [FreeBSD](https://www.freebsd.org/)."
+
+# gentoo-scripts
+  - repo:
+            "gentoo-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Gentoo machine, that automate some common tasks I perform on Gentoo, especially package management tasks."
+
+# Linux-scripts
+  - repo:
+            "Linux-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "n"
+    description:
+            "(work in progress) Shell scripts designed to automate tasks on Linux systems, in general."
+
+# mageia-scripts
+  - repo:
+            "mageia-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Automatically-loaded from `~/.bashrc` shell script functions for automating common tasks under Mageia."
+
+# opensuse-scripts
+  - repo:
+            "opensuse-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under openSUSE."
+
+# sabayon-scripts
+  - repo:
+            "sabayon-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Automatically-loaded shell scripts (mostly containing variable definitions and functions) that can be used to automate some common tasks in Sabayon."

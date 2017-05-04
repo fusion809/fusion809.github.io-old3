@@ -1,0 +1,16 @@
+caption: "&#42;nix Command Cheatsheet"
+
+body:
+  file:
+    - command:        "cat FILE"
+      description:    "Write the contents of FILE to standard output."
+      examples:       "<script src='https://gist.github.com/fusion809/054f8e17b8bd4e033f9843b646688542.js'></script>"
+
+    - command:        "cp FILE1 FILE2"
+      description:    "Copy FILE1 to FILE2."
+      examples:       "cp ~/.bashrc ~/.bashrc2"
+
+  process:
+    - command:        "ps"
+      description:    "List running processes, with their ID numbers (`PID`), CPU usage (`%CPU`), RAM usage (`%MEM`), and other characteristics, depending on the options passed to it. See the [ps(1)](/man/ps.1.html) man page for further details."
+      examples:       "<a href='https://gist.github.com/fusion809/2cfc71c0c956183ddee5a0b2ad536e04'><script src='https://gist.github.com/3197c1942ef4b9d048767249c0d29f35.js'></script></a>"

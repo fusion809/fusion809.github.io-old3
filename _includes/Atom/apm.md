@@ -1,0 +1,1 @@
+{{ include.puncl }}{% if include.package %}[<span class="package">{{ include.package }}</span>](https://atom.io/packages/{{ include.package }}){% elsif include.theme %}[`{{ include.theme }}`](https://atom.io/themes/{{ include.theme }}){% endif %}{{ include.puncr }}

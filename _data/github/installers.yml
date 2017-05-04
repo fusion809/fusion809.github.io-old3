@@ -1,0 +1,134 @@
+body:
+# atom-installer
+  - repo:
+            "atom-installer"
+    category:
+            "installers"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [Atom text editor](https://atom.io) that should work on most Linux distributions."
+
+# atom-quick-install
+  - repo:
+            "atom-quick-install"
+    category:
+            "installers"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated quick installer for Atom using only official Linux binaries."
+
+# atom-runner
+  - repo:
+            "atom-runner"
+    category:
+            "installers"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "A shell script for running (technically not installing, but I class installers and runners together) Atom on 64-bit Linux using AppImages."
+
+# brackets-installer
+  - repo:
+            "brackets-installer"
+    category:
+            "installers"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [Brackets text editor](http://brackets.io) that should work on most Linux distributions."
+
+# komodo-installer
+  - repo:
+            "komodo-installer"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for [Komodo Edit](http://komodoide.com/komodo-edit/) on Linux."
+
+# lighttable-installer
+  - repo:
+            "lighttable-installer"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [LightTable IDE](http://www.lighttable.com) that should work on most Linux distributions."
+
+# VScode-installer
+  - repo:
+            "vscode-installer"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [Visual Studio Code text editor](http://code.visualstudio.com) that should work on most Linux distributions."

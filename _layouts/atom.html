@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/main2.css" rel="stylesheet" type="text/css">
+  <link href="/css/my.css" rel="stylesheet">
+  <link href="/css/custom-font.css" rel="stylesheet">
+  <link href="/css/font-awesome.css" rel="stylesheet">
+  <link href="/images/favicon.png" rel="shortcut icon" type="image/png">
+  <script src="/js/jquery-1.12.4.js" type="text/javascript"></script>
+  <script src="/js/jquery.easyListSplitter.js" type="text/javascript"></script>
+  <script src="/js/columnize-list.js" type="text/javascript"></script>
+  <script src="/js/toc4.js" type="text/javascript"></script>
+  <script src="/js/raphael.min.js" type="text/javascript"></script>
+  <script src="/js/flowchart-latest.js" type="text/javascript"></script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  </head>
+
+  <body>
+
+    {% include Layouts/header2.html %}
+
+    <div class="page-content">
+      <div class="wrapper1">
+        <article class="post">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}{% if page.package %} <a href="https://travis-ci.org/fusion809/{{ page.package }}" link="_blank"><img src="https://travis-ci.org/fusion809/{{ page.package }}.svg?branch=master" alt="build-status"></img></a>{% endif %}</h1>
+            <p class="post-meta">
+              <time><b>First published</b>: {{ page.date | date: "%A, %-d %B %Y" }}.</time>
+              {% if page.last_modified_at %}<time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y %Z" }}" itemprop="dateModified"><br/><b>Last modified</b>: &nbsp;&nbsp;&nbsp;{{ page.last_modified_at | date:"%I:%M %p %A, %d %B %Y" }} (AEST).</time>{% endif %}
+            </p>
+          </header>
+
+          <div class="post-content">
+            {% if page.draft=="yes" %}{% include Layouts/draft.html %}{% endif %}
+            {{ content }}
+          </div>
+
+        </article>
+      </div>
+    </div>
+
+    {% include Layouts/footer2.html %}
+
+  </body>
+</html>

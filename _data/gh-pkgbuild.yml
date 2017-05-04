@@ -1,0 +1,45 @@
+caption:
+  "An Overview of the PKGBUILDs in the PKGBUILDs GitHub Repository"
+body:
+  text-editor:
+    - pkgname:   "atom-bleeding"
+      bp:        "Yes"
+      size:      "~143 MB."
+      pkgdesc:   "A hackable text editor for the 21st Century built using web technologies on the Electron framework. Built with the latest versions of all bundled packages."
+      notes:     "I have added an <code>atom-bleeding</code> package to the AUR, but this has a slightly different About page."
+
+    - pkgname:   "atom-editor"
+      bp:        "No"
+      size:      "&gt;200MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies."
+      notes:     "While an <code>atom-editor</code> AUR package does exist, it, as of the addition of an <code>atom</code> to the <code>[community]</code> repository, is frequently out-of-date. Plus, this custom <code>atom-editor</code> PKGBUILD has some custom packages installed instead of the default."
+
+    - pkgname:   "atom-editor-arch"
+      bp:        "No"
+      size:      "~220 MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with some extra packages for Arch Linux package development pre-installed."
+      notes:     "An <code>atom-editor-arch</code> AUR package is maintained by myself — About page is different."
+
+    - pkgname:   "atom-editor-base"
+      bp:        "Yes"
+      size:      "~235 MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with all language packages removed."
+      notes:     "Not present in the AUR. I do not use it myself anymore, as with all extra packages installed with APM it is very slow to startup."
+
+    - pkgname:   "atom-editor-beta"
+      bp:        "No"
+      size:      "~238 MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies — beta channel."
+      notes:     "The <code>atom-editor-beta</code> AUR package is also maintained by myself — About page is different."
+
+    - pkgname:   "atom-editor-beta-arch"
+      bp:        "No"
+      size:      "&gt;200 MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with some extra packages for Arch Linux package development pre-installed."
+      notes:     "Not present in the AUR."
+
+    - pkgname:   "atom-editor-beta-base"
+      bp:        "No"
+      size:      "&gt;200 MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with all language packages removed."
+      notes:     "Not present in the AUR."

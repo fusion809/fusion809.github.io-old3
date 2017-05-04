@@ -1,0 +1,209 @@
+<h2>My <a href="https://atom.io" link="_blank">Atom</a> Packages</h2>
+
+<ul class="post-list">
+  {% for row in site.data.github.atom.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: <a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.registered == "y" %}<span style="font-weight: normal;"><b><u>Atom Package URL:</u></b> <a href="https://atom.io/packages/{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}" link="_blank">https://atom.io/packages/{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}.</a></span>{% else %}<span style="font-weight:normal;">Not published in the Atom package registry.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>My Other GitHub Repositories</h2>
+<h3><a href="http://appimage.org/" link="_blank">AppImage</a></h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.appimage.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Configuration</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.configuration.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Installers</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.installers.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3><a href="https://en.wikipedia.org/wiki/ISO_image" link="_blank">ISO</a>-building</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.iso.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Mathematics</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.math.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3><a href="https://en.wikipedia.org/wiki/Operating_system" link="_blank">Operating System</a>-setup</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.os.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Other scripts</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.other-scripts.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Packaging</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.packaging.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3><a href="https://en.wikipedia.org/wiki/Packer_(software)" link="_blank">Packer</a></h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.packer.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3><a href="https://en.wikipedia.org/wiki/Unix_shell" link="_blank">Shell Profiles</a></h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.shell-profiles.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3><a href="https://en.wikipedia.org/wiki/Snappy_(package_manager)" link="_blank">Snaps</a></h3>
+<ul class="post-list">
+  {% for row in site.data.github.snaps.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Themes</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.themes.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Websites</h3>
+
+<ul class="post-list">
+  {% for row in site.data.github.websites.body %}
+    <li class="data-meta">
+      <a href = "https://github.com/fusion809/{{ row.repo }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
+      <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+      <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
+      <span style="font-weight: normal;"><b><u>License</u></b>: {% if row.license %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license }}</a>{% else %}None{% endif %}.</span><br/>
+      <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
+      {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>

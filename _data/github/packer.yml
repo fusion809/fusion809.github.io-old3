@@ -1,0 +1,44 @@
+body:
+# arch-builder
+  - repo:
+            "arch-builder"
+    fork:
+            "y"
+    orig-user:
+            "elasticdog"
+    orig-repo:
+            "packer-arch"
+    license:
+            "ISC"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Packer template for building Arch Linux VMs."
+
+# gentoo-packer
+  - repo:
+            "gentoo-packer"
+    fork:
+            "y"
+    orig-user:
+            "d11wtq"
+    orig-repo:
+            "gentoo-packer"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "A repository of scripts for the setting up of a Gentoo VM. Originally designed to be used by Packer (by its original developer, Elasticdog), but if you try to use this fork of mine to build a Packer image odds are it will fail."

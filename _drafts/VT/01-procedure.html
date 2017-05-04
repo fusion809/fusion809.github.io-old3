@@ -1,0 +1,63 @@
+{% capture item1 %}
+Creating a Docker container for the target operating system, that is, the operating system for which the software package being built, is intended for. Most (even comparatively obscure ones like Sabayon) Linux distributions already have Docker containers that can be found by searching the [Docker Hub](https://hub.docker.com/).
+
+Once you have found the container you are going to use in the Docker Hub, merely run:
+
+{% include Code/codeu.html line1="docker pull $name:$tag" %}
+
+where `$name` is replaced with the container's name (e.g., `opensuse` for [this container](https://hub.docker.com/_/opensuse/)) and `$tag` with the container's tag (usually `latest` is the default, if no tag is specified).
+{% endcapture %}
+{% capture item2 %}
+The next step is to start your Docker container and run a command inside it. The most common such command, for Linux distributions anyway, is `/bin/bash` (that is, the Bash Unix shell). To do this one runs:
+
+{% include Code/codeu.html line1="docker run $opts $ID $command" %}
+
+where `$opts` are the Docker options (I usually use `-i -t` myself, so that the session is interactive (which the `-i` option specifies) and is from the command-line which `-t` specifies), `$ID` is the image ID for your Docker container and `$command` is the command you are running in the container (which as I previously mentioned, for me, when building software packages is usually `/bin/bash`). The image ID can be determined by running {% include Code/codeus.html line1="docker images" %}, which for me, for example, returns:
+
+~~~ bash
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+debian-unstable       latest              9dd9fe468c9e        About an hour ago   323.3 MB
+gentoo-amd64          latest              3e02cda6a803        2 hours ago         1.624 GB
+<none>                <none>              31ed588c2fb5        4 hours ago         1.624 GB
+opensuse              tumbleweed          d825b768fae4        11 hours ago        98.07 MB
+opensuse              latest              7617deda9fe6        11 hours ago        97.67 MB
+debian                unstable            3f1ef6d67fa7        7 days ago          118.8 MB
+gentoo/stage3-amd64   latest              d23a7de89b05        12 days ago         832.3 MB
+offlinehacker/nixos   latest              65f8b74f4779        5 weeks ago         530.5 MB
+~~~
+
+needless to say, the image ID can be found in the "Image ID" column of this output.
+
+Docker containers are usually more "barebones" than their non-virtual or even VirtualBox counterparts, for example, if you use the official openSUSE Tumbleweed (giving the command {% include Code/codeus-rb.html line1="docker pull opensuse:tumbleweed" %} container, you will notice that the `sudo` Unix program is not even pre-installed on it. But there are advantages that come with this fact, for example, you will notice that in the output shown above, the size of my openSUSE Tumbleweed image is just 98.07 MB, while a fresh installation of openSUSE Tumbleweed (with the KDE desktop) in VirtualBox will likely be larger than 1 GB.
+
+After you start running `/bin/bash` or some other Unix shell in your Docker container, you can commence following the usual package development process you would use if you were doing package development on an actual (that is, non-virtual) installation of the OS, in question. For example, to build RPM packages for CentOS, Fedora or openSUSE one may follow the guide at the [*Fedora Wiki*](http://fedoraproject.org/wiki/How_to_create_an_RPM_package).
+{% endcapture %}
+{% capture item3 %}
+Once you have built a package in your Docker container, the logical next step would be to copy it to your host's file system. To do this one would run:
+
+{% include Code/codeu.html line1="docker cp $CONTAINER:$SRC_PATH $DEST_PATH" %}
+
+where `$CONTAINER` is the Docker container's ID, `$SRC_PATH` is the path of the package in the Docker container and `$DEST_PATH` is the destination path on one's local machine. The container ID can be determined by running:
+
+{% include Code/codeu.html line1="docker ps -a" %}
+
+which for me, for example, returns:
+
+{% include Links/image.html image="docker-psa.png" float="right" %}
+
+When I am working with ebuilds or PKGBUILDs, however, I usually prefer to cut the middle-man out and push the changes I made locally to the file's respective git repository.
+{% endcapture %}
+{% capture item4 %}
+Once you finished making all the changes you intend to make to the Docker container, for now, you can run:
+
+{% include Code/codeu.html line1="docker commit $CONTAINER $NAME" %}
+
+where `$CONTAINER` is the container ID again, and `$NAME` is the name you would like to give your Docker container for future reference.
+{% endcapture %}
+{% include Layouts/note.md note1="Remember, however, that in some distributions you will need to be a member of the `docker` user group (running `gpasswd -a $USER docker` as root should do the trick), in order to run Docker, a temporary workaround for users with `sudo` privileges is to add `sudo` to the start of each of the following Docker commands." %}
+<ol>
+  <li>{{ item1 | markdownify }}</li>
+  <li>{{ item2 | markdownify }}</li>
+  <li>{{ item3 | markdownify }}</li>
+  <li>{{ item4 | markdownify }}</li>
+</ol>

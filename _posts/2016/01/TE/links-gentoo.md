@@ -1,0 +1,1 @@
+{% if include.package %}[<abbr title="Entropy Store">ES</abbr>](https://packages.sabayon.org/quicksearch?q={{ include.package }}&x=0&y=0), [<abbr title="Gentoo Portage Overlays">GPO</abbr>](http://gpo.zugaina.org/{{ include.package }}), [<abbr title="Portage Tree">PT</abbr>](https://packages.gentoo.org/{{ include.package }}){% endif %}

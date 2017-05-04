@@ -1,0 +1,66 @@
+body:
+# AppImages
+  - repo:
+            "AppImages"
+    fork:
+            "y"
+    orig-user:
+            "probonopd"
+    orig-repo:
+            "AppImages"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    permalink:
+            "/appimages/"
+    description:
+            "Recipes (shell scripts) for building AppImages, forked from [probonopd/AppImages](https://github.com/probonopd/AppImages)."
+
+# Code-OSS.AppImage
+  - repo:
+           "Code-OSS.AppImage"
+    fork:
+           "n"
+    readme:
+           "y"
+    maintained:
+           "y"
+    working:
+           "y"
+    description:
+           "A repository that, using Travis CI, is used to build a Code (OSS) AppImage and upload it to the continuous tag of this very repository."
+
+# Emacs.AppImage
+  - repo:
+           "Emacs.AppImage"
+    fork:
+           "y"
+    orig-user:
+           "probonopd"
+    orig-repo:
+           "Emacs.AppImage"
+    readme:
+           "y"
+    maintained:
+           "y"
+    working:
+           "y"
+    description:
+           "A repository that, using Travis CI, is used to build a Emacs AppImage and upload it to Bintray."
+
+# GVim.AppImage
+  - repo:
+           "GVim.AppImage"
+    fork:
+           "n"
+    readme:
+           "y"
+    maintained:
+           "y"
+    working:
+           "y"
+    description:
+           "A repository that, using Travis CI, is used to build a GVim AppImage and upload it to the continuous tag of this very repository."

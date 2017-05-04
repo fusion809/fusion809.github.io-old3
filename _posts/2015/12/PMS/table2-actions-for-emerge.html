@@ -1,0 +1,94 @@
+<table class="green" style="width: 100%; border: 1px; padding: 1em;"><caption><strong>Table 2: Action values for Emerge</strong></caption>
+<tbody>
+<tr class="green">
+<td class="title" style="width: 130px;">Long</td>
+<td class="title" style="width: 50px;">Short</td>
+<td class="title" style="width: 50px;"><abbr title="Input-required?">IR</abbr>?</td>
+<td class="title" style="width: 670px;">Meaning</td>
+</tr>
+<tr class="green">
+<td class="green">None</td>
+<td class="green">N/A</td>
+<td style="background-color: green; color: white; text-align: center; vertical-align: middle;">Yes</td>
+<td class="green">If no action is specified then emerge will merge all packages specified and their dependencies.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--config</div></td>
+<td class="green">N/A</td>
+<td style="background-color: green; color: white; text-align: center; vertical-align: middle;">Yes</td>
+<td class="green">Run specific configuring processes that must be done after the package is emerged. The best example for this I can provide are the MariaDB and MySQL packages. Configuring these packages is required in order to set up a database with them.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--depclean</div></td>
+<td class="green"><code>-c</code></td>
+<td style="background-color: green; color: white; text-align: center; vertical-align: middle;">Yes</td>
+<td class="green">Removes packages not associated with any merged package.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--help</div></td>
+<td class="green"><code>-h</code></td>
+<td style="background-color: red; color: white; text-align: center; vertical-align: middle;">No</td>
+<td class="green">Displays some basic syntactic information, although if you really want some documentation for emerge from the command-line use <code>man emerge</code>.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--prune</div></td>
+<td class="green"><code>-P</code></td>
+<td style="background-color: green; color: white; text-align: center; vertical-align: middle;">Yes</td>
+<td class="green">Remove all but the highest installed version of the package specified.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--regen</div></td>
+<td class="green">N/A</td>
+<td style="background-color: red; color: white; text-align: center; vertical-align: middle;">No</td>
+<td class="green">Causes portage to check and update the dependency cache of all ebuilds in the portage tree.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--resume</div></td>
+<td class="green"><code>-r</code></td>
+<td style="background-color: red; color: white; text-align: center; vertical-align: middle;">No</td>
+<td class="green">Resumes the last merge, if said merge was cancelled due to errors.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--search</div></td>
+<td class="green"><code>-s</code></td>
+<td style="background-color: green; color: white; text-align: center; vertical-align: middle;">Yes</td>
+<td class="green">Search for packages who's name matches with the supplied case-insensitive string.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--searchdesc</div></td>
+<td class="green"><code>-S</code></td>
+<td style="background-color: green; color: white; text-align: center; vertical-align: middle;">Yes</td>
+<td class="green">Search the Portage tree for string in package names and descriptions.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--sync</div></td>
+<td class="green">N/A</td>
+<td style="background-color: red; color: white; text-align: center; vertical-align: middle;">No</td>
+<td class="green">Updates all the ebuilds in the Portage Tree. You should do this once a week, at least. The first time you do it, this will take quite some time (potentially up to a few hours). To save time the first time you do this you may wish to run <code>emerge-webrsync</code> which will download the Portage Tree as a tarball.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--unmerge</div></td>
+<td class="green"><code>-C</code></td>
+<td style="background-color: green; color: white; text-align: center; vertical-align: middle;">Yes</td>
+<td class="green">Unmerges (that is, uninstalls) software packages specified.
+<strong>WARNING: This command ignores packages that may depend on the unmerged packages.</strong> For a more dependency-conscious and hence safer version of this command use the <code>--depclean</code> or <code>--prune</code> options.</td>
+</tr>
+<tr class="green">
+<td class="green">
+<div class="code">--version</div></td>
+<td class="green"><code>-V</code></td>
+<td style="background-color: red; color: white; text-align: center; vertical-align: middle;">No</td>
+<td class="green">Display the version number of emerge.</td>
+</tr>
+</tbody>
+</table>

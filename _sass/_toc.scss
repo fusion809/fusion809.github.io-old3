@@ -1,0 +1,67 @@
+/* Sidebar TOC SCSS
+*/
+#toc {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    position: fixed;
+    background: #333;
+    width: $toc-width;
+    color: #fff;
+    overflow-y: scroll;
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#toc li {
+    padding: 0px 0px;
+}
+
+#toc li.h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  width: auto;
+  padding-left: 5px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 4px;
+}
+
+#toc li.h2 {
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+  padding-left: 5px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+#toc li.h3 {
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+#toc li.h3.col {
+  font-size: 13px;
+}
+
+#toc li.h4 {
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+#toc .toc-active {
+    background: #336699;
+    box-shadow: inset -5px 0px 5px -5px #000;
+}
+
+#toc a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}

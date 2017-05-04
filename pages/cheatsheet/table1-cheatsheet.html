@@ -1,0 +1,38 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption id="table-1">
+    {{ site.data.cheatsheet.caption | markdownify }}
+  </caption>
+  <tbody>
+    <tr class="title1">
+      <td class="title1">
+        Command
+      </td>
+      <td class="title1">
+        Description
+      </td>
+      <td class="title1">
+        Example(s)
+      </td>
+    </tr>
+    <tr class="title1">
+      <td class = "title2" style="text-align: center;" colspan="3">File Commands</td>
+    </tr>
+    {% for row in site.data.cheatsheet.body.file %}
+    <tr class="green">
+      <td class="code"><code>{{ row.command }}</code></td>
+      <td class="green">{{ row.description | markdownify }}</td>
+      <td class="green">{{ row.examples | markdownify }}</td>
+    </tr>
+    {% endfor %}
+    <tr class="title1">
+      <td class = "title2" style="text-align: center;" colspan="3">Process Management</td>
+    </tr>
+    {% for row in site.data.cheatsheet.body.process %}
+    <tr class="green">
+      <td class="code"><code>{{ row.command }}</code></td>
+      <td class="green">{{ row.description | markdownify }}</td>
+      <td class="green">{{ row.examples | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

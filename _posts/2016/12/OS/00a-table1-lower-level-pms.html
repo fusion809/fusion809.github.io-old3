@@ -1,0 +1,20 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+	<caption id="table-1">
+		{{ site.data.lowerpms.caption }}
+	</caption>
+	<tbody>
+		<tr class="green">
+			<td class="title1" style="width: 200px;">Name</td>
+			<td class="title1"><abbr title="Programming language the package manager is written in?">Language(s)</abbr></td>
+			<td class="title1"><abbr title="Can the package manager manage downloads as well?">Download?</abbr></td>
+			<td class="title1"><abbr title="The date it was originally published">Date</abbr></td>
+			<td class="titel1">Description</td>
+		</tr>
+		{% for row in site.data.lowerpms.body %}
+		<tr class="green">
+			<td class="green">{{ row.name }}</td>
+			<td class="green">{{ row.language }}</td>
+			<td class="green">{{ row.download }}</td>
+		{% endfor %}	
+	</tbody>
+</table>

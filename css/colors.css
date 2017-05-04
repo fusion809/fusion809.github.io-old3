@@ -1,0 +1,85 @@
+/* @m<x> = .medium-<x>
+ * @l<x> = .light-<x> (<x> lightened 15%)
+ * @d<x> = .dark-<x>  (<x>  darkened 15%)
+ */
+.light-red {
+  color: #c97071;
+}
+.medium-red {
+  color: #AC4142;
+}
+.dark-red {
+  color: #742c2d;
+}
+.light-green {
+  color: #b2c38b;
+}
+.medium-green {
+  color: #90A959;
+}
+.dark-green {
+  color: #66783e;
+}
+.light-yellow {
+  color: #fae0bc;
+}
+.medium-yellow {
+  color: #F4BF75;
+}
+.dark-yellow {
+  color: #ee9e2e;
+}
+.light-blue {
+  color: #9dc0ce;
+}
+.medium-blue {
+  color: #6A9FB5;
+}
+.dark-blue {
+  color: #46788d;
+}
+.light-maroon {
+  color: #be7953;
+}
+.medium-maroon {
+  color: #8F5536;
+}
+.dark-maroon {
+  color: #573421;
+}
+.light-purple {
+  color: #c7a4c0;
+}
+.medium-purple {
+  color: #AA759F;
+}
+.dark-purple {
+  color: #825078;
+}
+.light-orange {
+  color: #e1ad83;
+}
+.medium-orange {
+  color: #D28445;
+}
+.dark-orange {
+  color: #a35f27;
+}
+.light-cyan {
+  color: #a7d0c9;
+}
+.medium-cyan {
+  color: #75B5AA;
+}
+.dark-cyan {
+  color: #4d9085;
+}
+.light-pink {
+  color: #ff4ddb;
+}
+.medium-pink {
+  color: #F0C;
+}
+.dark-pink {
+  color: #b3008f;
+}

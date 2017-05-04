@@ -1,0 +1,81 @@
+# Jekyll configuration file
+# variables here can be accessed using liquid tags of the form {{ site.variable }}.
+title:                The Hornery
+github_username:      fusion809
+github_repo:          site.github_username/site.github_username.github.io
+url:                  https://site.github_username.github.io
+email:                brentonhorne77@gmail.com
+
+description:
+  "Where Brenton stores his thoughts and news relating to technology."
+
+extended_description:
+  "Welcome to *The Hornery*, where I, Brenton Horne, store my thoughts, guides, ramblings and news relating to **free and open-source software** (**FOSS**). If you are unfamiliar with the terminology used in the FOSS world, or otherwise find some terms in this site that confuse you, I suggest you see the [Glossary](/glossary/) of this website. Other pieces of general information that you might be interested in can be found in the site's information pages menu. If you have improvement suggestions (which I welcome!) please see the [Corrections page](/contributing/). If you like this site please [star](https://help.github.com/articles/about-stars/) its [GitHub repository](https://github.com/fusion809/fusion809.github.io).
+
+
+  This website is mostly powered by the static site generator (SSG), [Jekyll](http://jekyllrb.com/), if you would like to create your own Jekyll-powered website and preview it on a Linux platform, I have written a guide on how to do this [here](/how-to-create-your-own-jekyll-site-with-github-pages/). The [/hexo-site](/hexo-site) subfolder of *The Hornery* is powered by the SSG, [Hexo](https://hexo.io), while the [/hubpress.io](/hubpress.io) subfolder is powered by [HubPress](http://hubpress.io/), both subfolders are essentially just for testing purposes and not really ready for readers.
+
+
+  If you want to read about my other work on GitHub (namely my [repositories](https://github.com/fusion809?tab=repositories)), please see the [repositories page](/repositories)."
+
+url:                  https://fusion809.github.io
+twitter_username:     fusion809
+facebook_username:    brenton.horne.7
+facebook_name:        Brenton Horne
+facebook_username2:   sabayon.blog.77
+facebook_name2:       The Hornery
+stackexchange_name:   Brenton Horne
+stackexchange_id:     1884625
+fedora_id:            Fusion809
+aur_name:             fusion809
+opensuse_name:        fusion809
+highlighter:          rouge
+timezone:             Australia/Brisbane
+locale:               en_AU
+copyright:            "&copy; 2015-2017 Brenton Horne.<br/>
+                      Unless otherwise stated all content on this website is licensed under CC-BY-SA-3.0 or compatible licenses.<br/>
+                      Linux is a registered trademark of Linus Torvalds; all other trademarks are property of their respective owners."
+permalink:            /:year/:month/:day/:title/
+exclude:
+- vendor
+- assets
+
+gems:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-redirect-from
+
+tag_permalink_style:  pretty
+tag_page_layout:      tag_page
+tag_page_dir:         tag
+tag_feed_layout:      page
+tag_feed_dir:         tag
+
+# Build settings
+markdown:             kramdown
+author:               Brenton Horne
+rec_posts:
+  - "/operating-systems/"
+  - "/package-development/"
+  - "/linux-newcomers/"
+  - "/comparison-of-free-operating-systems/"
+  - "/comparison-of-text-editors/"
+  - "/comparison-of-package-managers/"
+  - "/linux-for-windows-users/"
+  - "/package-management-on-sabayon/"
+  - "/bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/"
+  - "/running-atom-on-linux/"
+
+main_pages:
+  - title: "About"
+    url:   "/about/"
+  - title: "About Me"
+    url:   "/about-me/"
+  - title: "Contributing"
+    url:   "/contributing/"
+  - title: "Copyright"
+    url:   "/copyright/"
+  - title: "Glossary"
+    url:   "/glossary/"
+  - title: "Repositories"
+    url:   "/repositories/"

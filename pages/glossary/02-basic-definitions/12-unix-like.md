@@ -1,0 +1,2 @@
+### Unix-like
+A **unix-like** operating system is one that behaves and to all the world seems like a Unix system, despite not being certified compliant to any version of the SUS. These systems can also be referred to as Unix clones. The only real practical difference between Unix and Unix-like systems are that Unix systems are usually developed by a commercial entity with the funds required to get their system SUS-certified.

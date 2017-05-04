@@ -1,0 +1,19 @@
+<table style="width: 400px; border: 1px; padding: 1em; margin-right: 0px; padding-right: 0px; float:right;">
+  <tbody style="width: 400px; float:right;">
+    <caption id="table-1" style="text-align: center; font-size: 30px;">
+      {{ include.distro }}
+    </caption>
+    <tr class="cyan">
+      <td class="white" colspan="2"><img src="/images/Logos/{{ include.logo }}" style = "width:100px;"/></td>
+    </tr>
+    <tr class="note">
+      <td class="note" colspan="2"><b><i>Note:</i></b> the hyperlinks in this infobox are mostly to the relevant Wikipedia articles, but otherwise it is to be best external site I can find.</td>
+    </tr>
+    {% include_relative infobox/01-characteristics.html %}
+    {% include_relative infobox/02-defaults.html %}
+    {% include_relative infobox/03-support.html %}
+    {% include_relative infobox/04-versioning.html %}
+    {% include_relative infobox/05-availability.html %}
+    {% include_relative infobox/06-links.html %}
+  </tbody>
+</table>

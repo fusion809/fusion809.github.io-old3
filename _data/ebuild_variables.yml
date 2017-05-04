@@ -1,0 +1,38 @@
+caption: "Table 8: Basic Variables set in ebuilds"
+head:
+  - Variable
+  - Meaning
+body:
+  - Variable: "[`DEPEND`](https://devmanual.gentoo.org/general-concepts/dependencies/index.html)"
+    Meaning:  "List of the package's build dependencies. These dependencies are only required for **building the package**,
+    the `RDEPEND` variable provides dependencies that are required to run the program after it is installed."
+  - Variable: "`DESCRIPTION`"
+    Meaning:  "A one-line description of the package. This field is **mandatory**."
+  - Variable: "`DOCS`"
+    Meaning:  "An array or space-separated list of documentation files to be installed using the `dodoc` function (requires **EAPI&#8805;4.**)."
+  - Variable: "[`EAPI`](https://devmanual.gentoo.org/ebuild-writing/variables/index.html#eapi)"
+    Meaning:  "Portage API version. Allowed values are integers between 0 and 6. Default value is 0."
+  - Variable: "`HOMEPAGE`"
+    Meaning:  "The URL of the package's home page. It is **mandatory**, except for virtual packages."
+  - Variable: "[`KEYWORDS`](https://devmanual.gentoo.org/keywording/index.html)"
+    Meaning:  "Keywords used to indicate package stability on different architecture types. A tilde (`~`) before an architecture (e.g.,
+    `x86`) denotes that while no bugs have been detected on this architecture, but it has not been sufficiently tested for its stability to
+    be certain. No tilde before an architecture indicates that its stability has been established by rigorous testing and usage."
+  - Variable: "`IUSE`"
+    Meaning:  "List of USE flags that are used in the ebuild."
+  - Variable: "[`LICENSE`](https://devmanual.gentoo.org/ebuild-writing/variables/index.html#license)"
+    Meaning:  "The package's license or licenses, which should exactly correspond (including its case) to a file in `licenses/`."
+  - Variable: "[`RDEPEND`](https://devmanual.gentoo.org/general-concepts/dependencies/index.html)"
+    Meaning:  "List of the package's runtime dependencies."
+  - Variable: "[`RESTRICT`](/man/ebuild.5.html)"
+    Meaning:  "This is a space-delimited list of Portage features that should be disabled or restricted. For example,
+    <code>RESTRICT=&#34;mirror&#34;</code> forces the ebuild to only download the source code from the `SRC_URI` (or equivalent) and not
+    try the Gentoo mirrors."
+  - Variable: "`S`"
+    Meaning:  "Path to temporary build directory that is used by `src_compile()` and `src_install()`. Default is `${WORKDIR}/${P}`, should
+    not be manually set unless it is not equal to the default value."
+  - Variable: "[`SLOT`](https://devmanual.gentoo.org/general-concepts/slotting/index.html)"
+    Meaning:  "The package's `SLOT`. This is used to install multiple different versions of the same package simultaneously on the same
+    system and is **mandatory**."
+  - Variable: "`SRC_URI`"
+    Meaning:  "URL of the source code (usually in archive format like `.tar.gz`). Can be in the form of a list. With **EAPI&#8805;2** the output file name of a given URI can be customized using the -> operator."

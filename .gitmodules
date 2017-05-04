@@ -1,0 +1,6 @@
+[submodule "galleria"]
+	path = galleria
+	url = https://github.com/aino/galleria/
+[submodule "devmanual.gentoo.org"]
+	path = devmanual.gentoo.org
+	url = https://github.com/gentoo/devmanual.gentoo.org

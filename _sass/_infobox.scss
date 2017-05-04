@@ -1,0 +1,99 @@
+$infobox-bg-color: #aaf;
+
+.infobox {
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+  padding: 4px;
+  border-color: #bbf;
+  border-radius: 4px;
+}
+
+table.infobox-icon, td.infobox-icon, tr.infobox-icon {
+  background-color: rgb(255,255,255);
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  font-size:        60px;
+  padding:          0px;
+  vertical-align:   middle;
+  text-align:       center;
+}
+
+.infobox-row-title {
+  background-color: $infobox-bg-color;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #222;
+  padding: 2px;
+  width: 120px;
+}
+
+.infobox-row {
+    background-color: $infobox-bg-color;
+    font-size: 12px;
+    border: 1px solid #222;
+    padding: 2px;
+}
+
+.infobox-row a {
+    color: #11f;
+    font-size: 12px;
+}
+
+.infobox-header {
+  background-color: rgba(255,122,66,1.0);
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #222;
+  padding: 2px;
+  text-align: center;
+}
+
+.infobox-notes {
+  background-color: rgba(66,122,255,1.0);
+  border: 1px solid #222;
+  padding: 2px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.infoboxDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.infoboxDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cc44ff;
+    min-width: 172px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.infoboxDropdown-content td {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 172px;
+}
+
+/* Change color of dropdown links on hover */
+.infoboxDropdown-content td:hover {
+  background-color: #f1f1f1;
+  width: 172px;
+}
+
+/* Show the dropdown menu on hover */
+.infoboxDropdown:hover .infoboxDropdown-content {
+    display: block;
+    width: 172px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.infoboxDropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

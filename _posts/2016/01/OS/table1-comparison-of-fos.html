@@ -1,0 +1,68 @@
+<table class="green" style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption class="blue"><strong>{{ site.data.os_comparison.caption | markdownify }}</strong></caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1" style="width:180px;">Operating System</td>
+      <td class="title1">
+        <abbr title="Release Model">RM</abbr>/<abbr title="Latest version available">LV</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Beginner-friendliness">BF</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Customizability">CB</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Documentation quality">DM</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="DistroWatch Ranking">DW</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Ease of installation">EI</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="My own experience with it. How much experience do I have with the OS.">MEWI</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Out-of-the-box. How much work must be done by the user before this OS is ready for everyday use?">OB</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Package management system">PMS</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Stability">SB</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Software Currency: how up-to-date is this OS' software?">SC</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Support. How efficient are the official support avenues, like their forums or AskBot/StackExchange website?">SP</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Overall. How does the OS do overall?">OA</abbr>
+      </td>
+    </tr>
+    {% for row in site.data.os_comparison.body %}
+    <tr class="green">
+      <td class="title1">{{ row.OS | markdownify }}</td>
+      <td class="green">{{ row.LV | markdownify }}</td>
+      <td class="green">{{ row.BF | markdownify }}</td>
+      <td class="green">{{ row.CB | markdownify }}</td>
+      <td class="green">{{ row.DM | markdownify }}</td>
+      <td class="green">{{ row.DW | markdownify }}</td>
+      <td class="green">{{ row.EI | markdownify }}</td>
+      <td class="green">{{ row.MEWI | markdownify }}</td>
+      <td class="green">{{ row.OB | markdownify }}</td>
+      <td class="green">{{ row.PMS | markdownify }}</td>
+      <td class="green">{{ row.SB | markdownify }}</td>
+      <td class="green">{{ row.SC | markdownify }}</td>
+      <td class="green">{{ row.SP | markdownify }}</td>
+      <td class="green">{{ row.OA | markdownify }}</td>
+    </tr>
+    {% endfor %}
+    <tr class = "blue">
+      <td class="blue" colspan="14"><b>S</b>: Stable release.<br/> <b>U</b>: Unstable branch (sid).<br/> <b>F</b>: Fixed releases.<br/> <b>T</b>: Tumbleweed.</td>
+    </tr>
+  </tbody>
+</table>

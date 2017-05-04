@@ -1,0 +1,33 @@
+<div class="highlight"><pre><code class="language-matlab" data-lang="MATLAB"><span class="c">% lorenz.m %</span>
+<span class="k">function</span><span class="w"> </span>dy <span class="r">=</span><span class="w"> </span><span class="nf">lorenz</span><span class="p">(</span>y,t<span class="p">)</span><span class="w"></span>
+<span class="n">dy</span> <span class="r">=</span> <span class="nb">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">P</span> <span class="r">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">r</span> <span class="r">=</span> <span class="mi">28</span><span class="p">;</span>
+<span class="n">b</span> <span class="r">=</span> <span class="mi">8</span><span class="o">/</span><span class="mi">3</span><span class="p">;</span>
+<span class="n">dy</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="r">=</span> <span class="n">P</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+<span class="n">dy</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="r">=</span> <span class="o">-</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="n">r</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">dy</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="r">=</span> <span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+
+<span class="c">% lorenz-ex.m %</span>
+<span class="nb">clear all</span>
+<span class="n">t</span> <span class="r">=</span> <span class="nb">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">350</span><span class="p">,</span><span class="mi">100001</span><span class="p">);</span>
+<span class="n">lsode_options</span><span class="p">(</span>"<span class="n">relative</span> <span class="n">tolerance</span>"<span class="p">,</span> <span class="mf">1e-15</span><span class="p">);</span>
+<span class="n">y</span> <span class="r">=</span> <span class="nb">lsode</span><span class="p">(</span>"<span class="n">lorenz</span>"<span class="p">,[</span> <span class="mf">1.0</span><span class="p">;</span> <span class="mf">1.0</span><span class="p">;</span> <span class="mf">1.0</span><span class="p">]</span><span class="o">'</span><span class="p">,</span><span class="n">t</span><span class="p">);</span>
+
+<span class="nb">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">221</span><span class="p">)</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">y</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="n">y</span><span class="p">(:,</span><span class="mi">2</span><span class="p">),</span><span class="s">'-'</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s">'x(t)'</span><span class="p">,</span><span class="s">'FontSize'</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s">'y(t)'</span><span class="p">,</span><span class="s">'FontSize'</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
+
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">222</span><span class="p">)</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">y</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="n">y</span><span class="p">(:,</span><span class="mi">3</span><span class="p">),</span><span class="s">'-'</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s">'x(t)'</span><span class="p">,</span><span class="s">'FontSize'</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s">'z(t)'</span><span class="p">,</span><span class="s">'FontSize'</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
+
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">223</span><span class="p">)</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">y</span><span class="p">(:,</span><span class="mi">2</span><span class="p">),</span><span class="n">y</span><span class="p">(:,</span><span class="mi">3</span><span class="p">),</span><span class="s">'-'</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s">'y(t)'</span><span class="p">,</span><span class="s">'FontSize'</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s">'z(t)'</span><span class="p">,</span><span class="s">'FontSize'</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
+</code></pre></div>

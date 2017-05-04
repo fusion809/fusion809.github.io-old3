@@ -1,0 +1,29 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption id="table-1">
+    {{ site.data.github.atom.caption }}
+  </caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1" style="width:200px;">Name</td>
+      <td class="title1"><abbr title="Is this repository a fork of another?">Fork?</abbr></td>
+      <td class="title1">Stars</td>
+      <td class="title1"><abbr title="Does this repository have an included LICENSE file and if so what is this license?">LICENSE</abbr></td>
+      <td class="title1"><abbr title="This package's README">README</abbr></td>
+      <td class="title1"><abbr title="Is this package registered with APM?">Reg?</abbr></td>
+      <td class="title1"><abbr title="Does this repository have its own page on The Hornery?">Page?</abbr></td>
+      <td class="title1">Description</td>
+    </tr>
+    {% for row in site.data.github.atom.body %}
+    <tr class="green">
+      <td class="green">{% if row.name %}<a href="https://github.com/fusion809/{{ row.repo }}" link="_blank"><code>{{ row.name }}</code></a>{% else %}<a href="https://github.com/fusion809/{{ row.repo }}" link="_blank"><code>{{ row.repo }}</code></a>{% endif %}</td>
+      {% if row.fork == 'y' %}<td class="yes"><a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">Yes</a></td>{% else %}<td class="no">No</td>{% endif %}
+      <td class="green" style="width:75px;"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg"></td>
+      {% if row.license %}<td class="{{ row.license }}"><a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}" link="_blank">{{ row.license | markdownify }}</a></td>{% else %}<td class="no">No</td>{% endif %}
+      {% if row.readme == "y" %}<td class="yes"><a href="https://github.com/fusion809/{{ row.repo }}/blob/master/README.md" link="_blank">README</a></td>{% else %}<td class="no">None</td>{% endif %}
+      {% if row.registered     == 'y' %}<td class="yes"><a href="https://atom.io/packages/{{ row.name }}" link="_blank">Yes</a></td>{% else %}<td class="no">No</td>{% endif %}
+      {% if row.permalink %}<td class="yes"><a href="{{ row.permalink }}" link="_blank">Yes</a></td>{% else %}<td class="no">No</td>{% endif %}
+      <td class="green">{{ row.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table><br/>

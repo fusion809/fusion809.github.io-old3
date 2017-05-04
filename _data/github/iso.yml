@@ -1,0 +1,28 @@
+body:
+# archiso
+  - repo:
+            "archiso"
+    fork:
+            "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Tools for automating the generation of ISOs for Arch Linux with out-of-the-box support for Broadcom Wireless."
+
+# fedora-ISO
+  - repo:
+            "fedora-ISO"
+    fork:
+            "n"
+    readme:
+            "n"
+    maintained:
+            "n"
+    working:
+            "n"
+    description:
+            "A collection of files for the generation of a custom Fedora ISO with out-of-the-box support for Broadcom Wireless. So far this repository is a work-in-progress and not yet ready for use. I have asked for help with this on [Ask Fedora](https://ask.fedoraproject.org/en/question/83250/how-do-i-create-a-fedora-23-iso-with-broadcom-wl-preinstalled/)."

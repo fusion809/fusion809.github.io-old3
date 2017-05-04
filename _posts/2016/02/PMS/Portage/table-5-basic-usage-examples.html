@@ -1,0 +1,46 @@
+<h3>Basic Usage</h3>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption>Table 5: Basic Usage of Portage</caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1">Action</td>
+      <td class="title1">Command<sup>1</sup></td>
+      <td class="title1">Description</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Build package from source</td>
+      <td class="green">{% include Code/coder.html line1="emerge -B $package" %}</td>
+      <td class="green">Building packages from source code is as simple as passing the necessary flag to <code>emerge</code>.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install build dependencies</td>
+      <td class="green">{% include Code/coder.html line1="emerge -o $package" %}</td>
+      <td class="green">Install the required build dependencies for <code>$package</code>.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install package</td>
+      <td class="green">{% include Code/coder.html line1="emerge $package" %}</td>
+      <td class="green">Install the target package (<code>$package</code>) and all runtime dependencies.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Remove package</td>
+      <td class="green">{% include Code/coder.html line1="emerge -C $package" %}</td>
+      <td class="green">Remove the target package (<code>$package</code>) and all runtime dependencies not required by other installed packages.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Search for keyword</td>
+      <td class="green">{% include Code/coder.html line1="emerge --search $package" %}</td>
+      <td class="green">Search package names and descriptions for provided regex.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Upgrade all packages</td>
+      <td class="green">{% include Code/coder.html line1="emerge --sync" line2="layman -S" line3="emerge -uDU --with-bdeps=y @world" %}</td>
+      <td class="green">Upgrade all installed packages, after synchronizing (with their respective version control system) the Portage Tree and all locally-installed overlays.</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr class="green">
+      <td colspan="3" style="padding:5px;"><sup>1</sup>: <u>Note:</u> in this table I use the short-hand notation <code>$package</code> to refer to the target package(s) that the user wishes to perform the mentioned action on.</td>
+    </tr>
+  </tfoot>
+</table><br/>

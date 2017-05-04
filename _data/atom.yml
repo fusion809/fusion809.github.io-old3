@@ -1,0 +1,24 @@
+body:
+  - item: 'The core [`about`](https://atom.io/packages/about) would be replaced with my fork of this package, [`about-arch`](https://atom.io/packages/about-arch), with a patch applied to it so that it gives an accurate About page. Specifically: ![about-arch 1.5.18 opened on Atom 1.8.0](/images/Atom/atom-editor-arch-1.8.0-about-arch-1.5.18.png)'
+
+  - item: 'The core [`language-gfm`](https://atom.io/packages/language-gfm) package would be replaced with my fork of this package, [`language-gfm2`](https://atom.io/packages/language-gfm2) along with the [`language-liquid`](https://atom.io/packages/language-liquid) package. These packages, together, provide syntax-highlighting for Liquid tags and HTML code embedded in GitHub-flavoured markdown files. See the screenshot below for an example of how this looks. ![language-gfm2-0.90.4 syntax-highlighting on Atom 1.8.0](/images/Atom/language-gfm2-0.90.4.png)'
+
+  - item: 'The core [`language-shellscript`](https://atom.io/packages/language-shellscript) package would be replaced with my fork of this package, [`language-unix-shell`](https://atom.io/packages/language-unix-shell). `language-unix-shell` provides syntax-highlighting for extra syntactic components of shell script, such as package management utilities, variable definitions, coreutilities, text editors, *etc.* Below is a screenshot of `language-unix-shell` (version 0.32.5) syntax-highlighting of my atom-editor-arch PKGBUILD on 20 June 2016.<br/> ![language-unix-shell 0.32.5 syntax-highlighting my atom-editor-arch PKGBUILD on 20 June 2016](/images/Atom/language-unix-shell-0.32.5.png)'
+
+  - item: '[`language-archlinux`](https://atom.io/packages/language-archlinux) package was added for Arch Linux package development support.'
+
+  - item: '[`language-ini-desktop`](https://atom.io/packages/language-ini-desktop) was added for the purpose of editing desktop configuration files as they are sometimes used as source files specified in PKGBUILDs.<br/>
+  ![language-ini-desktop 1.18.2 syntax-highlighting a desktop configuration file on Atom 1.8.0](/images/Atom/language-ini-desktop-1.18.2.png)'
+
+  - item: '[`language-patch2`](https://github.com/packages/language-patch2) was added to provide syntax-highlighting support for patch files, as they are often also listed as source files in PKGBUILDs.<br/>
+  ![language-patch2 0.1.3 syntax-highlighting a patch file on Atom 1.8.0](/images/Atom/language-patch2-0.1.3.png)'
+
+  - item: '[`terminal-fusion`](https://atom.io/packages/terminal-fusion) was added to provide an embedded terminal for Atom.<br/> ![terminal-fusion 2.1.7](/images/Atom/terminal-fusion-2.1.7.png)'
+
+  - item: 'The core [`exception-reporting`](https://atom.io/packages/exception-reporting) and [`metrics`](https://atom.io/packages/metrics) packages were removed.'
+
+  - item: 'The core themes were removed and replaced with [`dark-bint-syntax`](https://atom.io/packages/dark-bint-syntax) and [`fusion-ui`](https://atom.io/packages/fusion-ui) themes. All the previous screenshots shown on this page were with these two themes enabled.'
+
+  - item: 'My own custom Hunspell dictionary for Australian English installed. If your `LANG` environment variable is set to `en_AU` this spell-checking dictionary will be used.'
+
+  - item: 'The Electron version used in this build is 0.36.12 instead of the default version of 0.36.8. The reason why is because without this adjustment in Electron version a bug ([issue #10918](https://github.com/atom/atom/issues/10918)) occurs in Atom that is related to FreeType ≥2.6.3.'

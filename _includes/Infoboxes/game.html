@@ -1,0 +1,124 @@
+<table style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}; border:1px solid black; float: right;" class="infobox">
+
+    <tr>
+         <td colspan="2" class="title1" style="font-size: 18px; text-align: center;">{{ include.game }}</td>
+    </tr>
+
+    <tr style = "float: initial;">
+         <td colspan = "2" style = "width: {% if include.width %}{{ include.width }}{% else %}400px{% endif %};">
+              <div class = "infobox-icon">
+                   {% if include.logonot %}{% else %}
+                   <figure>
+                        <p style="margin-left: auto; margin-right: auto; text-align: center;">
+                             <a href="/images/Logos/{% if include.logo %}{{ include.logo }}{% else %}{{ include.game }}.png{% endif %}" link="_blank"><img src="/images/Logos/{% if include.logo %}{{ include.logo }}{% else %}{{ include.game }}.png{% endif %}" style = "width:{% if include.logo_width %}{{ include.logo_width }}{% else %}100px{% endif %}; float: initial; position: relative; margin: auto; text-align: center;"/></a>{% if include.logo_caption %}<br/>
+                             <span class="caption">{{ include.logo_caption }}</span>{% endif %}
+                        </p>
+                   </figure>
+                   {% endif %}
+
+                   <figure>
+                        <p style="margin-left: auto; margin-right: auto; text-align: center;">
+                             <a href="/images/Games/{{ include.screenshot }}" link="_blank"><img src="/images/Games/{{ include.screenshot }}" alt="{{ include.description }}" style = "width:{% if include.screenshot_width %}{{ include.screenshot_width }}{% else %}400px{% endif %}; float: initial; position: relative; margin: auto; text-align: center;"/></a>
+                             <span class="caption">{{ include.screenshot_caption }}</span>
+                        </p>
+                   </figure>
+
+              </div>
+         </td>
+    </tr>
+
+    {% if include.basis %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Based on</td>
+         <td class="infobox-row">{{ include.basis }}</td>
+    </tr>
+    {% endif %}
+
+    {% if include.developers %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Developer(s)</td>
+         <td class="infobox-row">{{ include.developers }}</td>
+    </tr>
+    {% endif %}
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">{% include Layouts/abbr.md full="Stage of development" abbr="Dev. stage" %}</td>
+         <td class="infobox-row">{{ include.development }}</td>
+    </tr>
+
+    {% if include.forked %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Forked from</td>
+         <td class="infobox-row">{{ include.forked }}</td>
+    </tr>
+    {% endif %}
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Founded</td>
+         <td class="infobox-row">{{ include.date }}</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+        <td class="infobox-row-title" style="width: 70px;">Genre</td>
+        <td class="infobox-row">{{ include.genre }}</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">License</td>
+         <td class="infobox-row">{{ include.license }}</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;"><abbr title="Supported platforms. Linux is not listed as it is a given, as if it did not run on Linux it would not be mentioned in this review.">Platform(s)</abbr></td>
+         <td class="infobox-row">{{ include.platforms }}</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+        <td class="infobox-row-title" style="width: 70px;">Written in</td>
+        <td class="infobox-row">{{ include.language }}</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="title4" style="{% if include.width %}{{ include.width }}{% else %}400px{% endif %}" colspan="2">External links</td>
+    </tr>
+
+    {% if include.github %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">GitHub</td>
+         <td class="infobox-row"><a href='https://github.com/{{ include.github }}' link="_blank">{{ include.github }}</a></td>
+    </tr>
+    {% endif %}
+
+    {% if include.gitlab %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">GitLab</td>
+         <td class="infobox-row"><a href='https://gitlab.com/{{ include.gitlab }}' link="_blank">{{ include.gitlab }}</a></td>
+    </tr>
+    {% endif %}
+
+    {% if include.irc %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">IRC</td>
+         <td class="infobox-row"><a href='https://kiwiirc.com/client/irc%3A%2F%2Firc.{% if include.irc-server %}{{ include.irc-server }}{% else %}freenode.net{% endif %}{{ include.irc }}' link="_blank">{{ include.irc }}</a></td>
+    </tr>
+    {% endif %}
+
+    {% if include.sf %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">SourceForge</td>
+         <td class="infobox-row"><a href="https://sourceforge.net/projects/{{ include.sf }}" link="_blank">{{ include.sf }}</a></td>
+    </tr>
+    {% endif %}
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Website</td>
+         <td class="infobox-row">{{ include.website }}</td>
+    </tr>
+
+    {% if include.wiki %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Wiki</td>
+         <td class="infobox-row">{{ include.wiki }}{% if include.official-wiki == "Yes" %} (Official){% else %} (Unofficial){% endif %}</td>
+    </tr>
+    {% endif %}
+</table>

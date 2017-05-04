@@ -1,0 +1,26 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption id="table-1">
+    {{ site.data.gh-pkgbuild.caption }}
+  </caption>
+  <tbody>
+    <tr class="green">
+      <td class="title2" style="text-align: center;" colspan="5">Text editors</td>
+    </tr>
+    <tr class="green">
+      <td class="title1" style="width:22=0px;"><code>pkgname</code></td>
+      <td class="title1"><abbr title="Is a binary provided by pkgbuild-current repository?">BP</abbr></td>
+      <td class="title1" style="width:100px;"><abbr title="Installed size in megabytes">Size</abbr></td>
+      <td class="title1"><code>pkgdesc</code></td>
+      <td class="title1">Notes</td>
+    </tr>
+    {% for row in site.data.gh-pkgbuild.body.text-editor %}
+    <tr class="green">
+      <td class="green"><code>{{ row.pkgname }}</code></td>
+      <td class="{{ row.bp }}">{{ row.bp }}</td>
+      <td class="green">{{ row.size }}</td>
+      <td class="green">{{ row.pkgdesc }}</td>
+      <td class="green">{{ row.notes }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

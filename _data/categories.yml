@@ -1,0 +1,28 @@
+caption:
+  "Table 3: Repository Categories"
+
+body:
+    - category:
+              "Configuration Files"
+      description:
+              "This category is for files that either modify the appearance or the behaviour of the programs they pertain to. For example, `~/.vimrc` is a configuration file for Vim, and so can be used to modify its appearance and behaviour."
+
+    - category:
+              "GitHub Pages"
+      description:
+              "This category is for repositories that should be pushing to GitHub Pages."
+
+    - category:
+              "Installers"
+      description:
+              "This category is for repositories used to install operating systems or other pieces of software."
+
+    - category:
+              "Quick Install"
+      description:
+              "This category is for repositories with a quick-install script (usually entitled `quick-install.sh`), which *should* (if they fail, feel free to start a new issue and report this fact and I will see what I can do about it) quickly install the repository on one's machine. For example, the `arch-scripts` quick-install script replaces `~/.bashrc`, `~/.zshrc` (for both root and standard user) with those from this repository, sets Zsh as the default shell, installs oh-my-zsh and gets one's system ready to use these scripts."
+
+    - category:
+              "Shell Profiles"
+      description:
+              "This category is for modifications to the files automatically loaded on startup by the Unix shells Bash and Zsh, which are `~/.bashrc` and `~/.zshrc`, respectively. Bash and Zsh categories are also provided if the repository contains a `~/.bashrc` or `~/.zshrc` file, respectively."

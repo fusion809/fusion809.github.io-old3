@@ -1,0 +1,2 @@
+### Berkeley Software Distribution
+The **Berkeley Software Distribution** (**BSD**) is a Unix operating system that was developed at the University of California, Berkeley between 1977 and 1995. It was originally closed-source (that is, not open-source), but later releases were licensed under permissive BSD licenses. Since then several descendants of BSD have emerged with the most notable and popular one being FreeBSD. I use the terminology &#42;BSD to collectively refer to BSD and its descendants.

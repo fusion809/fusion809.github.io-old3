@@ -1,0 +1,24 @@
+<table class="green" style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption><strong>{{ site.data.windows_linux.caption | markdownify }}</strong></caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1">Category</td>
+      <td class="title1" style="width:200px;">Windows<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></td>
+      <td class="title1" style="width:200px;">Linux<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup></td>
+      <td class="title1">Notes</td>
+    </tr>
+    {% for row in site.data.windows_linux.body %}
+    <tr class="green">
+      <td class="title1">{{ row.Category | markdownify }}</td>
+      <td class="green">{{ row.Windows | markdownify }}</td>
+      <td class="green">{{ row.Linux | markdownify }}</td>
+      <td class="green">{{ row.Notes | markdownify }}</td>
+    </tr>
+    {% endfor %}
+    {% for row in site.data.windows_linux.foot %}
+    <tr class="green">
+      <td class="green" colspan="4" style="padding:5px;">{{ row.Note | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table><br/>

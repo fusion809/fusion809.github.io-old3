@@ -1,0 +1,56 @@
+body:
+# PKGBUILDs
+  - repo:
+            "PKGBUILDs"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    permalink:
+            "/PKGBUILDs/"
+    description:
+            "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable. To help keep its repository size down and make it easier to tag releases of individual packages I have split this repository into a series of submodules &mdash; one for each individual PKGBUILD."
+
+# rpmbuild
+  - repo:
+            "rpmbuild"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Files for building RPM packages for Fedora and openSUSE."
+
+# sabayon-tools
+  - repo:
+            "sabayon-tools"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My Portage overlay for Funtoo, Gentoo and Sabayon Linux, with ebuilds for programs not (or at least not at the time of me writing them) provided by the Portage Tree or official `sabayon` overlay. This overlay has an `-old` version too."

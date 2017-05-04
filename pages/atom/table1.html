@@ -1,0 +1,29 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption id="table-1">
+    {{ site.data.atom.caption }}
+  </caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1">File</td>
+      <td class="title1">Function</td>
+      <td class="title1"><abbr title="Is this repository a fork of another?">Fork?</abbr></td>
+      <td class="title1"><abbr title="Does this repository have an included LICENSE file and if so what is this license?">LICENSE</abbr></td>
+      <td class="title1"><abbr title="Does this repository have a README file?">README</abbr></td>
+      <td class="title1"><abbr title="Is this repository actively maintained?">Maint.</abbr></td>
+      <td class="title1"><abbr title="Is this repository in working condition, or at least was it the last time I used these scripts?">Working</abbr></td>
+      <td class="title1">Description</td>
+    </tr>
+    {% for row in site.data.atom.body %}
+    <tr class="green">
+      <td class="green"><a href="https://github.com/fusion809/{{ row.repo }}"><code>{{ row.repo }}</code></a></td>
+      <td class="green" style="width:200px;">{{ row.category | markdownify }}</td>
+      {% if row.fork == 'y' %}<td class="yes"><a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}">Yes</a></td>{% else %}<td class="no">No</td>{% endif %}
+      {% if row.license %}<td class="{{ row.license }}"><a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.license-file }}">{{ row.license | markdownify }}</a></td>{% else %}<td class="no">No</td>{% endif %}
+      {% if row.readme     == 'y' %}<td class="yes">{% if row.readme-file %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{{ row.readme-file }}">{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/master/README.md">{% endif %}Yes</a></td>{% else %}<td class="no">No</td>{% endif %}
+      {% if row.maintained == 'y' %}<td class="yes">Yes</td>{% else %}<td class="no">No</td>{% endif %}
+      {% if row.working    == 'y' %}<td class="yes">Yes</td>{% else %}<td class="no">No</td>{% endif %}
+      <td class="green">{{ row.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table><br/>

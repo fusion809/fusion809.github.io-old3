@@ -1,0 +1,245 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**
+ * Basic styling
+ */
+body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: #000;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+ h3, h4, h5, h6 {
+   border-bottom: 2px solid #000;
+   padding: 2px;
+   font-weight: bold;
+ }
+
+ h1 {
+   padding: 4px;
+   color: #000;
+   font-weight: bold;
+   radius: 2px;
+ }
+
+ h2 {
+   background-color: rgb(150,150,255);
+   border: 2px solid #000;
+   padding: 4px;
+   font-weight: bold;
+ }
+
+ h3 {
+   background-color: rgb(255,150,255);
+   padding-left: 10px;
+ }
+
+ h4 {
+   background-color: rgb(150,255,150);
+   padding-left: 20px;
+ }
+
+ h5 {
+   background-color: rgb(255,255,150);
+   padding-left: 30px;
+ }
+
+ h6 {
+   background-color: rgb(255,180,180);
+   padding-left: 40px;
+ }
+
+
+
+/**
+ * Links
+ */
+a {
+    color: darken($brand-color, 5%);
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 20%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+.wrapper1 {
+  max-width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+      max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+      max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+      padding-right: $spacing-unit / 2;
+      padding-left: $spacing-unit / 2;
+  }
+  color: #111;
+}
+
+div.page-content {
+  color: #111;
+  background-color: rgba(255, 255, 255, 1);
+  padding-bottom: 5px;
+}
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+div.diagram {
+  background-color:    rgb(220,220,220);
+  border-bottom-color: rgb(57, 51, 24);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-collapse:     collapse;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice:  100%;
+  border-image-source: none;
+  border-image-width:  1;
+  border-left-color:   rgb(57, 51, 24);
+  border-left-style:   none;
+  border-left-width:   0px;
+  border-right-color:  rgb(57, 51, 24);
+  border-right-style:  none;
+  border-right-width:  0px;
+  border-top-color:    rgb(57, 51, 24);
+  border-top-style:    none;
+  border-top-width:    0px;
+  border-radius:       3px;
+  box-shadow:          0 1px 3px #757575, 0 1px 2px #5b5b5b;
+  color:               rgb(10,10,10);
+  display:             block;
+  font-family:         Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif;
+  font-size:           13px;
+  height:              560px;
+  line-height:         16.9px;
+  margin-bottom:       13px;
+  margin-left:         0px;
+  margin-right:        0px;
+  margin-top:          0px;
+  max-height:          600px;
+  overflow-x:          auto;
+  overflow-y:          auto;
+  padding-bottom:      5px;
+  padding-left:        5px;
+  padding-right:       5px;
+  padding-top:         5px;
+  text-align:          left;
+  white-space:         pre;
+  width:               100%;
+  word-wrap:           normal;
+}
+
+div.diagram a {
+  color:               rgb(10,30,255);
+}
+
+div.diagram a.hovering {
+  color:               rgb(10,20,255);
+}
+
+@import "img";
+@import "blog";
+@import "code";
+@import "table";
+@import "toc2";

@@ -1,0 +1,95 @@
+body:
+body:
+# C-Math-Projects
+  - repo:
+            "C-Math-Projects"
+    category:
+            "math"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Math projects written, predominantly, in C. Used for the purpose of helping me learn C."
+
+# CPP-Math-Projects
+  - repo:
+            "CPP-Math-Projects"
+    category:
+            "math"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Math projects written, predominantly, in C++. Used for the purpose of helping me learn C++."
+
+# GNU_Octave
+  - repo:
+            "GNU_Octave"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Scripts written for scientific computing in GNU Octave"
+
+# JScripts
+  - repo:
+            "JScripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Contains assorted JavaScript scripts written primarily for scientific computing."
+
+# python-scripts
+  - repo:
+            "python-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Assorted Python scripts used to perform numerical computations."

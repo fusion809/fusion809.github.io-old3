@@ -1,0 +1,59 @@
+caption: "Table 1: Transferring from Windows Applications to Linux Applications"
+head:
+  - Category
+  - Windows
+  - Linux
+  - Notes
+body:
+  - Category: "BitTorrent client"
+    Windows:  "&#956;Torrent&#8224;, Tixati&#8224;."
+    Linux:    "Deluge, KTorrent, qBittorrent, Vuze."
+    Notes:    "qBittorrent will likely be the most intuitive to &#956;Torrent users. A browser-based version of &#956;Torrent is available in Debian-based distros like Ubuntu, but I would not recommend it personally as it can be more trouble than it is worth."
+
+  - Category: "Computer algebra <br/>system"
+    Windows:  "Maple&#42;, Mathematica&#42;, MATLAB&#42; (with the symbolic toolbox)."
+    Linux:    "Maple&#42;, Mathematica&#42;, MATLAB&#42; (with the symbolic toolbox), Maxima, SageMath."
+    Notes:    "SageMath is my personal preference, as it integrates over a hundred different free mathematics programs in a single command-line or notebook (browser-based) interface. It has numerical analysis and statistical analysis capabilities too."
+
+  - Category: "Document viewer"
+    Windows:  "Adobe Acrobat&#42;/Reader&#8224;, Foxit Reader&#8224;, Nitro PDF&#8224;, SumatraPDF."
+    Linux:    "Adobe Reader&#8224;, Atril, Evince, MuPDF, Okular."
+    Notes:    "Okular (the official document viewer of KDE) in my opinion, is the best FOSS document viewer as it is compatible with the greatest number of document formats."
+
+  - Category: "Email client"
+    Windows:  "Microsoft Outlook&#42;."
+    Linux:    "KMail, Mozilla Thunderbird."
+    Notes:    "KMail is the default KDE Mail Client, while Thunderbird is developed by the *Mozilla Foundation*, the same foundation that provides the Firefox web browser. You can use Thunderbird on Windows, but it is not particularly popular on Windows."
+
+  - Category: "Multimedia player"
+    Windows:  "Media Player Classic&#8224;, MPlayer, SMPlayer, VLC, Windows Media Player&#8224;."
+    Linux:    "GNOME Videos (Totem), Kodi, MPlayer, Rage, SMPlayer, VLC."
+    Notes:    "SMPlayer and VLC are the most feature-packed (including the greatest support for a variety of media files) of these, in my experience. VLC can be buggy on Gentoo and Sabayon, however, in my experience."
+
+  - Category: "Numerical analysis <br/>software"
+    Windows:  "MATLAB&#42;, Scilab."
+    Linux:    "GNU Octave, MATLAB&#42;, Scilab."
+    Notes:    "MATLAB is the gold (or benchmark) standard piece of application software for numerical analysis and is extensively used in academia and industry. GNU Octave and Scilab are free clones of MATLAB. GNU Octave is the most compatible, of these, in terms of its syntax and is easier to install on most Linux distributions."
+
+  - Category: "Office suite"
+    Windows:  "Apache OpenOffice, LibreOffice, Microsoft Office&#42;."
+    Linux:    "Apache OpenOffice, Calligra Suite, LibreOffice."
+    Notes:    "IMO, the best Linux-compatible office suite is LibreOffice (LO), although IMO it is not as good as MS Office for my purposes (although, fair warning, I write a lot of equations in my word documents, and doing this in MS Word is easier than doing the same in LO Writer, due to the availability of keyboard-shortcuts for this in MS Word)."
+
+  - Category: "Statistical analysis <br/>software"
+    Windows:  "PSPP, R, SPSS&#42;."
+    Linux:    "PSPP, R, SPSS&#42;."
+    Notes:    "PSPP and R are GNU Projects, with R being primarily a programming language intended for statistical analysis. SPSS is a proprietary statistical analysis program, developed by IBM and written in Java. PSPP is a free clone of SPSS still in beta testing (i.e., a 1.0 release has not been made yet), that is written in C."
+
+  - Category: "Text editor"
+    Windows:  "Atom, GNU Emacs, gVim, Notepad&#8224;, Notepad++, Sublime Text&#42;, Vim."
+    Linux:    "Atom, Geany, gedit, GNU Emacs, GNU nano, gVim, jEdit, Kate, KWrite, Leafpad, SciTE, Sublime Text&#42;, Vim."
+    Notes:    "As you can see most Linux-compatible text editors will also run on Windows and while the reverse is mostly true there are exceptions. Atom is my favourite text editor, as it is extensively customizable, yet free and simple enough for my grandmother, who I think has probably never even used a computer, to use. [Truncated, click [here](#fn:5) for the full note]"
+
+  - Category: "Web browser"
+    Windows:  "Google Chrome&#8224;, Internet Explorer&#8224;, Mozilla Firefox, Opera&#8224;, Safari&#8224;."
+    Linux:    "Chromium, Google Chrome&#8224;, Konqueror, Midori, Mozilla Firefox, Opera&#8224;."
+    Notes:    "Konqueror also has file manager features and is the default web browser of KDE. Midori is noteworthy for being particularly fast and having a lighter memory footprint than most browsers. Chromium is the open-source software project, sponsored by Google, on which they build the proprietary Google Chrome browser."
+
+foot:
+  - Note: "&#42; is used to denote programs that must be purchased.<br/> &#8224; is used to denote freeware (that is, you can use them without paying for them, but the developers do not allow free access to the software's source code).<br/> **IMO**: In my opinion.<br/> **MS**: Microsoft."

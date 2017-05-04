@@ -1,0 +1,76 @@
+body:
+# MacBuntu-Remix
+  - repo: 
+            "MacBuntu-Remix"
+    fork:
+            "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "A remix of the MacBuntu icon theme."
+
+# osx-arc-white
+  - repo:
+            "osx-arc-white"
+    fork:
+            "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My OSX-Arc-White theme variant."
+            
+# osx-white
+  - repo:
+            "osx-white"
+    fork:
+            "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "A theme forked from the OSX-White theme on GNOME Look."
+# sabayon-gitsta
+  - repo:
+            "sabayon-gitsta"
+    fork:
+            "n"
+    license:
+            "GPLv2"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "A modified version of the gitsta theme that is used by the Sabayon Blog at [http://linux.x10host.com/blog/](http://linux.x10host.com/blog/)."
+# zsh-theme
+  - repo:
+            "zsh-theme"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Zsh themes I have developed."

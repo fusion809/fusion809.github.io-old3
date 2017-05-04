@@ -1,0 +1,2 @@
+### Linux-libre
+The **Linux-libre kernel** is essentially the Linux kernel with its binary blobs removed. This makes the kernel entirely free and open-source, as these binary blobs are proprietary software. A comparatively small number of Linux distributions use the libre kernel, these distributions are often called GNU/Linux-libre distributions and are fairly unpopular compared to their non-libre counterparts.

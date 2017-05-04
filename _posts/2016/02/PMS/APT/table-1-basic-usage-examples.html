@@ -1,0 +1,51 @@
+<h3>Basic Usage</h3>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption>Table 1: Basic Usage of APT</caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1">Action</td>
+      <td class="title1">Command<sup>1</sup></td>
+      <td class="title1">Description</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Add a repository</td>
+      <td class="green">{% include Code/coder.html line1="add-apt-repository $repository" %}</td>
+      <td class="green">Add APT repository, <code>$repository</code>.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Build package from source</td>
+      <td class="green">{% include Code/coder.html line1="apt-get source --compile $package" %}</td>
+      <td class="green">Building <code>$package</code> from source code.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install build dependencies</td>
+      <td class="green">{% include Code/coder.html line1="apt-get build-dep $package" %}</td>
+      <td class="green">Install required build dependencies for the target package (<code>$package</code>).</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install package</td>
+      <td class="green">{% include Code/coder.html line1="apt-get install $package" %}</td>
+      <td class="green">Install the target package (<code>$package</code>) and all runtime dependencies.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Remove package</td>
+      <td class="green">{% include Code/coder.html line1="apt-get remove $package" %}</td>
+      <td class="green">Remove the target package (<code>$package</code>) and all runtime dependencies not required by other installed packages.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Search for keyword</td>
+      <td class="green">{% include Code/coder.html line1="apt-cache search $package" %}</td>
+      <td class="green">Search package name and description for provided regex. Pass option <code>--names-only</code> to search only package names for regex.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Upgrade all packages</td>
+      <td class="green">{% include Code/coder.html line1="apt-get update && apt-get upgrade" %}</td>
+      <td class="green">Update index lists and upgrade all installed packages.</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr class="green">
+      <td colspan="3" style="padding:5px;"><sup>1</sup>: <u>Note:</u> in this table I use the short-hand notations <code>$package</code> and <code>$repository</code> to refer to the target package(s) or repository, respectively, that the user wishes to perform the mentioned action on.</td>
+    </tr>
+  </tfoot>
+</table><br/>

@@ -1,0 +1,51 @@
+caption:      "Table 10: Basic ebuild Functions<sup>1</sup>"
+footnotes:    "1. The order of functions in this table is that in which each function is executed by Portage."
+head:
+  - Function
+  - Meaning
+body:
+  - Function: "[`pkg_pretend`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_pretend/index.html)"
+    Meaning:  "Run sanity checks for a package during dependency calculation time."
+
+  - Function: "[`pkg_nofetch`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_nofetch/index.html)"
+    Meaning:  "Tell the user how to deal with packages that require manual downloading."
+
+  - Function: "[`pkg_setup`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_setup/index.html)"
+    Meaning:  "Pre-build environment configuration and checks."
+
+  - Function: "[`src_unpack`](https://devmanual.gentoo.org/ebuild-writing/functions/src_unpack/index.html)"
+    Meaning:  "Extract source packages and perform any necessary patching or fixes. Absolete as of **EAPI&#8805;2**."
+
+  - Function: "[`src_prepare`](https://devmanual.gentoo.org/ebuild-writing/functions/src_prepare/index.html)"
+    Meaning:  "Prepare source packages and do any necessary patching or fixes. Used instead of `src_unpack` for **EAPI&#8805;2**."
+
+  - Function: "[`src_configure`](https://devmanual.gentoo.org/ebuild-writing/functions/src_configure/index.html)"
+    Meaning:  "Configure the source code, requires **EAPI&#8805;2.**."
+
+  - Function: "[`src_compile`](https://devmanual.gentoo.org/ebuild-writing/functions/src_compile/index.html)"
+    Meaning:  "Compile the source code, for **EAPI&lt;2.** this function also configures the source code."
+
+  - Function: "[`src_test`](https://devmanual.gentoo.org/ebuild-writing/functions/src_compile/index.html)"
+    Meaning:  "Run pre-install test scripts"
+
+  - Function: "[`src_install`](https://devmanual.gentoo.org/ebuild-writing/functions/src_install/index.html)"
+    Meaning:  "Install a package to `${D}`."
+
+  - Function: "[`pkg_preinst`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_preinst/index.html)"
+    Meaning:  "Called before image is installed to `${ROOT}`."
+
+  - Function: "[`pkg_postinst`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_postinst/index.html)"
+    Meaning:  "Called after image is installed to `${ROOT}`."
+
+  - Function: "[`pkg_prerm`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_prerm/index.html)"
+    Meaning:  "Called before a package is unmerged."
+
+  - Function: "[`pkg_postrm`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_postrm/index.html)"
+    Meaning:  "Called after a package is unmerged."
+
+  - Function: "[`pkg_config`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_config/index.html)"
+    Meaning:  "Run any special post-install configuration. Examples of ebuilds with this function in the Portage Tree include
+    `dev-db/postgresql`"
+
+  - Function: "[`pkg_info`](https://devmanual.gentoo.org/ebuild-writing/functions/pkg_info/index.html)"
+    Meaning:  "Display information about the package."

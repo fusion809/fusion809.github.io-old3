@@ -1,0 +1,23 @@
+<table class="green" style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption><strong>{{ site.data.ebuild_functions.caption | markdownify }}</strong></caption>
+  <tbody>
+    <tr class="green">
+    {% for heading in site.data.ebuild_functions.head %}
+      <td class="title">{{ heading | markdownify }}</td>
+    {% endfor %}
+    </tr>
+    {% for row in site.data.ebuild_functions.body %}
+    <tr class="green">
+      <td class="green">{{ row.Function | markdownify }}</td>
+      <td class="green">{{ row.Meaning | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+  <tfoot>
+    {% for footnotes in site.data.ebuild_functions.footnotes %}
+    <tr class="green">
+      <td class="green" colspan="2">{{ footnotes | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tfoot>
+</table>

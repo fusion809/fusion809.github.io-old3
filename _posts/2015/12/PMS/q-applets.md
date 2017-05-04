@@ -1,0 +1,2 @@
+### q applets
+The {% include Links/links.html gw="Q_applets" gr="gentoo/portage-utils" package="app-portage/portage-utils" program="q applets" %} are a collection of small and fast tools written in [C](https://en.wikipedia.org/wiki/C_(programming_language)) and Bash script for the purpose of aiding with Gentoo administration. They are predominantly just faster equivalents to the tools that come bundled with Gentoolkit, although q applets lacks a `glsa-check` or `revdep-rebuild` equivalent.

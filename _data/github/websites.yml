@@ -1,0 +1,70 @@
+body:
+# fusion809.github.io
+  - repo:
+            "fusion809.github.io"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content. Two other repositories (`fusion809.github.io-{old,old2}`) contain the old content of *The Hornery*. The reason why the old content is kept in these two separate repositories is because their overall size exceeded 90 MB and much of this size was due to the accidental committing of content not intended for *The Hornery*."
+
+# hexo-site
+  - repo:
+            "hexo-site"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "My attempt at creating a subdirectory of *The Hornery* with Hexo-generated content. It was meant to deploy at the [/hexo](/hexo) subdirectory of *The Hornery*, but as you will see if you go there, it is not working as intended."
+
+# hubpress.io
+  - repo:
+            "hubpress.io"
+    fork:
+            "y"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    readme-file:
+            "README.adoc"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "A subdirectory ([/hubpress.io](/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
+
+# pelican-site
+  - repo:
+            "pelican-site"
+    fork:
+            "n"
+    readme:
+            "n"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "My (so far failed) attempt at adding a /pelican subdirectory to *The Hornery*. See [issue #1944](https://github.com/getpelican/pelican/issues/1944) for details."

@@ -1,0 +1,44 @@
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Copyright 1999-2015 Gentoo Foundation</span>
+<span class="c"># Distributed under the terms of the GNU General Public License v2</span>
+<span class="c"># $Id$</span>
+
+<span class="nv">EAPI</span><span class="o">=</span>5
+<span class="inherit">inherit</span> <span class="ec">eutils games</span>
+
+<span class="nv">DESCRIPTION</span><span class="o">=</span><span class="s2">&quot;A game similar to Super Mario Bros&quot;</span>
+<span class="nv">HOMEPAGE</span><span class="o">=</span><span class="s2">&quot;http://super-tux.sourceforge.net&quot;</span>
+<span class="nv">SRC_URI</span><span class="o">=</span><span class="s2">&quot;https://supertux.googlecode.com/files/${P}.tar.bz2&quot;</span>
+
+<span class="nv">LICENSE</span><span class="o">=</span><span class="s2">&quot;GPL-2&quot;</span>
+<span class="nv">SLOT</span><span class="o">=</span><span class="s2">&quot;0&quot;</span>
+<span class="nv">KEYWORDS</span><span class="o">=</span><span class="s2">&quot;amd64 ~mips ppc ~ppc64 sparc x86 ~x86-fbsd&quot;</span>
+<span class="nv">IUSE</span><span class="o">=</span><span class="s2">&quot;opengl&quot;</span>
+
+<span class="nv">DEPEND</span><span class="o">=</span><span class="s2">&quot;media-libs/libsdl[joystick]</span>
+<span class="s2">    media-libs/sdl-image[png,jpeg]</span>
+<span class="s2">    media-libs/sdl-mixer[mod,vorbis]</span>
+<span class="s2">    x11-libs/libXt&quot;</span>
+<span class="nv">RDEPEND</span><span class="o">=</span><span class="k">${DEPEND}</span>
+
+<span class="func">src_prepare</span><span class="o">()</span> <span class="o">{</span>
+    <span class="func">epatch</span> <span class="o">\</span>
+    <span class="s2">&quot;${FILESDIR}&quot;</span>/<span class="k">${P}</span>-gcc41.patch <span class="o">\</span>
+    <span class="s2">&quot;${FILESDIR}&quot;</span>/<span class="k">${P}</span>-ndebug.patch <span class="o">\</span>
+    <span class="s2">&quot;${FILESDIR}&quot;</span>/<span class="k">${P}</span>-desktop.patch
+<span class="o">}</span>
+
+<span class="func">src_configure</span><span class="o">()</span> <span class="o">{</span>
+    <span class="func">egamesconf</span> <span class="o">\</span>
+        --disable-debug <span class="o">\</span>
+        <span class="s2">$(use_enable opengl)</span>
+<span class="o">}</span>
+
+<span class="func">src_install</span><span class="o">()</span> <span class="o">{</span>
+    <span class="func">emake</span> <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">&quot;${D}&quot;</span> <span class="o">\</span>
+        <span class="nv">desktopdir</span><span class="o">=</span>/usr/share/applications <span class="o">\</span>
+        <span class="nv">icondir</span><span class="o">=</span>/usr/share/pixmaps <span class="o">\</span>
+        install
+    <span class="func">dodoc</span> AUTHORS ChangeLog LEVELDESIGN README TODO
+    <span class="func">prepgamesdirs</span>
+<span class="o">}</span>
+</code></pre></div>

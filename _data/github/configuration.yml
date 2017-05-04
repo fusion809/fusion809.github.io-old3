@@ -1,0 +1,74 @@
+body:
+# atom
+  - repo:
+            "atom"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Configuration files for Atom, specifically the configuration files found in my ~/.atom directory."
+
+# emacs
+  - repo:
+            "emacs"
+    category:
+            "configuration"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My emacs configuration settings (stored in `~/.emacs`). Has a quick install script too."
+
+# spacemacs
+  - repo:
+            "spacemacs"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My `~/.spacemacs` file."
+
+# vim
+  - repo:
+            "vim"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My `~/.vimrc` file."

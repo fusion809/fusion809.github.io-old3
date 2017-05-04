@@ -1,0 +1,18 @@
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># This is the best mirror for me, due to my geography. If you want to use this script you should change this variable to the best mirror for you.</span>
+<span class="nv">MIRROR</span><span class="o">=</span>ftp://mirror.optusnet.com.au/sabayon
+<span class="com">wget</span> <span class="opt">-c</span> <span class="nv">$MIRROR</span>/iso/daily/Sabayon_Linux_DAILY_amd64_tarball.tar.gz
+<span class="k">sudo</span> <span class="com">mkdir</span> /root2
+<span class="k">sudo</span> <span class="com">cp</span> <span class="opt">-a</span> <span class="s2">&quot;Sabayon_Linux_DAILY_amd64_tarball.tar.gz&quot;</span> /root2
+<span class="com">cd</span> /root2
+<span class="k">sudo</span> <span class="com">tar</span> <span class="opt">xvzpf</span> Sabayon_Linux_DAILY_amd64_tarball.tar.gz
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">-t</span> <span class="act">proc</span> none /root2/proc
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">-o</span> <span class="act">bind</span> /dev /root2/dev
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">-o</span> <span class="act">bind</span> /usr/portage /root2/usr/portage
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">-o</span> <span class="act">bind</span> /usr/src/linux /root2/usr/src/linux
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">-o</span> <span class="act">bind</span> /lib/modules /root2/lib/modules
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">-o</span> <span class="act">bind</span> /sys /root2/sys
+<span class="k">sudo</span> <span class="com">cp</span> /etc/resolv.conf /root2/etc/resolv.conf
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">-o</span> <span class="act">bind</span> /tmp /root2/tmp
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">--rbind</span> /dev /root2/dev
+<span class="k">sudo</span> <span class="com">mount</span> <span class="opt">--rbind</span> /sys /root2/sys
+</code></pre></div>

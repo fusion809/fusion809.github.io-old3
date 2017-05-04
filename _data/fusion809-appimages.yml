@@ -1,0 +1,115 @@
+caption:
+  "Table 2: My AppImages at Bintray"
+
+body:
+  - appimage:    Atom
+    url:         https://atom.io
+    source:      meta/atom
+    details:     "Built from official binary tarball releases."
+    description: "The Atom text editor, an open-source, hackable text editor for the 21st Century."
+  - appimage:    Atom_Beta
+    name:        Atom (Beta)
+    url:         https://atom.io
+    source:      meta/atom-beta
+    details:     "Also built from official binary tarball releases."
+    description: "The Atom text editor, an open-source, hackable text editor for the 21st Century - beta channel."
+  - appimage:    Bluefish_Editor
+    name:        Bluefish
+    source:      meta/bluefish
+    url:         http://bluefish.openoffice.nl/index.html
+    details:     "Built from 12.04 ingredients using the klaus-vormweg/bluefish-gtk2 PPA."
+    description: "An open-source IDE for web development."
+  - appimage:    Brackets
+    source:      brackets
+    url:         http://brackets.io
+    details:     "Built from official 64-bit Debian package release and Debian 7 (Wheezy) ingredients."
+    description: "An open-source code editor from Adobe for web languages."
+  - appimage:    Calibre
+    source:      meta/calibre
+    url:         http://calibre-ebook.com/
+    details:     "Built from official binary tarball releases."
+    description: "A free ebook library management program."
+  - appimage:    code-oss
+    source:      meta/code-oss
+    url:         http://code.visualstudio.com
+    details:     "Built from an unofficial Debian binary I myself build."
+    description: "An open-source code editor from Microsoft built on the Electron framework."
+  - appimage:    Code::Blocks_IDE
+    source:      meta/codeblocks-precise
+    name:        Code::Blocks
+    url:         http://www.codeblocks.org/
+    details:     "Built from 12.04 ingredients with the damien-moore/codeblocks-stable PPA."
+    description: "An open-source C/C++/Fortran IDE written in C++."
+  - appimage:    Electron
+    source:      meta/electron
+    url:         http://electron.atom.io/
+    details:     "Built from official binary tarball releases."
+    description: "An open-source framework for building desktop applications using web technologies."
+  - appimage:    Firefox
+    source:      meta/firefox
+    url:         https://www.mozilla.org/en-US/firefox/new/
+    details:     "Built from official binary tarball releases."
+    description: "An open-source web browser created by the Mozilla Foundation."
+  - appimage:    Geany
+    source:      meta/geany-trusty
+    url:         https://www.geany.org
+    details:     "Built from packages in my brentonhorne/geany2 PPA, along with other 14.04 ingredients."
+    description: "A lightweight, free and open-source IDE with support for several different programming languages and built on the GTK+ toolkit."
+  - appimage:    GNU_Emacs
+    name:        "GNU Emacs"
+    url:         https://www.gnu.org/software/emacs/
+    details:     "Built from source code on Ubuntu 12.04."
+    description: "A free and open-source, extensible and self-documenting text editor with IDE features."
+  - appimage:    GNU_Octave
+    source:      meta/octave-trusty
+    name:        "GNU Octave"
+    url:         https://www.gnu.org/software/octave/about.html
+    details:     "Built from packages in the brentonhorne/octave PPA, along with other 14.04 ingredients."
+    description: "A free and open-source environment for technical computing."
+  - appimage:    GNU_PSPP
+    source:      meta/pspp
+    name:        "GNU PSPP"
+    url:         https://www.gnu.org/software/pspp/
+    details:     "Built from the adamzammit/pspp PPA and other 12.04 ingredients."
+    description: "A free and open-source replacement for SPSS, with tools for statistical analysis"
+  - appimage:    gvim
+    source:      meta/gvim
+    url:         http://www.vim.org/
+    details:     "Built from packages in the jonathonf/vim PPA and other 14.04 ingredients."
+    description: "An open-source, modal and extensible text editor."
+  - appimage:    jekyll
+    source:      meta/jekyll
+    url:         https://jekyllrb.com/
+    details:     "Built from bundler package."
+    description: "An open-source static site generator written in Ruby."
+  - appimage:    LibreOffice
+    source:      libreoffice
+    url:         https://www.libreoffice.org/
+    details:     "Built from official binary tarballs."
+    description: "An open-source office suite."
+  - appimage:    Messenger_for_Desktop
+    source:      meta/messengerfordesktop
+    name:        Messenger for Desktop
+    url:         https://messengerfordesktop.com/
+    details:     "Built from official Debian package release."
+    description: "An open-source messenger for Facebook on the Linux desktop."
+  - appimage:    qBittorrent
+    source:      meta/qbittorrent
+    url:         http://qbittorrent.org/
+    details:     "Built from packages in qbittorrent-team/qbittorrent-stable PPA and 14.04 ingredients."
+    description: "An open-source BitTorrent client built using the Qt widget toolkit."
+  - appimage:    Terminix
+    source:      meta/terminix
+    url:         https://github.com/gnunn1/terminix
+    details:     "Built from the official binary zip archive."
+    description: "An open-source tiling terminal emulator written in D."
+  - appimage:    Thunderbird
+    source:      thunderbird
+    url:         https://www.mozilla.org/en-US/thunderbird/
+    details:     "Built from the official binary tarballs."
+    description: "An open-source email client from Mozilla."
+  - appimage:    Transmission-GTK
+    source:      transmission
+    url:         https://transmissionbt.com/
+    details:     "Built from source code using a CentOS 7 Docker container."
+    description: "An open-source BitTorrent client built using the GTK+ toolkit."

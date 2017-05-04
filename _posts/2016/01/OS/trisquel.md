@@ -1,0 +1,15 @@
+## Trisquel
+{% include_relative os-shot.html image="Trisquel-7.png" width="1130px" float="none" description="Trisquel 7 running its modified version of the GNOME 3.8.4" %}
+
+### Background
+{% include_relative os.md os="Trisquel" dw="trisquel" url="https://trisquel.info/" wiki="https://trisquel.info/en/wiki/documentation" d="https://trisquel.info/en/download" forum="https://trisquel.info/en/forum" ml="http://listas.trisquel.info/" %} is a Spanish Ubuntu (LTS) derivative that is composed entirely of free and open-source software (FOSS), this includes the Linux-libre kernel (presently Trisquel 7 &mdash; the latest edition as of {{ page.date | date:"%d %B %Y" }} &mdash; is using the 3.13 libre version of the kernel) derivatives such as all of its official derivatives and Linux Mint it uses its own repositories, separate from Ubuntu's repositories, which contain entirely free and open-source software, as opposed to Ubuntu's repositories which are a little more liberal in their licensing requirements. It has three official editions: one based on a modified version of the GNOME desktop (presently it is using GNOME 3.8.4 &mdash; from August 2013), another based on the LXDE desktop (which is called Trisquel Mini) and another based on the Sugar desktop (which is called Trisquel Sugar TOAST). It is the Linux distribution used by Richard Stallman on all of his personal computers. It is the latest addition to this post because of the fact I have just barely had enough experience with it to write a review.
+
+I find it aesthetically unique (afterall it does not use Ubuntu's Unity shell) from Ubuntu, although personally I do not find it anymore appealing than Ubuntu, but from the point of view of the user with regard to everything else it is pretty much identical to the Ubuntu LTS releases it is built on, except it does not have the Ubuntu Software Center, rather it has the Synaptic package manager for graphical package management. Its installer is Ubiquity &mdash; the same as Ubuntu and its command-line package management system is APT/dpkg same as Ubuntu. It also has Synaptic pre-installed for graphical package management.
+
+It is presently ranked 95th for popularity according to the *DistroWatch* website.
+
+{% include_relative specs.md arch="i686, x86_64." country="Spain." date="2007." shell="Bash." desktop="GNOME (modified), LXDE." base="Ubuntu (LTS)." im="Graphical, live medium." type="Linux." pm="APT, dpkg." rm="Standard, once every one to two years." tm="Varied, including home and office users." %}
+
+{% include_relative os-min.md cpu="i686." hdd="3 GB." ram="128 MB." ims="500 MB." %}
+
+{% include_relative os-ratings.md bf="8." cmb="&lt;5." ob="6. Less out-of-the-box due to licensing restrictions on firmware." doc="&lt;4." sup="? Never used them." pm="7. APT is alright enough." sru="8. Fairly lightweight when one uses the LXDE edition." sb="&gt;7. Never had stability issues with it myself." mewi="&lt;3." oa="7-8. Sometimes a lack of proprietary firmware can be nuisance, but otherwise it is a fairly user-friendly distro." %}

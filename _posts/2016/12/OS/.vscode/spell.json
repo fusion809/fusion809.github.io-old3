@@ -1,0 +1,61 @@
+{
+  "language": "en",
+  "ignoreWordsList": [
+    "GitHub",
+    "openSUSE",
+    "Xorg",
+    "KDE",
+    "AUR",
+    "packagers",
+    "PKGBUILDs",
+    "Pamac",
+    "pacman",
+    "Slackware",
+    "PostgreSQL",
+    "MariaDB",
+    "DragonFlyBSD",
+    "SVN",
+    "committers",
+    "committer",
+    "macOS",
+    "backported",
+    "ebuild",
+    "ebuilds",
+    "Sabayon",
+    "VirtualBox",
+    "GTK",
+    "AMD64",
+    "Mageia",
+    "Mandriva",
+    "coreutils",
+    "urpmi",
+    "Zorin",
+    "systemd",
+    "Devuan",
+    "OpenMandriva",
+    "Manjaro",
+    "Calamares"
+  ],
+  "mistakeTypeToStatus": {
+    "Passive voice": "Hint",
+    "Spelling": "Error",
+    "Complex Expression": "Disable",
+    "Hidden Verbs": "Information",
+    "Hyphen Required": "Disable",
+    "Redundant Expression": "Disable",
+    "Did you mean...": "Disable",
+    "Repeated Word": "Warning",
+    "Missing apostrophe": "Warning",
+    "Cliches": "Disable",
+    "Missing Word": "Disable",
+    "Make I uppercase": "Warning"
+  },
+  "languageIDs": [
+    "markdown",
+    "plaintext"
+  ],
+  "ignoreRegExp": [
+    "/\\(.*\\.(jpg|jpeg|png|md|gif|JPG|JPEG|PNG|MD|GIF)\\)/g",
+    "/((http|https|ftp|git)\\S*)/g"
+  ]
+}

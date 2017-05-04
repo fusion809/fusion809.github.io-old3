@@ -1,0 +1,13 @@
+// title
+.site-title {
+    font-family: 'Precious';
+    font-weight: 300;
+    line-height: 70px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}

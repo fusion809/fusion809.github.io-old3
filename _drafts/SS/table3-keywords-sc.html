@@ -1,0 +1,218 @@
+<table style="width: 100%;"><caption>Table 3: Some Keywords and Special Characters Permitted in Bash</caption>
+<tbody>
+<tr>
+<td class="title" style="width: 10%;"><abbr title = "Keywords/Special Character">KSC</abbr></td>
+<td class="title" style="width: 40%;">Meaning, or usage</td>
+<td class="title" style="width: 50%;">Example(s)</td>
+</tr>
+<tr>
+<td class="green"><code>{...}</code><br/> <code>function</code></td>
+<td class="green">Used to define <a href="#Functions">functions</a>. Curly braces can also be used to just group lines of code together.</td>
+<td class="green">
+{% highlight bash %}
+function update {
+   sudo equo update && sudo equo upgrade
+}
+{% endhighlight %}
+
+</pre>
+</td>
+</tr>
+<tr>
+<td class="green"><code>[...]</code><br/><code>[[...]]</code></td>
+<td class="green">Used for <a href="#Tests">tests</a>, double square brackets are only available in more advanced Unix shells such as Bash, ksh and Zsh.</td>
+<td class="green">
+{% highlight bash %}
+[[ -n $1 ]]
+{% endhighlight %}
+tests whether the input variable, <code>$1</code> exists.
+</td>
+</tr>
+<tr>
+<td class="green"><code>#</code></td>
+<td class="green">Whatever follows is interpreted by Bash, as a comment, for human operators to read but to be left uninterpreted by Bash.</td>
+<td class="green">
+{% highlight bash %}
+# This is a comment
+{% endhighlight %}</td>
+</tr>
+<tr>
+<td class="green"><code>!</code></td>
+<td class="green">Returns the reciprocal (opposite) or negates of what follows it.</td>
+<td class="green">
+{% highlight bash %}
+[[ $X != 3 ]]
+{% endhighlight %}
+(which returns 0 (true) if the variable X does not equal 3, or 1 if it is equal to 3).
+</td>
+</tr>
+<tr>
+<td class="green"><code>$</code></td>
+<td class="green">Evaluates what comes after it, such as a mathematical expression in double square brackets.</td>
+<td class="green"><code>echo $[3 * 2]</code> returns 6.</td>
+</tr>
+<tr>
+<td class="green"><code>|</code></td>
+<td class="green">This is called a <b>pipe</b> and it sends the output of a command through another. For example, <code>A | B</code> does A and sends its output through B.</td>
+<td class="green">The following example downloads the source code tarball of the 1.1.0 release of Atom and pipes it through tar and gzip to decompress it.
+<br/>
+{% highlight bash %}
+wget -qO- https://github.com/atom/atom/archive/v1.1.0.tar.gz | tar -xz
+{% endhighlight %}</td>
+</tr>
+<tr>
+<td class="green"><code>;</code></td>
+<td class="green">Allows several commands to be executed on the same line.</td>
+<td class="green">
+{% highlight bash %}sudo equo update ; sudo equo upgrade{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td class="green"><code>~</code></td>
+<td class="green">Denotes the home directory. For example, as my username is fusion809 on my Sabayon machine, my home directory is <code>/home/fusion809</code>.</td>
+<td class="green">{% highlight bash %}
+cd ~
+{% endhighlight %}
+takes one to current user's home directory. If it is run as root it will take one to one's <code>/root</code>.</td>
+</tr>
+<tr>
+<td class="green"><code>-</code></td>
+<td class="green">Can be used as the arithmetic operator, minus, or as the previous working directory.</td>
+<td class="green">{% highlight bash %}
+cd -
+{% endhighlight %}
+takes one to one's previous working directory.</td>
+</tr>
+<tr>
+<td class="green"><code>*</code></td>
+<td class="green">Wildcard operator, can take on any value. Can also be used for multiplication.</td>
+<td class="green">
+If you have a directory, <code>~/VirtualBox</code> on your machine and no others starting with the prefix <code>~/Virtual</code> then:
+<br/>
+{% highlight bash %}
+cd ~/Virtual*
+{% endhighlight %}
+should change your current working directory to <code>~/VirtualBox</code>.
+</td>
+</tr>
+<tr>
+<td class="green"><code>.</code></td>
+<td class="green">Serves as an equivalent to the <code>source</code> builtin and as an equivalent to <code>pwd</code></td>
+<td class="green">As <code>source</code> (the following will execute every file with the extension <code>.sh</code> in the <code>~/Shell</code> directory):
+<br/>
+{% highlight bash %}
+for i in ~/Shell/*.sh
+do
+	. $i
+done
+{% endhighlight %}
+whereas as <code>pwd</code>:
+<br/>
+{% highlight bash %}
+cd .
+{% endhighlight %}
+which causes no change in current directory.
+</td>
+</tr>
+<tr>
+<td class="green"><code>..</code></td>
+<td class="green">Denotes the parent directory</td>
+<td class="green">If I am working in the <code>~/Shell</code> directory, and run:
+<br/>
+{% highlight bash %}
+cd ..
+{% endhighlight %}
+my present working directory (pwd) would then be <code>~</code>, my home directory. </td>
+</tr>
+<tr>
+<td class="green"><code>&&</code></td>
+<td class="green">Executes subsequent commands, provided the preceding command(s) were executed without error. For example, <code>A && B</code> does A and then B, provided that A is executed without error. While <code>A && B && C</code> would do A, then if A returns no error, it would perform B and if A and B ran without error it would then run C.</td>
+<td class="green">
+{% highlight bash %}sudo equo update && sudo equo upgrade{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td class="green"><code>case</code><br/> <code>esac</code></td>
+<td class="green">Conditional statement, checking whether inputs match. <code>case</code> starts them and <code>esac</code> ends them.</td>
+<td class="green">
+{% highlight bash %}
+case $X in
+     [1-5])
+      Message="You're not at school yet!"
+     ;;
+     [6-12])
+      Message="You're in primary school now, enjoy!"
+     ;;
+     [13-17])
+      Message="You're in high school now, changes are coming!"
+     ;;
+     [18-20]*)
+      Message="You're at Uni, enjoy the freedom!"
+     ;;
+esac
+{% endhighlight %}</td>
+</tr>
+<tr>
+<td class="green"><code>do</code><br/> <code>done</code><br/> <code>for</code></td>
+<td class="green">Used in <code>for</code> loops. <code>for</code> begins the loop, <code>do</code> enacts commands and <code>done</code> and finishes the loop.</td>
+<td class="green">
+{% highlight bash %}
+for i in `find . -name "*.png"`
+do
+  optipng -o7 "$i"
+done
+{% endhighlight %}</td>
+</tr>
+<tr>
+<td class="green"><code>elif</code><br/> <code>else</code><br/> <code>fi</code><br/> <code>if</code><br/> <code>then</code></td>
+<td class="green">Used in <code>if</code> conditionals.</td>
+<td class="green">{% highlight bash %}
+if [[ -n $1 ]]
+   then
+     atom ~/Shell/$1.sh
+   elif [[ -v $X ]]
+     atom ~/Shell/$X.sh
+   else
+     atom ~/.bashrc
+fi
+{% endhighlight %}</td>
+</tr>
+<tr>
+<td class="green"><code>in</code></td>
+<td class="green">Used when dealing with lists</td>
+<td class="green">This script should, if passed an argument open Atom to <code>~/Shell/$1.sh</code>, otherwise ask the user to select from the list of shell scripts in <code>~/Shell</code> of which one to open in Atom.<br/>
+{% highlight bash %}
+pushd ~/Shell
+if [[ -n $1 ]]
+   then
+     atom $1.sh
+   else
+     select x in `find . -name "*.sh"`
+     do
+       atom $x
+      break
+     done
+fi
+popd
+{% endhighlight %}</td>
+</tr>
+<tr>
+<td class="green"><code>select</code></td>
+<td class="green">Gets users to select from a list of options.</td>
+<td class="green">{% highlight bash %}
+pushd ~/Shell #moving into the ~/Shell directory
+if [[ -n $1 ]]
+   then
+     atom $1.sh
+   else
+     select x in `find . -name "*.sh"`
+     do
+       atom $x
+      break
+     done
+fi
+popd #moving back out of the ~/Shell directory
+{% endhighlight %}</td>
+</tr>
+</tbody>
+</table>

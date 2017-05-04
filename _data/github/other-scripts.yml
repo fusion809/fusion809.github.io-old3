@@ -1,0 +1,38 @@
+body:
+# bin
+  - repo:
+            "bin"
+    category:
+            "other-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "Executable scripts found in my `~/bin` folder that, when added to my `PATH` environment variable, can be used to automate some otherwise tedious OBS tasks."
+
+# npm2archOBS
+  - repo:
+            "npm2archOBS"
+    fork:
+            "y"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Tools to automate the process of adding Node.js packages to the Open Build Service. "

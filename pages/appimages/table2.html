@@ -1,0 +1,23 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <tbody style="width:500px;">
+    <caption id="table-1">
+      {{ site.data.fusion809-appimages.caption | markdownify }}
+    </caption>
+    <tr class="green">
+      <td class="title1">AppImage</td>
+      <td class="title1" style="width:230px;">Download</td>
+      <td class="title1">Source</td>
+      <td class="title1">Build Details</td>
+      <td class="title1">Description</td>
+    </tr>
+    {% for row in site.data.fusion809-appimages.body %}
+    <tr class="green">
+      <td class="green"><a href="{{ row.url }}" link="_blank">{% if row.name %}{{ row.name }}{% else %}{{ row.appimage }}{% endif %}</a></td>
+      <td class="green"><a href="https://bintray.com/fusion809/AppImages/{{ row.appimage }}/_latestVersion#files" link="_blank"><img src="https://api.bintray.com/packages/fusion809/AppImages/{{ row.appimage }}/images/download.svg"></a></td>
+      <td class="green"><a href="{% if row.source %}https://github.com/fusion809/AppImages/tree/master/recipes/{{ row.source }}{% else %}https://github.com/fusion809/Emacs.AppImage{% endif %}" link="_blank">Link</a></td>
+      <td class="green">{{ row.details }}</td>
+      <td class="green">{{ row.description }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

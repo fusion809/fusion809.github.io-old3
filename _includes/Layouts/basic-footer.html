@@ -1,0 +1,79 @@
+<div class="wrapper">
+  <div class="footer-col-wrapper">
+    <span style="width:550px;" class="footer-col footer-col-2">
+      <b class="site-title" style="font-size:25px;">{{ site.title }}</b> <span style="font-size:12px;">(<a href="https://github.com/fusion809/fusion809.github.io" link="_blank">source</a>)</span>
+      <p>{{ site.description }}</p>
+    </span>
+
+    <span class="footer-col footer-col-2" style="width:550px">
+      <ul class="contact-list">
+        <li>Like reading <i>The Hornery</i>? Star us on <a href="https://github.com/fusion809/fusion809.github.io">GitHub</a>!</li>
+        <li>Got corrections or improvement ideas? Great, <a href="/contributing/">Tell me!</a></li>
+        <li>Want notifications on new posts? Like us on <a href="https://www.facebook.com/sabayon.blog.77/">Facebook</a> or follow our <a href="/feed">Atom feed</a>.</li>
+      </ul>
+    </span>
+
+    <span class="footer-col footer-col-3" style="width:230px;">
+      <ul class="social-media-list">
+        {% if site.aur_name %}
+        <li>
+          {% include Layouts/icon-aur.html username=site.aur_name %}
+        </li>
+        {% endif %}
+
+        {% if site.facebook_username %}
+        <li>
+          {% include Layouts/icon-facebook.html username=site.facebook_name username2=site.facebook_username %}
+        </li>
+        {% endif %}
+
+        {% if site.facebook_username2 %}
+        <li>
+          {% include Layouts/icon-facebook.html username=site.facebook_name2 username2=site.facebook_username2 %}
+        </li>
+        {% endif %}
+
+        {% if site.fedora_id %}
+        <li>
+          {% include Layouts/icon-fedora.html id=site.fedora_id %}
+        </li>
+        {% endif %}
+
+        {% if site.github_username %}
+        <li>
+          {% include Layouts/icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.email %}
+        <li>
+          {% include Layouts/icon-gmail.html email=site.email %}
+        </li>
+        {% endif %}
+
+        {% if site.opensuse_name %}
+        <li>
+          {% include Layouts/icon-opensuse.html username=site.opensuse_name %}
+        </li>
+        {% endif %}
+
+        {% if site.stackexchange_id %}
+        <li>
+          {% include Layouts/icon-stackexchange.html id=site.stackexchange_id name=site.stackexchange_name %}
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+          {% include Layouts/icon-twitter.html username=site.twitter_username %}
+        </li>
+        {% endif %}
+      </ul>
+    </span>
+
+    <span class="copyright footer-col">
+      <p>{{ site.copyright }}</p>
+    </span>
+  </div>
+
+</div>

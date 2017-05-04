@@ -1,0 +1,63 @@
+<table style="width:300px; border:1px solid black; float:right;" class="infobox">
+  <tr>
+    <td colspan="2" class="title1" style="font-size: 18px; text-align: center;">{{ include.distro }}</td>
+  </tr>
+  <tr style="float: initial;">
+    <td colspan="2" style="width:300px;">
+      <div class = "infobox-icon">
+        <figure>
+          <p style="margin-left: auto; margin-right: auto; text-align: center;"><img src="/images/Logos/{{ include.logo }}" alt="{{ include.description }}" style = "width:120px; float: initial; position: relative; margin: auto; text-align: center;"/></p>
+        </figure>
+      </div>
+    </td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Founded:</td>
+    <td class="infobox-row">{{ include.date }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Based on:</td>
+    <td class="infobox-row">{{ include.basis }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Country:</td>
+    <td class="infobox-row">{{ include.country }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Developer(s):</td>
+    <td class="infobox-row">{{ include.developers }}</td>
+  </tr>{% if include.design %}
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Design:</td>
+    <td class="infobox-row">{{ include.design }}</td>
+  </tr>{% endif %}
+  {% if include.installer %}
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Installer:</td>
+    <td class="infobox-row">{{ include.installer }}</td>
+  </tr>{% endif %}
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Package manager:</td>
+    <td class="infobox-row">{{ include.package-manager }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Release model:</td>
+    <td class="infobox-row">{{ include.release-model }}</td>
+  </tr>{% if include.cosr %}
+  <tr class="infobox-header">
+    <td class="infobox-header" colspan="2">Ratings</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title"><abbr title="Comprehensibility of the software repositories for the system.">CSR</abbr>:</td>
+    <td class="infobox-row">{{ include.cosr }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title"><abbr title="Stability vs. Bleeding-Edge Spectrum.">SBES</abbr>:</td>
+    <td class="infobox-row">{{ include.sbes }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Overall:</td>
+    <td class="infobox-row">{{ include.overall }}</td>
+  </tr>
+  {% endif %}
+</table>

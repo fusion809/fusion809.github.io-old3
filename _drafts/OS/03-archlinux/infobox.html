@@ -1,0 +1,25 @@
+<table class="infobox" style="width:{{ site.data.archlinux.width }}">
+  <tbody>
+    <tr>
+      <td class="title2" style="font-size: 25px; text-align: center;" colspan="3">{{ site.data.archlinux.title }}</td>
+    </tr>
+    <tr>
+      <td class="infobox-icon icon-{{ site.data.archlinux.name }} {{ site.data.archlinux.colour }}" colspan="3"></td>
+    </tr>
+    {% for row in site.data.archlinux.body %}
+    <tr>
+      <td class="title" style="width:{{ site.data.archlinux.title-width }};">{{ row.title }}</td>
+      <td class="green" style="width:{{ site.data.archlinux.details-width }};" colspan="2">{{ row.details }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td class="title3" style="font-size: 20px; text-align: center;" colspan="3">Ratings [<a href="#toc7" link="_blank">Explanations</a>]</td>
+    </tr>
+    {% for row in site.data.archlinux.ratings %}
+    <tr>
+      <td class="title" style="width:{{ site.data.archlinux.ratings-title-width }};" colspan="2">{{ row.title }}</td>
+      <td class="green" style="width:{{ site.data.archlinux.ratings-details-width }};">{{ row.details }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

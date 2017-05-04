@@ -1,0 +1,125 @@
+<h2>Summary</h2>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption>Table 8: A Summary of Package Managers</caption>
+    <tbody>
+      <tr class="green">
+        <td class="title1" style="width:120px;">Package Manager</td>
+        <td class="title1" style="width:45px;"><abbr title="Beginner-Friendliness">BF</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="Are both Binary and Source package installs possible with a single command?">BS</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="Customizability">CMB</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="Download and Install Package from URL">DIP</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="Ease of Package Development">EOD</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="Does this Package Manager have an official Graphical User Interface?">GUI</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="One-Click Install supported?">OCI</abbr></td>
+        <td class="title1" style="width:140px;"><abbr title="Package File Extension/Name">PFE</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="Shortened Commands">SC</abbr></td>
+        <td class="title1" style="width:60px;"><abbr title="Time taken to reinstall Vim package">TR</abbr></td>
+        <td class="title1" style="width:45px;"><abbr title="Wildcard Support?">WC</abbr></td>
+      </tr>
+      <tr title="green">
+        <td class="title1"><a href="#apt">APT</a></td>
+        <td class="green">5-7</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">1-4</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">1-4</td>
+        {% include tdyn.html yn="1" %}
+        {% include tdyn.html yn="1" %}
+        <td class="green"><code>.deb</code>, <code>.rpm</code> (APT-RPM)</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">2.783s</td>
+        {% include tdyn.html yn="1" %}
+      </tr>
+      <tr title="green">
+        <td class="title1"><a href="#dnf">DNF</a></td>
+        <td class="green">8</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">5</td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">5-6</td>
+        {% include tdyn.html yn="1" %}
+        {% include tdyn.html yn="0" %}
+        <td class="green"><code>.rpm</code>, <code>.src.rpm</code></td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">16.853s, <br/>11.977s (DNF 2.1.0)</td>
+        {% include tdyn.html yn="1" %}
+      </tr>
+      <tr title="green">
+        <td class="title1"><a href="#entropy">Entropy</a></td>
+        <td class="green">8</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">7</td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">5-7</td>
+        {% include tdyn.html yn="1" %}
+        {% include tdyn.html yn="0" %}
+        <td class="green"><code>.tbz2</code></td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">7.621s</td>
+        {% include tdyn.html yn="0" %}
+      </tr>
+      <tr title="green">
+        <td class="title1"><a href="#pacman">pacman</a></td>
+        <td class="green">6</td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">8-9</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">9</td>
+        {% include tdyn.html yn="0" %}
+        {% include tdyn.html yn="0" %}
+        <td class="green"><code>.pkg.tar.xz</code>, <code>PKGBUILD</code></td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">0.464s</td>
+        {% include tdyn.html yn="0" %}
+      </tr>
+      <tr title="green">
+        <td class="title1"><a href="#portage">Portage</a></td>
+        <td class="green">2-3</td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">9</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">7-8</td>
+        {% include tdyn.html yn="0" %}
+        {% include tdyn.html yn="0" %}
+        <td class="green"><code>.ebuild</code>, <code>.tbz2</code></td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">198.83s</td>
+        {% include tdyn.html yn="0" %}
+      </tr>
+      <tr title="green">
+        <td class="title1"><a href="#yum">yum</a></td>
+        <td class="green">7-8</td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">5</td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">5-6</td>
+        {% include tdyn.html yn="1" %}
+        {% include tdyn.html yn="0" %}
+        <td class="green"><code>.rpm</code>, <code>.src.rpm</code></td>
+        {% include tdyn.html yn="0" %}
+        <td class="green">8.461s</td>
+        {% include tdyn.html yn="1" %}
+      </tr>
+      <tr title="green">
+        <td class="title1"><a href="#zypp">ZYpp</a></td>
+        <td class="green">9</td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">6</td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">5-6</td>
+        {% include tdyn.html yn="1" %}
+        {% include tdyn.html yn="1" %}
+        <td class="green"><code>.rpm</code>, <code>.src.rpm</code></td>
+        {% include tdyn.html yn="1" %}
+        <td class="green">1.02s</td>
+        {% include tdyn.html yn="1" %}
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr title="green">
+        <td class="green" colspan="12" style="padding:5px;">
+          {% include_relative table-8/table-8-footer.md %}
+        </td>
+      </tr>
+    </tfoot>
+</table><br/>

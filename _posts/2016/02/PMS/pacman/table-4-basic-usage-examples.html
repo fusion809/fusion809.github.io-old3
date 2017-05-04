@@ -1,0 +1,46 @@
+<h3>Basic Usage</h3>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption>Table 4: Basic Usage of pacman</caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1">Action</td>
+      <td class="title1">Command<sup>1</sup></td>
+      <td class="title1">Description</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Build package from source</td>
+      <td class="green">{% include Code/codeu.html line1="makepkg" %}</td>
+      <td class="green">Build package from source, using instructions in the PKGBUILD in the present working directory (PWD).</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install build dependencies</td>
+      <td class="green">{% include Code/codeu.html line1="makepkg -s" %}</td>
+      <td class="green">Install the required build dependencies for package's whose PKGBUILD is in the PWD.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install package</td>
+      <td class="green">{% include Code/coder.html line1="pacman -S $package" %}</td>
+      <td class="green">Install the target package (<code>$package</code>) and all runtime dependencies.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Remove package</td>
+      <td class="green">{% include Code/coder.html line1="pacman -Rs $package" %}</td>
+      <td class="green">Remove the target package (<code>$package</code>) and all runtime dependencies not required by other installed packages.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Search for keyword</td>
+      <td class="green">{% include Code/coder.html line1="pacman -Ss $package" %}</td>
+      <td class="green">Search package names and descriptions for provided regex.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Upgrade all packages</td>
+      <td class="green">{% include Code/coder.html line1="pacman -Syu" %}</td>
+      <td class="green">Upgrade all installed packages present in the pacman repositories.</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr class="green">
+      <td colspan="3" style="padding:5px;"><sup>1</sup>: <u>Note:</u> in this table I use the short-hand notation <code>$package</code> to refer to the target package(s) that the user wishes to perform the mentioned action on.</td>
+    </tr>
+  </tfoot>
+</table><br/>

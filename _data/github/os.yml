@@ -1,0 +1,18 @@
+body:
+# arch-setup
+  - repo:
+            "arch-setup"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "Scripts for automating the installation of Arch Linux on laptops with Broadcom WiFi chips."

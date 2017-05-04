@@ -1,0 +1,9 @@
+
+## GNU Emacs
+{% include Links/image.html image="Emacs/GNU-Emacs-24.5.png" width="760px" float="none" description="GNU Emacs 24.5 running under Arch Linux" %}
+
+**GNU Emacs** is a free, GPL-licensed, extendable text editor developed as part of the GNU Project. It was originally developed in the mid 1980s by Richard Stallman, the founder of the GNU Project. It is written in C and its own purpose-built language, Emacs Lisp, and has both a command-line and graphical user interface (GUI). Its GUI is built using the GTK+ toolkit (presently GTK+ 3 is being used) on Linux. At its heart is an interpreter for the Emacs Lisp programming language and it is through this language that users can extend Emacs' functionalities with plugins and configuration scripts (with its main configuration script being `~/.emacs`, by default).
+
+As far as its start-up time goes it is faster than Atom and uses less RAM and hard disk drive (HDD) space, but has a longer start-up time and uses more RAM/HDD space than Vim. For example, on Arch Linux emacs 24.5-3 takes up 99.43 MB HDD space.
+
+Emacs is a much more difficult editor to learn and use efficiently than the beginner-friendly editors Atom, gedit, Kate and Notepad. Most actions in Emacs are controlled by combination keyboard shortcuts. This as opposed to Vim that is controlled by keyboard inputs that need not be provided simultaneously (that is, they can be successive, one after the other). Although the GUI of Emacs has a toolbar with drop-down menus in it, like most graphical text editors. There is also a plugin for Emacs that gives Emacs more Vim-like keyboard shortcuts, it is called [Spacemacs](http://spacemacs.org/). It uses buffers (as opposed to tabs or panes) for working on more than one file, or action (e.g., one buffer might be for a terminal emulator) at a time. You can navigate through your various buffers using keyboard shortcuts.

@@ -1,0 +1,26 @@
+{% capture item1 %}
+{% include_relative 01a/01-free.md %}
+{% endcapture %}
+{% capture item2 %}
+{% include_relative 01a/02-unix-like.md %}
+{% endcapture %}
+{% capture item3 %}
+{% include_relative 01a/03-desktop-environments.md %}
+{% endcapture %}
+{% capture item4 %}
+{% include_relative 01a/04-different-software.md %}
+{% endcapture %}
+{% capture item5 %}
+{% include_relative 01a/05-freedom.md %}
+{% endcapture %}
+{% capture item6 %}
+{% include_relative 01a/06-software-installation.md %}
+{% endcapture %}
+<ul>
+  <li>{{ item1 | markdownify }}</li>
+  <li>{{ item2 | markdownify }}</li>
+  <li>{{ item3 | markdownify }}</li>
+  <li>{{ item4 | markdownify }}</li>
+  <li>{{ item5 | markdownify }}</li>
+  <li>{{ item6 | markdownify }}</li>
+</ul>

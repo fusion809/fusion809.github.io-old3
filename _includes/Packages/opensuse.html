@@ -1,0 +1,1 @@
+{{ include.puncl }}{% if include.no != "1" %}openSUSE {{ include.variant }}(package name: <a href='https://software.opensuse.org/package/{{ include.package }}' link='_blank'><code>{{ include.package }}</code></a>){% else %}<a href='https://software.opensuse.org/package/{{ include.package }}' link='_blank'><code>{{ include.package }}</code></a>{% endif %}{{ include.puncr }}

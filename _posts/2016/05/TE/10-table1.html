@@ -1,0 +1,140 @@
+<h2>Summary</h2>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption>{{ site.data.TEs-IDEs.caption | markdownify }}</caption>
+  <tbody>
+    <tr class="cyan">
+      <td class="cyan">Program</td>
+      <td class="cyan">
+        <abbr title="This is the version of the program that is being evaluated for its installed size and RAM usage on Arch Linux. Any hyperlink given in this column is to the PKGBUILD I installed it from on Arch Linux, if I did not install it from the official Arch Linux repositories.">Version</abbr>
+      </td>
+      <td class="cyan">License</td>
+      <td class="cyan">Developer</td>
+      <td class="cyan">
+        <abbr title="The computer languages this editor is written in; bold are the languages it is extended with">Written In</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Availability; rating from 1 to 10 to reflect how easy it is to obtain this editor on desktop Linux distributions.">AV</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Beginner-Friendliness; rating from 1 to 10 to reflect how easy this editor is to pick up for those that have never even used a text editor.">BF</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Customizability; rating from 1 to 10 to reflect how extensively this editor can be customized.">CMB</abbr>
+      </td>
+      <td class="cyan">Tabs</td>
+      <td class="cyan">Panes</td>
+      <td class="cyan">
+        <abbr title="Embedded File Manager">FM?</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Embedded Web Browser">WB?</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Embedded Terminal Emulator">TE?</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Hard Disk Drive space taken when program is installed on Arch Linux">HDD</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Random Access Memory used by this program, when no optional packages are loaded and only one file is opened">RAM</abbr>
+      </td>
+      <td class="cyan">
+        <abbr title="Overall rating from 1 to 10; 10 being the best editor ever, 1 being a terrible editor.">OA</abbr>
+      </td>
+    </tr>
+    {% for row in site.data.TEs-IDEs.body %}
+    <tr>
+      <td class="program">
+        <a href="{{ row.program-link }}" link="_blank">{{ row.program }}</a>
+      </td>
+      <td class="version">
+        {% if row.version-link %}<a href="{{ row.version-link }}" link="_blank">{{ row.version }}</a>{% else %}{{ row.version }}{% endif %}
+      </td>
+      <td class="license">
+        <a href="{{ row.license-link }}" link="_blank">{{ row.license }}</a>
+      </td>
+      <td class="developer">
+        {{ row.developer }}
+      </td>
+      <td class="languages">
+        {{ row.languages }}
+      </td>
+      <td class="subjective">
+        <abbr title="{{ row.availability-abbr }}">{{ row.availability }}</abbr>
+      </td>
+      <td class="subjective">
+        <abbr title="{{ row.beginner-friendliness-abbr }}">{{ row.beginner-friendliness }}</abbr>
+      </td>
+      <td class="subjective">
+        <abbr title="{{ row.customizability-abbr }}">{{ row.customizability }}</abbr>
+      </td>
+      {% if row.tabs == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.tabs-link }}" link="_blank">{{ row.tabs }}</a>
+      </td>
+      {% else %}
+      <td class="{{ row.tabs }}">
+        {{ row.tabs }}
+      </td>
+      {% endif %}
+      {% if row.panes == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.panes-link }}" link="_blank">Optional</a>
+      </td>
+      {% elsif row.panes == 'Yes (H)' %}
+      <td class="partial">
+        <abbr title="Only splits horizontally">Yes (H)</abbr>
+      </td>
+      {% elsif row.panes == 'Yes (V)' %}
+      <td class="partial">
+        <abbr title="Only splits vertically">Yes (V)</abbr>
+      </td>
+      {% else %}
+      <td class="{{ row.panes }}">
+        {{ row.panes }}
+      </td>
+      {% endif %}
+      {% if row.file-manager == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.file-manager-link }}" link="_blank">Optional</a>
+      </td>
+      {% else %}
+      <td class="{{ row.file-manager }}">
+        {{ row.file-manager }}
+      </td>
+      {% endif %}
+      {% if row.web-browser == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.web-browser-link }}" link="_blank">Optional</a>
+      </td>
+      {% else %}
+      <td class="{{ row.web-browser }}">
+        {{ row.web-browser }}
+      </td>
+      {% endif %}
+      {% if row.shell == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.shell-link }}" link="_blank">Optional</a>
+      </td>
+      {% elsif row.shell == 'Partial' %}
+      <td class="partial">
+        <abbr title="No embedded terminal, but typing `:! &lt;COMMAND&gt;`, where &lt;COMMAND&gt; is your shell command">Partial</abbr>
+      </td>
+      {% else %}
+      <td class="{{ row.shell }}">
+        {{ row.shell }}
+      </td>
+      {% endif %}
+      <td class="version">
+        {{ row.installed-size }}
+      </td>
+      <td class="version">
+        {{ row.random-access-memory }}
+      </td>
+      <td class="subjective">
+        <abbr title="{{ row.overall-abbr }}">{{ row.overall }}</abbr>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

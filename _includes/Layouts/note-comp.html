@@ -1,0 +1,18 @@
+<div class="note">
+
+  <span style="font-size:20px; font-weight:bold;">NOTE:</span>
+  <ul>
+    <li>
+      I use the notation <code>$ver</code> for the version of Node.js you wish to install. You can substitute all instances of <code>$ver</code> with the specific version you want (e.g., 5.6.0 or 0.12.7), or you can add a line before the code lines mentioned defining <code>ver=5.6.0</code>, or whichever version you want. For example, see <a href="https://gist.github.com/fusion809/c674a7d1115b6b744cf6" link="_blank">this gist</a> for option 1 with version 5.6.0 being built.
+    </li>
+    <li>
+      In this example I used the xz-compressed tar archive of Node.js. This was used to save bandwidth, if your computer is older or if this type of archive is unavailable (which is the case for <code>$ver&lt;4.0.0</code>), I would suggest using the gz-compressed tar archive instead.<br/>
+
+      This would entail changing the line: <br/>
+      {% include Code/codeus.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver.tar.xz | tar -xJ" %}
+      <br/>to:<br/>
+      {% include Code/codeus.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver.tar.gz | tar -xz" %}
+      <br/>for option 1 and I will leave it up to your very capable minds to figure out what you should do for option 2, if you would prefer or require gz-compressed archives.
+    </li>
+  </ul>
+</div>

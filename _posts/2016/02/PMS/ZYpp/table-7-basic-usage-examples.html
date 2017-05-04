@@ -1,0 +1,51 @@
+<h3>Basic Usage</h3>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption>Table 7: Basic Usage of zypper</caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1">Action</td>
+      <td class="title1">Command<sup>1</sup></td>
+      <td class="title1">Description</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Add a repository</td>
+      <td class="green">{% include Code/coder.html line1="zypper ar -f $URL" %}</td>
+      <td class="green">Add a zypper repository, the <code>$URL</code> must be to the repository's <code>.repo</code> file.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install build dependencies</td>
+      <td class="green">{% include Code/coder.html line1="zypper source-install -d $package" %}</td>
+      <td class="green">Install the required build dependencies for <code>$package</code>.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install package</td>
+      <td class="green">{% include Code/coder.html line1="zypper install $package" %}</td>
+      <td class="green">Install the target package (<code>$package</code>) and all runtime dependencies.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install package from source</td>
+      <td class="green">{% include Code/coder.html line1="zypper source-install $package" %}</td>
+      <td class="green">Install package from <code>.src.rpm</code>.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Remove package</td>
+      <td class="green">{% include Code/coder.html line1="zypper remove $package" %}</td>
+      <td class="green">Remove the target package (<code>$package</code>) and all runtime dependencies not required by other installed packages.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Search for keyword</td>
+      <td class="green">{% include Code/coder.html line1="zypper search $package" %}</td>
+      <td class="green">Search package metadata (including name, description, URL, <i>etc.</i>) for provided regex.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Upgrade all packages</td>
+      <td class="green">{% include Code/coder.html line1="zypper update" %}</td>
+      <td class="green">Upgrade all installed packages.</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr class="green">
+      <td colspan="3" style="padding:5px;"><sup>1</sup>: <u>Note:</u> in this table I use the short-hand notations <code>$package</code> and <code>$URL</code> to refer to the target package(s) or repository URL, respectively, that the user wishes to perform the mentioned action on.</td>
+    </tr>
+  </tfoot>
+</table><br/>

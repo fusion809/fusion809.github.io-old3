@@ -1,0 +1,59 @@
+<table style="width: 100%;">
+<caption>Table 2: Some Basic Builtins</caption>
+<tbody>
+<tr>
+<td class="title">Command</td>
+<td class="title" style="width: 20%;">Meaning</td>
+<td class="title" style="width: 50%;">Examples</td>
+<td class="title" style="width: 20%;">Manpage (HTML)</td>
+</tr>
+<tr>
+<td class="green"><code>alias</code></td>
+<td class="green">Set a synonym for a command or function</td>
+<td class="green">
+{% highlight bash %}alias ..='cd ..'{% endhighlight %}
+</td>
+<td class="green"><a href="/man/alias.1p.html">alias.1p.html</a></td>
+</tr>
+<tr>
+<td class="green"><code>cd</code></td>
+<td class="green">Change directory.</td>
+<td class="green">
+{% highlight bash %}cd ~/Documents{% endhighlight %}
+changes one's directory to /home/username/Documents.</td>
+<td class="green"><a href="/man/cd.1p.html">cd.1p.html</a></td>
+</tr>
+<tr>
+<td class="green"><code>date</code></td>
+<td class="green">Outputs the date. Inputs/variables can be used to set the timezone and the format of the date given.</td>
+<td class="green">This gives my local date and time in my preferred format:<br/>
+{% highlight bash %}TZ="Australia/Brisbane" date +"%r %A, %d %B %Y"{% endhighlight %}
+</td>
+<td class="green"><a href="/man/date.1.html">date.1.html</a></td>
+</tr>
+<tr>
+<td class="green"><code>export</code></td>
+<td class="green">Set variables provided to it as environment, or global, variables.</td>
+<td class="green">{% highlight bash %}export JAVA_HOME=/usr/lib/jvm/oracle-jdk-bin-1.8/bin{% endhighlight %}</td>
+<td class="green"><a href="/man/export.1p.html">export.1p.html</a></td>
+</tr>
+<tr>
+<td class="green"><code>history</code></td>
+<td class="green">Outputs Bash history.</td>
+<td class="green">
+{% highlight bash %}history -10{% endhighlight %}
+should show the last ten commands executed with Bash.</td>
+<td class="green"><a href="/man/history.3.html">history.3.html</a></td>
+</tr>
+<tr>
+<td class="green"><code>source</code></td>
+<td class="green">Execute script(s) provided to it.</td>
+<td class="green">{% highlight bash %}
+source ~/.bashrc
+{% endhighlight %}
+runs the <code>~/.bashrc</code> script.
+</td>
+<td class="green"><a href="/man/source.n.html">source.n.html</a></td>
+</tr>
+</tbody>
+</table>

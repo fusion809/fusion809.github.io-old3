@@ -1,0 +1,2 @@
+### GNU
+The **GNU Project** is a FOSS project that was first founded in the 1980s by Richard M. Stallman (or rms), its stated mission is to develop a free and open-source Unix clone. This clone is referred to as GNU, which is incredibly unpopular. The GNU Project provides the Unix utilities (contained in the GNU Coreutils package) and the Unix shell (called Bash) used by the vast majority of Linux distributions. Due to this some people refer to the family of operating systems known as Linux, as GNU/Linux.

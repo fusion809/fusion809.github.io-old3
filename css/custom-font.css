@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Adine Kirnberg Alternate';
+  src: url(/ttf/AdineKirnberg-Alternate.ttf);
+}
+
+@font-face {
+  font-family: 'Adine Kirnberg';
+  src: url(/ttf/Adine Kirnberg.ttf);
+}
+
+@font-face {
+  font-family: 'Precious';
+  src: url(/ttf/Precious.ttf);
+}
+
+@font-face {
+  font-family: 'Aguafina Script';
+  src: url(/ttf/AguafinaScript-Regular.ttf);
+}

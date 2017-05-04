@@ -1,0 +1,108 @@
+header nav span.navbar-brand {
+  padding: 10px;
+}
+
+#main hr, footer hr  {
+  /*margin*/: 0px;
+}
+
+#main #main-content {
+  font-size: 1em;
+}
+
+#main #main-content .panel .panel-heading {
+  padding: 3px 15px;
+}
+
+#main #main-content .panel .post-date {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  padding: 5px 8px;
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #e1e1e8;
+  border-radius: 0 4px 0 4px;
+}
+
+#main #main-content .panel .post-title {
+  max-width: 90%;
+}
+
+#main #main-content .panel h1 { font-size: 1.5em; }
+
+#main #footer-spacing { display:block; height:40px; }
+
+#main #post-navigation { margin-top:40px; }
+#main #post-navigation .next { margin-top:20px; text-align: right; }
+/*#main #post-navigation .next a { font-size: 1.2em; }*/
+
+b.TOP { font-size: 18px; color: black;}
+b.VERSION { font-size: small; font-family : arial, sans-serif; }
+b.NORM  { color: black;  background-color: transparent;}
+b.FIFO  { color: purple; background-color: transparent;}
+b.CHAR  { color: yellow; background-color: transparent;}
+b.DIR   { color: blue;   background-color: transparent;}
+b.BLOCK { color: yellow; background-color: transparent;}
+b.LINK  { color: aqua;   background-color: transparent;}
+b.SOCK  { color: fuchsia;background-color: transparent;}
+b.EXEC  { color: green;  background-color: transparent;}
+div.tree { background-color: fuchsia; width: 200px; padding: 5px; border-radius: 5px; }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.caret.caret-up {
+    border-top-width: 0;
+    border-bottom: 4px solid #fff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.pagesDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.pagesDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cc44ff;
+    min-width: 172px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.pagesDropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 172px;
+}
+
+/* Change color of dropdown links on hover */
+.pagesDropdown-content a:hover {
+  background-color: #f1f1f1;
+  width: 172px;
+}
+
+/* Show the dropdown menu on hover */
+.pagesDropdown:hover .pagesDropdown-content {
+    display: block;
+    width: 172px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.pagesDropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

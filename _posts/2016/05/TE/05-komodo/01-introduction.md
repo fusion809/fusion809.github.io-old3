@@ -1,0 +1,5 @@
+
+## Komodo Edit
+{% include Links/image.html image="Komodo/Komodo-Edit-10.0.0.png" float="none" width="100%" description="Komodo Edit 10.0.0 running on Arch Linux" %}
+
+**Komodo Edit** is a free (licensed under the Mozilla Public License) text editor built on the source code of Mozilla Firefox and developed by ActiveState. It is written in JavaScript, Python and C++ and is the open-source version of the proprietary **Komodo IDE** integrated development environment. It has a repository of themes and packages that can be found [here](http://komodoide.com/packages). I personally find it fairly extensible, but not as extensible as Atom, Emacs or Vim. I have also found it a real pain to compile from source code, so much of a pain that in a cross-distribution shell script installer I wrote for it {% include Links/fusgr.md repo="komodo-installer" puncl="(" puncr=")" %} I decided to omit a source code install option. This is because it requires an older version of autotools (2.13) than presently in the official repositories of the more up-to-date distributions like day-to-day one, Arch Linux.

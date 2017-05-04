@@ -1,0 +1,72 @@
+<h2>Comparison</h2>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption>{{ site.data.proglang_comparison.caption | markdownify }}</caption>
+  <tbody>
+    <tr class="green">
+      <td class="title1">Language</td>
+      <td class="title1" style="width:140px;">
+        <abbr title="File extension">Extension(s)</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Abstraction level">Level</abbr>
+      </td>
+      <td class="title1">Developer(s)</td>
+      <td class="title1" style="width:50px;"><abbr title="Date the programming language first appeared">Date</td></td>
+      <td class="title1" style="width:50px;">
+        <abbr title="Implementation method">Implem</abbr>
+      </td>
+      <td class="title1">Paradigm(s)</td>
+      <td class="title1">Purpose</td>
+      <td class="title1">
+        <abbr title="Freely licensed?">Free?</abbr>
+      </td>
+      <td class="title1">
+        <abbr title="Scripting language?">Script?</abbr>
+      </td>
+      <td class="title1">Speed</td>
+    </tr>
+    {% for row in site.data.proglang_comparison.body %}
+    <tr class="green">
+      {% if row.Lang == 'Assembly' %}
+      <td class="title1"><a href="https://en.wikipedia.org/wiki/{% if row.WLang %}{{ row.WLang }}{% else %}{{ row.Lang }}{% endif %}" link="_blank">{{ row.Lang | markdownify }}</a> (<a href="#assembly-language">section</a>)</td>
+      {% elsif row.Lang == 'Visual Basic*' %}
+      <td class="title1"><a href="https://en.wikipedia.org/wiki/{% if row.WLang %}{{ row.WLang }}{% else %}{{ row.Lang }}{% endif %}" link="_blank">{{ row.Lang | markdownify }}</a> (<a href="#visual-basic">section</a>)</td>
+      {% else %}
+      <td class="title1"><a href="https://en.wikipedia.org/wiki/{% if row.WLang %}{{ row.WLang }}{% else %}{{ row.Lang }}{% endif %}" link="_blank">{{ row.Lang | markdownify }}</a> (<a href="#{{ row.Lang | downcase }}">section</a>)</td>
+      {% endif %}
+      <td class="green">{% if row.ext %}{{ row.ext | markdownify }}{% elsif row.Ext %}{{ row.Ext | markdownify }}{% elsif row.extension %}{{ row.extension | markdownify }}{% elsif row.Extension %}{{ row.Extension | markdownify }}{% elsif row.extensions %}{{ row.extensions | markdownify }}{% endif %}</td>
+      <td class="green">{{ row.Level | markdownify }}</td>
+      <td class="green">{{ row.Developer | markdownify }}</td>
+      <td class="green">{{ row.Date  | markdownify }}</td>
+      <td class="{{ row.Imp }}">{% if row.Implementation %}{{ row.Implementation | markdownify }}{% else %}{{ row.Imp | markdownify }}{% endif %}</td>
+      <td class="green">{{ row.Paradigm | markdownify }}</td>
+      <td class="green">{{ row.Purpose | markdownify }}</td>
+      <td class="{{ row.Free }}">{{ row.Free }}</td>
+      <td class="{{ row.Script }}">{{ row.Script }}</td>
+      <td class="green">{{ row.Speed | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+  <tfoot>
+    <tr class="title2">
+      <td class="title2" colspan="11">Footnotes</td>
+    </tr>
+    <tr class="green">
+      <td class="blue" colspan="11">
+        <b>*</b>: Indicates the programming language and its straight-forward (usually meaning they have the original programming
+        language's name somewhere in theirs, e.g., Object Pascal is a straight-forward derivative of Pascal) derivatives.
+        <br/><br/>
+        <b>Common</b>: included programming languages include those that are listed in the top 20 programming languages for popularity in
+        December 2015 according to <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">TIOBE</a>. It also includes
+        programming languages that are notable due to their use in FOSS.
+        <br/><br/>
+        <b>Speed</b>: The speed rating is assigned by myself as essentially an average of the speed tests I have found by Googling
+        "comparison of programming languages by performance". While this gives one an incling as to the speed of these programming
+        languages it is worthwhile noting that the speed of a programming language greatly depends on what it is being used to do and in
+        some cases how it is implemented can greatly impact upon its performance. 10 indicates that the language is amongst the fastest
+        available, 1 indicates that the language is essentially the slowest of languages.
+      </td>
+    </tr>
+  </tfoot>
+</table>
+<br/>

@@ -1,0 +1,2 @@
+### Customization
+Vim can be extensively customized via plugins written in VimL, although it is generally considered less extensible than GNU Emacs, due to limitations in this programming language. The way I usually customize Vim whenever I install it is I install the solarized colours theme, along with the NERDTree plugin (which inserts an embedded file browser into Vim) and Markdown support, so that I can edit *The Hornery* in it. 

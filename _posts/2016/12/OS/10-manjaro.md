@@ -1,0 +1,16 @@
+## Manjaro Linux
+{% include_relative infoboxes/10-manjaro.html %}
+
+[**Manjaro Linux**][1000] is a beginner-friendly and out-of-the-box Linux distribution that is based on Arch Linux. Compared to its parent distribution (that is, Arch Linux) it has several important differences, for one it has an official graphical installer, [Calamares][1001]. Although I should clarify, Calamares is not an installer specifically made for Manjaro, in fact its development is completely independent from that of Manjaro and it is designed to be a distribution-agnostic installer, it just happens to be the installer that Manjaro's live media comes with. Manjaro also used to ship with the home-grown [Thus][1002] installer, giving users the choice of using either Calamares or Thus, but Thus has since become deprecated. 
+
+### Package management
+Manjaro uses its own package repositories that are distinct from those of Arch Linux, but most packages in these repositories are derived from the corresponding packages in Arch Linux's repositories (and merely re-packaged with sometimes some slight modification for Manjaro) or the AUR. Manjaro also ships with the latest LTS release (presently 4.9.x) of the Linux kernel by default (as opposed to Arch Linux which ships with the latest stable kernel). Despite this more bleeding-edge kernels are available in its repositories. It used to have out-of-the-box Broadcom wireless support, but with the release of 17.0 it no longer does, which is something I learnt when I put it on a USB stick in the hope it would give out-of-the-box Broadcom wireless support to aid me in installing Gentoo Linux from a stage3 tarball. And yes I did try starting Manjaro with unfree drivers and still it had no support for Broadcom wireless.  
+
+It also has its own home-grown tool for automatic hardware detection, specifically for detecting graphics cards, [`mhwd`][1003] (short for *Manjaro Hardware Detection*). `mhwd-kernel` is a command that can be used to manage different version of the Linux kernel on Manjaro. 
+
+### Conclusion
+It is best suited to users that prefer a beginner-friendly distribution (with out-of-the-box support for popular extraneous devices such as Broadcom chips and NVIDIA graphics cards), but one where bug-wrangling may sometimes be required (as it is more on the bleeding-edge side of the spectrum, than on the stable side) and those that need/want amongst the most extensive software repositories of any Linux distribution known. It is also suited to beginners who want to get started with Linux packaging, as pacman packages are amongst the easiest to develop. 
+
+Its forums have been irritating to me as whenever I start a question there that includes a hyperlink (like to a pastebin service, containing my long error message or log file) it is subject to review by moderators before it will become visible to others. This process of review can take days. I have not used their forums in months or maybe even a year though, so for all I know they may have fixed that issue. When questions are not subject to review by a moderator the forums works about as quickly and well as Ask Fedora does to answer questions. So it is fairly good, but not as good as Ask Ubuntu, in terms of support quality and swiftness. 
+
+{% include Layouts/clear.html %}

@@ -1,0 +1,1 @@
+<td class="title1"><a href="https://en.wikipedia.org/wiki/{% if row.WLang %}{{ row.WLang }}{% else %}{{ row.Lang }}{% endif %}" link="_blank">{{ row.Lang | markdownify }}</a> (<a href="#{% include section.html Lang="{{ row.Lang }}" %}">section</a>)</td>

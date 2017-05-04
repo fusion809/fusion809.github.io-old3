@@ -1,0 +1,23 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption id="table-2">
+    {{ site.data.categories.caption | markdownify }}
+  </caption>
+  <tbody>
+    <tr class="note">
+      <td class="note" colspan="2" style="text-align: center;">
+        <div style="font-size:20px; font-weight:bold;">Note:</div>
+        Some categories are not mentioned here as their definition is considered obvious, based on their name.
+      </td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Category</td>
+      <td class="title1">Description</td>
+    </tr>
+    {% for row in site.data.categories.body %}
+    <tr class="green">
+      <td class="blue"><b>{{ row.category    | markdownify }}</b></td>
+      <td class="green">{{ row.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

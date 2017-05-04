@@ -1,0 +1,21 @@
+{% if include.width %}<div class = "image-box" style = "width:{{ include.width }}; {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">
+<figure>
+  <img src="{% if include.url %}{{ include.url }}{% else %}/images/operating-systems/{{ include.image }}{% endif %}" alt="{{ include.description }}" style = "width:{{ include.width }}"/>
+  {% if include.id %}
+    <figcaption align="bottom" style="width:-webkit-calc({{ include.width }}-5px); {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">Figure {{ include.id }}: {{ include.description }}</figcaption>
+  {% else %}
+    <figcaption align="bottom" style="width:-webkit-calc({{ include.width }}-5px); {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">{{ include.description }}</figcaption>
+  {% endif %}
+</figure>
+</div>
+{% else %}<div class = "image-box" style = "width:1150px; {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">
+<figure>
+  <img src="{% if include.url %}{{ include.url }}{% else %}/images/operating-systems/{{ include.image }}{% endif %}" alt="{{ include.description }}" style = "width:1150px"/>
+  {% if include.id %}
+    <figcaption align="bottom" style="width:-webkit-calc(1150px-5px); {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">Figure {{ include.id }}: {{ include.description }}</figcaption>
+  {% else %}
+    <figcaption align="bottom" style="width:-webkit-calc(1150px-5px); {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">{{ include.description }}</figcaption>
+  {% endif %}
+</figure>
+</div>
+{% endif %}

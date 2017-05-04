@@ -1,0 +1,46 @@
+caption: "Table 9: Predefined Read-Only Variables."
+head:
+  - Variable
+  - Meaning
+body:
+  - Variable: "`P`"
+    Meaning:  "Package name and version, excluding its revision, if any. For example, for `app-editors/vim-6.3-r1.ebuild`, `P` would equal `vim-6.3`."
+
+  - Variable: "`PN`"
+    Meaning:  "Package name only. In the previous example this would be `vim`."
+
+  - Variable: "`PV`"
+    Meaning:  "Package version, excluding revision, if any. In the aforementioned example this would equal `6.3`."
+
+  - Variable: "`PR`"
+    Meaning:  "Package revision, or `r0` if no revision exists."
+
+  - Variable: "`PVR`"
+    Meaning:  "Package version and revision (if any). In the aforementioned example this would be equal to `6.3-r1`."
+
+  - Variable: "`PF`"
+    Meaning:  "Package full name, including version and revision. For example, in the aforementioned example this would equal to `vim-6.3-r1`."
+
+  - Variable: "`A`"
+    Meaning:  "All package source files (excluding those that are unavailable due to USE flag constraints)."
+
+  - Variable: "`CATEGORY`"
+    Meaning:  "The package's category, for the previous example this would be `app-editors`."
+
+  - Variable: "`FILESDIR`"
+    Meaning:  "Path to the package's `files/` directory, which usually contains patches."
+
+  - Variable: "`WORKDIR`"
+    Meaning:  "Path to the ebuild's root build directory."
+
+  - Variable: "`T`"
+    Meaning:  "Path to a temporary directory that may be used by the ebuild."
+
+  - Variable: "`D`"
+    Meaning:  "Path to the temporary install directory."
+
+  - Variable: "`ROOT`"
+    Meaning:  "Path to the root directory."
+
+  - Variable: "`DISTDIR`"
+    Meaning:  "Contains the path to the directory where all files fetched are stored."
