@@ -13,7 +13,7 @@ where `$INSTALLED_FILES` are, of course, the installed files of the package with
 The package metadata (which is used by pacman when it installs new packages to check for file conflicts and such) is stored in the four hidden files (that is, those with `.` in their filename) in the package's top-level directory.
 
 #### PKGBUILD Structure
-ALPs are built from PKGBUILDs using the [`makepkg`](/man/makepkg.8.html) command that comes bundled with the pacman package manager. They are the easiest packages to build, in my opinion. PKGBUILDs have the following general format (for more details see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page):
+ALPs are built from PKGBUILDs using the [`makepkg`](https://fusion809.github.io/man/makepkg.8.html) command that comes bundled with the pacman package manager. They are the easiest packages to build, in my opinion. PKGBUILDs have the following general format (for more details see the [PKGBUILD(5)](https://fusion809.github.io/man/PKGBUILD.5.html) man page):
 
 {% include_relative 03-package-formats/02-archlinux/04-general-format.md %}
 

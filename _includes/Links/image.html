@@ -1,6 +1,6 @@
 <div class = "image-box" style = "width:{{ include.width }}; {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">
 <figure>
-  <img src="{% if include.url %}{{ include.url }}{% elsif include.image %}/images/{{ include.image }}{% elsif include.os %}/images/operating-systems/{{ include.os }}{% elsif include.game %}/images/Games/{{ include.game }}{% endif %}" alt="{{ include.description }}" style = "width:{{ include.width }}"/>
+  <img src="{% if include.url %}{{ include.url }}{% elsif include.image %}https://fusion809.github.io/images/{{ include.image }}{% elsif include.os %}https://fusion809.github.io/images/operating-systems/{{ include.os }}{% elsif include.game %}https://fusion809.github.io/images/Games/{{ include.game }}{% endif %}" alt="{{ include.description }}" style = "width:{{ include.width }}"/>
   {% if include.id %}
     <figcaption align="bottom" style="width:-webkit-calc({{ include.width }}-5px); {% if include.float %}float: {{ include.float }};{% else %}float: right;{% endif %}">Figure {{ include.id }}: {{ include.description }}</figcaption>
   {% elsif include.description %}

@@ -18,7 +18,7 @@ Fedora uses the [**Anaconda**](https://fedoraproject.org/wiki/Anaconda) installe
 I have successfully managed to install Fedora 23 LXDE edition on my removable drive, although it failed to connect to the Wi-Fi by default. I had to install additional drivers by following [this guide](https://onpub.com/install-broadcom-linux-wi-fi-driver-on-fedora-23-s7-a192) while connected to a wired (or ethernet) Internet connection.
 
 ### Package Management
-As previously mentioned later releases of Fedora use DNF (from the command-line [`dnf`](/man/dnf.8.html)) as their default command-line package manager, with PackageKit being an officially-supported graphical front-end for DNF. DNF is essentially the same as yum (including the fact that it is mostly written in Python), except with faster dependency-resolution thanks to that fact it uses ZYpp's libsolv library for this. Its syntax is virtually identical to that of yum, below are some examples. There are over 21,000 binary packages in its repositories.[^4]
+As previously mentioned later releases of Fedora use DNF (from the command-line [`dnf`](https://fusion809.github.io/man/dnf.8.html)) as their default command-line package manager, with PackageKit being an officially-supported graphical front-end for DNF. DNF is essentially the same as yum (including the fact that it is mostly written in Python), except with faster dependency-resolution thanks to that fact it uses ZYpp's libsolv library for this. Its syntax is virtually identical to that of yum, below are some examples. There are over 21,000 binary packages in its repositories.[^4]
 
 {% include_relative dnf-scripts.md %}
 

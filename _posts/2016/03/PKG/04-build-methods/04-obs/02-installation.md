@@ -3,7 +3,7 @@ On **openSUSE**, installing `osc` and its dependencies is simple, merely run:
 
 {% include Code/coder.html line1="zypper in osc" %}
 
-and it is installed! One way, that one can install `osc` and all its dependencies on non-openSUSE distributions is by manually compiling them all from source code. Now I am no expert, in fact, I have not tried installing these packages, manually from source code, on any distribution other than Arch Linux, so if there are gaps or flat out errors in this brief tutorial, please [contact me](/contributing/) or fork the [fusion809.github.io](https://github.com/fusion809/fusion809.github.io) GitHub repo, modify the `_posts/2016/03/PKG/04-build-methods/04-obs.md` file in your fork and start a pull request. Firstly, ensure you have the following packages installed on your system:[^2]
+and it is installed! One way, that one can install `osc` and all its dependencies on non-openSUSE distributions is by manually compiling them all from source code. Now I am no expert, in fact, I have not tried installing these packages, manually from source code, on any distribution other than Arch Linux, so if there are gaps or flat out errors in this brief tutorial, please [contact me](https://fusion809.github.io/contributing/) or fork the [fusion809.github.io](https://github.com/fusion809/fusion809.github.io) GitHub repo, modify the `_posts/2016/03/PKG/04-build-methods/04-obs.md` file in your fork and start a pull request. Firstly, ensure you have the following packages installed on your system:[^2]
 
 * `bash`
 * `diffutils`

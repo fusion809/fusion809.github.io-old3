@@ -14,13 +14,17 @@ To check how many Linux games there were available on Gentoo Linux, on 14 April 
 with the following extra (on top of the Portage tree, of course) overlays enabled:
 
 * [`flatpak-overlay`](https://github.com/fosero/flatpak-overlay)
-* [`fusion809-overlay`](https://github.com/fusion809/fusion809-overlay)
+* {% include Packages/fusion809.html %}
 * [`gamerlay`](https://github.com/gentoo-mirror/gamerlay)
 * [`games-overlay`](https://github.com/hasufell/games-overlay)
 * [`grub2-themes`](https://github.com/gentoo/grub2-themes-overlay)
 * [`steam-overlay`](https://github.com/anyc/steam-overlay)
 
-and it returned: [this list](https://github.com/fusion809/fusion809.github.io/blob/master/_drafts/2017-GAMES/games-list-gentoo.txt) which is over 1,100 lines long, which corresponds to over 1,100 separate games! Beware, however, that as said in the ["*A Comparison of Major Free Operating Systems*"](/comparison-major-free-operating-systems/) post the Portage tree and these extra overlays are riddled with proprietary and even paid software so not all these games will be free.
+and it returned: [this list](https://github.com/fusion809/fusion809.github.io/blob/master/_drafts/2017-GAMES/games-list-gentoo.txt) which is over 1,100 lines long, which corresponds to over 1,100 separate games! Beware, however, that as said in the ["*A Comparison of Major Free Operating Systems*"](/comparison-major-free-operating-systems/) post the Portage tree and these extra overlays are riddled with proprietary and even paid software so not all these games will be free. So to determine how many open-source games were in my enabled overlays I ran:
+
+{% include Code/codeu.html line1='eix -Cc games --not -L "EULA" | grep "games\-[a-z]*\/" | wc -l' %}
+
+and it returned: 1070. I should explain what this command does; `eix -Cc games` specifies to search for "games" in the category name of packages. `--not -L "EULA"` specifies that the packages should be licensed under an End-User License Agreement (EULA), the most common type of proprietary software license. 
 
 <h3 style="margin-right: 0px;">Distribution-specific notes</h3>
 In each game monograph I will be mentioning how easy it is to get the game on the following popular, sufficiently independent Linux distributions:
@@ -37,3 +41,6 @@ In each game monograph I will be mentioning how easy it is to get the game on th
 * Ubuntu
 
 distributions based on these nine distributions usually have repositories containing at least many of the same packages, hence are not mentioned as there are just too many of them to mention them all. If you are wondering why I am not mentioning Slackware Linux it is because Slackware does not have a package for any game listed in this review. 
+
+<h3 style="margin-right: 0px;">Development stage</h3>
+In the infobox of each game I mention the development stage of the game. Post-release development means that the first stable release (version 1.0) of the game has been released and the game is still under active development, or at least maintenance. 

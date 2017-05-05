@@ -19,7 +19,7 @@ redirect_from:
 
 {% include_relative intro-note.html %}
 
-As is mentioned in the [About Me](/about-me/) section of this website, I have tried quite a few Linux distributions and BSD derivatives using **Oracle VM VirtualBox**, **live media** and my **removable hard drive**. Some I have only spent less than an hour using, but those I have spent over an hour with and feel fairly confident in my ability to review, include:
+As is mentioned in the [About Me](https://fusion809.github.io/about-me/) section of this website, I have tried quite a few Linux distributions and BSD derivatives using **Oracle VM VirtualBox**, **live media** and my **removable hard drive**. Some I have only spent less than an hour using, but those I have spent over an hour with and feel fairly confident in my ability to review, include:
 
 {% include_relative oslist.html %}
 

@@ -10,7 +10,7 @@ On Linux *MegaGlest* is often split into two packages: `megaglest` and `megagles
 
 {% include Code/equery.html package1="games-strategy/megaglest" packageversion1="3.13.0" files1="27" files2="6877" size1="10.93" size2="488.93" overlay="fusion809" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/791d0d6/games-strategy/megaglest/megaglest-3.13.0.ebuild" ebuildurl2="https://github.com/fusion809/fusion809-overlay/blob/0a28377/games-strategy/megaglest-data/megaglest-data-3.13.0.ebuild" %}
 
-Both packages were provided by my own [`fusion809-overlay`](https://github.com/fusion809/fusion809-overlay), building the ebuild in the Portage tree fails, due to an issue I reported in [Gentoo Bug 614408](https://bugs.gentoo.org/show_bug.cgi?id=614408).
+Both packages were provided by my own {% include Packages/fusion809.html puncr="," %} building the ebuild in the Portage tree fails, due to an issue I reported in [Gentoo Bug 614408](https://bugs.gentoo.org/show_bug.cgi?id=614408).
 
 *MegaGlest* is available from the official repositories of a wide range of different Linux distributions, including:
 
