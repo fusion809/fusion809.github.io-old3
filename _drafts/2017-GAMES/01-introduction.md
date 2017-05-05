@@ -6,25 +6,34 @@ I intend on mentioning a wide variety of free games, including those I dislike a
 
 There are over a thousand different games available for Linux in all, so in here I will only be covering free games of particular interest to myself (and hopefully the majority of Linux gamers).
 
-<h3 style="margin-right: 0px;">Side note</h3>
-To check how many Linux games there were available on Gentoo Linux, on 14 April 2017, I ran the command:
+<h3 style="margin-right: 0px;">How many Linux games are there?</h3>
+To check how many Linux games there were available on Gentoo Linux, on 5 May 2017, I ran:
 
-{% include Code/codeu.html line1='emerge -s "%@^games" | grep "*" | cut -d "/" -f 2 | cut -d "[" -f 1 | sort -u' %}
+{% include Code/codeu.html line1='eix -Cc games | grep "games\-[a-z]*\/" | grep -v "util\|engine" | wc -l' %}
 
-with the following extra (on top of the Portage tree, of course) overlays enabled:
+and it returned 985, meaning, at least in theory, that there were 985 games available from the overlays I had enabled. My enabled overlays included:
 
+* Gentoo's official overlay
 * [`flatpak-overlay`](https://github.com/fosero/flatpak-overlay)
 * {% include Packages/fusion809.html %}
-* [`gamerlay`](https://github.com/gentoo-mirror/gamerlay)
+* [`gamerlay`](https://gitweb.gentoo.org/proj/gamerlay.git/)
 * [`games-overlay`](https://github.com/hasufell/games-overlay)
+* [`gnome`](https://gitweb.gentoo.org/proj/gnome.git/)
 * [`grub2-themes`](https://github.com/gentoo/grub2-themes-overlay)
+* [`mozilla`](https://gitweb.gentoo.org/proj/mozilla.git/)
 * [`steam-overlay`](https://github.com/anyc/steam-overlay)
 
-and it returned: [this list](https://github.com/fusion809/fusion809.github.io/blob/master/_drafts/2017-GAMES/games-list-gentoo.txt) which is over 1,100 lines long, which corresponds to over 1,100 separate games! Beware, however, that as said in the ["*A Comparison of Major Free Operating Systems*"](/comparison-major-free-operating-systems/) post the Portage tree and these extra overlays are riddled with proprietary and even paid software so not all these games will be free. So to determine how many open-source games were in my enabled overlays I ran:
+So to determine how many open-source games were in my enabled overlays I ran:
 
-{% include Code/codeu.html line1='eix -Cc games --not -L "EULA" | grep "games\-[a-z]*\/" | wc -l' %}
+{% include Code/codeu.html line1='eix -Cc games --not -L "EULA" | grep "games\-[a-z]*\/" | grep -v "util\|engine" | wc -l' %}
 
-and it returned: 1070. I should explain what this command does; `eix -Cc games` specifies to search for "games" in the category name of packages. `--not -L "EULA"` specifies that the packages should be licensed under an End-User License Agreement (EULA), the most common type of proprietary software license. 
+and it returned: 943. I should explain what this command does; `eix -Cc games` specifies to search for "games" in the category name of packages. `--not -L "EULA"` specifies that the packages should be licensed under an End-User License Agreement (EULA), the most common type of proprietary software license. 
+
+In an Arch Linux Docker container (the `dock0/arch` container to be precise) with `pacaur` installed I ran: 
+
+{% include Code/codeu.html line1="pacaur -Ssq game | wc -l" %}
+
+to determine the number of games available from the Arch Linux official stable, non-multilib repositories (so `core`, `community` and `extra`) and the Arch User Repository (AUR) and it returned: 1413. Beware, however, that with `pacaur`, to my knowledge there is no way to exclude programs that are game engines or utilities and not games themselves so some of these results may not be games at all. If one does not exclude utilities/engines from the above `eix` search on Gentoo the number of 'games' would be recorded as 1113. 
 
 <h3 style="margin-right: 0px;">Distribution-specific notes</h3>
 In each game monograph I will be mentioning how easy it is to get the game on the following popular, sufficiently independent Linux distributions:
@@ -40,7 +49,7 @@ In each game monograph I will be mentioning how easy it is to get the game on th
 * Sabayon Linux, while it is based on Gentoo Linux it uses its own repositories (containing both packages in the Gentoo Portage tree and in a couple of its own repositories) and binary package manager (Entropy), hence making it sufficiently independent to deserve a mention. 
 * Ubuntu
 
-distributions based on these nine distributions usually have repositories containing at least many of the same packages, hence are not mentioned as there are just too many of them to mention them all. If you are wondering why I am not mentioning Slackware Linux it is because Slackware does not have a package for any game listed in this review. 
+distributions based on these nine distributions usually have repositories containing at least many of the same packages, hence are not mentioned as there are just too many of them to mention them all. If you are wondering why I am not mentioning Slackware Linux it is because Slackware's official repositories do not have a package for any game listed in this review. 
 
 <h3 style="margin-right: 0px;">Development stage</h3>
 In the infobox of each game I mention the development stage of the game. Post-release development means that the first stable release (version 1.0) of the game has been released and the game is still under active development, or at least maintenance. 
