@@ -14,6 +14,7 @@ categories:       free, games, overviews
 {% include_relative alienarena.md %}
 {% include_relative battle-for-wesnoth.md %}
 {% include_relative boswars.md %}
+{% include_relative bzflag.md %}
 {% include_relative eternal-lands.md %}
 {% include_relative freeciv.md %}
 {% include_relative freecol.md %}
