@@ -8,4 +8,17 @@
 
 {% include Code/equery.html package1="kde-apps/kmahjongg" packageversion1="17.04.0" files1="462" size1="7.47" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/kde-apps/kmahjongg/kmahjongg-17.04.0.ebuild?id=1799b8fd29a3d6fdfea87b210897ce86c6a1936a" %}
 
+As *KMahjongg* is part of the games suite of KDE it should be available from the official repositories of virtually any distribution with KDE in its repositories. Distributions with a *KMahjongg* package in their official repositories include:
+
+* {% include Packages/archlinux.html package="kmahjongg" %}
+* {% include Packages/centos.html package="kmahjongg" %}
+* {% include Packages/debian.html package="kmahjongg" %}
+* {% include Packages/fedora.html package="kmahjongg" %}
+* {% include Packages/gentoo.html package="kde-apps/kmahjongg" %}
+* {% include Packages/mageia.html package="kmahjongg" %}
+* {% include Packages/opensuse.html package="kmahjongg" %}
+* {% include Packages/pclinuxos.html package="kmahjongg" %}
+* {% include Packages/sabayon.html package="kde-apps/kmahjongg" %}
+* {% include Packages/ubuntu.html package="kmahjongg" %}
+
 {% include Layouts/clear.html %}

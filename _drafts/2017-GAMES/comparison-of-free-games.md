@@ -27,7 +27,6 @@ categories:       free, games, overviews
 {% include_relative kpatience.md %}
 {% include_relative megaglest.md %}
 {% include_relative naev.md %}
-{% include_relative netpanzer.md %}
 {% include_relative openra.md %}
 {% include_relative openttd.md %}
 {% include_relative runescape.md %}
@@ -40,4 +39,5 @@ categories:       free, games, overviews
 {% include_relative xmahjongg.md %}
 {% include_relative xonotic.md %}
 
+{% include_relative not-included.md %}
 {% include_relative footnotes.html %}

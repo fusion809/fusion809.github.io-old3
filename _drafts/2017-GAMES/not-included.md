@@ -1,6 +1,9 @@
 ## Games deliberately not included
 Certain games were excluded from this post deliberately, they include:
 
+* BSD games, excluded mostly because the only individual BSD game I was really interested in was Hangman, but then I found out that KDE has its own graphical hangman game so I decided to cover it instead. 
+* netPanzer, a free and open-source strategy tank game. Excluded as running it on Gentoo was a pain, I could not seem to connect to any server as one server timed out and the other servers said the protocol was too new (after all Gentoo only has the outdated 0.8.2 release of netPanzer in their official repositories, even though 0.8.7 is out). See the screenshot below for exactly what I saw.
+![](https://fusion809.github.io/images/Games/NetPanzer-server-issue.png)
 * [Tremulous](http://tremulous.net/), an open-source 3D first-person shooter game. Excluded as installing it on my Gentoo system returned the download error:
 
 ```bash
