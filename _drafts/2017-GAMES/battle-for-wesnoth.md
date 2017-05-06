@@ -9,7 +9,7 @@
 
 {% include Code/equery.html package1="games-strategy/wesnoth" packageversion1="1.13.7" files1="16214" size1="383.98" sizeunit1="MiB" overlay="fusion809" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/6454ca6/games-strategy/wesnoth/wesnoth-1.13.7.ebuild" %}
 
-No *official* cross-distribution Linux binary is available for *BfW*, as users are encouraged to get *BfW* from their distribution's package manager or by grabbing the source code and compiling it themselves.{% include_relative fn-inline.html no="9" %} It is probably the single most ubiquitous game in the Linux world and it is available from the official repositories of the following distributions:
+No *official* cross-distribution Linux binary is available for *BfW*, as users are encouraged to get *BfW* from their distribution's package manager or by grabbing the source code and compiling it themselves.{% include_relative fn-inline.html no="7" %} It is probably the single most ubiquitous game in the Linux world and it is available from the official repositories of the following distributions:
 
 * {% include Packages/archlinux.html package="wesnoth" %}
 * {% include Packages/centos.html package="wesnoth" %}

@@ -10,7 +10,7 @@ On Linux *SuperTux* 0.5.1 has an installed size of approximately 125 MB. Here is
 
 {% include Code/equery.html package1="games-arcade/supertux" packageversion1="0.5.1" files1="3384" size1="126.82" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-arcade/supertux/supertux-0.5.1.ebuild?id=fabb4eec7e2144c418733c13c958c931cc691bb2" %} 
 
-*SuperTux* is a fairly ubiquitous game in the Linux world. Distributions with a *SuperTux* package in their official repository(ies) include:
+*SuperTux* is a fairly ubiquitous game in the Linux world. Distributions with a *SuperTux* package in their official repositories include:
 
 * {% include Packages/archlinux.html package="supertux" %}
 * {% include Packages/centos.html package="supertux" versions="6" %} although CentOS 7 does not.

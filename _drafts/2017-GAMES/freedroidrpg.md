@@ -8,7 +8,7 @@ On Linux *FreedroidRPG* 0.16 has an installed size of approximately 230 MB, here
 
 {% include Code/equery.html package1="games-rpg/freedroidrpg" packageversion1="0.16-r1" files1="6840" size1="227.41" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-rpg/freedroidrpg/freedroidrpg-0.16-r1.ebuild?id=1799b8fd29a3d6fdfea87b210897ce86c6a1936a" %}
 
-Distributions with a *FreedroidRPG* package in their official repository(ies) include:
+Distributions with a *FreedroidRPG* package in their official repositories include:
 
 * {% include Packages/archlinux.html package="freedroidrpg" %}
 * {% include Packages/debian.html package="freedroidrpg" %}
@@ -24,6 +24,6 @@ while:
 * openSUSE
 * PCLinuxOS
 
-do not have a FreedroidRPG package in their official repository(ies). openSUSE does have an outdated version of FreedroidRPG (0.15.1, when 0.16.1 is the latest as of 19 April 2017) in its unofficial {% include Packages/gamesr.html %} repository.
+do not have a FreedroidRPG package in their official repositories. openSUSE does have an outdated version of FreedroidRPG (0.15.1, when 0.16.1 is the latest as of 19 April 2017) in its unofficial {% include Packages/gamesr.html %} repository.
 
 {% include Layouts/clear.html %}

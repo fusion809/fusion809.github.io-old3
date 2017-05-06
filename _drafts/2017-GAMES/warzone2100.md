@@ -8,7 +8,7 @@
 
 {% include Code/equery.html package1="games-strategy/warzone2100" packageversion1="3.2.3" files1="176" size1="99.53" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-strategy/warzone2100/warzone2100-3.2.3.ebuild?id=fa8320cf0cf3f4543f3163e7b9eb7208305ec0a3" %}
 
-Debian-based distributions, along with openSUSE, split *Warzone 2100* into two packages, `warzone2100` and `warzone2100-data`. Most distributions have a *Warzone 2100* package in their official repository(ies), including:
+Debian-based distributions, along with openSUSE, split *Warzone 2100* into two packages, `warzone2100` and `warzone2100-data`. Most distributions have a *Warzone 2100* package in their official repositories, including:
 
 * {% include Packages/archlinux.html package="warzone2100" %}
 * {% include Packages/centos.html package="warzone2100" versions="7" %}

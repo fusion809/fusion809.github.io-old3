@@ -1,0 +1,11 @@
+## KMahjongg
+{% include Infoboxes/game.html game="KMahjongg" screenshot="KMahjongg_17.04.0.png" screenshot_caption="<i>KMahjongg</i> 17.04.0 running on Gentoo Linux" license="<a href='https://github.com/KDE/kmahjongg/blob/master/COPYING' link='_blank'>GPLv2</a>" genre="Board" date="1998" development="Post-release" language="C, C++ (>95%)" github="KDE/kmahjongg" developers="<a href='https://www.kde.org/applications/games/kmahjongg/' link='_blank'>Mathias Mueller, Mauricio Piacentini, Albert Astals Cid, <i>et al.</i></a>" platforms="DragonFlyBSD, FreeBSD, NetBSD, OpenBSD" website="<a href='https://www.kde.org/applications/games/kmahjongg/' link='_blank'>www.kde.org/applications/games/kmahjongg</a>" %}
+
+***KMahjongg*** is a free and open-source, board game that is developed as part of the KDE project. It is a software version of the classical Chinese tile game, Mahjongg. Cards are piled on one another and the objective of the game is to match them all until there are no cards left. 
+
+### Packaging details
+*KMahjongg* has an installed size of approximately 7.5 MB on Gentoo Linux. `equery` prints the following report on the size of the `kde-apps/kmahjongg-17.04.0` package:
+
+{% include Code/equery.html package1="kde-apps/kmahjongg" packageversion1="17.04.0" files1="462" size1="7.47" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/kde-apps/kmahjongg/kmahjongg-17.04.0.ebuild?id=1799b8fd29a3d6fdfea87b210897ce86c6a1936a" %}
+
+{% include Layouts/clear.html %}

@@ -1,10 +1,10 @@
 ## KPatience
-{% include Infoboxes/game.html game="KPatience" screenshot="KPatience_17.04.png" screenshot_caption="Screenshot of KPatience 17.04 running on Gentoo Linux" date="? 1999 is in the copyright notice (source: <a href='https://games.kde.org/game.php?game=kpat' link='_blank'>KPat Information</a>)" development="Post-release" developers="KPatience Team" license="GPLv2" genre="Card game" language="C++" website="<a href='https://www.kde.org/applications/games/kpatience/' link='_blank'>www.kde.org/applications/games/kpatience</a>" platforms="FreeBSD, NetBSD, OpenBSD" %}
+{% include Infoboxes/game.html game="KPatience" screenshot="KPatience_17.04.0.png" screenshot_caption="Screenshot of KPatience 17.04 running on Gentoo Linux" date="? 1999 is in the copyright notice (source: <a href='https://games.kde.org/game.php?game=kpat' link='_blank'>KPat Information</a>)" development="Post-release" developers="<a href='https://github.com/KDE/kpat/graphs/contributors' link='_blank'>Parker Coates, Stephan Kulow, Montel Laurent, <i>et al.</i></a>" license="<a href='https://github.com/GNOME/gnome-chess/blob/master/COPYING' link='_blank'>GPLv2</a>" genre="Card game" language="C++" website="<a href='https://www.kde.org/applications/games/kpatience/' link='_blank'>www.kde.org/applications/games/kpatience</a>" platforms="FreeBSD, NetBSD, OpenBSD" %}
 
-***KPatience*** (also known as ***KPat***) is a free and open-source, somewhat cross-platform, card game suite that is developed by KDE. By card game suite it is meant that one can play twelve different card games from within *KPatience*, including FreeCell, Klondike (a variant of Solitaire), Spider Solitaire and many others. 
+***KPatience*** (also known as ***KPat***) is a free and open-source, card game suite that is developed by KDE. By card game suite it is meant that one can play twelve different card games from within *KPatience*, including FreeCell, Klondike (a variant of Solitaire), Spider Solitaire and many others. 
 
 ### Packaging details
-*KPatience* has an installed size of approximately 7.2 MB. `equery` gives the size details:
+*KPatience* has an installed size of approximately 7.2 MB on Gentoo Linux. `equery` gives the size details:
 
 {% include Code/equery.html package1="kde-apps/kpat" packageversion1="17.04.0" files1="338" size1="7.16" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/kde-apps/kpat/kpat-17.04.0.ebuild?id=1799b8fd29a3d6fdfea87b210897ce86c6a1936a" %}
 
