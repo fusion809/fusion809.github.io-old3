@@ -30,7 +30,7 @@
     {% if include.basis %}
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Based on</td>
-         <td class="infobox-row">{{ include.basis }}</td>
+         <td class="infobox-row"><i>{{ include.basis }}</i></td>
     </tr>
     {% endif %}
 
@@ -49,7 +49,7 @@
     {% if include.forked %}
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Forked from</td>
-         <td class="infobox-row">{{ include.forked }}</td>
+         <td class="infobox-row"><i>{{ include.forked }}</i></td>
     </tr>
     {% endif %}
 
