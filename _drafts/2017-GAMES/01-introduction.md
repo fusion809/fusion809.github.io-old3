@@ -13,7 +13,7 @@ To check how many Linux games there were available on Gentoo Linux, on 5 May 201
 
 and it returned 985, meaning, at least in theory, that there were 985 games available from the overlays I had enabled. My enabled overlays included:
 
-* Gentoo's official overlay
+* Gentoo's official overlay, the Portage tree
 * [`flatpak-overlay`](https://github.com/fosero/flatpak-overlay)
 * {% include Packages/fusion809.html %}
 * [`gamerlay`](https://gitweb.gentoo.org/proj/gamerlay.git/)
@@ -29,7 +29,7 @@ So to determine how many open-source games were in my enabled overlays I ran:
 
 and it returned: 943. I should explain what this command does; `eix -Cc games` specifies to search for "games" in the category name of packages. `--not -L "EULA"` specifies that the packages should be licensed under an End-User License Agreement (EULA), the most common type of proprietary software license. 
 
-In an Arch Linux Docker container (the `dock0/arch` container to be precise) with `pacaur` installed I ran: 
+In an Arch Linux Docker container (the [`dock0/arch`](https://hub.docker.com/r/dock0/arch/) container to be precise) with `pacaur` installed I ran: 
 
 {% include Code/codeu.html line1="pacaur -Ssq game | wc -l" %}
 

@@ -4,7 +4,7 @@
 ***Bos Wars*** is a free and open-source, cross-platform futuristic RTS game. Like most RTS games in *Bos Wars* one has to fight their enemy armies while developing their economy. *Bos Wars* is fairly infrequently updated with its last update being version 2.7 which was released in June 2013, almost four years ago. Its graphics are poor, although I doubt its developers ever intended its graphics to be anything worth showing-off. Both single-player (wherein one plays against the computer) and multiplayer (wherein one plays against other players) options for playing the game are available.
 
 ### Packaging details
-The installed size of *Bos Wars* 2.7 on Linux is roughly 88 MB, here is an `equery s` command and its output on Gentoo Linux (on 1 May 2017):
+The installed size of *Bos Wars* 2.7 on Gentoo Linux is roughly 88 MB, here is an `equery s` command and its output on Gentoo Linux (on 1 May 2017):
 
 {% include Code/equery.html package1="games-strategy/boswars" packageversion1="2.7-r1" size1="87.67" files1="1685" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-strategy/boswars-2.7-r1.ebuild?id=fcc333a85b1ce79142b43ab773bfc74efdc707ad" %}
 
