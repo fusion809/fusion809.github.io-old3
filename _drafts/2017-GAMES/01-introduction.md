@@ -45,7 +45,7 @@ In each game monograph I will be mentioning how easy it is to get the game on th
 * Gentoo Linux
 * Mageia
 * openSUSE
-* PCLinuxOS, beware however that with PCLinuxOS the links I provide may become broken with time as the distribution's packages get updated.
+* PCLinuxOS
 * Sabayon Linux, while it is based on Gentoo Linux it uses its own repositories (containing both packages in the Gentoo Portage tree and in a couple of its own repositories) and binary package manager (Entropy), hence making it sufficiently independent to deserve a mention. 
 * Ubuntu
 
