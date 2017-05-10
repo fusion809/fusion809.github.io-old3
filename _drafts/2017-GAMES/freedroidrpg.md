@@ -4,7 +4,7 @@
 ***FreedroidRPG*** is a free and open-source, cross-platform role-playing game (RPG) wherein one plays as Tux to save the world from merciless robots, in a world ravaged by a conflict between robots and humans. I found myself stuck in its tutorial so I have not played the game all that much. Its graphics are 3D and are of reasonable quality, not quite as high quality as *RuneScape*'s NXT client or *0 A.D.*
 
 ### Packaging details
-On Linux *FreedroidRPG* 0.16 has an installed size of approximately 230 MB, here is the output of `equery s` on Gentoo Linux (on 1 May 2017):
+On Gentoo Linux *FreedroidRPG* 0.16 has an installed size of approximately 230 MB, here is the output of `equery s` on Gentoo Linux (on 1 May 2017):
 
 {% include Code/equery.html package1="games-rpg/freedroidrpg" packageversion1="0.16-r1" files1="6840" size1="227.41" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-rpg/freedroidrpg/freedroidrpg-0.16-r1.ebuild?id=1799b8fd29a3d6fdfea87b210897ce86c6a1936a" %}
 
