@@ -1,7 +1,38 @@
 ## RuneScape
-{% include Infoboxes/game.html game="RuneScape" genre="MMORPG" license="EULA" logo_caption="NXT client logo" screenshot="RuneScape_2.2.4.png" screenshot_caption="Screenshot of <i>RuneScape</i>'s NXT client version 2.2.4 running on Arch Linux" date="1999" developers="Jagex Limited" development="Post-release" language="C++ (NXT), Java (old client)" website="<a href='http://www.runescape.com/' link='_blank'>www.runescape.com</a>" wiki="<a href='http://runescape.wikia.com' link='_blank'>runescape.wikia.com</a>" platforms="macOS, Windows NT" graphics="High-quality 3D" %}
+{% include Infoboxes/game.html game="RuneScape" genre="MMORPG" license="<a href='https://www.jagex.com/terms' link='_blank'>EULA</a>" logo_caption="NXT client logo" screenshot="RuneScape_2.2.4.png" screenshot_caption="Screenshot of <i>RuneScape</i>'s NXT client version 2.2.4 running on Arch Linux" date="1999" developers="Jagex Limited" development="Post-release" language="C++ (NXT), Java (old client)" website="<a href='http://www.runescape.com/' link='_blank'>www.runescape.com</a>" wiki="<a href='http://runescape.wikia.com' link='_blank'>runescape.wikia.com</a>" platforms="macOS, Windows NT" graphics="High-quality 3D" %}
 
-***RuneScape*** is a proprietary, cross-platform MMORPG that I have played since 2006. In it users train skills, including combat, make money (which while it is illegal to trade this money for real-world currency, it can be used to buy bonds which, in turn, can be used to buy game membership) and undertake quests. It is a freemium game, as while it is free to play the game, paying for game membership gives users several extra perks, such as being able to say adios to advertisements and unlock extra map areas, quests and skills.
+***RuneScape*** is a proprietary, cross-platform MMORPG that I have played since 2006. In it users train skills, including combat, make money (which while it is illegal to trade this money for real-world currency, it can be used to buy bonds which, in turn, can be used to buy game membership) and undertake quests. It is a freemium game, as while it is free to play the game, paying for game membership gives users several extra perks, such as being able to say adios to advertisements and unlock extra map areas, quests and skills. Free-to-play users have access to sixteen skills total while pay-to-play (P2P) users (or members) have access to twenty-seven skills total. These skills include (and they are all hyperlinked to their respective article on the *RuneScape Wiki*):
+
+{% capture list %}
+* [Agility](http://runescape.wikia.com/wiki/Agility) (P2P-only)
+* [Attack](http://runescape.wikia.com/wiki/Attack)
+* [Constitution](http://runescape.wikia.com/wiki/Constitution)
+* [Construction](http://runescape.wikia.com/wiki/Construction) (P2P-only)
+* [Cooking](http://runescape.wikia.com/wiki/Cooking)
+* [Crafting](http://runescape.wikia.com/wiki/Crafting)
+* [Defence](http://runescape.wikia.com/wiki/Defence)
+* [Divination](http://runescape.wikia.com/wiki/Divination) (P2P-only)
+* [Dungoneering](http://runescape.wikia.com/wiki/Dungeoneering)
+* [Farming](http://runescape.wikia.com/wiki/Farming) (P2P-only)
+* [Firemaking](http://runescape.wikia.com/wiki/Firemaking)
+* [Fishing](http://runescape.wikia.com/wiki/Fishing)
+* [Fletching](http://runescape.wikia.com/wiki/Fletching) (P2P-only)
+* [Herblore](http://runescape.wikia.com/wiki/Herblore) (P2P-only)
+* [Hunter](http://runescape.wikia.com/wiki/Hunter) (P2P-only)
+* [Invention](http://runescape.wikia.com/wiki/Invention) (P2P-only)
+* [Magic](http://runescape.wikia.com/wiki/Magic)
+* [Mining](http://runescape.wikia.com/wiki/Mining)
+* [Prayer](http://runescape.wikia.com/wiki/Prayer)
+* [Ranged](http://runescape.wikia.com/wiki/Ranged)
+* [Runecrafting](http://runescape.wikia.com/wiki/Runecrafting)
+* [Slayer](http://runescape.wikia.com/wiki/Slayer) (P2P-only)
+* [Smithing](http://runescape.wikia.com/wiki/Smithing)
+* [Strength](http://runescape.wikia.com/wiki/Strength)
+* [Summoning](http://runescape.wikia.com/wiki/Summoning) (P2P-only)
+* [Thieving](http://runescape.wikia.com/wiki/Thieving) (P2P-only)
+* [Woodcutting](http://runescape.wikia.com/wiki/Woodcutting)
+{% endcapture %}
+{% include Layouts/column.html no="4" content=list %}
 
 Its original client, that has been in use since the game was first officially released in 2001, is written in Java. In April 2016 a new NXT client written in C++, which had been in the works since 2012, was officially released. This was after a few beta weekends in which a select set of users had the opportunity to test out the new game client. The Java client is set to be phased out, although an exact timeline of when this will happen has not been made public. The NXT client only supports 64-bit Linux, macOS and Windows NT.
 

@@ -1,7 +1,5 @@
 As a Linux user I have found it a real challenge to find free (of monetary charge, not free as in freedom) games that I like, that can be run on Linux, without the use of [Wine](https://www.winehq.org/) or virtualization.{% include_relative fn-inline.html no="1" %} Most of the games I will mention in this post will be open-source, most of the rest will be freeware (free to play, without any paid membership or subscriptions being available), although I will mention one freemium game (wherein a free version is available, but paying for membership gives one some extra perks), *RuneScape*.
 
-Most Linux games are second-class or worse, compared to the corresponding Windows or even macOS games. This is not surprising given that most high-quality games are proprietary games and macOS and Windows are the most attractive operating systems to package for, from the point-of-view of proprietary software developers. This is because their market share on the desktop and laptop are far higher than that of Linux (most estimates place Linux's usage share at 1% while macOS has a market share of 10-20% and Windows of >80%), plus given macOS and Windows are proprietary operating systems usually their users are more willing to use proprietary and even paid software. Another reason for why most Linux games are second-class or worse is that most Linux-compatible games are developed as side-projects by hobbyists and not professional game developers.
-
 I intend on mentioning a wide variety of free games, including those I dislike and even those I have not really used all that much (or even at all). If you feel any review is inaccurate feel free to create a pull request at this website's source repository [fusion809.github.io](https://github.com/fusion809/fusion809.github.io), or start a [new issue](https://github.com/fusion809/fusion809.github.io/issues/new) at our bug tracker.
 
 There are over a thousand different games available for Linux in all, so in here I will only be covering free games of particular interest to myself (and hopefully the majority of Linux gamers).
@@ -33,7 +31,11 @@ In an Arch Linux Docker container (the [`dock0/arch`](https://hub.docker.com/r/d
 
 {% include Code/codeu.html line1="pacaur -Ssq game | wc -l" %}
 
-to determine the number of games available from the Arch Linux official stable, non-multilib repositories (so `core`, `community` and `extra`) and the Arch User Repository (AUR) and it returned: 1413. Beware, however, that with `pacaur`, to my knowledge there is no way to exclude programs that are game engines or utilities and not games themselves so some of these results may not be games at all. If one does not exclude utilities/engines from the above `eix` search on Gentoo the number of 'games' would be recorded as 1113. 
+to determine the number of games available from the Arch Linux official stable, non-multilib repositories (so `core`, `community` and `extra`) and the Arch User Repository (AUR) and it returned: 1413. Beware, however, that with `pacaur`, to my knowledge there is no way to exclude programs that are game engines or utilities and not games themselves so some of these results may not be games at all. The equivalent Gentoo command would be:
+
+{% include Code/codeu.html line1="eix -Cc games | wc -l" %}
+
+and it returns 1158. 
 
 <h3 style="margin-right: 0px;">Distribution-specific notes</h3>
 In each game monograph I will be mentioning how easy it is to get the game on the following popular, sufficiently independent Linux distributions:
@@ -49,7 +51,7 @@ In each game monograph I will be mentioning how easy it is to get the game on th
 * Sabayon Linux, while it is based on Gentoo Linux it uses its own repositories (containing both packages in the Gentoo Portage tree and in a couple of its own repositories) and binary package manager (Entropy), hence making it sufficiently independent to deserve a mention. 
 * Ubuntu
 
-distributions based on these nine distributions usually have repositories containing at least many of the same packages, hence are not mentioned as there are just too many of them to mention them all. If you are wondering why I am not mentioning Slackware Linux it is because Slackware's official repositories do not have a package for any game listed in this review. 
+distributions based on these nine distributions usually have repositories containing at least many of the same packages, hence are not mentioned as there are just too many of them to mention them all. If you are wondering why I am not mentioning Slackware Linux it is because Slackware's official repositories do not have a package for any game listed in this review. The unofficial Slackware repository, [SlackOnly](https://slackonly.com/), does have a package for the majority of games mentioned in this review.
 
 <h3 style="margin-right: 0px;">Development stage</h3>
 In the infobox of each game I mention the development stage of the game. Post-release development means that the first stable release (version 1.0) of the game has been released and the game is still under active development, or at least maintenance. 

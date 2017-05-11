@@ -19,7 +19,7 @@ The installed size of *Bos Wars* 2.7 on Gentoo Linux is roughly 88 MB, here is a
 
 and it is not in the official repositories of:
 
-* Arch Linux, although it is in the [Arch User Repository](https://aur.archlinux.org/packages/boswars).
+* Arch Linux, although it is in the Arch User Repository (AUR) with the package name [`boswars`](https://aur.archlinux.org/packages/boswars).
 * CentOS
 * openSUSE, although it is in the unofficial {% include Packages/gamesr.html %} repository.
 
