@@ -48,7 +48,7 @@ In each game monograph I will be mentioning how easy it is to get the game on th
 * Mageia
 * openSUSE
 * PCLinuxOS
-* Sabayon Linux, while it is based on Gentoo Linux it uses its own repositories (containing both packages in the Gentoo Portage tree and in a couple of its own repositories) and binary package manager (Entropy), hence making it sufficiently independent to deserve a mention. 
+* Sabayon Linux, while it is based on Gentoo Linux it uses its own repositories (containing some, but not all, packages in the Gentoo Portage tree and all packages in a couple of its own repositories) and binary package manager (Entropy), hence making it sufficiently independent to deserve a mention. 
 * Ubuntu
 
 distributions based on these nine distributions usually have repositories containing at least many of the same packages, hence are not mentioned as there are just too many of them to mention them all. If you are wondering why I am not mentioning Slackware Linux it is because Slackware's official repositories do not have a package for any game listed in this review. The unofficial Slackware repository, [SlackOnly](https://slackonly.com/), does have a package for the majority of games mentioned in this review.

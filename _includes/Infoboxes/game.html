@@ -30,16 +30,14 @@
     {% if include.basis %}
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Based on</td>
-         <td class="infobox-row"><i>{{ include.basis }}</i></td>
+         <td class="infobox-row"><i><a href="{{ include.basis-link }}" link='_blank'>{{ include.basis }}</a></i></td>
     </tr>
     {% endif %}
 
-    {% if include.developers %}
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Developer(s)</td>
-         <td class="infobox-row">{{ include.developers }}</td>
+         <td class="infobox-row"><a href="{{ include.developers-link }}" link='_blank'>{{ include.developers }}</a></td>
     </tr>
-    {% endif %}
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">{% include Layouts/abbr.md full="Stage of development" abbr="Dev. stage" %}</td>
@@ -70,7 +68,7 @@
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">License</td>
-         <td class="infobox-row">{{ include.license }}</td>
+         <td class="infobox-row">{% if include.license-link %}<a href='{{ include.license-link }}' link='_blank'>{{ include.license }}</a>{% else %}{{ include.license }}{% endif %}</td>
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
@@ -104,7 +102,7 @@
     {% if include.irc %}
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">IRC</td>
-         <td class="infobox-row"><a href='https://kiwiirc.com/client/irc%3A%2F%2Firc.{% if include.irc-server %}{{ include.irc-server }}{% else %}freenode.net{% endif %}{{ include.irc }}' link="_blank">{{ include.irc }}</a></td>
+         <td class="infobox-row"><a href='https://kiwiirc.com/client/irc%3A%2F%2F{% if include.irc-server %}irc.{{ include.irc-server }}{% elsif include.full-server %}{{ include.full-server }}{% else %}freenode.net{% endif %}{{ include.irc }}' link="_blank">{{ include.irc }}</a></td>
     </tr>
     {% endif %}
 
@@ -117,13 +115,13 @@
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Website</td>
-         <td class="infobox-row">{{ include.website }}</td>
+         <td class="infobox-row"><a href='{{ include.website-full }}' link='_blank'>{{ include.website }}</a></td>
     </tr>
 
     {% if include.wiki %}
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Wiki</td>
-         <td class="infobox-row">{{ include.wiki }}{% if include.official-wiki == "Yes" %} (Official){% else %} (Unofficial){% endif %}</td>
+         <td class="infobox-row"><a href='{{ include.wiki-link }}' link='_blank'>{{ include.wiki }}</a>{% if include.official-wiki == "Yes" %} (Official){% else %} (Unofficial){% endif %}</td>
     </tr>
     {% endif %}
 </table>

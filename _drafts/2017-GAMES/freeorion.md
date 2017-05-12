@@ -1,5 +1,5 @@
 ## FreeOrion
-{% include Infoboxes/game.html game="FreeOrion" basis="Master of Orion" screenshot="FreeOrion_0.4.7-rc2.png" screenshot_caption="<i>FreeOrion</i> 0.4.7-rc2 running on Gentoo Linux" website="<a href='http://www.freeorion.org' link='_blank'>www.freeorion.org</a>" development="Beta" genre="Turn-based strategy" license="<a href='https://github.com/freeorion/freeorion/blob/master/README.md' link='_blank'>GPLv2/CC-BY-SA</a>" developers="<a href='https://github.com/freeorion/freeorion/graphs/contributors' link='_blank'>FreeOrion Developers</a>" language="C++, Python" platforms="FreeBSD, macOS, Windows NT" github="freeorion/freeorion" sf="freeorion" wiki="<a href='http://www.freeorion.org/index.php/Main_Page' link='_blank'>www.freeorion.org/index.php/Main_Page</a>" official-wiki="Yes" date="?" graphics="Low-quality 3D" %}
+{% include Infoboxes/game.html game="FreeOrion" basis="Master of Orion" screenshot="FreeOrion_0.4.7-rc2.png" screenshot_caption="<i>FreeOrion</i> 0.4.7-rc2 running on Gentoo Linux" website="www.freeorion.org" website-full="http://www.freeorion.org" development="Beta" genre="Turn-based strategy" license="GPLv2/CC-BY-SA" license-link="https://github.com/freeorion/freeorion/blob/master/README.md" developers="Marcel Metz, Geoff (geoffthemedio), Zach Laine, <i>et al.</i>" developers-link="https://github.com/freeorion/freeorion/graphs/contributors" language="C++, Python" platforms="FreeBSD, macOS, Windows NT" github="freeorion/freeorion" sf="freeorion" wiki="www.freeorion.org/index.php/Main_Page" wiki-link="http://www.freeorion.org/index.php/Main_Page" official-wiki="Yes" date="?" graphics="Low-quality 3D" %}
 
 ***FreeOrion*** is a free and open-source, cross-platform, turn-based strategy game in which users create their own space empire, explore the cosmos and conquer galaxies. Its graphics are 3D, but fairly low-quality. 
 
@@ -10,7 +10,7 @@
 
 The following distributions have a package for *FreeOrion* in their official repositories, including:
 
-* {% include Packages/debian.html package="freeorion" norightb="1" %} for stable, testing and unstable branches. The oldstable branch does not have a `freeorion` package. 
+* {% include Packages/debian.html package="freeorion" norightb="1" %} for stable, testing and unstable branches. The oldstable branch does not have a `freeorion` package) 
 * {% include Packages/fedora.html package="freeorion" %}
 * {% include Packages/gentoo.html package="games-strategy/freeorion" %}
 * {% include Packages/mageia.html package="freeorion" %}

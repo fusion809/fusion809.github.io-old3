@@ -1,5 +1,5 @@
 ## Xmahjongg
-{% include Infoboxes/game.html game="Xmahjongg" date="1988" developers="Mark Holm, Dorothy Robinson, Jeff S. Young, <i>et al.</i>" logonot="1" screenshot="Xmahjongg_3.7.png" screenshot_caption="Screenshot of Xmahjongg 3.7 running on Gentoo Linux" development="Post-release" license="GPLv3" genre="Board game" language="C, C++" website="<a href='https://www.lcdf.org/xmahjongg/' link='_blank'>www.lcdf.org/xmahjongg</a>" platforms="FreeBSD, macOS, NetBSD, OpenBSD" graphics="2D" %}
+{% include Infoboxes/game.html game="Xmahjongg" date="1988" developers="Mark Holm, Dorothy Robinson, Jeff S. Young, <i>et al.</i>" logonot="1" screenshot="Xmahjongg_3.7.png" screenshot_caption="Screenshot of Xmahjongg 3.7 running on Gentoo Linux" development="Post-release" license="GPLv3" genre="Board game" language="C, C++" website="www.lcdf.org/xmahjongg" website-full="https://www.lcdf.org/xmahjongg/" platforms="FreeBSD, macOS, NetBSD, OpenBSD" graphics="2D" %}
 
 ***Xmahjongg*** is a free and open-source, cross-platform Mahjongg game that is designed specifically to use the X11 windowing system. I have fairly limited experience with it as I usually play *KMahjongg* instead, but it seems like a worthy replacement for *KMahjongg*. 
 

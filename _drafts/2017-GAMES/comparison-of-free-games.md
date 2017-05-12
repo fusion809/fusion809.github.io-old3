@@ -17,6 +17,7 @@ categories:       free, games, overviews
 {% include_relative boswars.md %}
 {% include_relative bzflag.md %}
 {% include_relative eternal-lands.md %}
+{% include_relative flightgear.md %}
 {% include_relative freeciv.md %}
 {% include_relative freecol.md %}
 {% include_relative freedroidrpg.md %}

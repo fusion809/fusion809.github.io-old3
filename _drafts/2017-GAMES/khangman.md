@@ -1,7 +1,7 @@
 ## KHangMan
-{% include Infoboxes/game.html game="KHangMan" screenshot="KHangMan_17.04.0.png" screenshot_caption="KHangMan 17.04.0 running on Gentoo Linux" date="2001" development="Post-release" developers="<a href='https://www.kde.org/applications/education/khangman' link='_blank'>Primoz Anzur, Anne-Marie Mahfouf, Stefan Böhmann, <i>et al.</i></a>" license="<a href='https://github.com/KDE/khangman/blob/master/COPYING' link='_blank'>GPLv2</a>" genre="Education" language="C++, QML" website="<a href='https://www.kde.org/applications/education/khangman' link='_blank'>www.kde.org/applications/education/khangman</a>" platforms="DragonFlyBSD, FreeBSD, NetBSD, OpenBSD" github="KDE/khangman" graphics="2D" %}
+{% include Infoboxes/game.html game="KHangMan" screenshot="KHangMan_17.04.0.png" screenshot_caption="KHangMan 17.04.0 running on Gentoo Linux" date="2001" development="Post-release" developers="Primoz Anzur, Anne-Marie Mahfouf, Stefan Böhmann, <i>et al.</i>" developers-link="https://www.kde.org/applications/education/khangman" license="GPLv2" license-link="https://github.com/KDE/khangman/blob/master/COPYING" genre="Education" language="C++, QML" website="www.kde.org/applications/education/khangman" website-full="https://www.kde.org/applications/education/khangman" platforms="DragonFlyBSD, FreeBSD, NetBSD, OpenBSD" github="KDE/khangman" graphics="2D" %}
 
-***KHangMan*** is a free and open-source, classical hangman game that presently supports over twenty different languages.
+***KHangMan*** is a free and open-source, classical hangman game that presently supports over twenty different languages. In it the user can pick a subset of words, such as animals, from which the word they have to guess is selected at random. The user gets just ten incorrect guesses before they loose the game. 
 
 ### Packaging details
 *KHangMan* 17.04.0 has an installed size of approximately 9.7 MB on Gentoo Linux. This is `equery`'s size report on it:

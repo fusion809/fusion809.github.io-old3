@@ -1,0 +1,5 @@
+## FlightGear
+{% include Infoboxes/game.html game="FlightGear" screenshot="FlightGear_2017.1.3.png" screenshot_caption="<i>FlightGear</i> 2017.1.3 running on Gentoo Linux" date="1996" developers="David Murr, James Turner, Torsten Dreyer, <i>et al.</i>" developers-link="https://github.com/FlightGear/flightgear/graphs/contributors" license="GPLv2" license-link="https://github.com/FlightGear/flightgear/blob/master/COPYING" genre="Simulation" development="Post-release" language="C++" website="www.flightgear.org" website-full="http://www.flightgear.org/" wiki="wiki.flightgear.org" wiki-link="http://wiki.flightgear.org" official-wiki="Yes" platforms="DragonFlyBSD, FreeBSD, macOS, NetBSD, OpenBSD, Solaris, Windows NT" graphics="High-quality 3D" sf="flightgear" irc="#flightgear" irc-server="flightgear.org" %}
+
+***FlightGear*** is a free and open-source, extremely cross-platform flight simulator game that is able to emulate flight for several dozen different aircraft. 
+{% include Layouts/clear.html %}
