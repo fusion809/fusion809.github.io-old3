@@ -15,10 +15,11 @@
 * {% include Packages/fedora.html package="FlightGear" %}
 * {% include Packages/gentoo.html package="games-simulation/flightgear" %}
 * {% include Packages/mageia.html package="flightgear" %}
+* {% include Packages/opensuse.html package="FlightGear" variant="Tumbleweed" %}
 * {% include Packages/pclinuxos.html package="flightgear" %}
 * {% include Packages/sabayon.html package="games-simulation/flightgear" %}
 * {% include Packages/ubuntu.html package="flightgear" %}
 
-openSUSE's unofficial games repository does contain a package for *FlightGear* on both supported releases. To my knowledge no CentOS repositories (official or otherwise) have a *FlightGear* package. 
+openSUSE Leap's unofficial games repository does contain a package for *FlightGear* on both supported releases (package name: `FlightGear`). To my knowledge no CentOS repositories (official or otherwise) have a *FlightGear* package. 
 
 {% include Layouts/clear.html %}

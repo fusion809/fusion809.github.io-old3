@@ -17,7 +17,7 @@
 * {% include Packages/fedora.html package="xonotic" %}
 * {% include Packages/gentoo.html package="games-fps/xonotic" %}
 * {% include Packages/mageia.html package="xonotic" %}
-* {% include Packages/opensuse.html package="xonotic" %}. Official packages are available for Leap 42.2 and Tumbleweed only, the unofficial {% include Packages/gamesr.html %}  overlay provides a package for Leap 42.1.
+* {% include Packages/opensuse.html package="xonotic" %}. Official packages are available for Leap 42.2 and Tumbleweed only.
 * {% include Packages/pclinuxos.html package="xonotic" %}
 * {% include Packages/sabayon.html package="games-fps/xonotic" %}
 
