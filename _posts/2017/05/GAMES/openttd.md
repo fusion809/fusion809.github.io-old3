@@ -15,7 +15,7 @@ There are cross-distribution binary tarballs for 32-bit and 64-bit Linux that ar
 * {% include Packages/fedora.html package="openttd" puncr="," %} rather impressive that every presently-supported release of Fedora (so 24, 25, 26 and rawhide) have the very latest *OpenTTD* at the time of writing, 1.7.0. 
 * {% include Packages/gentoo.html package="games-simulation/openttd" puncr="," %} presently the Portage tree provides fairly outdated versions of OpenTTD (1.6.0, 1.6.1-r1), although my overlay, {% include Packages/fusion809.html puncr="," %} provides the very latest OpenTTD, 1.7.0. 
 * {% include Packages/mageia.html package="openttd" %}
-* {% include Packages/opensuse.html package="openttd" puncr="," %} leap 42.1 is the only supported openSUSE release without a package for OpenTTD in their official repositories, but the unofficial {% include Packages/gamesr.html %} repository does. 
+* {% include Packages/opensuse.html package="openttd" puncr="," %}
 * {% include Packages/pclinuxos.html package="openttd" %}
 * {% include Packages/sabayon.html package="games-simulation/openttd" puncr="," %} also stores an out-of-date version of OpenTTD, 1.6.1-r1. Although if you are willing to use Portage to install the latest you can from my overlay, {% include Packages/fusion809.html puncr="." %}
 * {% include Packages/ubuntu.html package="openttd" puncr="," %} the *OpenTTD* development team provide Deb packages for the latest stable release of *OpenTTD* on Ubuntu 14.04, for download details see [this page](https://www.openttd.org/en/download-stable).

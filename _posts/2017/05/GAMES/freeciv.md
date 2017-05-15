@@ -16,7 +16,7 @@
 * {% include Packages/fedora.html package="freeciv" %}
 * {% include Packages/gentoo.html package="games-strategy/freeciv" %}
 * Mageia has two packages belonging to Freeciv: {% include Packages/mageia.html no="1" package="freeciv-client" %} and {% include Packages/mageia.html no="1" package="freeciv-server" puncr="." %}
-* {% include Packages/opensuse.html package="freeciv" %}, available for Leap 42.2 and Tumbleweed. Leap 42.1 does not have an official Freeciv package, but there is a package for Freeciv in the unofficial {% include Packages/gamesr.html %} repository.
+* {% include Packages/opensuse.html package="freeciv" %}, available for Leap 42.2 and Tumbleweed.
 * {% include Packages/pclinuxos.html package="freeciv-client" package2="freeciv-server" %}
 * {% include Packages/sabayon.html package="games-strategy/freeciv" %}
 * {% include Packages/ubuntu.html package="freeciv" %}

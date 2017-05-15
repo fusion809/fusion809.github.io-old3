@@ -16,7 +16,7 @@ There are packages for *Naev* in the official repositories of the following dist
 * {% include Packages/fedora.html package="naev" %}
 * {% include Packages/gentoo.html package="naev" %}
 * {% include Packages/mageia.html package="naev" %}
-* {% include Packages/opensuse.html package="naev" variant="Tumbleweed" puncr="," %} Leap 42.1 and 42.2 do not have an official package available, but the unofficial {% include Packages/gamesr.html %} repository does have packages for these two distributions. 
+* {% include Packages/opensuse.html package="naev" variant="Tumbleweed" puncr="," %} Leap 42.2 do not have an official package available, but the unofficial {% include Packages/gamesr.html %} repository does have packages for these two distributions. 
 * {% include Packages/pclinuxos.html package="naev" %}
 * {% include Packages/sabayon.html package="naev" %}
 * {% include Packages/ubuntu.html package="naev" %}

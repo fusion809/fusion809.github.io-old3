@@ -21,12 +21,6 @@
         </li>
         {% endif %}
 
-        {% if site.facebook_username %}
-        <li>
-          {% include Layouts/icon-facebook.html username=site.facebook_name username2=site.facebook_username %}
-        </li>
-        {% endif %}
-
         {% if site.facebook_username2 %}
         <li>
           {% include Layouts/icon-facebook.html username=site.facebook_name2 username2=site.facebook_username2 %}
@@ -60,12 +54,6 @@
         {% if site.stackexchange_id %}
         <li>
           {% include Layouts/icon-stackexchange.html id=site.stackexchange_id name=site.stackexchange_name %}
-        </li>
-        {% endif %}
-
-        {% if site.twitter_username %}
-        <li>
-          {% include Layouts/icon-twitter.html username=site.twitter_username %}
         </li>
         {% endif %}
       </ul>

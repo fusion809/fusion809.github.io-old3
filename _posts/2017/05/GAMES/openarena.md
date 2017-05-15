@@ -22,6 +22,6 @@ The following distributions have a package for *OpenArena* in their official rep
 while the following distributions do not have an *OpenArena* package in their official repositories:
 
 * Arch Linux, the AUR does have a [PKGBUILD](https://aur.archlinux.org/packages/openarena) for *OpenArena*, however. 
-* openSUSE, the unofficial {% include Packages/gamesr.html package="openarena" %} repository does have packages for Leap 42.1, 42.2 and Tumbleweed, however. 
+* openSUSE, the unofficial {% include Packages/gamesr.html package="openarena" %} repository does have packages for Leap 42.2 and Tumbleweed, however. 
 
 {% include Layouts/clear.html %}

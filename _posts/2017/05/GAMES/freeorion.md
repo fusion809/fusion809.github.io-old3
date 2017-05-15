@@ -21,7 +21,7 @@ while the following distributions do not have a *FreeOrion* package in their off
 
 * Arch Linux, although [one](https://aur.archlinux.org/packages/freeorion/) is available from the Arch User Repository.
 * CentOS
-* openSUSE. Although all supported releases (Leap 42.1, 42.2 and Tumbleweed) have `freeorion` packages in the unofficial {% include Packages/gamesr.html %} repository. 
+* openSUSE. Although all supported releases (Leap 42.2 and Tumbleweed) have `freeorion` packages in the unofficial {% include Packages/gamesr.html %} repository. 
 * Sabayon Linux.
 
 {% include Layouts/clear.html %}
