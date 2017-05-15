@@ -38,7 +38,7 @@ Its original client, that has been in use since the game was first officially re
 
 ### Packaging details
 #### Java
-The Java client is far easier to use on Linux and it supports at least x86 and x86_64 Linux (as opposed to NXT which only supports x86_64). One method is to go to [www.runescape.com/game-applet](https://www.runescape.com/game-applet) in a Java-compatible web browser like Mozilla Firefox and play the game. Alternatively, one can use the [Unix RuneScape Client](https://github.com/HikariKnight/rsu-client) (RSU) for which there is a cross-distribution installer.
+The Java client is far easier to use on Linux and it supports at least x86 and x86_64 Linux (as opposed to NXT which only supports x86_64). One method is to go to [www.runescape.com/game-applet](https://www.runescape.com/game-applet) in a Java-compatible web browser like the long-term supported releases of Mozilla Firefox (version 52 and later of Firefox **do not** support Java) and play the game. Alternatively, one can use the [Unix RuneScape Client](https://github.com/HikariKnight/rsu-client) (RSU) for which there is a cross-distribution installer.
 
 #### NXT
 Its installed size on Linux is approximately 8 MB, although it is worthwhile noting that the client downloads an awful lot of data (~3.4 GB for myself as of 2 May 2017) to a folder in the user home directory called `Jagex`. Here is what `equery` has to say about the `games-rpg/runescape-launcher` package's installed size:

@@ -22,7 +22,7 @@ Most Linux distributions split *0 A.D.* into two packages, that are often named 
 * {% include Packages/gentoo.html package="games-strategy/0ad" puncr="," %} the latest and second-latest releases of *0 A.D.* are presently in testing (that is, have `~` in their keyword field for both `x86` and `amd64`).
 * {% include Packages/mageia.html package="0ad" puncr="," %} the fairly old releases alpha 18 and 19 are available for Mageia 5.
 * Manjaro Linux, has the latest *0 A.D.* available from its official repositories.
-* {% include Packages/opensuse.html package="0ad" puncr="," %} the official repositories of Tumbleweed has the latest *0 A.D.*, but Leap releases 42.1 and 42.2 do not have 0 A.D. in their official repositories, although the unofficial {% include Packages/gamesr.html %} repository does have the latest *0 A.D.* for these two Leap releases.
+* {% include Packages/opensuse.html package="0ad" puncr="," %} the official repositories of Tumbleweed has the latest *0 A.D.*, but Leap release 42.2 does not have 0 A.D. in its official repositories, although the unofficial {% include Packages/gamesr.html %} repository does have the latest *0 A.D.* for this Leap release.
 * [PCLinuxOS](http://rpm.pbone.net/index.php3/stat/4/idpl/34712537/dir/pclinuxos/com/0ad-0.0.21-1pclos2016.x86_64.rpm.html), which presently has the latest *0 A.D.*
 * {% include Packages/sabayon.html package="games-strategy/0ad" puncr="," %} presently has the latest *0 A.D.* available from its official repositories.  
 * {% include Packages/ubuntu.html package="0ad" puncr="," %} only the latest stable release of Ubuntu, Zesty (17.04), has the latest *0 A.D.* release in its official repositories.
