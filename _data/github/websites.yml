@@ -55,6 +55,24 @@ body:
     description:
             "A subdirectory ([/hubpress.io](/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
 
+# hugo-site
+  - repo:
+            "hugo-site"
+    fork:
+            "y"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "My attempted at adding a /hugo-site subdirectory to *The Hornery*."
+
 # pelican-site
   - repo:
             "pelican-site"
