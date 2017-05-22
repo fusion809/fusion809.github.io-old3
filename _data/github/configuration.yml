@@ -37,6 +37,66 @@ body:
     description:
             "My emacs configuration settings (stored in `~/.emacs`). Has a quick install script too."
 
+# funtoo-config
+  - repo:
+            "funtoo-config"
+    category:
+            "configuration"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My Funtoo configuration settings."
+
+# gentoo-config
+  - repo:
+            "gentoo-config"
+    category:
+            "configuration"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My Gentoo configuration settings."
+
+# i3-configs
+  - repo:
+            "i3-configs"
+    category:
+            "configuration"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My i3 configuration settings. Written in C++, Python and Shell."
+
 # spacemacs
   - repo:
             "spacemacs"

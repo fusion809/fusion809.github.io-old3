@@ -1,4 +1,22 @@
 body:
+# fusion809-overlay
+  - repo:
+            "fusion809-overlay"
+    fork:
+            "y"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Assorted ebuilds for building packages not provided by the Portage tree or any of the following overlays: (1) flatpak-overlay, (2) gamerlay, (3) games-overlay, (4) gnome, (5) grub2-themes, (6) kde, (7) mozilla, (8) spring and (9) steam-overlay. Sometimes an older version of my ebuilds are provided by these or other overlays."
+
 # PKGBUILDs
   - repo:
             "PKGBUILDs"
