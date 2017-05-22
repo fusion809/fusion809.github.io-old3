@@ -1,3 +1,4 @@
+# Also de-licensed
 body:
 # arch-setup
   - repo:
@@ -6,8 +7,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:

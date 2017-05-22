@@ -1,3 +1,4 @@
+# This file has been de-licensed
 caption: "Table 1: An Overview of my Atom Packages and Themes"
 
 body:
@@ -14,8 +15,6 @@ body:
             "about"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -36,8 +35,6 @@ body:
             "fusion-ui"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -52,8 +49,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -74,8 +69,6 @@ body:
             "language-gfm"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -94,8 +87,6 @@ body:
             "atom-language-ini"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -114,8 +105,6 @@ body:
             "language-patch"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -128,8 +117,6 @@ body:
             "language-solus"
     fork:
             "n"
-    license-file:
-            "LICENSE"
     license:
             "GPLv3"
     readme:
@@ -152,8 +139,6 @@ body:
             "language-shellscript"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -172,8 +157,6 @@ body:
             "language-vala"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:
@@ -192,8 +175,6 @@ body:
             "platformio-ide-terminal"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     registered:

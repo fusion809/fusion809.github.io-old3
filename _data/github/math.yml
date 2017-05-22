@@ -1,4 +1,4 @@
-body:
+# This has been de-licensed
 body:
 # C-Math-Projects
   - repo:
@@ -9,8 +9,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -29,8 +27,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -47,8 +43,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "n"
     maintained:
@@ -65,8 +59,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -83,8 +75,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:

@@ -26,7 +26,7 @@ body:
             "y"
     description:
             "My OSX-Arc-White theme variant."
-            
+
 # osx-white
   - repo:
             "osx-white"
@@ -40,6 +40,7 @@ body:
             "y"
     description:
             "A theme forked from the OSX-White theme on GNOME Look."
+
 # sabayon-gitsta
   - repo:
             "sabayon-gitsta"
@@ -47,8 +48,6 @@ body:
             "n"
     license:
             "GPLv2"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -57,6 +56,7 @@ body:
             "y"
     description:
             "A modified version of the gitsta theme that is used by the Sabayon Blog at [http://linux.x10host.com/blog/](http://linux.x10host.com/blog/)."
+
 # zsh-theme
   - repo:
             "zsh-theme"
@@ -64,8 +64,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "n"
     maintained:

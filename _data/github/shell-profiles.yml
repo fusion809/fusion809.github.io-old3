@@ -1,3 +1,4 @@
+# Has been de-licensed; some missing entries are possible, however
 body:
 # arch-scripts
   - repo:
@@ -6,8 +7,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -24,8 +23,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "n"
     maintained:
@@ -44,8 +41,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "n"
     maintained:
@@ -54,7 +49,7 @@ body:
             "y"
     description:
             "Shell scripts automatically loaded on Bash startup that are designed to automate common tasks, especially package management, under Debian and its derivatives."
-        
+
 # fedora-scripts
   - repo:
             "fedora-scripts"
@@ -62,8 +57,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -80,8 +73,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "n"
     maintained:
@@ -91,6 +82,22 @@ body:
     description:
             "Shell scripts automatically loaded on Zsh startup designed to automate common tasks on [FreeBSD](https://www.freebsd.org/)."
 
+# funtoo-scripts
+  - repo:
+            "funtoo-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Funtoo machine, that automate some common tasks I perform on Funtoo, especially package management tasks."
+
 # gentoo-scripts
   - repo:
             "gentoo-scripts"
@@ -98,8 +105,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -116,8 +121,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE.md"
     readme:
             "y"
     maintained:
@@ -134,8 +137,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "n"
     maintained:
@@ -145,15 +146,13 @@ body:
     description:
             "Automatically-loaded from `~/.bashrc` shell script functions for automating common tasks under Mageia."
 
-# opensuse-scripts
+# netbsd-scripts
   - repo:
-            "opensuse-scripts"
+            "netbsd-scripts"
     fork:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -161,7 +160,55 @@ body:
     working:
             "y"
     description:
-            "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under openSUSE."
+            "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under NetBSD."
+
+# openbsd-scripts
+  - repo:
+            "openbsd-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under OpenBSD."
+
+# pclinuxos-scripts
+  - repo:
+            "pclinuxos-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's PCLinuxOS machine, that automate some common tasks I perform on PCLinuxOS, especially package management tasks."
+
+# pisi-scripts
+  - repo:
+            "pisi-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Automatically-loaded shell-scripts for Bash and Zsh shells that help simplify common system management tasks on Pisi-based distros."
 
 # sabayon-scripts
   - repo:
@@ -170,8 +217,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -180,3 +225,19 @@ body:
             "y"
     description:
             "Automatically-loaded shell scripts (mostly containing variable definitions and functions) that can be used to automate some common tasks in Sabayon."
+
+# slackware-scripts
+  - repo:
+            "slackware-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Slackware machine, that automate some common tasks I perform on Slackware, especially package management tasks."

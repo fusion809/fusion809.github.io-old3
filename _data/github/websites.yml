@@ -6,8 +6,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -24,8 +22,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -40,10 +36,12 @@ body:
             "hubpress.io"
     fork:
             "y"
+    orig-repo:
+            "hubpress.io"
+    orig-user:
+            "HubPress"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     readme-file:
@@ -59,11 +57,9 @@ body:
   - repo:
             "hugo-site"
     fork:
-            "y"
+            "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:

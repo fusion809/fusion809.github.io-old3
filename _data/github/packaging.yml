@@ -6,8 +6,6 @@ body:
             "y"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -24,8 +22,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -44,8 +40,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -62,8 +56,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:

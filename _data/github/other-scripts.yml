@@ -1,3 +1,4 @@
+# De-licensed
 body:
 # bin
   - repo:
@@ -8,8 +9,6 @@ body:
             "n"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -26,8 +25,6 @@ body:
             "y"
     license:
             "MIT"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:

@@ -1,3 +1,4 @@
+# Has been de-licensed
 body:
 # arch-builder
   - repo:
@@ -10,8 +11,6 @@ body:
             "packer-arch"
     license:
             "ISC"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:
@@ -32,8 +31,6 @@ body:
             "gentoo-packer"
     license:
             "GPLv3"
-    license-file:
-            "LICENSE"
     readme:
             "y"
     maintained:

@@ -58,6 +58,8 @@ body:
            "n"
     readme:
            "y"
+    license:
+           "GPLv3"
     maintained:
            "y"
     working:

@@ -1,3 +1,5 @@
+# These repos have no licenses.
+# archiso provides proprietary Broadcom drivers, so that is why. 
 body:
 # archiso
   - repo:
