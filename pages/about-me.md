@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-05-24 01:05:45 +1000
+last_modified_at: 2017-05-28 09:33:53 +1000
 permalink:        /about-me/
 ---
 
@@ -80,6 +80,16 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 <div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
 {{ my_capture | markdownify }}
 </div>
+
+I have also repeatedly tried to build a Linux From Scratch system but it fails every time. The last time it failed with Manjaro Linux 17.0 live session as the host (or bootstrap) OS and I was building LFS 8.0 and the failure was due to glibc 2.25 issues. Namely its test suite failed during [this stage](http://www.linuxfromscratch.org/lfs/view/stable/chapter06/glibc.html) (chapter 6.9) giving [this log](https://pastebin.com/Skvn0k8j). After this running:
+
+```bash
+echo 'int main(){}' > dummy.c
+cc dummy.c -v -Wl,--verbose &> dummy.log
+readelf -l a.out | grep ': /lib'
+```
+
+per chapter 6.10 of the manual failed as the compiler was malfunctioning.
 
 of these operating systems I have also installed the following six on my PC:
 {% capture my_capture %}
