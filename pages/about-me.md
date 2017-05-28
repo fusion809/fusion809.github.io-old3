@@ -81,7 +81,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 {{ my_capture | markdownify }}
 </div>
 
-I have also repeatedly tried to build a Linux From Scratch system but it fails every time. The last time it failed with Manjaro Linux 17.0 live session as the host (or bootstrap) OS and I was building LFS 8.0 and the failure was due to glibc 2.25 issues. Namely its test suite failed during [this stage](http://www.linuxfromscratch.org/lfs/view/stable/chapter06/glibc.html) (chapter 6.9) giving [this log](https://pastebin.com/Skvn0k8j). After this running:
+I have also repeatedly tried to build a Linux From Scratch system but it fails every time. The last time it failed (on 28 May 2017) with Manjaro Linux 17.0 live session as the host (or bootstrap) OS and I was building LFS 8.0 and the failure was due to glibc 2.25 issues. Namely its test suite failed during [this stage](http://www.linuxfromscratch.org/lfs/view/stable/chapter06/glibc.html) (chapter 6.9) giving [this log](https://pastebin.com/Skvn0k8j). After this running:
 
 ```bash
 echo 'int main(){}' > dummy.c
