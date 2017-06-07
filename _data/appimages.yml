@@ -2,8 +2,6 @@ caption:
   "Table 1: @probonopd's Example AppImages"
 
 body:
-  - appimage: AppImageAssistant
-    url:      https://bintray.com/probono/AppImages/AppImageAssistant
   - appimage: AppImageUpdate
     url:      https://bintray.com/probono/AppImages/AppImageUpdate
   - appimage: Arduino
@@ -45,8 +43,6 @@ body:
     url:      https://www.demonsaw.com/
   - appimage: Dia
     url:      http://dia-installer.de/
-  - appimage: DocFetcher
-    url:      http://docfetcher.sourceforge.net/en/index.html
   - appimage: DOS_emulator
     name:     DOS Emulator
     url:      http://www.dosemu.org/
@@ -64,8 +60,6 @@ body:
     url:      http://jliljebl.github.io/flowblade/
   - appimage: FontForge
     url:      https://fontforge.github.io/en-US/
-  - appimage: FreeCAD
-    url:      http://www.freecadweb.org/
   - appimage: FreeMind
     url:      http://freemind.sourceforge.net/wiki/index.php/Main_Page
   - appimage: Fritzing

@@ -89,7 +89,7 @@ cc dummy.c -v -Wl,--verbose &> dummy.log
 readelf -l a.out | grep ': /lib'
 ```
 
-per chapter 6.10 of the manual failed as the compiler was malfunctioning.
+per chapter 6.10 of the manual failed as the compiler was malfunctioning. Also tried using ALFS with jhalfs-2.4 and that still failed due to kernel issues. The #lfs IRC channel was not really helpful people just said to try the manual way over and over (doing a clean start from the beginning the LFS guide) again until it magically works. 
 
 of these operating systems I have also installed the following six on my PC:
 {% capture my_capture %}
