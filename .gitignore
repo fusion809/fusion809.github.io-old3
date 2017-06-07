@@ -5,6 +5,7 @@ _site
 .jekyll-metadata
 vendor
 .directory
+*.swo
 *.swp
 *.png
 *.jpg
