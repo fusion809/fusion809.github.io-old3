@@ -24,8 +24,8 @@ The most important commands one can issue from Vim, include:
 * `"+x`: cut selected text.
 * `"+y`: copy selected text. 
 * `"+gP`: paste text in the clipboard. 
-* `ggVG"`: select all text in present file or buffer. 
+* `ggVG`: select all text in present file or buffer. 
 * `u`: undo the last command.
-* `Ctrl+R`: redo (undo the last undo). 
+* <kbd>Ctrl</kbd>+<kbd>R</kbd> (shown as such instead of as code because writing `CtrlR` might be difficult to read, perhaps making some look for a CtrlR key. Likewise `Ctrl+R` might look like I mean press <kbd>Ctrl</kbd> then <kbd>+</kbd> and lastly <kbd>R</kbd>): redo (undo the last undo) 
 
 Adding an `a` to the end of the `:q`, `:w` and `:x`, applies the actions to all opened files. Likewise adding `!` to the end of `:q`, `:w` and `:x`, even after an end `a` applies these actions despite warnings. 

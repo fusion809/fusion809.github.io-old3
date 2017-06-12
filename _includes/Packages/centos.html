@@ -1,2 +1,2 @@
-{{ include.puncl }}{% if include.no != "1" %}CentOS {{ include.versions }} (package name: <a href='https://pkgs.org/download/{{ include.package }}' link='_blank'><code>{{ include.package }}</code></a>){% else %}<a href='https://pkgs.org/download/{{ include.package }}' link='_blank'><code>{{ include.package }}</code></a>{% endif %}{{ include.puncr }}
+{{ include.puncl }}{% if include.no != "1" %}CentOS {{ include.versions }} (package name: <a href='https://pkgs.org/download/{{ include.package }}' link='_blank'><span class="package">{{ include.package }}</span></a>){% else %}<a href='https://pkgs.org/download/{{ include.package }}' link='_blank'><span class="package">{{ include.package }}</span></a>{% endif %}{{ include.puncr }}
 
