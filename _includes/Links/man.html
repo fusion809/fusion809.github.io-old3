@@ -1,1 +1,1 @@
-<a href="/man/{{ include.man }}.html" link="_blank">{{ include.man }}.html</a>
+{% if include.puncl %}{{ include.puncl }}{% endif %}<a href="https://fusion809.github.io/man/{% if include.prog %}{{ include.prog }}.{{ include.no }}{% else %}{{ include.man }}{% endif %}.html" link="_blank">{% if include.link %}<code>{{ include.link }}</code>{% elsif include.man %}{{ include.man }}{% elsif include.prog %}<code>{{ include.prog }}</code>{% endif %}</a>{% if include.puncr %}{{ include.puncr }}{% endif %}

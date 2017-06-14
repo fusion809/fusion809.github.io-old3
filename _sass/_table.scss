@@ -12,6 +12,16 @@ span.green, table.green, td.green, tr.green {
   vertical-align:   middle;
 }
 
+span.greend, table.greend, td.greend, tr.greend {
+  background-color: rgb(128, 255, 255);
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  padding:          8px;
+  vertical-align:   middle;
+}
+
 span.white, table.white, td.white, tr.white {
   background-color: rgb(255,255,255);
   border:           2px solid #000 !important;
