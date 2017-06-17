@@ -35,14 +35,17 @@ If you want to back up your personal data (like your desktop environment configu
 Some people may wish use Logical Volume Manager (LVM) to manage their partitions, which may have some advantages (like backing up using snapshots) but in my experience is just a heap of unnecessary hassle. For further details, such as on advantages, refer to the [Gentoo Wiki's article on LVM](https://wiki.gentoo.org/wiki/LVM).
 
 ### File systems
-Each of the aforementioned partitions, except the swap partition, are useless if they have no file system on them. Swap partitions do not have a file system but they still need the command `mkswap` run on them. A BBP should have an ext2 file system on it, while an ESP should have a FAT32 file system. Root and home partitions, on the other hand, have a file system on them that is entirely up to the user. Further information on file systems can be found in the [Gentoo Handbook](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks#Creating_file_systems). The most popular and stable choices for the file systems on root and home partitions are (with each linked to the corresponding article on the Gentoo Wiki):
+Each of the aforementioned partitions, except the swap partition, are useless if they have no file system on them. Swap partitions do not have a file system but they still need the command {% include Links/man.html prog="mkswap" no="8" %} run on them. A BBP should have an ext2 file system on it, while an ESP should have a FAT32 file system. Root and home partitions, on the other hand, have a file system on them that is entirely up to the user. Further information on file systems can be found in the [Gentoo Handbook](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks#Creating_file_systems). The most popular and stable choices for the file systems on root and home partitions are (with each linked to the corresponding article on the Gentoo Wiki):
 
+{% capture list %}
 * [Btrfs](https://wiki.gentoo.org/wiki/Btrfs)
 * [ext2](https://wiki.gentoo.org/wiki/ext2)
 * [ext3](https://wiki.gentoo.org/wiki/ext3)
 * [ext4](https://wiki.gentoo.org/wiki/ext4)
 * [XFS](https://wiki.gentoo.org/wiki/XFS)
+{% endcapture %}
 
+{% include Layouts/column.html content=list no="8" %} 
 Of these ext4 is probably the most popular and is the one I personally use. ext2 and ext3 are fairly infrequently used nowadays for root and home partitions as they have been largely superseded by ext4. If you are uncertain as to which file system to use for your Gentoo system use ext4! It is simpler, better-tested and more reliable than most of the alternatives. 
 
 Btrfs is believed to be, by some (including a developer of ext4), the next generation file system for Linux likely to supersede ext4 as its most popular file system. Btrfs is more popular on solid disk drives (SSDs), due to possible performance benefits (which are not conclusive, see, for example, [this set of test results](http://openbenchmarking.org/result/1608041-LO-LINUX44BT99) on Phoronix for a SSD with the 4.7 kernel), although it can be just as easily used on hard disk drives (HDDs). Btrfs can also take file system snapshots that one can use for backup purposes. I have had issues that seem to be related to it on openSUSE with HDDs and it seems like I am not the only one as reports of file system corruption are considered common with it. Security, bug fixes (including for file system corruption issues) and major improvements are not ported to older versions of the kernel so to keep a system with it running properly it is advisable to use a bleeding-edge kernel (so always using the latest stable kernel available from the Portage tree).  
