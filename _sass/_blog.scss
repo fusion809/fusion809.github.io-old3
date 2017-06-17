@@ -323,3 +323,20 @@ p.subheader {
     font-weight: bold; 
     background-color: #7798ab;
 }
+
+.gw-box, .gw-hybrid-box {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  background-color: #f3f3f3;
+}
+
+.gw-box pre, .gw-hybrid-box pre {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.label{
+    border:1px solid #000;
+}
