@@ -18,4 +18,6 @@ to bind up the system and make it ready for chrooting. Then run:
 
 {% include Code/coder.html line1="chroot /mnt/gentoo /bin/bash" %}
 
-to chroot into your Gentoo system. 
+to chroot into your Gentoo system. Mount the BBP / ESP (e.g. {% include Layouts/path.html path="/dev/sda1" puncr=")" %} to {% include Layouts/path.html path="/boot" puncr="," %} for example, using:
+
+{% include Code/coder.html line1="mount /dev/sda1 /boot" %}
