@@ -218,45 +218,45 @@ span.category {
 }
 
 span.package {
-    background-color: rgb(220,220,220);
+    background-color: rgb(255,255,255);
     color:            rgba(0, 0, 0, 100);
-    border-radius:    3px;
+//    border-radius:    3px;
     font-size:        14.4px;
-    border:           1px solid rgb(220,220,220);
-    padding:          3px;
-    margin-bottom:    8px;
-    box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
-    white-space:      nowrap;
-    overflow:         auto;
+//    border:           1px solid rgb(255,255,255);
+//    padding:          3px;
+//    margin-bottom:    8px;
+//    box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
+//    white-space:      nowrap;
+//    overflow:         auto;
     font-family:      monospace;
 }
 
 a span.package {
-    background-color: rgb(220,220,220);
+    background-color: rgb(255,255,255);
     color:            #11f;
-    white-space:      nowrap;
-    overflow:         auto;
+//    white-space:      nowrap;
+//    overflow:         auto;
     font-family:      monospace;
 }
 
 span.path {
     background-color: rgb(255,255,255);
     color:            rgba(0, 0, 0, 100);
-    border-radius:    3px;
+//    border-radius:    3px;
     font-size:        14.4px;
-    padding:          3px;
-    margin-bottom:    8px;
-    box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
-    white-space:      nowrap;
-    overflow:         auto;
+//    padding:          3px;
+//    margin-bottom:    8px;
+//    box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
+//    white-space:      nowrap;
+//    overflow:         auto;
     font-family:      monospace;
 }
 
 a span.path {
     background-color: rgb(255,255,255);
     color:            #00f;
-    white-space:      nowrap;
-    overflow:         auto;
+//    white-space:      nowrap;
+//    overflow:         auto;
     font-family:      monospace;
 }
 
@@ -328,6 +328,7 @@ p.subheader {
   margin-top: .5em;
   margin-bottom: .5em;
   background-color: #f3f3f3;
+  overflow: auto;
 }
 
 .gw-box pre, .gw-hybrid-box pre {
@@ -337,6 +338,122 @@ p.subheader {
   padding: 0;
 }
 
+pre.captioned {
+    border-top: none;
+    -webkit-border-radius:0 0 4px 4px;
+    -moz-border-radius:0 0 4px 4px;
+    background-color: rgb(245, 245, 245);
+    border-bottom-color: rgb(204, 204, 204);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(204, 204, 204);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(204, 204, 204);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(51, 51, 51);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    direction: ltr;
+    display: block;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 18.5714px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-bottom: 9.5px;
+    padding-left: 9.5px;
+    padding-right: 9.5px;
+    padding-top: 9.5px;
+    text-size-adjust: 100%;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.box-caption {
+    padding-top:4.25px;
+    padding-right:8.5px;
+    padding-bottom:6.25px;
+    padding-left:8.5px;
+    background-color:#eeeeee;
+    border:1px solid #ccc;
+    border:1px solid rgba(0,0,0,0.15);
+    border-bottom:none;
+    -webkit-border-radius:4px 4px 0 0;
+    -moz-border-radius:4px 4px 0 0;
+    border-radius:4px 4px 0 0;
+    overflow:auto;
+}
+
 .label{
     border:1px solid #000;
+}
+
+code.file {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x:0%;
+    background-position-y: 0%;
+    background-size: auto;
+    border-bottom-color: rgb(84, 72, 122);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(84, 72, 122);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(84, 72, 122);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(84, 72, 122);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgb(84, 72, 122);
+    direction: ltr;
+    display: inline;
+    font-family: monospace;
+    font-size: 12.6px;
+    font-weight: bold;
+    height: auto;
+    line-height: 18px;
+    margin-right: 6.3px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
