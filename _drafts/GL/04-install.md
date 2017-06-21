@@ -10,3 +10,4 @@
 
 {% include_relative 04e-kernel.md %}
 
+{% include_relative 04f-bootloader.md %}

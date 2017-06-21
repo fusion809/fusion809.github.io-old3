@@ -16,7 +16,7 @@ with or without the `--quiet` option, to update your copy of the tree to the ver
 #### Git-managed tree
 Now it is up to you what to do. You can emerge git and use git to control your Portage tree, which is what I recommend. A git-controlled tree means you can update the tree as often as you want and as rarely the tree maintainers will make a careless mistake (like forgetting to run repoman before committing their changes) that may cause significant problems, this can come in handy. To emerge it run:
 
-{% include Code/coder.html line1="emerge dev-vcs/git" %}
+{% include Code/coder.html emerge="1" package="dev-vcs/git" %}
 
 Then edit your {% include Layouts/path.html path="/etc/portage/repos.conf/gentoo.conf" %} file to:
 
@@ -24,7 +24,7 @@ Then edit your {% include Layouts/path.html path="/etc/portage/repos.conf/gentoo
 
 I often install my favourite text editor, Vim, before I edit any files. GNU nano is included in the stage3 tarball, so if you favour using nano you need not install Vim. But if you wish to use Vim merely issue the command:
 
-{% include Code/coder.html line1="emerge app-editors/vim" %}
+{% include Code/coder.html emerge="1" package="app-editors/vim" %}
 
 to install it.
 
