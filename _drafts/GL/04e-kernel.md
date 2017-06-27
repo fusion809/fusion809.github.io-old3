@@ -24,5 +24,5 @@ After you have finished tweaking your kernel configs run:
 
 where `<NO>` is the number of processor cores across which you wish to compile the kernel, plus one. For example `make -j9` will compile across eight cores, while `make -j2` will compile against one core. Now I personally recommend you also emerge the {% include Packages/gentoo.html package="sys-kernel/dracut" %} package and create a initramfs as while an initramfs may not be necessary for some systems, for all systems (including virtual machines and laptops) I have installed Gentoo Linux on it is necessary in order to boot the system. To emerge it and then build an initramfs (assuming you are still in {% include Layouts/path.html path="/usr/src/linux" puncr=")" %} run:
 
-{% include Code/coder.html emerge="1" package="emerge sys-kernel/dracut" line2="dracut -f --fstab --xz /boot/initramfs-$(ls -ld /usr/src/linux | cut -d ' ' -f 11 | sed 's/linux\-//g').img $(ls -ld /usr/src/linux | cut -d ' ' -f 11 | sed 's/linux\-//g')" %}
+{% include Code/coder.html emerge="1" package="sys-kernel/dracut" line2="dracut -f --fstab --xz /boot/initramfs-$(ls -ld /usr/src/linux | cut -d ' ' -f 11 | sed 's/linux\-//g').img $(ls -ld /usr/src/linux | cut -d ' ' -f 11 | sed 's/linux\-//g')" %}
 

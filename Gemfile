@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll'
+gem "jekyll", :git => "https://github.com/jekyll/jekyll.git"
 gem 'jekyll-tagging'
 gem 'ruby-nuggets'
 gem 'hen'

@@ -1,7 +1,7 @@
 ---
 layout:           post
 date:             2017-07-01
-last_modified_at: 2017-06-09 04:19:06
+last_modified_at: 2017-06-27 14:59:34
 title:            "Taming the Penguin: a guide to Gentoo Linux"
 permalink:        /gentoo-linux/
 ---
@@ -15,3 +15,5 @@ After some five years of looking for an operating system that suites me I have f
 {% include_relative 03-prep.md %}
 
 {% include_relative 04-install.md %}
+
+{% include_relative 05-portage.md %}

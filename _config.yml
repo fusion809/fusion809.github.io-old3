@@ -38,7 +38,7 @@ exclude:
 - vendor
 - assets
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-redirect-from
