@@ -2,7 +2,7 @@
 layout:           post
 date:             2017-07-01
 last_modified_at: 2017-06-27 14:59:34
-title:            "Taming the Penguin: a guide to Gentoo Linux"
+title:            "Taming the fast penguin: a guide to Gentoo Linux"
 permalink:        /gentoo-linux/
 ---
 

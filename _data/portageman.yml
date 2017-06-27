@@ -1,0 +1,62 @@
+body:
+
+    - command:     "dispatch-conf"
+      number:      "1"
+      description: "Information on the command dispatch-conf, which is meant to be run after emerging new packages and it checks for configuration file updates."
+
+    - command:     "ebuild"
+      number:      "1"
+      description: "Creates ebuild manifests and can be used for emerging packages provides by the ebuild the command is ran on."
+
+    - command:     "egencache"
+      number:      "1"
+      description: "Used for generating information about ebuild repositories (or overlays)."
+
+    - command:     "emaint"
+      number:      "1"
+      description: "Performs package management related to system maintenance and health checks."
+
+    - command:     "emerge"
+      number:      "1"
+      description: "The main command-line interface (CLI) to Portage. Used for installing, building binary packages from, removing and performing other actions with packages."
+
+    - command:     "emirrordist"
+      number:      "1"
+      description: "A fetch tool for mirroring of package distfiles."
+
+    - command:     "env-update"
+      number:      "1"
+      description: "Updates environment settings automatically."
+
+    - command:     "etc-update"
+      number:      "1"
+      description: "Handles configuration file updates."
+
+    - command:     "fixpackages"
+      number:      "1"
+      description: "Performs package move updates for all packages."
+
+    - command:     "quickpkg"
+      number:      "1"
+      description: "Creates Portage binary packages from existing Portage package installations."
+
+# Configs
+    - command:     "color.map"
+      number:      "5"
+      description: "Editing <span class='path'>/etc/portage/color.map</span>, a file that is used for adding custom colour settings for Portage."
+
+    - command:     "ebuild"
+      number:      "5"
+      description: "Information on editing ebuild files."
+
+    - command:     "make.conf"
+      number:      "5"
+      description: "Custom settings found in include <span class='path'>/etc/portage/make.conf</span>, mostly related to building packages, for Portage."
+
+    - command:     "portage"
+      number:      "5"
+      description: "Custom settings found in all other files in <span class='path'>/etc/portage</span>."
+
+    - command:     "xpak"
+      number:      "5"
+      description: "XPAK data settings found in Portage binary packages."

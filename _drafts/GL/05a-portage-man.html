@@ -1,0 +1,33 @@
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+    <caption id="table-1" style="text-align: center;">
+         Table 1: Portage Man Pages
+    </caption>
+    <tbody>
+         <tr class="blue">
+              <td class="title1">Man page</td>
+              <td class="title1">Description (often copied or a rewordered version of man page description)</td>
+         </tr>
+         <tr class="title1">
+              <td class="title1" colspan="2" style="text-align: center;">Commands (man page number 1)</td>
+         </tr>
+         {% for row in site.data.portageman.body %}
+         {% if row.number == "1" %}
+         <tr class="green">
+              <td class="green"><a href="https://fusion809.github.io/man/{{ row.command }}.1.html" link="_blank">{{ row.command }}(1)</a></td>
+              <td class="green">{{ row.description }}</td>
+         </tr>
+         {% endif %}
+         {% endfor %}
+         <tr class="title1">
+              <td class="title1" colspan="2" style="text-align: center;">Configuration files (man page number 5)</td>
+         </tr>
+         {% for row in site.data.portageman.body %}
+         {% if row.number == "5" %}
+         <tr class="green">
+              <td class="green"><a href="https://fusion809.github.io/man/{{ row.command }}.5.html" link="_blank">{{ row.command }}(5)</a></td>
+              <td class="green">{{ row.description }}</td>
+         </tr>
+         {% endif %}
+         {% endfor %}
+    </tbody>
+</table>
