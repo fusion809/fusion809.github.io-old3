@@ -4,7 +4,6 @@ title:                The Hornery
 github_username:      fusion809
 github_repo:          site.github_username/site.github_username.github.io
 url:                  https://site.github_username.github.io
-email:                brentonhorne77@gmail.com
 
 description:
   "Where Brenton stores his thoughts and news relating to technology."
@@ -22,15 +21,9 @@ url:                  https://fusion809.github.io
 twitter_username:     fusion809
 facebook_username2:   sabayon.blog.77
 facebook_name2:       The Hornery
-stackexchange_name:   Brenton Horne
-stackexchange_id:     1884625
-fedora_id:            Fusion809
-aur_name:             fusion809
-opensuse_name:        fusion809
 highlighter:          rouge
 timezone:             Australia/Brisbane
 locale:               en_AU
-copyright:            "&copy; 2015-2017 Brenton Horne.<br/>
                       Unless otherwise stated all content on this website is licensed under CC-BY-SA-3.0 or compatible licenses.<br/>
                       Linux is a registered trademark of Linus Torvalds; all other trademarks are property of their respective owners."
 permalink:            /:year/:month/:day/:title/
@@ -51,7 +44,6 @@ tag_feed_dir:         tag
 
 # Build settings
 markdown:             kramdown
-author:               Brenton Horne
 rec_posts:
   - "/operating-systems/"
   - "/package-development/"
