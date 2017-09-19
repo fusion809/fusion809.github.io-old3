@@ -62,7 +62,7 @@ I find it gives better, more detailed, output than APT, pacman or ZYpp. Addition
 * builddep &mdash; install the required build-dependencies of a package.
 * URL installs.
 
-it also has support for use of wildcard operators. For example, {% include Code/coders-rc.html line1="dnf install kernel*" %} will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g., the `-devel`, `-doc`, *etc.* subpackages).
+it also has support for use of wildcard operators. For example, {% include Code/coders.html puncr="," line1="dnf install kernel*" %} will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g., the `-devel`, `-doc`, *etc.* subpackages).
 
 ### Speed
 Running {% include Code/coders.html line1="time dnf install -y vim-common" %} returns:
