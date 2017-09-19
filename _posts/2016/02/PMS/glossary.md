@@ -6,6 +6,7 @@
 * tar archive called `data`, that is optionally bz2, gz, lzma or xz-compressed. It contains the installed files.
 * tar archive called `control`, that is optionally compressed with any of the aforementioned algorithms and it contains package metadata.
 * `debian-binary` text file that contains the deb format number, the latest is presently 2.0.
+
 They are probably the single most popular type of Linux binary package out there, as they are used by each of the three most popular Linux distributions, according to *DistroWatch* (Debian, Linux Mint and Ubuntu).
 
 ### dpkg
