@@ -62,7 +62,11 @@ I find it gives better, more detailed, output than APT, pacman or ZYpp. Addition
 * builddep &mdash; install the required build-dependencies of a package.
 * URL installs.
 
-it also has support for use of wildcard operators. For example, {% include Code/coders.html puncr="," line1="dnf install kernel*" %} will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g., the `-devel`, `-doc`, *etc.* subpackages).
+it also has support for use of wildcard operators. For example:
+
+{% include Code/coder.html line1="dnf install kernel&#8727;" %} 
+
+will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g., the `-devel`, `-doc`, *etc.* subpackages).
 
 ### Speed
 Running {% include Code/coders.html line1="time dnf install -y vim-common" %} returns:
@@ -128,10 +132,10 @@ Transaction check succeeded.
 Running transaction test
 Transaction test succeeded.
 Running transaction
-  Reinstalling: vim-common-8.0.388-1.mga6.x86_64                         1/2 
-  Erasing     : vim-common-8.0.388-1.mga6.x86_64                         2/2 
-  Verifying   : vim-common-8.0.388-1.mga6.x86_64                         1/2 
-  Verifying   : vim-common-8.0.388-1.mga6.x86_64                         2/2 
+  Reinstalling: vim-common-8.0.388-1.mga6.x86_64                         1/2
+  Erasing     : vim-common-8.0.388-1.mga6.x86_64                         2/2
+  Verifying   : vim-common-8.0.388-1.mga6.x86_64                         1/2
+  Verifying   : vim-common-8.0.388-1.mga6.x86_64                         2/2
 
 Reinstalled:
   vim-common.x86_64 8.0.388-1.mga6                                           
@@ -143,6 +147,6 @@ user    0m3.001s
 sys     0m3.114s
 ~~~
 
-as you can see the time was reduced, but not enough to make it faster than the other package managers compared in this article. 
+as you can see the time was reduced, but not enough to make it faster than the other package managers compared in this article.
 
 {% include_relative DNF/table-2-basic-usage-examples.html %}
