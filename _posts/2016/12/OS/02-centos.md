@@ -22,7 +22,7 @@ Ideal CentOS users are at least intermediate-level users (so not beginners, unle
 * Love open-source, but not enough to ditch the standard kernel in favour of the [Linux-libre][207] kernel.
 * Favour software stability over the very latest software releases.
 * Favour a fixed release model distribution over a rolling release model.
-* Favour a long-term supported distribution over a distribution with a short support cycle (e.g., Fedora). I personally dislike performing distribution upgrades as in my experience, something almost always gets broken, or at least damaged, in the process. 
+* Favour a long-term supported distribution over a distribution with a short support cycle (e.g. Fedora). I personally dislike performing distribution upgrades as in my experience, something almost always gets broken, or at least damaged, in the process. 
 * Do not have a need for any obscure pieces of software, that is, software that is not universally found in virtually every Linux distribution's repositories. CentOS tends to have more comprehensive repositories than Mageia (if one includes EPEL repositories), but less comprehensive repositories than Arch Linux or Fedora.
 * Use CentOS or Red Hat Enterprise Linux at work. CentOS and RHEL are very similar (or so I am told, I have never used RHEL myself as it is a paid product and I refuse to pay for operating systems), so being experienced with one should help one out when using the other.
 

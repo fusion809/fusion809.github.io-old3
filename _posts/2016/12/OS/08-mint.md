@@ -5,7 +5,7 @@
 
 {% include Code/coder.html line1="do-release-upgrade" %}
 
-does not reliably upgrade between releases of Linux Mint (e.g., it may not reliably upgrade a Linux Mint 17.3 system to 18.1). So this is one thing that may reduce this distribution's appeal to beginners. An upgrade guide for Linux Mint can be found [here][803].
+does not reliably upgrade between releases of Linux Mint (e.g. it may not reliably upgrade a Linux Mint 17.3 system to 18.1). So this is one thing that may reduce this distribution's appeal to beginners. An upgrade guide for Linux Mint can be found [here][803].
 
 ### Closing remarks
 It is ideal for users that:
