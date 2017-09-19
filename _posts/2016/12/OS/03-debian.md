@@ -7,7 +7,7 @@
 Debian has four supported branches (each with different repositories, different purposes, different derivatives and different usage shares):
 
 * [Oldstable][301] &mdash; the previous stable release, presently Jessie (8).
-* [Stable][302] &mdash; the current stable release, presently Stretch (9). Debian stable usually has packages in its repositories that are two or three years old. For example, Debian 8 (released 2015) still uses KDE4 despite KDE Plasma 5 coming out in July 2014.
+* [Stable][302] &mdash; the current stable release, presently Stretch (9). Debian stable usually has packages in its repositories that are one to three years old. For example, Debian 8 (released 2015, was the latest until mid 2017) still uses KDE4 despite KDE Plasma 5 coming out in July 2014.
 * [Testing][303] &mdash; which will become the next stable release.
 * [Unstable (sid)][304] &mdash; a bleeding-edge rolling release version of Debian.
 
