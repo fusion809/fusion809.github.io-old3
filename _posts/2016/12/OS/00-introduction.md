@@ -15,7 +15,7 @@ I would also like to clarify what is helpful and unhelpful criticism in my books
 
 Generally speaking, beginner-friendly distributions have more friendly, slower to negative assumptions (I will clarify this in the next sentence) support communities than those of advanced distributions like Arch Linux. By negative assumptions, I mean a number of different assumptions (that often end up being false) I have seen people jump to, including:
 
-* That you are not doing your own research on the issues you are asking for help with. Likewise that you are not trying to troubleshoot your own problems. This is why it is crucial to explain all your troubleshooting efforts in detail. Do not just say, "I Googled the problem and found no solutions." Tell them which results you looked at, if there were any that you did not understand (and hence may need help understanding, give details on exactly what you do not understand!) what you have tried based on the search results you did find and what output (if any) you received from these efforts. I know that this can be annoying to have to spell out to people, but sometimes it is a necessary annoyance. 
+* That you are not doing your own research on the issues you are asking for help with. Likewise that you are not trying to troubleshoot your own problems. This is why it is crucial to explain all your troubleshooting efforts in detail. Do not just say, "I Googled the problem and found no solutions." Tell them which results you looked at, if there were any that you did not understand (and hence may need help understanding, give details on exactly what you do not understand!), what you have tried based on the search results you did find and what output (if any) you received from these efforts. I know that this can be annoying to have to spell out to people, but sometimes it is a necessary annoyance. 
 * That you are, even deliberately, not giving them enough information. This is a false assumption I have seen when I had an Xorg issue, that prevented me from copy-pasting everything into the [Arch Linux forums][4] (to help those trying to help me). Sometimes the situation itself can make it difficult to share information, so one only shares what one thinks (sometimes mistakenly) are the only relevant pieces of information.
 * That you are not even trying to help them help you. That you want them to magically do everything for you. This is an assumption they are most likely to jump to, if they think your question is not clear. There is no shame in taking a few extra minutes to write your question as clearly as possible. This is something I have had difficulty with too, as sometimes the situation I am in is challenging to explain in words. It is usually in these situations that I use pictures to help me with my explanations. 
 
@@ -59,17 +59,17 @@ these operating systems are more oriented towards intermediate-advanced users, b
 ### Question 3
 **Question:** What is so important about out-of-the-box FUSE support? (Hence why did I include it in my infoboxes?)
 
-**Answer**: FUSE is used for easily mounting file systems without root privileges. It is useful for a few things, including running AppImages (the cross-distribution packaging formats).
+**Answer**: FUSE is used for easily mounting file systems without root privileges. It is useful for a few things, including running AppImages (a type of cross-distribution package format).
 
 ### Question 4
 **Question:** What is the relevance of the default file system of operating systems? 
 
 **Answer:** File systems are relevant for a few different reasons. The main reason is that the [Btrfs][15] file system used by openSUSE allows for snapshots of the operating system to be taken, that one can rollback to if the operating system becomes unusable later. This can be incredibly handy, especially when one is using openSUSE Tumbleweed which I have found incredibly easy to inadvertently break, rendering it unusable. Beware though that the tool one uses to rollback Btrfs file systems is called snapper and it will only work if it can access DBus, hence it cannot be run (to my knowledge, at least, do correct me if I am wrong!) from a chroot (and, of course, a chroot is sometimes necessary to recover an OS that will not boot).
 
-## Package Managers
+## Package managers
 In this section I will briefly review the key characteristics of the package managers of the operating systems reviewed in this post.
 
-### Debian Package Management
+### Debian package management
 [**dpkg**][16] and its higher-level official front-end [**APT**][17] are used extensively by Debian-based operating systems. dpkg was initially developed in the early-mid 1990s by Ian Murdock (the founder of Debian) and a few other members of a fairly small development team. Originally it was written predominantly in Perl, but it was later rewritten in C. APT's development began in the mid-late 1990s and it was and still is written predominantly in C++, with most of the remaining code being written in Shell. When installing a package that has already been downloaded (and placed in the cache) the APT/dpkg combination installs packages fairly fast, although slower than pacman and ZYpp do. 
 
 Debian packages are built using a tool called debuild (which is provided by a package called [`devscripts`][18]), which uses the contents of a specialized folder usually named `debian`, along with the upstream source code, to construct the Debian package. Usually the `debian` folder is placed as a subfolder of the upstream source code. The most important file in this folder is probably the `rules` file (with that exact name). This file is a type of Makefile (you will even find its first line is `#!/usr/bin/make -f`, which essentially says this file should be treated as a Makefile). 
