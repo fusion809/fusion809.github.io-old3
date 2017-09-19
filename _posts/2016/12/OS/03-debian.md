@@ -8,7 +8,7 @@ Debian has four supported branches (each with different repositories, different 
 
 * [Oldstable][301] &mdash; the previous stable release, presently Jessie (8).
 * [Stable][302] &mdash; the current stable release, presently Stretch (9). Debian stable usually has packages in its repositories that are one to three years old. For example, Debian 8 (released 2015, was the latest until mid 2017) still uses KDE4 despite KDE Plasma 5 coming out in July 2014.
-* [Testing][303] &mdash; which will become the next stable release.
+* [Testing][303] &mdash; which will become the next stable release, presently Buster (10).
 * [Unstable (sid)][304] &mdash; a bleeding-edge rolling release version of Debian.
 
 its default repositories are entirely free and open-source, but it does have non-free versions of its repositories. Its official repositories are amongst the most comprehensive of any distribution, aside from perhaps Arch Linux, Gentoo Linux and Ubuntu. Like CentOS, Fedora, Linux Mint, Mageia, openSUSE, PCLinuxOS and Ubuntu, Debian packages are split up into several different packages each containing parts (but not all) of the package in question. Those with the `-dev` suffix are those that contain the development headers of the program in question, while those with the `-dbg` suffix contain the debugging symbols of the program and those with the `-doc` suffix contain the documentation of the program.
