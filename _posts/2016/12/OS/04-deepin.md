@@ -13,5 +13,6 @@ Its ideal users are those that:
 * Prefer distributions with fairly extensive repositories.
 * Understand Mandarin Chinese. Not a necessity, as English support is available, but Mandarin Chinese would likely give one an edge on their online forums and other parts of their website.
 * Like the Deepin Desktop Environment (DDE), macOS users will likely favour it as its [default look][401] is similar to that of macOS.
+* Do not mind a fixed release model; deepin uses fixed releases as opposed to a rolling release model which is not suitable for everyone. 
 
 {% include Layouts/clear.html %}
