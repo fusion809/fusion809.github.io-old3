@@ -1,0 +1,20 @@
+<tr class="green">
+	<td class="title2" colspan="2" style="text-align: center;">Components</td>
+</tr>
+<tr class="green">
+	<td class="title5" style="width: 100px;">Display server</td>
+        <td class="green" width="300px;">{% if include.wm %}<a href="https://en.wikipedia.org/wiki/X.Org_Server" link="_blank">Xorg</a>{% elsif include.wc %}<a href="https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)" link="_blank">Wayland</a>{% elsif include.ds == "Xorg" %}<a href="https://en.wikipedia.org/wiki/X.Org_Server" link="_blank">Xorg</a>{% elsif include.ds == "Wayland" %}<a href="https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)" link="_blank">Wayland</a>{% endif %}</td>
+</tr>{% if include.fm %}
+<tr class="green">
+	<td class="title5"><abbr title="What is the official file manager of this desktop?">File manager</abbr></td>
+	<td class="green">{{ include.fm }}</td>
+</tr>{% endif %}{% if include.wt %}
+<tr class="green">
+	<td class="title5" style="width: 100px;">Widget toolkit</td>
+        <td class="green">{{ include.wt }}</td>
+</tr>
+{% endif %}{% if include.de %}
+<tr class="green">
+	<td class="title5" style="width: 100px;">Other</td>
+        <td class="green" width="300px;">{% if include.other %}{{ include.other }}{% endif %}</td>
+</tr>{% endif %}
