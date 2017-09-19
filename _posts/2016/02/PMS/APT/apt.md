@@ -48,7 +48,7 @@ where `$URL` is the URL you wish to install the Debian package from, while `$pac
 
 {% include Code/codeu.html line1="wget $URL" line2="sudo apt-get install $package.deb" %}
 
-. One feature of APT that can be handy is that it supports the use of wildcards, e.g., {% include Code/coders.html line1="apt-get install lua5.2*" %} should install all packages with the `lua5.2` prefix. It supports the installation of package groups too. To list available package groups I suggest you install the `tasksel` if it is not presently installed (via issuing {% include Code/coders-rb.html line1="apt-get install tasksel" %} and run {% include Code/codeus-fs.html line1="tasksel --list-tasks" %} Then to install the package group you run {% include Code/coders-rc.html line1="apt-get install $group^" %} where `$group` is the package group in question. One-click installs are supported by APT, on Ubuntu at least.
+. One feature of APT that can be handy is that it supports the use of wildcards, e.g. {% include Code/coders.html line1="apt-get install lua5.2*" %} should install all packages with the `lua5.2` prefix. It supports the installation of package groups too. To list available package groups I suggest you install the `tasksel` if it is not presently installed (via issuing {% include Code/coders-rb.html line1="apt-get install tasksel" %} and run {% include Code/codeus-fs.html line1="tasksel --list-tasks" %} Then to install the package group you run {% include Code/coders-rc.html line1="apt-get install $group^" %} where `$group` is the package group in question. One-click installs are supported by APT, on Ubuntu at least.
 
 ### Speed
 Running {% include Code/coders.html line1="time apt-get install -y --reinstall vim" %} gives:

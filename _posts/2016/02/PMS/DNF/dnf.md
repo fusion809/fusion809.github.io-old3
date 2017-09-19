@@ -64,9 +64,9 @@ I find it gives better, more detailed, output than APT, pacman or ZYpp. Addition
 
 it also has support for use of wildcard operators. For example:
 
-{% include Code/coder.html line1="dnf install kernel&#8727;" %} 
+{% include Code/coder.html line1="dnf install kernel&#8727;" %}
 
-will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g., the `-devel`, `-doc`, *etc.* subpackages).
+will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g. the `-devel`, `-doc`, *etc.* subpackages).
 
 ### Speed
 Running {% include Code/coders.html line1="time dnf install -y vim-common" %} returns:
