@@ -14,7 +14,7 @@ One characteristic that sets **Linux** apart from the more popular desktop opera
 * **Stability**: is this desktop likely to be so buggy that many users will not be even able to use the thing? I will also rate this out of 10. 
 * **System resource usage (SRU)**: does this desktop use a lot of system resources like power, CPU and RAM? I will rate this out of 10, with 1 being insane levels of resource usage and 10 being hardly any usage at all. I have, in the past, performed tests to measure RAM usage but in this comparison I will just use my experience as a guide.
 
-I will also discuss, briefly, the history of each desktop. I will compare the following desktops:
+I will also discuss, briefly, the history of each desktop. Unfortunately, I simply do not have enough time to compare every single desktop, in particular there is a very long list of window managers available that I simply cannot completely cover. I will compare the following desktops:
 
 {% include_relative list.md %}
 
