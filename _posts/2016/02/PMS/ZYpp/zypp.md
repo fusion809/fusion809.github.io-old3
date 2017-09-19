@@ -91,7 +91,7 @@ Alternatively, for most packages you can use the [**Open Build Service**][2], wh
 ZYpp is very feature-packed, it possesses all the features previously mentioned of DNF, with one exception: group installs. Instead if you wish to install a group of packages you have to use patterns, similarly to APT's tasks. For example, to install all members of the pattern `books` one would run: {% include Code/coders-fs.html line1="zypper in -t pattern books" %} To list all available patterns run {% include Code/coders-fs.html line1="zypper pt" %} YaST2 can also do so called &ldquo;one-click installs&rdquo;, wherein you click a button on a webpage, that is hyperlinked to a file with the `.ymp` file extension, which if your web browser preferences are set properly, should automatically download. If you click on the file either in your browser or in your file manager, it will open YaST2 which will, with your permission, attempt to install the package (or even group of packages specified by some pattern) specified in the `.ymp` file. This system can be handy (and a time-saver) when one wishes to install a package from a repository not presently added, although if I already have the repository in question added, I usually prefer to use `zypper` to install the package.
 
 ### Speed
-On openSUSE Tumbleweed running {% include Code/coders.html line1="time zypper --no-refresh in -y --force vim" %} returned:
+On openSUSE Tumbleweed running {% include Code/coders.html line1="time zypper &#8208;&#8208;no-refresh in -y &#8208;&#8208;force vim" %} returned:
 
 ~~~
 Loading repository data...

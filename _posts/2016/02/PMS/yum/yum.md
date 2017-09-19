@@ -8,7 +8,7 @@ Its basic syntax is:
 {% include Code/coder.html line1="yum [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="5" space="62" %}
 
 ### Customizability
-As yum is a binary package manager its packages cannot be as easily customized as source code packages would be. Source code packages can be downloaded though (with the command {% include Code/codeus-rbc.html line1="yumdownloader --source $package" %} modified, rebuilt and installed as described in the DNF section of this post.
+As yum is a binary package manager its packages cannot be as easily customized as source code packages would be. Source code packages can be downloaded though (with the command {% include Code/codeus-rbc.html line1="yumdownloader &#8208;&#8208;source $package" %} modified, rebuilt and installed as described in the DNF section of this post.
 
 ### Development
 Developing packages for yum is the same as developing DNF packages as they are both RPM packages. You can use the [method][1] outlined at the *Fedora Wiki* or using the Open Build Service.
