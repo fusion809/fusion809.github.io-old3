@@ -1,5 +1,6 @@
 {% capture my_capture %}
 * [awesome](#awesome)
+* [bspwm](#bspwm)
 * [Budgie](#budgie)
 * [Cinnamon](#cinnamon)
 * [Deepin Desktop Environment](#deepin-desktop-environment)
@@ -25,4 +26,5 @@
 * [Trinity Desktop Environment](#trinity-desktop-environment)
 * [Unity](#unity)
 * [Xfce](#xfce)
+* [xmonad](#xmonad)
 {% endcapture %}{% include Layouts/column.html content=my_capture no="4" %} 
