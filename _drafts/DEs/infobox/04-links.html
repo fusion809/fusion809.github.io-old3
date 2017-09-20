@@ -8,11 +8,11 @@
 <tr class="green">
 	<td class="title5">GitHub</td>
         <td class="green"><a href="https://github.com/{{ include.github }}" link="_blank">{{ include.github }}</a></td>
-</tr>{% endif %}
+</tr>{% endif %}{% if include.website %}
 <tr class="green">
 	<td class="title5">Official website</td>
         <td class="green"><a href="{{ include.website }}" link="_blank">{{ include.website-pretty }}</a></td>
-</tr>{% if include.wp %}
+</tr>{% endif %}{% if include.wp %}
 <tr class="green">
 	<td class="title5">Wikipedia (en)</td>
         <td class="green"><a href="https://en.wikipedia.org/wiki/{{ include.wp }}" link="_blank">{% if include.wp-pretty %}{{ include.wp-pretty }}{% else %}{{ include.wp }}{% endif %}</a></td>

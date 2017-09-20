@@ -5,13 +5,13 @@
   <tr style = "float: initial;">
     <td colspan = "2" style = "width: {% if include.width %}{{ include.width }}{% else %}400px{% endif %};">
       <div class = "infobox-icon">
-        {% if include.logonot %}{% else %}
-          <figure>
-            <p style="margin-left: auto; margin-right: auto; text-align: center;">
-              <a href="https://fusion809.github.io/images/Logos/{% if include.logo %}{{ include.logo }}{% else %}{{ include.game }}.png{% endif %}" link="_blank"><img src="https://fusion809.github.io/images/Logos/{% if include.logo %}{{ include.logo }}{% else %}{{ include.game }}.png{% endif %}" style = "width:{% if include.logo_width %}{{ include.logo_width }}{% else %}100px{% endif %}; float: initial; position: relative; margin: auto; text-align: center;"/></a>{% if include.logo_caption %}<br/>
-              <span class="caption">{{ include.logo_caption }}</span>{% endif %}
-            </p>
-          </figure>
+        {% if include.logo %}
+        <figure>
+          <p style="margin-left: auto; margin-right: auto; text-align: center;">
+            <a href="https://fusion809.github.io/images/Logos/{{ include.logo }}" link="_blank"><img src="https://fusion809.github.io/images/Logos/{{ include.logo }}" style = "width:{% if include.logo_width %}{{ include.logo_width }}{% endif %}; float: initial; position: relative; margin: auto; text-align: center;"/></a>{% if include.logo_caption %}<br/>
+            <span class="caption">{{ include.logo_caption }}</span>{% endif %}
+          </p>
+        </figure>
         {% endif %}
 
         <figure>
