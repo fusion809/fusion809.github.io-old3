@@ -1,2 +1,22 @@
 ## bspwm
-{% include_relative infobox-desktop.html wm="bspwm" screenshot="https://fusion809.github.io/images/desktop-environments/Manjaro_bspwm.png" screenshot_caption="bspwm running on Manjaro Linux, with its official branding." arch="bspwm" wp="bspwm" github="baskerville/bspwm" language="C" size="210 KiB" date="2013" license="<a href='https://raw.githubusercontent.com/baskerville/bspwm/master/LICENSE' link='_blank'>BSD-2</a>" devfor="N/A" developer="Bastien Dejean (original and lead), <a href='https://github.com/baskerville/bspwm/graphs/contributors' link='_blank'><i>et al.</i></a>" release="0.9.3" %}
+{% include_relative infobox-desktop.html wm="bspwm" screenshot="https://fusion809.github.io/images/desktop-environments/Manjaro_bspwm.png" screenshot_caption="bspwm running on Manjaro Linux, with its official branding." arch="bspwm" wp="bspwm" github="baskerville/bspwm" language="C" size="210 KiB" date="2013" license="<a href='https://raw.githubusercontent.com/baskerville/bspwm/master/LICENSE' link='_blank'>BSD-2</a>" devfor="N/A" developer="Bastien Dejean (original and lead), <a href='https://github.com/baskerville/bspwm/graphs/contributors' link='_blank'><i>et al.</i></a>" release="0.9.3" type="Tiling window manager" %}
+
+**bspwm** is a fast, lightweight and minimalist tiling window manager. It represents its windows as leaves on a full binary tree and it only responds to X events and the messages it receives on a dedicated socket. It is very much in-line with the Unix philosophy as it does just one thing, window management, and does it well. It has no drop-down menus in its own right, although applications run under it can provide their own. It does not respond to keyboard or pointer inputs, not on its own anyway, rather any such interaction must be programmed into sxhkd, a daemon that sends output to bspc which in turn sends messages to bspwm via its dedicated socket. 
+
+I must admit that very little background information on it is available online, most information I can find is about using it, not so much about its background, and I have little experience with it myself.
+
+### Availability
+Many modern distributions have bspwm in their official repositories, including:
+
+* Arch Linux and derivatives, including Manjaro which even has its own unofficial (or community) edition featuring bspwm as its default user interface. 
+* Debian 9 / sid
+* Fedora 24 and newer (including Rawhide)
+* Gentoo Linux
+* openSUSE Leap 42.2 and later, along with Tumbleweed
+* Slackware 14.1 and later
+* Ubuntu 16.10 and later
+
+Although many distributions, especially those infrequently updated like CentOS and older versions of Debian (e.g. 7/8) and Ubuntu (e.g. 14.04 / 16.04) do not have a bspwm package in their official repositories. bspwm is a fairly simple package to build so it is not surprising that it is finding its way into more and more distribution's official repositories. I would overall rate its availability as 7 out of 10, although in a few years I would expect this to go up to 9 or even 10 out of 10, assuming it is still actively developed. 
+
+### Customizability
+It is customized by editing {% include Layouts/path.html path="~/.config/bspwm/bspwmrc" puncr="," %} which is a Bourne shell script.
