@@ -61,7 +61,7 @@ main_pages:
     url:   "/about/"
   - title: "About Me"
     url:   "/about-me/"
-  - title: "Contributing"
+  - title: "Corrections"
     url:   "/contributing/"
   - title: "Copyright"
     url:   "/copyright/"

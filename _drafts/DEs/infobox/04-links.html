@@ -7,14 +7,21 @@
 </tr>{% endif %}{% if include.github %}
 <tr class="green">
 	<td class="title5">GitHub</td>
-        <td class="green"><a href="https://github.com/{{ include.github }}" link="_blank">{{ include.github }}</a></td>
+        <td class="green"><a href="https://github.com/{{ include.github }}" link="_blank">{{ include.github }}</a><br/> <a href = "https://github.com/{{ include.github }}/forks" link="_blank"><img src="https://img.shields.io/github/forks/{{ include.github }}.svg" style="float:right;"></a><a href = "https://github.com/{{ include.github }}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/{{ include.github }}.svg" style="float:right;"></a><a href = "https://github.com/{{ include.github }}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/{{ include.github }}.svg" style="float:right;"></a></td>
+</tr>{% endif %}{% if include.channel %}
+<tr class="green">
+	<td class="title5">IRC channel</td>
+	<td class="green"><a href="{% if include.server %}https://webchat.{% if include.server == "oftc" %}oftc.net{% else %}{{ include.server }}{% endif %}/?channels=#{{ include.channel }}{% else %}https://webchat.freenode.net/?channel={{ include.channel }}{% endif %}" link="_blank">#{{ include.channel }} on {% if include.server == "oftc" %}OFTC{% else %}Freenode{% endif %}</a></td>
 </tr>{% endif %}{% if include.website %}
 <tr class="green">
 	<td class="title5">Official website</td>
         <td class="green"><a href="{{ include.website }}" link="_blank">{{ include.website-pretty }}</a></td>
+</tr>{% endif %}{% if include.reddit %}
+<tr class="green">
+	<td class="title5">Reddit</td>
+	<td class="green"><a href="https://www.reddit.com/r/{{ include.reddit }}/" link="_blank">{{ include.reddit }}</a></td>
 </tr>{% endif %}{% if include.wp %}
 <tr class="green">
 	<td class="title5">Wikipedia (en)</td>
         <td class="green"><a href="https://en.wikipedia.org/wiki/{{ include.wp }}" link="_blank">{% if include.wp-pretty %}{{ include.wp-pretty }}{% else %}{{ include.wp }}{% endif %}</a></td>
 </tr>{% endif %}
-
