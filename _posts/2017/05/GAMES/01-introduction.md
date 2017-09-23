@@ -1,4 +1,4 @@
-As a Linux user I have found it a real challenge to find free (of monetary charge, not free as in freedom) games that I like, that can be run on Linux, without the use of [Wine](https://www.winehq.org/) or virtualization.{% include_relative fn-inline.html no="1" %} Most of the games I will mention in this post will be open-source, most of the rest will be freeware (free to play, without any paid membership or subscriptions being available), although I will mention one freemium game (wherein a free version is available, but paying for membership gives one some extra perks), *RuneScape*.
+As a Linux user I have found it a real challenge to find free (of monetary charge, not free as in freedom) games that I like, that can be run on Linux, without the use of [Wine](https://www.winehq.org/) or virtualization.{% include_relative fn-inline.html no="1" %} Most of the games I will mention in this post will be open-source, most of the rest will be freeware (free to play, without any paid membership or subscriptions being available), although I will mention one freemium game (wherein a free version is available, but paying for membership gives one some extra perks), RuneScape.
 
 I intend on mentioning a wide variety of free games, including those I dislike and even those I have not really used all that much (or even at all). If you feel any review is inaccurate feel free to create a pull request at this website's source repository [fusion809.github.io](https://github.com/fusion809/fusion809.github.io), or start a [new issue](https://github.com/fusion809/fusion809.github.io/issues/new) at our bug tracker.
 
@@ -13,7 +13,7 @@ and it returned 985, meaning, at least in theory, that there were 985 games avai
 
 * Gentoo's official overlay, the Portage tree
 * [`flatpak-overlay`](https://github.com/fosero/flatpak-overlay)
-* {% include Packages/fusion809.html %}
+* [`fusion809-overlay`](https://github.com/fusion809/fusion809-overlay)
 * [`gamerlay`](https://gitweb.gentoo.org/proj/gamerlay.git/)
 * [`games-overlay`](https://github.com/hasufell/games-overlay)
 * [`gnome`](https://gitweb.gentoo.org/proj/gnome.git/)

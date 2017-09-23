@@ -5,7 +5,7 @@ What makes a great game really differs according to personal opinion. I personal
 * Racing games.
 * Real-time strategy.
 
-Unfortunately, however, no game I am aware of fulfils all six of these requirements. The game closest to fulfilling these requirements is probably *0 A.D.* as the only one of these requirements it does not meet is (5). As a result of these limitations I am forced to settle for games that do not tick all the boxes, but nevertheless the Linux world has numerous games to offer.
+Unfortunately, however, no game I am aware of fulfils all six of these requirements. The game closest to fulfilling these requirements is probably 0 A.D. as the only one of these requirements it does not meet is (5). As a result of these limitations I am forced to settle for games that do not tick all the boxes, but nevertheless the Linux world has numerous games to offer.
 
 The criteria for a game getting a mention in this post are that:
 

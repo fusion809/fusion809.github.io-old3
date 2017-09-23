@@ -22,4 +22,9 @@ Although many distributions, especially those infrequently updated like CentOS a
 bspwm is configured solely using text files, with no graphical tools available to simplify the process. It does not work in an intuitive way out-of-the-box like awesome or the mainstream desktop environments, making it fairly non-beginner friendly. I would rate its beginner-friendliness at 2 out of 10, as it is customized mostly using shell scripts which most Linux users are probably at least mildly familiar with. 
 
 ### Customizability
-It is customized by editing {% include Layouts/path.html path="~/.config/bspwm/bspwmrc" puncr="," %} which is a Bourne shell script. From what I understand it determines what information is sent to bspwm via the dedicated socket, although I could be wrong (do correct me if I am, see [Corrections](/contributing/) for details). If you wish to customize sxhkd you will need to edit {% include Layouts/path.html path="~/.config/sxhkd/sxhkdrc" puncr="." %} I would rate its customizability at &ge;8 out of 10.
+It is customized by editing {% include Layouts/path.html path="~/.config/bspwm/bspwmrc" puncr="," %} which is a Bourne shell script. From what I understand it determines what information is sent to bspwm via the dedicated socket, although I could be wrong (do correct me if I am, see [Corrections](/contributing/) for details). If you wish to customize sxhkd you will need to edit {% include Layouts/path.html path="~/.config/sxhkd/sxhkdrc" puncr="." %} 
+
+I would rate its customizability at &ge;8 out of 10.
+
+### Stability
+I have minimal experience with bspwm so I cannot really speak to its stability. Given that it still has not had a stable (1.0) release, I would guess its stability to be in the range 3&ndash;7 out of 10. 
