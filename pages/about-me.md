@@ -8,14 +8,14 @@ permalink:        /about-me/
 
 {% include Links/image.html image="operating-systems/Ubuntu_12.04.png" description="Desktop of Ubuntu 12.04, with its default wallpaper" id="1" width = "1034px" float="none" %}
 
-My journey through the world of Linux began in mid 2012, when I first tried [Ubuntu](http://www.ubuntu.com) 12.04 as a dual-boot with Windows 7 on my Dell laptop. At first, I must admit I was not impressed, as it was like I had landed on an alien planet, as I had never had any need to use a terminal emulator (or command-prompt as it is called under Microsoft Windows) before. Fortunately, I persevered (although, I did return to Windows on-and-off) and after a while I became almost addicted to Linux. A couple of years later I decided to delete the Windows 7 partition on my Dell laptop and make the laptop 100% pure Linux. Since then, I have never regretted making the transition to Linux. Although, I eventually outgrew Ubuntu as it was essentially preschool with so much hand-holding that I was left out of many of the important decisions about my own system.
+My journey through the world of Linux began in mid 2012, when I first tried [Ubuntu](http://www.ubuntu.com) 12.04 as a dual-boot with Windows 7 on my Dell laptop. At first, I must admit I was not impressed, as it was like I had landed on an alien planet, as I had never had any need to use a terminal emulator (or command prompt as it is called under Microsoft Windows) before. Fortunately, I persevered (although, I did return to Windows on-and-off) and after a while I became almost addicted to Linux. A couple of years later I decided to delete the Windows 7 partition on my Dell laptop and make the laptop 100% pure Linux. Since then, I have never regretted making the transition to Linux. Although, I eventually outgrew Ubuntu as it was essentially preschool with so much hand-holding that I was left out of many of the important decisions about my own system.
 
-When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/), KVM/QEMU and live USB I tried a variety of free (of monetary cost) operating systems, including:
+When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/), KVM/QEMU and live USB I tried a variety of free (of monetary cost) operating systems, including (note official Ubuntu spins like Kubuntu, Lubuntu, Ubuntu GNOME, Ubuntu MATE, Xubuntu are not mentioned, although I have tried them):
 
 {% capture my_capture %}
 * [Android-x86 6.0-r1](http://www.android-x86.org/)
 * [Antergos](https://antergos.com/)
-* [antiX 15/15-MX](http://antix.mepis.org/index.php?title=Main_Page)
+* [antiX 15/15-MX/16.2](http://antix.mepis.org/index.php?title=Main_Page)
 * [ArchBang](http://bbs.archbang.org/)
 * [Arch Linux](https://www.archlinux.org/)
 * [Arya Linux 2017](http://aryalinux.org/)
@@ -25,13 +25,13 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Chakra](https://chakralinux.org/)
 * [Chapeau 22.1](http://chapeaulinux.org/)
 * [Chromixium 1.5](http://chromixium.org/)
-* [Debian 8.x](https://www.debian.org/)
+* [Debian 8.x/9.x/testing/unstable](https://www.debian.org/)
 * [deepin 2014.3/15/15.3/15.4](http://www.deepin.org/?lang=en)
 * [DragonFlyBSD 4.8](https://www.dragonflybsd.org/)
 * [elementary OS 0.3.x](https://elementary.io/)
 * [Exherbo Linux](http://exherbo.org/)
-* [Fedora 22-25](https://getfedora.org/)
-* [FreeBSD 10.2/10.3/11.0/11-STABLE/12-CURRENT](https://www.freebsd.org/)
+* [Fedora 22-26](https://getfedora.org/)
+* [FreeBSD 10.2/10.3/11.0/11.1/11-STABLE/12-CURRENT](https://www.freebsd.org/)
 * [FreeDOS 1.2](http://www.freedos.org/)
 * [Frugalware Linux 2.1](http://frugalware.org/)
 * [Funtoo Linux](http://www.funtoo.org/Welcome)
@@ -58,7 +58,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [OpenBSD 5.9/6.0/6.1](https://www.openbsd.org/)
 * [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
 * [OpenMandriva Lx 2014.2/3/3.01](https://www.openmandriva.org/en)
-* [openSUSE 13.2/42.1/42.2/Tumbleweed](https://www.opensuse.org/)
+* [openSUSE 13.2/42.1/42.2/42.3/Tumbleweed](https://www.opensuse.org/)
 * [PC-BSD 10.1/10.2/TrueOS](https://www.trueos.org/)
 * [PCLinuxOS](http://www.pclinuxos.com/)
 * [Pisi Linux 2.0-beta2](http://www.pisilinux.org/en/)
@@ -111,13 +111,6 @@ my favourite were, in ascending order:
 ## Ubuntu
 **Ubuntu** was my first distro so I feel very comfortable with it, despite the fact that package development under it is difficult and tedious. Ubuntu affords one comparatively few customization options, although it is sufficient for me to use 16.04 LTS as my primarily operating system. This is because I find it more stable than any other operating system that makes the top five.
 
-## Arch Linux / Manjaro Linux
-**Manjaro Linux** is a beginner-friendly derivative of **Arch Linux**, a Linux distribution based on the "Keep It Simple, Stupid" (KISS) principle, that is geared towards more experienced Linux users. The way it interprets the KISS principle, is that a fresh Arch install should be the barebones and that automation (e.g., there is no automated installer for Arch, by default) should be kept to a minimum. For this reason, Arch Linux was previously out of my reach, until I found some scripts for automating its installation process. Unfortunately, installing Arch on my removable drive did not go well at first (I forgot to install and configure a boot loader for it, I think), so I then opted to use Manjaro Linux in its place on this drive.
-
-Later I managed to install Arch Linux on this removable drive and successfully boot it and then I successfully installed it on my internal hard drive (namely on my `/dev/sda3` partition, with `/dev/sda1` being my Sabayon partition and `/dev/sda2` being my swap partition). Graphics issues caused me to delete this internal drive installation and install OT in its place. Later I deleted this installation and installed Arch in its place. Manjaro Linux uses its own repositories, which are updated approximately once a week, this is apparently to ensure the system's stability.
-
-Arch Linux is my second-preference operating system (OS) and I presently, as of 8 November 2016, dual-boot it along with Ubuntu 16.04. It is not my primary OS as I find it buggy and prone to freeze up on me, without warning.
-
 ## Sabayon Linux
 It is the distribution that I have decided to keep on my `/dev/sda1` partition permanently, because it is a good fallback distribution in case the distro on my `/dev/sda3` partition fails to boot or otherwise has serious issues. It is a Gentoo derivative that has a beginner-friendly binary package manager, Entropy, alongside the complicated yet powerful package manager (oriented towards experienced Linux users) of Gentoo, Portage. Its software is usually fairly up-to-date (e.g., its website claims that its software is "bleeding-edge"), although sometimes you will see a lag, sometimes due to upstream issues (see most packages in its repositories come from the Portage Tree of Gentoo. e.g., GNOME 3.18 was released 23 September 2015, yet it was not until 15 November 2015 that the GNOME Shell 3.18 was finally added to the Portage Tree) and sometimes because only two people directly maintain the Entropy Store and as there are over 13,100 software packages in the Entropy Store it is sometimes impossible for them, from a practical standpoint, to keep all of them up-to-date.
 
@@ -133,4 +126,9 @@ For example, when I booted Gecko Linux (Rolling) for the first time, after insta
 **Funtoo Linux** was the first source-based distribution I had successfully set up on my computer, outside a VM. It, for the most part, was quite an enlightening experience and it gave me the confidence to re-try installing Gentoo Linux on my PC outside a VM, after my first attempt failed quite miserably. 
 
 ## Gentoo Linux
-I successfully installed **Gentoo Linux** around early April 2017 and with what I learnt from installing Funtoo Linux I found it fairly easy. I ended up switching my init system from OpenRC to systemd, using git to control my local Portage tree copy (as opposed to the default of rsync).  
+I successfully installed **Gentoo Linux** around early April 2017 and with what I learnt from installing Funtoo Linux I found it fairly easy. I ended up switching my init system from OpenRC to systemd, using git to control my local Portage tree copy (as opposed to the default of rsync). 
+
+## Arch Linux / Manjaro Linux
+**Manjaro Linux** is a beginner-friendly derivative of **Arch Linux**, a Linux distribution based on the "Keep It Simple, Stupid" (KISS) principle, that is geared towards more experienced Linux users. The way it interprets the KISS principle, is that a fresh Arch install should be the barebones and that automation (e.g., there is no automated installer for Arch, by default) should be kept to a minimum. For this reason, Arch Linux was previously out of my reach, until I found some scripts for automating its installation process. Unfortunately, installing Arch on my removable drive did not go well at first (I forgot to install and configure a boot loader for it, I think), so I then opted to use Manjaro Linux in its place on this drive.
+
+Later I managed to install Arch Linux on this removable drive and successfully boot it and then I successfully installed it on my internal hard drive (namely on my `/dev/sda3` partition, with `/dev/sda1` being my Sabayon partition and `/dev/sda2` being my swap partition). Graphics issues caused me to delete this internal drive installation and install OT in its place. Later I deleted this installation and installed Arch in its place. Manjaro Linux uses its own repositories, which are updated approximately once a week, this is apparently to ensure the system's stability.
