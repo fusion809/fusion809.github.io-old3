@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-09-24 18:12:00 +1000
+last_modified_at: 2017-09-24 22:06:40 +1000
 permalink:        /about-me/
 ---
 
@@ -10,12 +10,12 @@ permalink:        /about-me/
 
 My journey through the world of Linux began in mid 2012, when I first tried [Ubuntu](http://www.ubuntu.com) 12.04 as a dual-boot with Windows 7 on my Dell laptop. At first, I must admit I was not impressed, as it was like I had landed on an alien planet, as I had never had any need to use a terminal emulator (or command prompt as it is called under Microsoft Windows) before. Fortunately, I persevered (although, I did return to Windows on-and-off) and after a while I became almost addicted to Linux. A couple of years later I decided to delete the Windows 7 partition on my Dell laptop and make the laptop 100% pure Linux. Since then, I have never regretted making the transition to Linux. Although, I eventually outgrew Ubuntu as it was essentially preschool with so much hand-holding that I was left out of many of the important decisions about my own system.
 
-When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/), KVM/QEMU and live USB I tried a variety of free (of monetary cost) operating systems, including (note official Ubuntu spins like Kubuntu, Lubuntu, Ubuntu GNOME, Ubuntu MATE, Xubuntu are not mentioned, although I have tried them):
+When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/), KVM/QEMU and live USB I tried a variety of free (of monetary cost) operating systems, including:
 
 {% capture my_capture %}
 * [Android-x86 6.0-r1](http://www.android-x86.org/)
 * [Antergos](https://antergos.com/)
-* [antiX 15/15-MX/16.2](http://antix.mepis.org/index.php?title=Main_Page)
+* [antiX 15/15-MX/16.1/16.2](http://antix.mepis.org/index.php?title=Main_Page)
 * [ArchBang](http://bbs.archbang.org/)
 * [Arch Linux](https://www.archlinux.org/)
 * [Arya Linux 2017](http://aryalinux.org/)
@@ -27,10 +27,11 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Chromixium 1.5](http://chromixium.org/)
 * [Debian 8.x/9.x/testing/unstable](https://www.debian.org/)
 * [deepin 2014.3/15/15.3/15.4](http://www.deepin.org/?lang=en)
+* [Devuan 1.0](https://devuan.org/)
 * [DragonFlyBSD 4.8](https://www.dragonflybsd.org/)
 * [elementary OS 0.3.x](https://elementary.io/)
 * [Exherbo Linux](http://exherbo.org/)
-* [Fedora 22-26](https://getfedora.org/)
+* [Fedora 22-26/Rawhide](https://getfedora.org/)
 * [FreeBSD 10.2/10.3/11.0/11.1/11-STABLE/12-CURRENT](https://www.freebsd.org/)
 * [FreeDOS 1.2](http://www.freedos.org/)
 * [Frugalware Linux 2.1](http://frugalware.org/)
@@ -49,7 +50,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Linux Mint 17.2/17.3/18.1](http://linuxmint.com/)
 * [Lunar Linux](http://www.lunar-linux.org/)
 * [LXLE 14.04](http://lxle.net/)
-* [Mageia 5/6 sta2](http://www.mageia.org/en/)
+* [Mageia 5/6 sta2/6/Cauldron](http://www.mageia.org/en/)
 * [Manjaro Linux](https://manjaro.github.io/)
 * [MidnightBSD 0.8.5](http://www.midnightbsd.org/)
 * [NetBSD 7/7.1](https://www.netbsd.org)
@@ -62,7 +63,9 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [PC-BSD 10.1/10.2/TrueOS](https://www.trueos.org/)
 * [PCLinuxOS](http://www.pclinuxos.com/)
 * [Pisi Linux 2.0-beta2](http://www.pisilinux.org/en/)
+* [Puppy Linux 6.0/6.3](http://puppylinux.com/)
 * [Q4OS 1.6.x/2.3.x](http://q4os.org/)
+* [Quirky Linux 6.x/7.x](http://barryk.org/quirky/)
 * [ReactOS 0.4.2/0.4.4/0.4.5](https://www.reactos.org/)
 * [Remix OS 3](http://www.jide.com/remixos)
 * [ROSA R8](http://en.rosalinux.com/)
@@ -71,8 +74,9 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [SmartOS](https://www.joyent.com/smartos)
 * [Solus OS 1.0-RC1/1.2.1](https://solus-project.com/)
 * [Slackware Linux 14.2-RC2/14.2](http://www.slackware.com/)
+* [Tails 3.1](https://tails.boum.org/)
 * [Trisquel GNU/Linux 7](https://trisquel.info/)
-* [Ubuntu 12.04-17.04](http://www.ubuntu.com)
+* [Ubuntu 12.04-17.04](http://www.ubuntu.com) (and its official flavours)
 * [Vector Linux 7.1](http://vectorlinux.com/)
 * [Void Linux](http://www.voidlinux.eu/)
 * [Zorin OS 7/12](http://zorinos.com/)
@@ -109,7 +113,7 @@ of these operating systems I have also installed the following six on my PC:
 my favourite were, in ascending order:
 
 ## Ubuntu
-**Ubuntu** was my first distro so I feel very comfortable with it, despite the fact that package development under it is difficult and tedious. Ubuntu affords one comparatively few customization options, although it is sufficient for me to use 16.04 LTS as my primarily operating system. This is because I find it more stable than any other operating system that makes the top five.
+**Ubuntu** was my first distro so I feel very comfortable with it, despite the fact that package development under it is difficult and tedious. I do not presently use it but it is fairly stable. 
 
 ## Sabayon Linux
 It is the distribution that I have decided to keep on my `/dev/sda1` partition permanently, because it is a good fallback distribution in case the distro on my `/dev/sda3` partition fails to boot or otherwise has serious issues. It is a Gentoo derivative that has a beginner-friendly binary package manager, Entropy, alongside the complicated yet powerful package manager (oriented towards experienced Linux users) of Gentoo, Portage. Its software is usually fairly up-to-date (e.g., its website claims that its software is "bleeding-edge"), although sometimes you will see a lag, sometimes due to upstream issues (see most packages in its repositories come from the Portage Tree of Gentoo. e.g., GNOME 3.18 was released 23 September 2015, yet it was not until 15 November 2015 that the GNOME Shell 3.18 was finally added to the Portage Tree) and sometimes because only two people directly maintain the Entropy Store and as there are over 13,100 software packages in the Entropy Store it is sometimes impossible for them, from a practical standpoint, to keep all of them up-to-date.
