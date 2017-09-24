@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-05-28 09:33:53 +1000
+last_modified_at: 2017-09-24 18:12:00 +1000
 permalink:        /about-me/
 ---
 
@@ -44,7 +44,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Haiku OS rev 51133](https://www.haiku-os.org/)
 * [Icaros Desktop 2.2](http://icarosdesktop.org/)
 * [Kali Linux 2](https://www.kali.org/)
-* [KDE Neon Unstable](https://neon.kde.org/)
+* [KDE Neon git-unstable](https://neon.kde.org/)
 * [Korora 21/22/23/24](https://kororaproject.org/)
 * [Linux Mint 17.2/17.3/18.1](http://linuxmint.com/)
 * [Lunar Linux](http://www.lunar-linux.org/)
