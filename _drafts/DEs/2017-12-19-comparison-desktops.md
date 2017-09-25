@@ -20,3 +20,4 @@ I will also discuss, briefly, the history of each desktop. Unfortunately, I simp
 
 {% include_relative 01-awesome.md %}
 {% include_relative 02-bspwm.md %}
+{% include_relative 03-budgie.md %}

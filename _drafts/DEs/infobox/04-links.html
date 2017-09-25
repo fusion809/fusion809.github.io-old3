@@ -11,7 +11,7 @@
 </tr>{% endif %}{% if include.channel %}
 <tr class="green">
 	<td class="title5">IRC channel</td>
-	<td class="green"><a href="{% if include.server %}https://webchat.{% if include.server == "oftc" %}oftc.net{% else %}{{ include.server }}{% endif %}/?channels=#{{ include.channel }}{% else %}https://webchat.freenode.net/?channel={{ include.channel }}{% endif %}" link="_blank">#{{ include.channel }} on {% if include.server == "oftc" %}OFTC{% else %}Freenode{% endif %}</a></td>
+	<td class="green"><a href="{% if include.server %}https://kiwiirc.com/client/irc://irc.{% if include.server == "oftc" %}oftc.net{% else %}{{ include.server }}{% endif %}/#{{ include.channel }}{% else %}https://kiwiirc.com/client/irc://irc.freenode.net/#{{ include.channel }}{% endif %}" link="_blank">#{{ include.channel }} on {% if include.server == "oftc" %}OFTC{% else %}Freenode{% endif %}</a></td>
 </tr>{% endif %}{% if include.website %}
 <tr class="green">
 	<td class="title5">Official website</td>
