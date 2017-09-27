@@ -141,6 +141,19 @@ td.title5 {
   white-space: nowrap;
 }
 
+td.title6 {
+  border-collapse: collapse !important;
+  padding: 8px;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  background-color: rgb(255, 128, 255);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
 span.no, td.no, td.No {
   background-color: red;
   color: white;
