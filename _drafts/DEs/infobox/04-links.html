@@ -16,6 +16,10 @@
 <tr class="green">
 	<td class="title5">Official website</td>
         <td class="green"><a href="{{ include.website }}" link="_blank">{{ include.website-pretty }}</a></td>
+</tr>{% endif %}{% if include.packages %}
+<tr class="green">
+	<td class="title5">Packages (pkgs.org)</td>
+	<td class="green"><a href="https://pkgs.org/download/{% if include.package %}{{ include.package }}{% elsif include.wc %}{{ include.wc }}{% else %}{{ include.wm }}{% endif %}" link="_blank">{% if include.package %}{{ include.package }}{% elsif include.wc %}{{ include.wc }}{% else %}{{ include.wm }}{% endif %}</a></td>
 </tr>{% endif %}{% if include.reddit %}
 <tr class="green">
 	<td class="title5">Reddit</td>
