@@ -29,7 +29,7 @@ I would rate its customizability at &ge;8 out of 10.
 ### Stability
 I have minimal experience with bspwm so I cannot really speak to its stability. Given that it still has not had a stable (1.0) release, I would guess its stability to be in the range 3&ndash;7 out of 10.
 
-### System resource usage
+<h3 style="width: 100%">System resource usage</h3>
 bspwm has a very low installed size (210 KiB). Its RAM usage is also rather small at just 1.2 MiB (which I determined in a Manjaro bspwm edition VM), which is lower than that of most window manager. 
 
 {% include Layouts/clear.html %}
