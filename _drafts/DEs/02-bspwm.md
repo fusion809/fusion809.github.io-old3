@@ -16,7 +16,7 @@ Many modern distributions have bspwm in their official repositories, including:
 * Slackware 14.1 and later
 * Ubuntu 16.10 and later
 
-Although many distributions, especially those infrequently updated like CentOS and older versions of Debian (e.g. 7/8) and Ubuntu (e.g. 14.04 / 16.04) do not have a bspwm package in their official repositories. bspwm is a fairly simple package to build so it is not surprising that it is finding its way into more and more distribution's official repositories. I would overall rate its availability as 7 out of 10, although in a few years I would expect this to go up to 9 or even 10 out of 10, assuming it is still actively developed. 
+Although many distributions, especially those infrequently updated like CentOS and older versions of Debian (e.g. 7/8) and Ubuntu LTS (e.g. 14.04 / 16.04) do not have a bspwm package in their official repositories. bspwm is a fairly simple package to build so it is not surprising that it is finding its way into more and more distribution's official repositories. I would overall rate its availability as 7 out of 10, although in a few years I would expect this to go up to 9 or even 10 out of 10, assuming it is still actively developed. 
 
 ### Beginner-friendliness
 bspwm is configured solely using text files, with no graphical tools available to simplify the process. It does not work in an intuitive way out-of-the-box like awesome or the mainstream desktop environments, making it fairly non-beginner friendly. I would rate its beginner-friendliness at 2 out of 10, as it is customized mostly using shell scripts which most Linux users are probably at least mildly familiar with. 
