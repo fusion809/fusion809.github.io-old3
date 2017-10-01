@@ -28,3 +28,5 @@
 * [Xfce](#xfce)
 * [xmonad](#xmonad)
 {% endcapture %}{% include Layouts/column.html content=my_capture no="4" %} 
+
+{% include Layouts/clear.html %}

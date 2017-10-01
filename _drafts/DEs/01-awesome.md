@@ -17,7 +17,7 @@ Customizing awesome is done by editing its configuration files which are written
 I would rate its customizability as &ge;9 out of 10.
 
 ### Stability
-I have fairly limited experience with awesome so I cannot be too confident about its stability but I found I could not launch awesome on Arch Linux using either SDDM or xinit. SDDM, when the awesome session was selected and logged in, did not launch awesome successfully and I was left with a Compton session. Likewise running xinit failed to start it too, although the error message I got was not very helpful. Running it on Gentoo Linux, however, was successful. I give it a 5-7 out of 10. 
+It is very stable. I have tried it on three different platforms (Arch Linux, Debian 9 and Gentoo Linux), on all three I noticed no bugs. I would rate stability as being &ge;8 out of 10. 
 
 ### System resource usage
 awesome has a fairly low installed size (8.33 MiB), although higher than some window managers like bspwm (210 KiB), Fluxbox (2.98 MiB), i3 (1.27 MiB) and Openbox (1.19 MiB). Its RAM usage is also fairly low (18.7 MiB, when running on Gentoo Linux with the default theme), but higher than that of some of the lightest window managers. 
