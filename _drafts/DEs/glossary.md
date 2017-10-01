@@ -6,7 +6,7 @@ Some basic definitions of the terminology used in this post are called for.
 
 A desktop environment is an implementation of the desktop metaphor. It consists of several crucial components, including:
 * A display server &mdash; the most common options are Wayland and X.Org Server. 
-* A Wayland compositor / window manager
+* A Wayland compositor / window manager.
 * A widget toolkit &mdash; most commonly GTK+ or Qt. 
 
 <h3 style="width: 100%">Wayland compositor</h3>
