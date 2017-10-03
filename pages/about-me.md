@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-09-24 22:06:40 +1000
+last_modified_at: 2017-10-04 01:26:05 +1000
 permalink:        /about-me/
 ---
 
@@ -20,7 +20,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Arch Linux](https://www.archlinux.org/)
 * [Arya Linux 2017](http://aryalinux.org/)
 * [Bodhi Linux 3.10](http://www.bodhilinux.com/)
-* [Calculate Linux 15.17](http://www.calculate-linux.org/)
+* [Calculate Linux 15.17/17.6](http://www.calculate-linux.org/)
 * [CentOS 7](https://www.centos.org/)
 * [Chakra](https://chakralinux.org/)
 * [Chapeau 22.1](http://chapeaulinux.org/)
@@ -54,7 +54,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Manjaro Linux](https://manjaro.github.io/)
 * [MidnightBSD 0.8.5](http://www.midnightbsd.org/)
 * [NetBSD 7/7.1](https://www.netbsd.org)
-* [NixOS 17.03](https://nixos.org/)
+* [NixOS 17.03/17.09/unstable](https://nixos.org/)
 * [NuTyX 9.0](http://www.nutyx.org/)
 * [OpenBSD 5.9/6.0/6.1](https://www.openbsd.org/)
 * [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
@@ -76,9 +76,9 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Slackware Linux 14.2-RC2/14.2](http://www.slackware.com/)
 * [Tails 3.1](https://tails.boum.org/)
 * [Trisquel GNU/Linux 7](https://trisquel.info/)
-* [Ubuntu 12.04-17.04](http://www.ubuntu.com) (and its official flavours)
+* [Ubuntu 12.04-17.10](http://www.ubuntu.com) (and its official flavours)
 * [Vector Linux 7.1](http://vectorlinux.com/)
-* [Void Linux](http://www.voidlinux.eu/)
+* [Void Linux glibc/musl](http://www.voidlinux.eu/)
 * [Zorin OS 7/12](http://zorinos.com/)
 {% endcapture %}
 <div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
