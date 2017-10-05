@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jekyll/jekyll.git
-  revision: 4c0f26c8a1deaab81d9d981da2e28f54d633ff16
+  revision: 4a2ab9247c63ae05962f9b502eb22e3d9b7fec83
   specs:
     jekyll (3.6.0)
       addressable (~> 2.4)
@@ -74,7 +74,7 @@ GEM
     nuggets (1.0.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    pathutil (0.14.0)
+    pathutil (0.16.0)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.0)
     pygments.rb (1.2.0)
@@ -88,7 +88,7 @@ GEM
     ruby-nuggets (1.0.0)
       nuggets (= 1.0.0)
     safe_yaml (1.0.4)
-    sass (3.5.1)
+    sass (3.5.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
