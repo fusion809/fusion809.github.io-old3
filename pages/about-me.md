@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-10-07 09:03:57 +1000
+last_modified_at: 2017-10-10 17:45:30 +1000
 permalink:        /about-me/
 ---
 
@@ -50,22 +50,26 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [KDE Neon git-unstable](https://neon.kde.org/)
 * [Korora 21/22/23/24](https://kororaproject.org/)
 * [Linux From Scratch 8.1](http://www.linuxfromscratch.org/lfs/)
+* [Linux Lite 3.6](https://linuxliteos.com/)
 * [Linux Mint 17.2/17.3/18.1/18.2](http://linuxmint.com/)
 * [Lunar Linux](http://www.lunar-linux.org/)
 * [LXLE 14.04](http://lxle.net/)
 * [Mageia 5/6 sta2/6/Cauldron](http://www.mageia.org/en/)
 * [Manjaro Linux](https://manjaro.github.io/)
 * [MidnightBSD 0.8.5](http://www.midnightbsd.org/)
+* [MX 16.1](https://mxlinux.org/)
 * [NetBSD 7/7.1](https://www.netbsd.org)
 * [NixOS 17.03/17.09/unstable](https://nixos.org/)
 * [NuTyX 9.0](http://www.nutyx.org/)
 * [Oracle Linux 7](https://www.oracle.com/linux/index.html)
-* [OpenBSD 5.9/6.0/6.1](https://www.openbsd.org/)
+* [OpenBSD 5.9/6.0/6.1/6.2](https://www.openbsd.org/)
 * [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
 * [OpenMandriva Lx 2014.2/3/3.01](https://www.openmandriva.org/en)
 * [openSUSE 13.2/42.1/42.2/42.3/Tumbleweed](https://www.opensuse.org/)
+* [Parrot Security OS 3.8](https://www.parrotsec.org/)
 * [PC-BSD 10.1/10.2/TrueOS](https://www.trueos.org/)
 * [PCLinuxOS](http://www.pclinuxos.com/)
+* [Peppermint OS 8](https://peppermintos.com/)
 * [Pisi Linux 2.0-beta2](http://www.pisilinux.org/en/)
 * [Puppy Linux 6.0/6.3](http://puppylinux.com/)
 * [Q4OS 1.6.x/2.3.x](http://q4os.org/)
