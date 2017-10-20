@@ -4,6 +4,10 @@
 <tr class="green">
 	<td class="title5">ArchWiki</td>
         <td class="green"><a href="https://wiki.archlinux.org/index.php/{{ include.arch }}" link="_blank">{% if include.arch-pretty %}{{ include.arch-pretty }}{% else %}{{ include.arch }}{% endif %}</a></td>
+</tr>{% endif %}{% if include.gentoo %}
+<tr class="green">
+	<td class="title5">Gentoo Wiki</td>
+        <td class="green"><a href="https://wiki.gentoo.org/wiki/{{ include.gentoo }}" link="_blank">{% if include.gentoo-pretty %}{{ include.gentoo-pretty }}{% else %}{{ include.gentoo }}{% endif %}</a></td>
 </tr>{% endif %}{% if include.github %}
 <tr class="green">
 	<td class="title5">GitHub</td>
