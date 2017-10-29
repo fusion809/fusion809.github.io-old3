@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-10-10 17:45:30 +1000
+last_modified_at: 2017-10-29 18:27:10 +1000
 permalink:        /about-me/
 ---
 
@@ -13,7 +13,7 @@ My journey through the world of Linux began in mid 2012, when I first tried [Ubu
 When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/), KVM/QEMU and live USB I tried a variety of free (of monetary cost) operating systems, including:
 
 {% capture my_capture %}
-* [Android-x86 6.0-r1](http://www.android-x86.org/)
+* [Android-x86 6.0-r1/7.1-rc2](http://www.android-x86.org/)
 * [Antergos](https://antergos.com/)
 * [antiX 15/15-MX/16.1/16.2](http://antix.mepis.org/index.php?title=Main_Page)
 * [ArchBang](http://bbs.archbang.org/)
@@ -104,6 +104,15 @@ readelf -l a.out | grep ': /lib'
 
 per chapter 6.10 of the manual failed as the compiler was malfunctioning. Also tried using ALFS with jhalfs-2.4 and that still failed due to kernel issues. The #lfs IRC channel was not really helpful people just said to try the manual way over and over (doing a clean start from the beginning the LFS guide) again until it magically works. I did manage to install Linux From Scratch with this effort starting on 6 October 2017 and ending 7 October 2017 and it finally booted fine, except one minor networking issue.
 
+## Distribution difficulty
+I have ranked the distributions I have tried by how challenging they are to set up and use on a scale from 0 to 5. 0 are beginner-friendly distributions no more challenging to set up and use than Windows. I am unaware of any distribution that is exactly 0 on this scale. 1 are beginner-friendly distributions that are usually as easy as Windows to install, but may be a little more challenging to use post-install for beginners. Ubuntu is an example of a distribution with a difficulty score of 1. 2 have automated installers and may be as easy to set up as Windows, but post-installation they are significantly more challenging to use than Windows. Usually due to things like bugs, small repositories, poor out-of-the-box support for devices with proprietary drivers and/or difficult package management. 3 have no automated installers, but have a simple installation process, are usually installed from the command-line. Initial system configuration post-install is done from the command-line. Package management is not too easy for beginners, but it also is not too complex. Alternatively some distributions may fit this category that have an installer but with very complicated package management. 4 have no automated installer and a complicated installation process and are installed from the command-line. The package manager is complicated and builds from source by default. 5 is Linux From Scratch (LFS). 
+
+1 includes: Ubuntu and most of its derivatives like Linux Mint. Along with Chapeau, deepin, Korora, Manjaro Linux, Q4OS and Sabayon Linux. 
+2 includes: CentOS, Debian, Fedora, Mageia, OpenMandriva, openSUSE and TrueOS. 
+3 includes: Arch Linux, NixOS, Parabola GNU/Linux and Slackware Linux. It has an installer but its package management is complicated as it has no high-level package manager, by default, that is one that resolves dependencies, manages repositories and downloads packages automatically for you. Package managers that do this for you (e.g. slapt-get) is available, but it is not installed, by default, on Slackware. 
+4 includes: Exherbo Linux, Funtoo Linux and Gentoo Linux. 
+5 is mostly just LFS. 
+
 ## Operating systems installed on my actual hard disk
 Of the operating systems listed before I have also installed the following nine on my PC, outside a VM and live session:
 {% capture my_capture %}
@@ -140,7 +149,7 @@ For example, when I booted Gecko Linux (Rolling) for the first time, after insta
 **Funtoo Linux** was the first source-based distribution I had successfully set up on my computer, outside a VM. It, for the most part, was quite an enlightening experience and it gave me the confidence to re-try installing Gentoo Linux on my PC outside a VM, after my first attempt failed quite miserably. 
 
 ### Gentoo Linux
-I successfully installed **Gentoo Linux** around early April 2017 and with what I learnt from installing Funtoo Linux I found it fairly easy. I ended up switching my init system from OpenRC to systemd, using git to control my local Portage tree copy (as opposed to the default of rsync). Around late April 2017 my hard disk on which Gentoo was installed crashed and I had to re-install it. Took about two days to set up a basic, usable system with a GUI (namely KDE Plasma). I learnt that a Gentoo (testing) is quite buggy, mostly with respect to building packages. I found myself filing at least one bug report per day, until my system was fully set up (which took roughly a fortnight), with all the packages I wanted. 
+I successfully installed **Gentoo Linux** around early April 2017 and with what I learnt from installing Funtoo Linux I found it fairly easy. I ended up switching my init system from OpenRC to systemd and using git to control my local Portage tree copy (as opposed to the default of rsync). Around late April 2017 my hard disk on which Gentoo was installed crashed and I had to re-install it. Took about two days to set up a basic, usable system with a GUI (namely KDE Plasma). I learnt that a Gentoo (testing) is quite buggy, mostly with respect to building packages. I found myself filing at least one bug report per day, until my system was fully set up (which took roughly a fortnight), with all the packages I wanted. 
 
 ### Arch Linux / Manjaro Linux
 **Manjaro Linux** is a beginner-friendly derivative of **Arch Linux**, a Linux distribution based on the "Keep It Simple, Stupid" (KISS) principle, that is geared towards more experienced Linux users. The way it interprets the KISS principle, is that a fresh Arch install should be the barebones and that automation (e.g., there is no automated installer for Arch, by default) should be kept to a minimum. For this reason, Arch Linux was previously out of my reach, until I found some scripts for automating its installation process. Unfortunately, installing Arch on my removable drive did not go well at first (I forgot to install and configure a boot loader for it, I think), so I then opted to use Manjaro Linux in its place on this drive.
