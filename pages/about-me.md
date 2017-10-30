@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-10-29 18:27:10 +1000
+last_modified_at: 2017-10-30 23:57:10 +1000
 permalink:        /about-me/
 ---
 
@@ -43,6 +43,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [GhostBSD 10.1/10.2](http://ghostbsd.org/)
 * [GhostOS 0.5.6](https://ghostkernel.org/)
 * [gNewSense 3.1](http://www.gnewsense.org/index.html)
+* [GoboLinux 016.01](http://www.gobolinux.org/)
 * [GuixSD 0.13.0](https://www.gnu.org/software/guix/)
 * [Haiku OS rev 51133](https://www.haiku-os.org/)
 * [Icaros Desktop 2.2](http://icarosdesktop.org/)
