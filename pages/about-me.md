@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-10-30 23:57:10 +1000
+last_modified_at: 2017-11-05 15:41:50 +1000
 permalink:        /about-me/
 ---
 
@@ -74,7 +74,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Pisi Linux 2.0-beta2](http://www.pisilinux.org/en/)
 * [Puppy Linux 6.0/6.3](http://puppylinux.com/)
 * [Q4OS 1.6.x/2.3.x](http://q4os.org/)
-* [Quirky Linux 6.x/7.x](http://barryk.org/quirky/)
+* [Quirky Linux 6.x/7.x/8.2](http://barryk.org/quirky/)
 * [ReactOS 0.4.2/0.4.4/0.4.5](https://www.reactos.org/)
 * [Remix OS 3](http://www.jide.com/remixos)
 * [ROSA R8](http://en.rosalinux.com/)
