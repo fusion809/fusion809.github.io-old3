@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-11-18 00:18:50 +1000
+last_modified_at: 2017-11-19 16:37:10 +1000
 permalink:        /about-me/
 ---
 
@@ -135,16 +135,6 @@ Of the operating systems listed before I have also installed the following nine 
 </div>
 my favourite were, in ascending order:
 
-### Void Linux (musl)
-I had serious runit issues and many of the more important daemons would not start including:
-* cgmanager
-* DBus
-* LightDM
-* NetworkManager
-even though I set up the symlinks properly, even the {% include Links/irc.html channel="#voidlinux" %} Freenode group seemed to agree I did everything right, it is just for some reason some supervise files in {% include Layouts/path.html path="/run/runit" %} did not exist. I did like the fast boot times, though, and fast package management times. 
-
-I also had to install it from the minimal ISO (musl) as the Cinnamon ISO (musl) had the Cinnamon DE crash repeatedly on me. A dialog box kept asking me whether I wanted to restart it and I did so about four times before I said, "To ... with this!"
-
 ### Linux Mint
 It started fine, thanks to its Ubuntu base it was easy to set up Broadcom wireless in the live session, even without inserting an ethernet cable as the required packages were already in the package cache. I disliked the outdated software though and I hear distribution upgrades between major releases (e.g. 16.x, 17.x, 18.x, *etc.*) often causes major breaks. I also experienced some weird bugs with the Cinnamon applet installer. I only used it for a few hours though before I gave up.
 
@@ -176,6 +166,18 @@ It is also interesting to me in that its system software and desktop environment
 It has its own equivalent to the OBS, Copr (although unlike the OBS it can only build packages for Fedora), which does afford packages Internet access during their build, if the packager grants them this. Copr also like the OBS, has strong licensing restrictions (namely, that they have to be FOSS) on any packages built and distributed through it.
 
 Fedora is also a very touchy distribution. Not sure why but I have my suspicions it is due to safety measures related to SELinux. By touchy I mean if you chroot into a Fedora distribution (after mounting up all the necessary parts of your system like /proc, /dev and /sys) and run `dnf update` or any other package management command (e.g. `dnf install vim`) you will find that if you boot Fedora several systemd services will fail and the system will often not reach its graphical interface target (that is, GNOME will not start). I have also found that moving folders around in a Fedora root partition, even in the home folder, from another system (e.g. mounting the Fedora root partition to say /mnt) will also cause major problems when you try to start Fedora.  Likewise I have also found that manually compiling software and installing it to /usr/local also tends to cause major problems. 
+
+### Void Linux (musl)
+I had serious runit issues and many of the more important daemons would not start including:
+* cgmanager
+* DBus
+* LightDM
+* NetworkManager
+even though I set up the symlinks properly, even the {% include Links/irc.html channel="#voidlinux" %} Freenode group seemed to agree I did everything right, it is just for some reason some supervise files in {% include Layouts/path.html path="/run/runit" %} did not exist. I did like the fast boot times, though, and fast package management times. 
+
+I also had to install it from the minimal ISO (musl) as the Cinnamon ISO (musl) had the Cinnamon DE crash repeatedly on me. A dialog box kept asking me whether I wanted to restart it and I did so about four times before I said, "To ... with this!"
+
+I gave it another go though and everything went fine and dandy. I met the consequences of using the musl C standard library, namely that several characters are not rendered properly due to poor locale support. I think the problem the first time I installed it was that I was doing some package management stuff like installing NetworkManager and LightDM from a chroot so some of the symlinks were set up improperly. In retrospect I should have looked at [this article](https://wiki.voidlinux.eu/Installing_alongside_Arch_Linux#Install_Void_from_Arch) on the Void Wiki. 
 
 ### Funtoo Linux
 **Funtoo Linux** was the first source-based distribution I had successfully set up on my computer, outside a VM. It, for the most part, was quite an enlightening experience and it gave me the confidence to re-try installing Gentoo Linux on my PC outside a VM, after my first attempt failed quite miserably. 
