@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-11-19 16:37:10 +1000
+last_modified_at: 2017-11-26 22:33:10 +1000
 permalink:        /about-me/
 ---
 
@@ -119,15 +119,17 @@ Of the operating systems listed before I have also installed the following nine 
 {% capture my_capture %}
 * Arch Linux
 * Fedora 22/25/26/27
-* Funtoo Linux
+* Funtoo Linux (testing)
 * Gecko Linux
-* Gentoo Linux
+* Gentoo Linux (testing)
+* Gentoo Linux (testing + runit)
 * Linux Mint 18.2
 * Manjaro Linux
 * NixOS 17.09
 * openSUSE Tumbleweed
 * Sabayon Linux
 * Ubuntu 12.04-15.04 / 16.04 / 17.10
+* Void Linux (glibc)
 * Void Linux (musl)
 {% endcapture %}
 <div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
@@ -179,11 +181,16 @@ I also had to install it from the minimal ISO (musl) as the Cinnamon ISO (musl) 
 
 I gave it another go though and everything went fine and dandy. I met the consequences of using the musl C standard library, namely that several characters are not rendered properly due to poor locale support. I think the problem the first time I installed it was that I was doing some package management stuff like installing NetworkManager and LightDM from a chroot so some of the symlinks were set up improperly. In retrospect I should have looked at [this article](https://wiki.voidlinux.eu/Installing_alongside_Arch_Linux#Install_Void_from_Arch) on the Void Wiki. 
 
+### Void Linux (glibc)
+runit issues dominated the picture for the first couple hours after I had installed it. I eventually got it up and running, with a little help from the #voidlinux Freenode channel.
+
 ### Funtoo Linux
 **Funtoo Linux** was the first source-based distribution I had successfully set up on my computer, outside a VM. It, for the most part, was quite an enlightening experience and it gave me the confidence to re-try installing Gentoo Linux on my PC outside a VM, after my first attempt failed quite miserably. 
 
 ### Gentoo Linux
 I successfully installed **Gentoo Linux** around early April 2017 and with what I learnt from installing Funtoo Linux I found it fairly easy. I ended up switching my init system from OpenRC to systemd and using git to control my local Portage tree copy (as opposed to the default of rsync). Around late April 2017 my hard disk on which Gentoo was installed crashed and I had to re-install it. Took about two days to set up a basic, usable system with a GUI (namely KDE Plasma). I learnt that a Gentoo (testing) is quite buggy, mostly with respect to building packages. I found myself filing at least one bug report per day, until my system was fully set up (which took roughly a fortnight), with all the packages I wanted. 
+
+I have also tried musl and runit, both musl and runit together and runit by itself, in it. They were a bit of work but I managed to get them to work, with help, of course.  
 
 ### Arch Linux / Manjaro Linux
 **Manjaro Linux** is a beginner-friendly derivative of **Arch Linux**, a Linux distribution based on the "Keep It Simple, Stupid" (KISS) principle, that is geared towards more experienced Linux users. The way it interprets the KISS principle, is that a fresh Arch install should be the barebones and that automation (e.g., there is no automated installer for Arch, by default) should be kept to a minimum. For this reason, Arch Linux was previously out of my reach, until I found some scripts for automating its installation process. Unfortunately, installing Arch on my removable drive did not go well at first (I forgot to install and configure a boot loader for it, I think), so I then opted to use Manjaro Linux in its place on this drive.
