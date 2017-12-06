@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-12-06 22:28:10 +1000
+last_modified_at: 2017-12-07 01:25:20 +1000
 permalink:        /about-me/
 ---
 
@@ -43,6 +43,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [GhostBSD 10.1/10.2](http://ghostbsd.org/)
 * [GhostOS 0.5.6](https://ghostkernel.org/)
 * [gNewSense 3.1](http://www.gnewsense.org/index.html)
+* [GNOME Next 3.27.2-Build1.10 (23 Nov 2017)](http://download.opensuse.org/repositories/GNOME:/Medias/images/iso/)
 * [GoboLinux 016.01](http://www.gobolinux.org/)
 * [GuixSD 0.13.0](https://www.gnu.org/software/guix/)
 * [Haiku OS rev 51133](https://www.haiku-os.org/)
@@ -96,7 +97,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 {{ my_capture | markdownify }}
 </div>
 
-## Footnotes
+**Footnotes**
 1. Specifically the MATE OpenRC 20170930 image. 
 2. The installer crashed on me, maybe it does not like to play nice with VirtualBox, but I used its live image, at least. 
 
@@ -129,20 +130,22 @@ Of the operating systems listed before I have also installed the following nine 
 * Fedora 22/25/26/27
 * Funtoo Linux (testing)
 * Gecko Linux
-* Gentoo Linux (testing)
-* Gentoo Linux (testing + runit)
+* Gentoo Linux (testing, including with Btrfs, systemd, runit)
 * Linux Mint 18.2
 * Manjaro Linux
 * NixOS 17.09
 * openSUSE Tumbleweed
 * Sabayon Linux
-* Ubuntu 12.04-15.04 / 16.04 / 17.10
+* Ubuntu 12.04-15.04 / 16.04
 * Void Linux (glibc)
 * Void Linux (musl)
 {% endcapture %}
 <div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
 {{ my_capture | markdownify }}
 </div>
+
+I have also tried Android-x86 6.0/7.1-rc2, deepin 15.5, RemixOS 3.0 and Ubuntu 17.10 in live sessions.
+
 my favourite were, in ascending order:
 
 ### Linux Mint
