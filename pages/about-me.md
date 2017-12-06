@@ -15,7 +15,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 {% capture my_capture %}
 * [Android-x86 6.0-r1/7.1-rc2](http://www.android-x86.org/)
 * [Antergos](https://antergos.com/)
-* [antiX 15/15-MX/16.1/16.2](http://antix.mepis.org/index.php?title=Main_Page)
+* [antiX 15/15-MX/16.1/16.2/17](http://antix.mepis.org/index.php?title=Main_Page)
 * [ArchBang](http://bbs.archbang.org/)
 * [Arch Linux](https://www.archlinux.org/)
 * [Arya Linux 2017](http://aryalinux.org/)
@@ -27,7 +27,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Chapeau 22.1](http://chapeaulinux.org/)
 * [Chromixium 1.5](http://chromixium.org/)
 * [Debian 8.x/9.x/testing/unstable](https://www.debian.org/)
-* [deepin 2014.3/15/15.3/15.4](http://www.deepin.org/?lang=en)
+* [deepin 2014.3/15/15.3/15.4/15.5](http://www.deepin.org/?lang=en)
 * [Devuan 1.0](https://devuan.org/)
 * [DragonFlyBSD 4.8](https://www.dragonflybsd.org/)
 * [elementary OS 0.3.x](https://elementary.io/)
@@ -67,6 +67,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
 * [OpenMandriva Lx 2014.2/3/3.01](https://www.openmandriva.org/en)
 * [openSUSE 13.2/42.1/42.2/42.3/Tumbleweed](https://www.opensuse.org/)
+* [Parabola GNU/Linux](https://www.parabola.nu/)<sup>1</sup>
 * [Parrot Security OS 3.8](https://www.parrotsec.org/)
 * [PC-BSD 10.1/10.2/TrueOS](https://www.trueos.org/)
 * [PCLinuxOS](http://www.pclinuxos.com/)
@@ -86,6 +87,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Tails 3.1](https://tails.boum.org/)
 * [Trisquel GNU/Linux 7](https://trisquel.info/)
 * [Ubuntu 12.04-17.10](http://www.ubuntu.com) (and its official flavours)
+* [Uruk GNU/Linux 2.0](https://urukproject.org/dist/en.html)<sup>2</sup>
 * [Vector Linux 7.1](http://vectorlinux.com/)
 * [Void Linux glibc/musl](http://www.voidlinux.eu/)
 * [Zorin OS 7/12](http://zorinos.com/)
@@ -93,6 +95,10 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 <div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
 {{ my_capture | markdownify }}
 </div>
+
+## Footnotes
+1. Specifically the MATE OpenRC 20170930 image. 
+2. The installer crashed on me, maybe it does not like to play nice with VirtualBox, but I used its live image, at least. 
 
 ## Linux From Scratch
 I have also repeatedly tried to build a Linux From Scratch system but it failed almost every time. The second last time it failed (on 28 May 2017) with Manjaro Linux 17.0 live session as the host (or bootstrap) OS and I was building LFS 8.0 and the failure was due to glibc 2.25 issues. Namely its test suite failed during [this stage](http://www.linuxfromscratch.org/lfs/view/stable/chapter06/glibc.html) (chapter 6.9) giving [this log](https://pastebin.com/Skvn0k8j). After this running:
@@ -103,7 +109,9 @@ cc dummy.c -v -Wl,--verbose &> dummy.log
 readelf -l a.out | grep ': /lib'
 ```
 
-per chapter 6.10 of the manual failed as the compiler was malfunctioning. Also tried using ALFS with jhalfs-2.4 and that still failed due to kernel issues. The #lfs IRC channel was not really helpful people just said to try the manual way over and over (doing a clean start from the beginning the LFS guide) again until it magically works. I did manage to install Linux From Scratch with this effort starting on 6 October 2017 and ending 7 October 2017 and it finally booted fine, except one minor networking issue.
+per chapter 6.10 of the manual failed as the compiler was malfunctioning. Also tried using ALFS with jhalfs-2.4 and that still failed due to kernel issues. The #lfs IRC channel was not really helpful people just said to try the manual way over and over (doing a clean start from the beginning the LFS guide) again until it magically works. I did manage to install Linux From Scratch with this effort starting on 6 October 2017 and ending 7 October 2017 and it finally booted fine, except one minor networking issue. This issue was quickly resolved. 
+
+I cloned this LFS image so I would not have to build it again. Then on 6 December 2017 I decided to rebuild with makepkg and re-install each package with pacman. That way I could track package files easier. 
 
 ## Distribution difficulty
 I have ranked the distributions I have tried by how challenging they are to set up and use on a scale from 0 to 5. 0 are beginner-friendly distributions no more challenging to set up and use than Windows. I am unaware of any distribution that is exactly 0 on this scale. 1 are beginner-friendly distributions that are usually as easy as Windows to install, but may be a little more challenging to use post-install for beginners. Ubuntu is an example of a distribution with a difficulty score of 1. 2 have automated installers and may be as easy to set up as Windows, but post-installation they are significantly more challenging to use than Windows. Usually due to things like bugs, small repositories, poor out-of-the-box support for devices with proprietary drivers and/or difficult package management. 3 have no automated installers, but have a simple installation process, are usually installed from the command-line. Initial system configuration post-install is done from the command-line. Package management is not too easy for beginners, but it also is not too complex. Alternatively some distributions may fit this category that have an installer but with very complicated package management. 4 have no automated installer and a complicated installation process and are installed from the command-line. The package manager is complicated and builds from source by default. 5 is Linux From Scratch (LFS). 
