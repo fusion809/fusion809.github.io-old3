@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-12-07 01:25:20 +1000
+last_modified_at: 2017-12-11 01:46:50 +1000
 permalink:        /about-me/
 ---
 
@@ -127,13 +127,18 @@ I have ranked the distributions I have tried by how challenging they are to set 
 Of the operating systems listed before I have also installed the following nine on my PC, outside a VM and live session:
 {% capture my_capture %}
 * Arch Linux
+* Black Lab Linux 8
+* deepin 15.5
+* elementary OS 0.4.1
 * Fedora 22/25/26/27
 * Funtoo Linux (testing)
 * Gecko Linux
 * Gentoo Linux (testing, including with Btrfs, systemd, runit)
 * Linux Mint 18.2
+* Mageia 6
 * Manjaro Linux
 * NixOS 17.09
+* OpenMandriva Lx 3.03
 * openSUSE Tumbleweed
 * Sabayon Linux
 * Ubuntu 12.04-15.04 / 16.04
@@ -144,15 +149,41 @@ Of the operating systems listed before I have also installed the following nine 
 {{ my_capture | markdownify }}
 </div>
 
-I have also tried Android-x86 6.0/7.1-rc2, deepin 15.5, RemixOS 3.0 and Ubuntu 17.10 in live sessions.
+I have also tried Android-x86 6.0/7.1-rc2, RemixOS 3.0, ROSA R10 (only in live session as the installer crashed on me), Ubuntu 17.10, Ubuntu Kylin 17.10 (installer crashed on me too, as it was expecting to run grub-install and I was going to use another distribution's GRUB to boot it) in live sessions.
 
 my favourite were, in ascending order:
 
+### OpenMandriva Lx 3.03
+Started fine and I did not notice any stability issues, although its package was more bleeding edge than Mageia at least. Found it odd that a distribution with the word 'open' in its name would include a nonfree repository (containing things like Broadcom drivers) by default. Felt like its Broadcom wireless drivers package was barely being maintained though. I installed it and got errors mentioned in [this forum thread](https://forum.openmandriva.org/t/dkms-broadcom-wl-a-missing-file-dkms-was-expecting-and-erroneous-sed-command/1550), an earlier (by less than 2 months) [thread](https://forum.openmandriva.org/t/cant-configure-my-wireless/1477) relating to this package, [another in Italian](https://forum.openmandriva.org/t/omv-i586-32-aggiornata-a-3-02-non-collega-il-wifi-scambia-linterfaccia-wifi-per-interfaccia-ethernet/1207) and a [fourth in French](https://forum.openmandriva.org/t/la-lx3-0-rc1-est-arrivee/555) with all but the French one being within the past six months (as of 11 December 2017), indicates to me that maybe this package is less maintained on OpenMandriva Lx than on other distributions, or maybe just plain buggy. To be clear this is not me biting at its developers, I realize they owe me and everyone else nothing, just commenting on my impressions and experience. 
+
+So I essentially gave up on this interesting distribution that for me is best used only in a virtual machine. 
+
+### Black Lab Linux 8
+Must admit I was having a hard time determining what this distribution had that Ubuntu MATE LTS did not (I was using the MATE edition). The only things I came up with was:
+
+* Its own branding, including its own unique artwork.
+* Chromium web browser
+* No bcmwl-kernel-source package, nor its dependencies, in its package cache. So I could not connect to the WiFi in its live session. I ran `sudo apt-get install -y bcmwl-kernel-source` and I got [this error](https://gist.github.com/fusion809/47ba090e433227606737494771695e91) in the live session.
+
+[Their website](http://www.blacklablinux.org/p/why-black-lab-linux.html) and DistroWatch say they have better multimedia support, must admit I do not see how they could do better than most beginner-friendly distributions, at least in the way I play videos (in VLC and to a lesser extent in the browser), which is fairly basic. Despite this if you have complex multimedia needs it might help you. Its website says it also comes with Steam pre-installed, which I hardly use, but might be advantageous to some. It also has an antivirus (presumably ClamAV given how popular, free and ubiquitous it is) pre-installed according to their website, although I cannot see ClamAV installed based on the output of `dpkg -L | grep -i clam`. 
+
 ### Linux Mint
-It started fine, thanks to its Ubuntu base it was easy to set up Broadcom wireless in the live session, even without inserting an ethernet cable as the required packages were already in the package cache. I disliked the outdated software though and I hear distribution upgrades between major releases (e.g. 16.x, 17.x, 18.x, *etc.*) often causes major breaks. I also experienced some weird bugs with the Cinnamon applet installer. I only used it for a few hours though before I gave up.
+It started fine, thanks to its Ubuntu base it was easy to set up Broadcom wireless in the live session, even without inserting an ethernet cable as the required packages were already in the package cache. I disliked the outdated software though (but it is something it shares with Ubuntu LTS and is needed for its stability so it is not something I hold against it personally) and I hear distribution upgrades between major releases (e.g. 16.x, 17.x, 18.x, *etc.*) often causes major breaks. I also experienced some weird bugs with the Cinnamon applet installer. I only used it for a few hours though before I gave up.
+
+### elementary OS
+I never noticed any bugs in it, it was unique among Ubuntu-based distributions I have tried so far as it had out-of-the-box support for my Broadcom chip, never had to install any drivers for it myself. That was not just in the live session either, post-install it had it and the WiFi credentials I had entered in the live session were kept in the hard disk installation (that is, I did not have to re-enter them in order to access the network's WiFi).
+
+It was stable, had its base, Ubuntu LTS', old outdated software, so that part was no different from Linux Mint. It also had decent aesthetics (not quite as beautiful as deepin, but still pasts muster). The thing that infuriated me with it is that often it can seem like you have to pay something to use certain applications, or even to use the system itself. Its website makes it seem like you have to pay, in the eyes of so many, that an [answer of mine](https://www.quora.com/How-can-I-get-elementary-OS-A-fast-and-open-replacement-for-Windows-and-macOS-%E2%8B%85-elementary-OS-for-free/answer/Brenton-Horne) on Quora informing people of how to download it for free has received over seventy upvotes, the second most of any answer of mine as of 11 December 2017 (~2 & 1/2 months after I wrote the answer). 
 
 ### Ubuntu
 **Ubuntu** was my first distro so I feel very comfortable with it, despite the fact that package development under it is difficult and tedious compared to how it is on other distributions I have used. I do not presently use it but it is fairly stable.
+
+### Mageia
+**Mageia** was surprisingly a rather pleasant experience for me. Everything 'just worked' rather well with it, I noticed no bugs in the day or so I used it. I personally think it would probably make for a great system to run on a desktop PC used by the technologically-inept, or at least less skilled, that merely do basic stuff like emailing, browsing the web, view image files, play simple open-source games (e.g. card/board games, not so much graphics-intensive/proprietary games or ones where the very latest drivers and alike is either necessary or desirable) and maybe watch videos. As expected based on my virtual machine experience with it and basic research I have done on it, its software was a little outdated (e.g. using KDE Plasma LTS which is presently 5.8.x, as well as Firefox ESR), but still well-tested, usable and stable. 
+
+The problems I noticed with it was what I expected, namely that Broadcom drivers were not pre-installed, neither in the live session nor fresh installation. Although this problem, like usual, is simple to fix, merely install them and they are ready to go. That and I must admit I am not the biggest fan of urpmi, thankfully there is DNF pre-installed which I favour as its syntax is simpler. 
+
+Arch Linux's GRUB bootloader (as I triple booted Arch Linux / Gentoo Linux / Void Linux at the time and was using a fourth partition to test distributions out on ) did not play nice with it, it used an old kernel (the one Mageia 6 comes with in a fresh install) of Mageia's (for which I had not installed Broadcom wireless) as the default instead of the latest kernel (and yes I had updated the configuration file with `grub-mkconfig -o /boot/grub/grub.cfg` since the install of the newer kernel). The newer kernel was in the advanced options list of Mageia, but having to go there every time I wanted to boot it was irritating. 
 
 ### NixOS
 **NixOS** is a fascinating distribution, in principle, but in practice it is a pain in the rear to set up for the first time, especially if you have a Broadcom WiFi chip. One pain with is the bootloader. On 17 November 2017 I set it up to use OS prober via the option:
@@ -172,13 +203,23 @@ It is the distribution that I have decided to keep on my `/dev/sda1` partition p
 For example, when I booted Gecko Linux (Rolling) for the first time, after installing it, I typed in my credentials to access the WiFi (which did not require any extra packages installed as Gecko comes with Broadcom firmware pre-installed from the unofficial Packman repository of openSUSE), from the network section of the KDE Plasma 5 system tray, and while it seemed to connect to the WiFi (i.e., no errors were mentioned) the WiFi was not available to any of my applications, including my web browser (Google Chrome, which I installed manually as it does not come with Gecko, by default) and command-line programs like `ping` and `zypper`.
 
 ### Fedora
-**Fedora** is interesting to me, in that installing software packages in its software repositories is usually at least as easy as it is on Ubuntu, but installing software manually from source code or setting up web applications (e.g., MediaWiki or WordPress) tends to be substantially more difficult than on other more user-friendly distributions. 
+**Fedora** is interesting to me, in that installing software packages in its software repositories is usually at least as easy as it is on Ubuntu, but installing software manually from source code or setting up web applications (e.g. MediaWiki or WordPress) tends to be substantially more difficult than on other more user-friendly distributions. 
 
 It is also interesting to me in that its system software and desktop environment-related software is usually the most up-to-date of any distribution following a fixed-release cycle, yet the rest of its software tends to lag behind the latest available release, in my experience, anyway. 
 
 It has its own equivalent to the OBS, Copr (although unlike the OBS it can only build packages for Fedora), which does afford packages Internet access during their build, if the packager grants them this. Copr also like the OBS, has strong licensing restrictions (namely, that they have to be FOSS) on any packages built and distributed through it.
 
 Fedora is also a very touchy distribution. Not sure why but I have my suspicions it is due to safety measures related to SELinux. By touchy I mean if you chroot into a Fedora distribution (after mounting up all the necessary parts of your system like /proc, /dev and /sys) and run `dnf update` or any other package management command (e.g. `dnf install vim`) you will find that if you boot Fedora several systemd services will fail and the system will often not reach its graphical interface target (that is, GNOME will not start). I have also found that moving folders around in a Fedora root partition, even in the home folder, from another system (e.g. mounting the Fedora root partition to say /mnt) will also cause major problems when you try to start Fedora.  Likewise I have also found that manually compiling software and installing it to /usr/local also tends to cause major problems. 
+
+### deepin
+This distribution has more outdated software than Fedora and Tumbleweed yet there is some part of me that likes it more than both. The reason why is several fold:
+* It has out-of-the-box support for my Broadcom WiFi chip, which is not too common among distributions and a nice touch.
+* It has several extra applications that its basis, Debian (unstable), simply does not have (e.g. Atom and Visual Studio Code). Many of which are there because users requested them ([here](https://bbs.deepin.org/forum.php?mod=viewthread&tid=133777) is the forum thread where you can), or because deepin's developers just thought its users might like it (cannot rule out the possibility they are paid some sort of commission with some of the proprietary applications like Spotify though, since deepin is developed by a company). It also has a far more up-to-date version of Eclipse than its basis Debian (unstable) has. Debian (all branches) uses a really ancient (by computing standards) version of Eclipse, namely version 3.8.1 which was released in 2012! deepin, however, at the time of writing (11 December 2017) has version 4.7.0, which is one bug fix release short of being the latest (4.7.1). 
+* While their site could do with a little extra "internationalization" as some parts are still in Chinese regardless of the language you have selected to view the site in, it is clear they are trying and doing fairly well.
+* It comes with the single most popular web browser on the desktop/laptop: Google Chrome, instead of most distribution's default, Firefox. Firefox is used by most other distributions not so much because their developers think that it will be what most of their users are used to using but because it is open-source. deepin's developers decided to focus more on making its users happy than keeping to the idea that distributions should be as open-source as possible. I personally favour Firefox, but I like the fact they are putting users first over ideology.
+* They have several home-grown open-source applications they have developed just to make their users like it and enjoy their experience with it. This includes their desktop environment (DE), sure they have borrowed some components of GNOME but their DE is still quite distinct from all other DEs. Frankly I would call it the single most innovative Debian-based distribution I am aware of. Even moreso than Ubuntu.
+
+The only thing I dislike about it is that you cannot choose to use the Btrfs file system from its installer and I have been experimenting with it lately. 
 
 ### Void Linux (musl)
 I had serious runit issues and many of the more important daemons would not start including:
