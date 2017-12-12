@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-12-11 01:46:50 +1000
+last_modified_at: 2017-12-13 07:40:20 +1000
 permalink:        /about-me/
 ---
 
@@ -149,7 +149,7 @@ Of the operating systems listed before I have also installed the following nine 
 {{ my_capture | markdownify }}
 </div>
 
-I have also tried Android-x86 6.0/7.1-rc2, RemixOS 3.0, ROSA R10 (only in live session as the installer crashed on me), Ubuntu 17.10, Ubuntu Kylin 17.10 (installer crashed on me too, as it was expecting to run grub-install and I was going to use another distribution's GRUB to boot it) in live sessions.
+I have also tried Android-x86 6.0/7.1-rc2, Peppermint OS 8, RemixOS 3.0, ROSA R10 (only in live session as the installer crashed on me), Ubuntu 17.10, Ubuntu Kylin 17.10 (installer crashed on me too, as it was expecting to run grub-install and I was going to use another distribution's GRUB to boot it) in live sessions.
 
 my favourite were, in ascending order:
 
