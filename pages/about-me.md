@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-12-13 07:40:20 +1000
+last_modified_at: 2018-01-23 18:48:20 +1000
 permalink:        /about-me/
 ---
 
@@ -62,7 +62,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [MX 16.1](https://mxlinux.org/)
 * [NetBSD 7/7.1](https://www.netbsd.org)
 * [NixOS 17.03/17.09/unstable](https://nixos.org/)
-* [NuTyX 9.0](http://www.nutyx.org/)
+* [NuTyX 9.0/10.0](http://www.nutyx.org/)
 * [Oracle Linux 7](https://www.oracle.com/linux/index.html)
 * [OpenBSD 5.9/6.0/6.1/6.2](https://www.openbsd.org/)
 * [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
