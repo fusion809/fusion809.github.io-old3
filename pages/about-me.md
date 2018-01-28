@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2017-12-13 07:40:20 +1000
+last_modified_at: 2018-01-23 18:48:20 +1000
 permalink:        /about-me/
 ---
 
@@ -62,7 +62,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [MX 16.1](https://mxlinux.org/)
 * [NetBSD 7/7.1](https://www.netbsd.org)
 * [NixOS 17.03/17.09/unstable](https://nixos.org/)
-* [NuTyX 9.0](http://www.nutyx.org/)
+* [NuTyX 9.0/10.0](http://www.nutyx.org/)
 * [Oracle Linux 7](https://www.oracle.com/linux/index.html)
 * [OpenBSD 5.9/6.0/6.1/6.2](https://www.openbsd.org/)
 * [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
@@ -87,7 +87,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Slackware Linux 14.2-RC2/14.2](http://www.slackware.com/)
 * [Tails 3.1](https://tails.boum.org/)
 * [Trisquel GNU/Linux 7](https://trisquel.info/)
-* [Ubuntu 12.04-17.10](http://www.ubuntu.com) (and its official flavours)
+* [Ubuntu 12.04-18.04](http://www.ubuntu.com) (and its official flavours)
 * [Uruk GNU/Linux 2.0](https://urukproject.org/dist/en.html)<sup>2</sup>
 * [Vector Linux 7.1](http://vectorlinux.com/)
 * [Void Linux glibc/musl](http://www.voidlinux.eu/)
@@ -177,6 +177,8 @@ It was stable, had its base, Ubuntu LTS', old outdated software, so that part wa
 
 ### Ubuntu
 **Ubuntu** was my first distro so I feel very comfortable with it, despite the fact that package development under it is difficult and tedious compared to how it is on other distributions I have used. I do not presently use it but it is fairly stable.
+
+I also tried Ubuntu 18.04, while still in pre-release development, around 23-24 January 2018. Not surprisingly it was buggy, with a bug wherein Ubiquity (the installer) froze at the stage wherein I ticked the boxes to install third-party WiFi drivers, codecs, *etc.* during system installation, along with updates. It also had an issue with Broadcom WiFi support after I installed it with debootstrap ([here](https://bugs.launchpad.net/ubuntu/+source/bcmwl/+bug/1745256) be the bug report).
 
 ### Mageia
 **Mageia** was surprisingly a rather pleasant experience for me. Everything 'just worked' rather well with it, I noticed no bugs in the day or so I used it. I personally think it would probably make for a great system to run on a desktop PC used by the technologically-inept, or at least less skilled, that merely do basic stuff like emailing, browsing the web, view image files, play simple open-source games (e.g. card/board games, not so much graphics-intensive/proprietary games or ones where the very latest drivers and alike is either necessary or desirable) and maybe watch videos. As expected based on my virtual machine experience with it and basic research I have done on it, its software was a little outdated (e.g. using KDE Plasma LTS which is presently 5.8.x, as well as Firefox ESR), but still well-tested, usable and stable. 
