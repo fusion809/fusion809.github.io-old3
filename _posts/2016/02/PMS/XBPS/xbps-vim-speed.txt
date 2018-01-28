@@ -1,0 +1,56 @@
+~~~~
+Name     Action    Version           New version            Download size
+vim-huge reinstall 8.0.1352_1        8.0.1352_1             -
+
+Size required on disk:        2837KB
+Free space on disk:            177GB
+
+
+[*] Downloading binary packages
+
+[*] Verifying package integrity
+vim-huge-8.0.1352_1: verifying RSA signature...
+
+[*] Running transaction tasks
+vim-huge-8.0.1352_1: unpacking ...
+
+[*] Configuring unpacked packages
+vim-huge-8.0.1352_1: configuring ...
+vim-huge-8.0.1352_1: installed successfully.
+
+0 downloaded, 1 installed, 0 updated, 1 configured, 0 removed.
+
+real    0m0.406s
+user    0m0.272s
+sys     0m0.010s
+~~~
+
+while `xbps-query -S xbps` returns:
+
+~~~
+architecture: x86_64
+automatic-install: yes
+build-date: 2017-04-13 10:36 CEST
+filename-sha256: 0a6d36b111bbeb69f6e3befb53d81d77c4eab4f5bd717632b76f56b5156054ef
+filename-size: 79KB
+homepage: https://github.com/voidlinux/xbps
+install-date: 2017-05-11 22:42 CEST
+install-msg: 289B
+install-script: 856B
+installed_size: 362KB
+license: 2-clause-BSD
+maintainer: Juan RP <xtraeme@voidlinux.eu>
+metafile-sha256: 04ea167277d3da19c86dd24d68d2fe058a837119b973c02a1df9bda45f0ed604
+pkgver: xbps-0.51_18
+repository: http://repo.voidlinux.eu/current
+shlib-requires:
+        libpthread.so.0
+        libarchive.so.13
+        libxbps.so.2
+        libc.so.6
+        libcrypto.so.41
+        librt.so.1
+short_desc: The XBPS package system utilities
+source-revisions: xbps:aae44f3125
+state: installed
+~~~
