@@ -6,10 +6,10 @@ github_repo:          site.github_username/site.github_username.github.io
 url:                  https://site.github_username.github.io
 
 description:
-  "Where fusion809 stores his thoughts and news relating to technology."
+  "Where Brenton (fusion809) stores his thoughts, tutorials and news relating to technology."
 
 extended_description:
-  "Welcome to *The Hornery*, where I, fusion809, store my thoughts, guides, ramblings and news relating to **free and open-source software** (**FOSS**). If you are unfamiliar with the terminology used in the FOSS world, or otherwise find some terms in this site that confuse you, I suggest you see the [Glossary](/glossary/) of this website. Other pieces of general information that you might be interested in can be found in the site's information pages menu. If you have improvement suggestions (which I welcome!) please see the [Corrections page](/contributing/). If you like this site please [star](https://help.github.com/articles/about-stars/) its [GitHub repository](https://github.com/fusion809/fusion809.github.io).
+  "Welcome to *The Hornery*, where I, Brenton (fusion809), store my thoughts, guides, ramblings and news relating to **free and open-source software** (**FOSS**). If you are unfamiliar with the terminology used in the FOSS world, or otherwise find some terms in this site that confuse you, I suggest you see the [Glossary](/glossary/) of this website. Other pieces of general information that you might be interested in can be found in the site's information pages menu. If you have improvement suggestions (which I welcome!) please see the [Corrections page](/contributing/). If you like this site please [star](https://help.github.com/articles/about-stars/) its [GitHub repository](https://github.com/fusion809/fusion809.github.io).
 
 
   This website is mostly powered by the static site generator (SSG), [Jekyll](http://jekyllrb.com/), if you would like to create your own Jekyll-powered website and preview it on a Linux platform, I have written a guide on how to do this [here](/how-to-create-your-own-jekyll-site-with-github-pages/). The [/hexo-site](/hexo-site) subfolder of *The Hornery* is powered by the SSG, [Hexo](https://hexo.io), while the [/hubpress.io](/hubpress.io) subfolder is powered by [HubPress](http://hubpress.io/), both subfolders are essentially just for testing purposes and not really ready for readers.
