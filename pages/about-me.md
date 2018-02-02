@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2018-01-23 18:48:20 +1000
+last_modified_at: 2018-02-02 11:38:20 +1000
 permalink:        /about-me/
 ---
 
@@ -49,7 +49,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Haiku OS rev 51133](https://www.haiku-os.org/)
 * [Icaros Desktop 2.2](http://icarosdesktop.org/)
 * [Kali Linux 2](https://www.kali.org/)
-* [KDE Neon git-unstable](https://neon.kde.org/)
+* [KDE Neon stable/git-unstable](https://neon.kde.org/)
 * [Korora 21/22/23/24](https://kororaproject.org/)
 * [Linux From Scratch 8.1](http://www.linuxfromscratch.org/lfs/)
 * [Linux Lite 3.6](https://linuxliteos.com/)
@@ -127,21 +127,25 @@ I have ranked the distributions I have tried by how challenging they are to set 
 Of the operating systems listed before I have also installed the following nine on my PC, outside a VM and live session:
 {% capture my_capture %}
 * Arch Linux
+* CentOS 7
 * Black Lab Linux 8
+* Debian 9 / sid
 * deepin 15.5
 * elementary OS 0.4.1
 * Fedora 22/25/26/27
 * Funtoo Linux (testing)
 * Gecko Linux
-* Gentoo Linux (testing, including with Btrfs, systemd, runit)
-* Linux Mint 18.2
+* Gentoo Linux (stable / testing, including with Btrfs, systemd, runit)
+* KDE Neon git unstable
+* Linux Mint 18.2 / 18.3
 * Mageia 6
 * Manjaro Linux
 * NixOS 17.09
 * OpenMandriva Lx 3.03
-* openSUSE Tumbleweed
+* openSUSE Leap 15.0 (when in beta) / openSUSE Tumbleweed
 * Sabayon Linux
-* Ubuntu 12.04-15.04 / 16.04
+* Slackware 14.2 and current
+* Ubuntu 12.04-15.04 / 16.04 / 18.04
 * Void Linux (glibc)
 * Void Linux (musl)
 {% endcapture %}
