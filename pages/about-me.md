@@ -119,7 +119,7 @@ I have ranked the distributions I have tried by how challenging they are to set 
 
 1 includes: Ubuntu and most of its derivatives like Linux Mint. Along with Chapeau, deepin, Korora, Manjaro Linux, Q4OS and Sabayon Linux. 
 2 includes: CentOS, Debian, Fedora, Mageia, OpenMandriva, openSUSE and TrueOS. 
-3 includes: Arch Linux, NixOS, Parabola GNU/Linux and Slackware Linux. It has an installer but its package management is complicated as it has no high-level package manager, by default, that is one that resolves dependencies, manages repositories and downloads packages automatically for you. Package managers that do this for you (e.g. slapt-get) is available, but it is not installed, by default, on Slackware. 
+3 includes: Arch Linux, NixOS, Parabola GNU/Linux and Slackware Linux. It has an installer but its package management is complicated as it has no high-level package manager, by default, that is one that resolves dependencies, manages repositories and downloads packages automatically for you. 
 4 includes: Exherbo Linux, Funtoo Linux and Gentoo Linux. 
 5 is mostly just LFS. 
 
