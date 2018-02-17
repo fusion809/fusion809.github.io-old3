@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2018-02-02 15:11:20 +1000
+last_modified_at: 2018-02-17 20:19:40 +1000
 permalink:        /about-me/
 ---
 
@@ -28,9 +28,9 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Chromixium 1.5](http://chromixium.org/)
 * [Debian 8.x/9.x/testing/unstable](https://www.debian.org/)
 * [deepin 2014.3/15/15.3/15.4/15.5](http://www.deepin.org/?lang=en)
-* [Devuan 1.0](https://devuan.org/)
+* [Devuan 1.0/2.0 (beta)](https://devuan.org/)
 * [DragonFlyBSD 4.8](https://www.dragonflybsd.org/)
-* [elementary OS 0.3.x](https://elementary.io/)
+* [elementary OS 0.3.x/0.4.x](https://elementary.io/)
 * [Exherbo Linux](http://exherbo.org/)
 * [Fedora 22-27/Rawhide](https://getfedora.org/)
 * [feren OS 2017.08](http://ferenos.weebly.com/)
@@ -45,7 +45,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [gNewSense 3.1](http://www.gnewsense.org/index.html)
 * [GNOME Next 3.27.2-Build1.10 (23 Nov 2017)](http://download.opensuse.org/repositories/GNOME:/Medias/images/iso/)
 * [GoboLinux 016.01](http://www.gobolinux.org/)
-* [GuixSD 0.13.0](https://www.gnu.org/software/guix/)
+* [GuixSD 0.13.0/0.14.0](https://www.gnu.org/software/guix/)
 * [Haiku OS rev 51133](https://www.haiku-os.org/)
 * [Icaros Desktop 2.2](http://icarosdesktop.org/)
 * [Kali Linux 2](https://www.kali.org/)
@@ -53,12 +53,13 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Korora 21/22/23/24](https://kororaproject.org/)
 * [Linux From Scratch 8.1](http://www.linuxfromscratch.org/lfs/)
 * [Linux Lite 3.6](https://linuxliteos.com/)
-* [Linux Mint 17.2/17.3/18.1/18.2](http://linuxmint.com/)
+* [Linux Mint 17.2/17.3/18.1/18.2/18.3](http://linuxmint.com/)
 * [Lunar Linux](http://www.lunar-linux.org/)
 * [LXLE 14.04](http://lxle.net/)
 * [Mageia 5/6 sta2/6/Cauldron](http://www.mageia.org/en/)
 * [Manjaro Linux](https://manjaro.github.io/)
 * [MidnightBSD 0.8.5](http://www.midnightbsd.org/)
+* [MINIX 3.3](http://www.minix3.org/)
 * [MX 16.1](https://mxlinux.org/)
 * [NetBSD 7/7.1](https://www.netbsd.org)
 * [NixOS 17.03/17.09/unstable](https://nixos.org/)
@@ -75,9 +76,9 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Peppermint OS 8](https://peppermintos.com/)
 * [Pisi Linux 2.0-beta2](http://www.pisilinux.org/en/)
 * [Puppy Linux 6.0/6.3](http://puppylinux.com/)
-* [Q4OS 1.6.x/2.3.x](http://q4os.org/)
+* [Q4OS 1.6.x/2.3.x/2.4.x](http://q4os.org/)
 * [Quirky Linux 6.x/7.x/8.2](http://barryk.org/quirky/)
-* [ReactOS 0.4.2/0.4.4/0.4.5](https://www.reactos.org/)
+* [ReactOS 0.4.2/0.4.4/0.4.5/0.4.7](https://www.reactos.org/)
 * [Remix OS 3](http://www.jide.com/remixos)
 * [ROSA R8](http://en.rosalinux.com/)
 * [Sabayon Linux](https://www.sabayon.org/)
