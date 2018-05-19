@@ -1,0 +1,180 @@
+caption: "Table 1: Comparison of cross-distribution methods of getting programs<sup>1</sup>"
+
+format:       "120"
+synonyms:      "80"
+type:         "150"
+date:          "50"
+auto-updates:  "60"
+setup:         "80"
+use:           "60"
+req:          "120"
+pkg:          "135"
+language:     "110"
+
+body:
+   - name:              "AppImage"
+     url:               "https://appimage.org/"
+     type:              "BF"
+     provider:          "Third-parties"
+     founded:           "2013"
+     updates:           "Not widely implemented.<sup>3</sup>"
+     setup-privileges:  "N/A"
+     use-privileges:    "User"
+     requirements:      "Modern system,<sup>4</sup> <a href='https://en.wikipedia.org/wiki/Filesystem_in_Userspace' link='_blank'>FUSE</a>."
+     purpose:           "PBD"
+     language:          "C"
+     description:       "Essentially a disk image that, when executed, starts a binary file inside."
+
+   - name:              "CDE"
+     url:               "http://www.pgbovine.net/cde.html"
+     type:              "SPM"
+     provider:          "Third-parties"
+     founded:           "2010"
+     updates:           "No"
+     setup-privileges:  "User"
+     use-privileges:    "User"
+     requirements:      "None"
+     purpose:           "PBD"
+     language:          "C" 
+
+   - name:              "Flatpak<sup>6</sup>"
+     url:               "https://flatpak.org/"
+     synonyms:          "xdg-apps"
+     type:              "SPM"
+     provider:          "TPP"
+     founded:           "2014"
+     updates:           "Yes"
+     setup-privileges:  "Root"
+     use-privileges:    "User"
+     requirements:      "PFD"
+     purpose:           "TPP"
+     language:          "C" 
+
+   - name:              "GNU Guix"
+     url:               "https://www.gnu.org/software/guix/"
+     synonyms:          "None"
+     type:              "FPM"
+     founded:           "2013"
+     updates:           "Yes"
+     setup-privileges:  "Root"
+     use-privileges:    "User"
+     requirements:      "None"
+     purpose:           "OS"
+     language:          "GNU Guile,<br/> C++ (NixC)"
+     description:       "Transactional package manager written in GNU Guile on a Nix core that's primary repositories are fairly large, but also strict on open-source."
+
+   - name:              "Linuxbrew"
+     url:               "http://linuxbrew.sh/"
+     synonyms:          "None"
+     type:              "PM"
+     founded:           "2013"
+     updates:           "Yes"
+     setup-privileges:  "User"
+     use-privileges:    "User"
+     requirements:      "x86-64 Linux ≥2.6.16, GCC ≥4.4."
+     purpose:           "PMSD"
+     language:          "Ruby"
+
+   - name:              "Nix"
+     url:               "https://nixos.org/nix/"
+     synonyms:          "None"
+     type:              "FPM"
+     founded:           "2003"
+     updates:           "Yes"
+     setup-privileges:  "Root"
+     use-privileges:    "User"
+     requirements:      "None"
+     purpose:           "OS"
+     language:          "C++, Nix"
+
+   - name:              "Orbital Apps"
+     url:               "https://www.orbital-apps.com/"
+     synonyms:          "None"
+     type:              "BF"
+     founded:           "2016"
+     updates:           "No"
+     setup-privileges:  "N/A"
+     use-privileges:    "User"
+     requirements:      "None"
+     purpose:           "PMSD"
+     language:          "Shell (launcher)"
+
+   - name:              "pkgsrc"
+     url:               "http://www.pkgsrc.org/"
+     synonyms:          "None"
+     type:              "Ports"
+     founded:           "1999"
+     updates:           "Yes"
+     setup-privileges:  "Root"
+     use-privileges:    "Root"
+     requirements:      "Several<sup>12</sup>"
+     purpose:           "OS"
+     language:          "C, Shell"
+
+   - name:              "Ravenports"
+     url:               "http://www.ravenports.com/"
+     synonyms:          "None"
+     type:              "Ports"
+     founded:           "2017"
+     updates:           "Yes"
+     setup-privileges:  "Root"
+     use-privileges:    "Root"
+     requirements:      "x86-64 glibc ≥2.6.32"
+     purpose:           "TPP"
+     language:          "Ada, C, C++"
+     
+   - name:              "Snappy"
+     url:               "https://snapcraft.io/"
+     synonyms:          "None"
+     type:              "TPM"
+     founded:           "2014"
+     updates:           "Yes"
+     setup-privileges:  "Root"
+     use-privileges:    "Root"
+     requirements:      "PFD"
+     purpose:           "TPP"
+     language:          "Go, Python"
+
+   - name:              "Zero Install"
+     url:               "http://0install.net"
+     synonyms:          "0install"
+     type:              "BF"
+     founded:           "2003"
+     updates:           "Yes"
+     setup-privileges:  "User"
+     use-privileges:    "User"
+     requirements:      "None"
+     purpose:           "TPP"
+     language:          "OCaml"
+
+
+notes: "<b>Date</b> = Initial release date for Linux. Some of these package managers might have been released for other platforms before they were available for Linux so I am only giving the port to Linux release date.<br/>
+<b>DH</b> = Development headers.<br/>
+<b>NixC</b> = Nix core.<br/> 
+<b>PM</b> = Package manager.<br/>
+<b>PR</b> = Privilege requirements. Setup PR is what privileges (e.g. root, user) is required to install and set up the package manager initially. Use PR is what requirements do you need to perform package management with the package manager, like install a package, update it, remove it, <i>etc.</i><br/>
+
+
+<b>Footnotes</b><br/>
+
+<sup>1</sup> Excluding .bin/.run installers as they are very diverse (e.g. there's no common website with information on all such installers), along with those methods mentioned in the first sentence of this article.<br/>
+ 
+<sup>2</sup> Who's intended to package using this format? Or if there is no specifically intended packager then the main one that does.<br/>
+
+<sup>3</sup> There is a way of producing an AppImage with automated update capabilities, but most AppImages are not built with this ability.<br/>
+ 
+<sup>4</sup> Specifics of what constitutes 'modern' enough to run an AppImage depends on the specific AppImage and how it was built. Usually 'modern' is measured by glibc version.<br/>
+
+<sup>5</sup> What I mean is the developer of the program that is being packaged using this format. Essentially a way they can disseminate their program around the Linux world.<br/>
+
+<sup>7</sup> What I mean is that the Flatpak program (that provides the Flatpak package manager) has to be installed, preferably via the distribution's package manager. Theoretically it could be manually compiled from source.<br/>
+
+<sup>8</sup> I mean packagers that are not the developers of the program, nor the package manager, but for some reason or another decide to package the program in this format. <br/>
+
+<sup>9</sup> No requirements other than the system using one of the main desktop architectures: x86, x86-64.<br/>
+
+<sup>10</sup> I mean that this package manager was originally designed to be used as the primary package manager of a Linux distribution (e.g. Nix for NixOS) or other Unix-like (*nix) system like NetBSD (pkgsrc). So the main packagers are the packagers of the operating system.<br/>
+
+<sup>11</sup> Package manager developers, that is, those that develop the package manager sometimes also package for it.<br/>
+
+<sup>12</sup> gcc, g++, zlib (and development headers), ncurses (and development headers) and optionally development headers of libudev and openssl."

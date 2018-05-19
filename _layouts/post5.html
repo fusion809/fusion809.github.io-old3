@@ -1,0 +1,22 @@
+---
+layout: default6
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">
+      {% if page.revision %}<b>Revision</b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.revision }} ({% if page.revision_date %}{{ page.revision_date | date: "%A, %-d %B %Y" }}{% else %}{{ page.last_modified_at | date: "%A, %-d %B %Y" }}{% endif %}).{% endif %}<br/>
+      <!--<span itemprop="categories"><b>Category(s)</b>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% for item in page.categories %}<span class="tag"><a href="/tag/{{ item | replace:',','' }}/" link="_blank">{{ item | replace:',','' }}</a></span>{% endfor %}<br/>-->
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><b>First published</b>: {{ page.date | date: "%A, %-d %B %Y" }}.</time>
+      {% if page.last_modified_at %}<time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y %Z" }}" itemprop="dateModified"><br/><b>Last modified</b>: &nbsp;&nbsp;&nbsp;{{ page.last_modified_at | date:"%I:%M %p %A, %d %B %Y" }} (<abbr title="Australian Eastern Standard Time, or UTC+10">AEST</abbr>).</time>{% endif %}
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {% include Layouts/toc.html %}
+    {% if page.draft=="yes" %}{% include Layouts/draft.html %}{% endif %}
+    {{ content }}
+  </div>
+
+</article>

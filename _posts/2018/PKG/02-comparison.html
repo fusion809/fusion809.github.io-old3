@@ -1,0 +1,41 @@
+<h2>Overview</h2>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+    <caption id="table-1">
+         {{ site.data.cpms.caption }}
+    </caption>
+    <tbody>
+         <tr class="green">
+              <td class="title1" style="width: {{ site.data.cpms.format }}px;">Format</td>
+              <!--<td class="title1" style="width: {{ site.data.cpms.synonyms }}px;">Synonyms</td>-->
+              <td class="title1" style="width: {{ site.data.cpms.type }}px;">Type</td>
+              <td class="title1" style="width: {{ site.data.cpms.date }}px;">Date</td>
+              <td class="title1" style="width: {{ site.data.cpms.auto-updates }}px;">Auto-updates?</td>
+              <td class="title1" style="width: {{ site.data.cpms.setup }}px;">Setup PR</td>
+              <td class="title1" style="width: {{ site.data.cpms.use }}px;">Use PR</td>
+              <td class="title1" style="width: {{ site.data.cpms.req }}px;">Host requirements</td>
+              <td class="title1" style="width: {{ site.data.cpms.pkg }}px;">Packagers<sup>2</sup></td>
+              <td class="title1" style="width: {{ site.data.cpms.language }}px;">Language</td>
+            <!--  <td class="title1">Description</td>-->
+         </tr>
+	 {% for row in site.data.cpms.body %}
+	 <tr class="pinkl">
+	      <td class="firstl"><a href="{{ row.url }}" link='_blank'>{{ row.name }}</a></td>
+              <!--<td class="pinkl"{% if row.synonyms == "None" %} style="text-align: center; font-weight: bold; background-color: red"{% elsif row.synonyms == "None<sup>3</sup>" %} style="text-align: center; font-weight: bold; background-color: red"{% else %} style="background-color: rgb(0, 255, 0);"{% endif %}>{{ row.synonyms }}</td>-->
+	      {% if row.type == "FPM" %}<td class="green">Functional,<br/> transactional PM</td>{% elsif row.type == "BF" %}<td class="red">Bundling format</td>{% elsif row.type == "Ports" %}<td class="lightgreyl"><a href='https://en.wikipedia.org/wiki/Ports_collection' link='_blank'>Ports</a></td>{% elsif row.type == "SPM" %}<td class="yellow"><a href='https://en.wikipedia.org/wiki/Application_virtualization' link='_blank'>Application virtualization</a></td>{% elsif row.type == "PM" %}<td class="yellow">Package manager</td>{% elsif row.type == "TPM" %}<td class="yellow">Transactional PM</td>{% endif %}
+	      <td class="generic" style="background-color: rgb({% if row.founded == '2003' %}255, 255, 0{% elsif row.founded == '2004' %}255, 244, 0{% elsif row.founded == '1999' %}0, 255, 0{% elsif row.founded == '2010' %}255, 155, 0{% elsif row.founded == '2013' %}255, 105, 0{% elsif row.founded == '2014' %}255, 85, 0{% elsif row.founded == '2016' %}255, 20, 0{% elsif row.founded == '2017' %}255, 0, 0{% endif %})">{{ row.founded }}</td>
+	      {% if row.updates == "Yes" %}<td class="green" style='text-align: center;'>Yes{% elsif row.updates == "No" %}<td class="red" style="text-align: center;">No{% else %}<td class="yellow">{{ row.updates }}{% endif %}</td>
+	      {% if row.setup-privileges == "User" %}<td class="green" style="text-align: center;">User</td>{% elsif row.setup-privileges == "Root" %}<td class="red" style="text-align: center;">Root</td>{% elsif row.setup-privileges == "N/A" %}<td class="grey" style="text-align: center;">N/A</td>{% endif %}
+	      {% if row.use-privileges == "User" %}<td class="green" style="text-align: center;">User</td>{% elsif row.use-privileges == "Root" %}<td class="red" style="text-align: center;">Root</td>{% elsif row.use-privileges == "N/A" %}<td class="grey" style="text-align: center;">N/A</td>{% endif %}
+              {% if row.requirements == "None" %}<td class="green" style="text-align: center;">None<sup>9</sup>{% elsif row.requirements == "PFD" %}<td class="red">Packaged for distribution<sup>7</sup>{% else %}<td class="red">{{ row.requirements }}{% endif %}</td>
+              {% if row.purpose == "OS" %}<td class="green" style="text-align: center;">OS<sup>10</sup></td>{% elsif row.purpose == "PBD" %}<td class="lightgreyl">Developers<sup>5</sup></td>{% elsif row.purpose == "TPP" %}<td class="yellow">Third-parties<sup>8</sup></td>{% elsif row.purpose == "PMSD" %}<td class="red">PM developer<sup>11</sup></td>{% endif %}
+              <td class="{% if row.language == 'C' %}grey{% elsif row.language == 'Ada, C, C++' %}lightgrey{% elsif row.language == 'Go, Python' %}greenc{% elsif row.language == 'Ruby' %}redc{% elsif row.language == 'C, Shell' %}grey-green{% else %}yellowc{% endif %}">{{ row.language }}</td>
+	     <!-- <td class="pinkl">{{ row.description }}</td>-->
+	 </tr>
+	 {% endfor %}	
+        
+         <tr class="lightgreyl">
+              <td class="lightgreyl" colspan="10">{{ site.data.cpms.notes }}</td>
+         </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,2 @@
+Once upon a time if you wanted to run an application not packaged for your distribution you would have to manually compile the program yourself, unless perhaps if there was a binary tarball available for it or if you can coax existing distribution-specific binaries into working on your distribution. Nowadays the technologies available for making a program available across the various distributions are a little more numerous and advanced.
+
