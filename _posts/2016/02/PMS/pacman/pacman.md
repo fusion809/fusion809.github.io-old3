@@ -24,6 +24,8 @@ pacman's feature set is fairly limited compared to other package managers mentio
 
 pacman does have several actions that can be built into a single pacman command, though, giving it more power and compactness in its syntax than more beginner-friendly package managers like APT or DNF. For example, {% include Code/coders.html line1="pacman -Syyu $package" %} can be used to synchronize local repositories, upgrade all installed packages on the system (note this will not upgrade packages installed via the AUR or custom PKGBUILDs) and install the package(s) specified in `$package`. This is as opposed to {% include Code/coders.html line1="apt-get update && apt-get upgrade && apt-get install $package" %} for APT and {% include Code/coders.html line1="dnf update && dnf install $package" %} for DNF.
 
+pacman can download and install packages from a specified URL too, using the `-U` option.  
+
 ### Speed
 From {% include Code/coders.html line1="time pacman -S vim &#8208;&#8208;noconfirm" %} I received the output:
 
