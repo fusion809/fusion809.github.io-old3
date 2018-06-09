@@ -40,5 +40,10 @@ One important lesson I have learnt from uploading to Wikimedia Commons and deali
 Skeletal structures can be drawn using a variety of Linux-compatible software packages. The most ubiquitous are probably BKChem and GChemPaint. These definitely have their limitations, but they are open-source, at least. They are simple enough and get simple jobs done fairly easily, but if you want more functionality you may have to turn to proprietary software like MarvinSketch. 
 
 ### BKChem
-BKChem is an unmaintained (no new releases since 2010!) skeletal structure sketching program written in Python. It is fairly easy to use it, but it lacks structureimportation from IUPAC or traditional name (it used to have it, however, but its method has become outdated). 
+{% include Links/image.html description="Figure 2: BKChem 0.13.0 running on KDE neon git unstable, with an <a href='https://en.wikipedia.org/wiki/Amitriptyline' link='_blank'>amitriptyline</a> Molfile imported" image="BKChem/BKChem-0.13.0-KDE-20180608.png" width="800px" float="right" %}
+BKChem is an unmaintained (no new releases since 2010!) skeletal structure sketching program written in Python. It is fairly easy to use it, but it lacks structure importation from IUPAC or traditional name (it used to have it, however, but its method has become outdated). It has not had a 1.0 release yet (and given it is unmaintained it seems unlikely to happen anytime soon), but seems fairly stable. One can draw structures and chemical reactions, it also supports other languages, importing from CML, CML2 and Molfile formats; exporting to a variety of graphic file formats, as well as CML, CML2 and Molfile formats. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IaPWx5vs5VA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+### GChemPaint
+{% include Links/image.html description="Figure 3: GChemPaint " %}
