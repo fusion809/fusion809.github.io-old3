@@ -1,5 +1,5 @@
 
 ## Sublime Text
-{% include Links/image.html image="Sublime/Sublime-Text-3.png" width="100%" float="none" description="Sublime Text 3.3103 running on Arch Linux" %}
+{% include Links/image.html image="text-editors/Sublime-Text-3.png" width="100%" float="none" description="Sublime Text 3.3103 running on Arch Linux" %}
 
 **Sublime Text** is a proprietary text editor that is available free of charge, although it will occasionally prompt the user asking for them to pay for a license until they do. It costs around $70 USD to purchase a license. It is written in C++ and Python, although its Python component is mostly for the purpose of allowing users to extend the editor with plugins. Sublime Text's positive points compared to say Atom are that it starts faster and uses less RAM once started than Atom. It is more extendable than Brackets and LightTable, in my opinion, but roughly extendable as Visual Studio Code and less extendable than Atom, Emacs or Vim. At this point in time there are two major releases of Sublime Text, Sublime Text 2 (*stable version*) and Sublime Text 3 (*development version*). I mostly use Sublime Text 3, as it has more features. 
