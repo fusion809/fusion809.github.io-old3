@@ -1,7 +1,7 @@
 ---
 date:             2018-07-01
 layout:           post4
-last_modified_at: 2018-07-01 19:34:00 +1000
+last_modified_at: 2018-07-01 21:32:00 +1000
 title:            "July update: what I've been up to"
 redirect_from:    /2018-07-01-july-update/
 permalink:        /july-update/
