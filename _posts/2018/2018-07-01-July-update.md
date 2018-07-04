@@ -1,7 +1,7 @@
 ---
 date:             2018-07-01
 layout:           post4
-last_modified_at: 2018-07-02 06:10:50 +1000
+last_modified_at: 2018-07-04 22:02:00 +1000
 title:            "July update: what I've been up to"
 redirect_from:    /2018-07-01-july-update/
 permalink:        /july-update/
@@ -17,7 +17,7 @@ I have been very active on [Quora](https://www.quora.com/profile/Brenton-Horne),
 * [My answer to, "How can I get elementary OS [A fast and open replacement for Windows and macOS * elementary OS] for free?"](https://www.quora.com/How-can-I-get-elementary-OS-A-fast-and-open-replacement-for-Windows-and-macOS-%E2%8B%85-elementary-OS-for-free/answer/Brenton-Horne) (82 upvtes, ~18,600 views)
 * [My answer to, "Why do so many Linux users prefer the command line to a GUI?"](https://www.quora.com/Why-do-so-many-Linux-users-prefer-the-command-line-to-a-GUI/answer/Brenton-Horne) (46 upvotes, ~4,500 views)
 * [My answer to, "Should I switch from Ubuntu to Arch"](https://www.quora.com/Should-I-switch-from-Ubuntu-to-Arch/answer/Brenton-Horne) (37 upvotes, ~11,600 views)
-* [My answer to, "What advantages does Red Hat/Fedora have over Debian/Ubuntu?"](https://www.quora.com/What-advantages-does-Red-Hat-Fedora-have-over-Debian-Ubuntu/answer/Brenton-Horne) (31 upvotes, ~7,500 views)/u
+* [My answer to, "What advantages does Red Hat/Fedora have over Debian/Ubuntu?"](https://www.quora.com/What-advantages-does-Red-Hat-Fedora-have-over-Debian-Ubuntu/answer/Brenton-Horne) (31 upvotes, ~7,500 views)
 * [My answer to "Why is CentOS so popular as a server? What are its advantages compared to the other distributions?"](https://www.quora.com/Why-is-CentOS-so-popular-as-a-server-What-are-its-advantages-compared-to-the-other-distributions/answer/Brenton-Horne) (29 upvotes, ~6,500 views)
 * [My answer to, "What is the coolest distro?"](https://www.quora.com/What-is-the-coolest-Linux-distro) (28 upvotes, ~11,500 views)
 * [My answer to, "What Linux distro has the best software manager"](https://www.quora.com/What-Linux-distro-has-the-best-software-manager/answer/Brenton-Horne) (23 upvotes, ~2,500 views)
