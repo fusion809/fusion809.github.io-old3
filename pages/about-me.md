@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2018-02-17 20:19:40 +1000
+last_modified_at: 2018-07-06 21:04:40 +1000
 permalink:        /about-me/
 ---
 
@@ -13,26 +13,26 @@ My journey through the world of Linux began in mid 2012, when I first tried [Ubu
 When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/), KVM/QEMU and live USB I tried a variety of free (of monetary cost) operating systems, including:
 
 {% capture my_capture %}
-* [Android-x86 6.0-r1/7.1-rc2](http://www.android-x86.org/)
+* [Android-x86 6.0-r1/7.1-rc2/7.1](http://www.android-x86.org/)
 * [Antergos](https://antergos.com/)
 * [antiX 15/15-MX/16.1/16.2/17](http://antix.mepis.org/index.php?title=Main_Page)
 * [ArchBang](http://bbs.archbang.org/)
 * [Arch Linux](https://www.archlinux.org/)
-* [Arya Linux 2017](http://aryalinux.org/)
+* [Arya Linux 2017/1.0](http://aryalinux.org/)
 * [Black Lab Linux 8](http://www.blacklablinux.org/)
 * [Bodhi Linux 3.10/4.3.1](http://www.bodhilinux.com/)
 * [Calculate Linux 15.17/17.6](http://www.calculate-linux.org/)
-* [CentOS 7](https://www.centos.org/)
+* [CentOS 6/7](https://www.centos.org/)
 * [Chakra](https://chakralinux.org/)
 * [Chapeau 22.1](http://chapeaulinux.org/)
 * [Chromixium 1.5](http://chromixium.org/)
 * [Debian 8.x/9.x/testing/unstable](https://www.debian.org/)
-* [deepin 2014.3/15/15.3/15.4/15.5](http://www.deepin.org/?lang=en)
+* [deepin 2014.3/15/15.3/15.4/15.5/15.6](http://www.deepin.org/?lang=en)
 * [Devuan 1.0/2.0 (beta)](https://devuan.org/)
 * [DragonFlyBSD 4.8](https://www.dragonflybsd.org/)
-* [elementary OS 0.3.x/0.4.x](https://elementary.io/)
+* [elementary OS 0.3.x/0.4.x/5.0-beta1](https://elementary.io/)
 * [Exherbo Linux](http://exherbo.org/)
-* [Fedora 22-27/Rawhide](https://getfedora.org/)
+* [Fedora 22-28/Rawhide](https://getfedora.org/)
 * [feren OS 2017.08](http://ferenos.weebly.com/)
 * [FreeBSD 10.2/10.3/10.4/11.0/11.1/11-STABLE/12-CURRENT](https://www.freebsd.org/)
 * [FreeDOS 1.2](http://www.freedos.org/)
@@ -53,7 +53,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Korora 21/22/23/24](https://kororaproject.org/)
 * [Linux From Scratch 8.1](http://www.linuxfromscratch.org/lfs/)
 * [Linux Lite 3.6](https://linuxliteos.com/)
-* [Linux Mint 17.2/17.3/18.1/18.2/18.3](http://linuxmint.com/)
+* [Linux Mint 17.2/17.3/18.1/18.2/18.3/19-beta/19](http://linuxmint.com/)
 * [Lunar Linux](http://www.lunar-linux.org/)
 * [LXLE 14.04](http://lxle.net/)
 * [Mageia 5/6 sta2/6/Cauldron](http://www.mageia.org/en/)
@@ -62,13 +62,14 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [MINIX 3.3](http://www.minix3.org/)
 * [MX 16.1](https://mxlinux.org/)
 * [NetBSD 7/7.1](https://www.netbsd.org)
-* [NixOS 17.03/17.09/unstable](https://nixos.org/)
+* [NixOS 17.03/17.09/18.03/unstable](https://nixos.org/)
 * [NuTyX 9.0/10.0](http://www.nutyx.org/)
 * [Oracle Linux 7](https://www.oracle.com/linux/index.html)
 * [OpenBSD 5.9/6.0/6.1/6.2](https://www.openbsd.org/)
 * [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
 * [OpenMandriva Lx 2014.2/3/3.01](https://www.openmandriva.org/en)
-* [openSUSE 13.2/42.1/42.2/42.3/Tumbleweed](https://www.opensuse.org/)
+* [openSUSE 13.2/42.1/42.2/42.3/15.0-beta/15.0/Tumbleweed](https://www.opensuse.org/)
+* [Oracle Linux 7](http://www.oracle.com/us/technologies/linux/index.html)
 * [Parabola GNU/Linux](https://www.parabola.nu/)<sup>1</sup>
 * [Parrot Security OS 3.8](https://www.parrotsec.org/)
 * [PC-BSD 10.1/10.2/TrueOS](https://www.trueos.org/)
@@ -82,9 +83,9 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Remix OS 3](http://www.jide.com/remixos)
 * [ROSA R8](http://en.rosalinux.com/)
 * [Sabayon Linux](https://www.sabayon.org/)
-* [Scientific Linux 6.7/7.3](https://www.scientificlinux.org/)
+* [Scientific Linux 6.7/7.3/7.5](https://www.scientificlinux.org/)
 * [SmartOS](https://www.joyent.com/smartos)
-* [Solus OS 1.0-RC1/1.2.1](https://solus-project.com/)
+* [Solus OS 1.0-RC1/1.2.1/3](https://solus-project.com/)
 * [Slackware Linux 14.2-RC2/14.2](http://www.slackware.com/)
 * [Tails 3.1](https://tails.boum.org/)
 * [Trisquel GNU/Linux 7](https://trisquel.info/)
