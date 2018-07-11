@@ -1,0 +1,1 @@
+Funtoo Linux was the first source-based distribution I had successfully set up on my computer, outside a VM. It, for the most part, was quite an enlightening experience and it gave me the confidence to re-try installing Gentoo Linux on my PC outside a VM, after my first attempt failed quite miserably.

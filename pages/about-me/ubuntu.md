@@ -1,0 +1,3 @@
+Ubuntu was my first distro so I feel very comfortable with it, despite the fact that package development under it is difficult and tedious compared to how it is on other distributions I have used. I do not presently use it but it is fairly stable.
+
+I also tried Ubuntu 18.04, while still in pre-release development, around 23-24 January 2018. Not surprisingly it was buggy, with a bug wherein Ubiquity (the installer) froze at the stage wherein I ticked the boxes to install third-party WiFi drivers, codecs, *etc.* during system installation, along with updates. It also had an issue with Broadcom WiFi support after I installed it with debootstrap ([here](https://bugs.launchpad.net/ubuntu/+source/bcmwl/+bug/1745256) be the bug report).

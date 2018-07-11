@@ -1,0 +1,6 @@
+Must admit I was having a hard time determining what this distribution had that Ubuntu MATE LTS did not (I was using the MATE edition). The only things I came up with was:
+* Its own branding, including its own unique artwork.
+* Chromium web browser
+* No bcmwl-kernel-source package, nor its dependencies, in its package cache. So I could not connect to the WiFi in its live session. I ran `sudo apt-get install -y bcmwl-kernel-source` and I got [this error](https://gist.github.com/fusion809/47ba090e433227606737494771695e91) in the live session.
+
+[Their website](http://www.blacklablinux.org/p/why-black-lab-linux.html) and DistroWatch say they have better multimedia support, must admit I do not see how they could do better than most beginner-friendly distributions, at least in the way I play videos (in VLC and to a lesser extent in the browser), which is fairly basic. Despite this if you have complex multimedia needs it might help you. Its website says it also comes with Steam pre-installed, which I hardly use, but might be advantageous to some. It also has an antivirus (presumably ClamAV given how popular, free and ubiquitous it is) pre-installed according to their website, although I cannot see ClamAV installed based on the output of `dpkg -L | grep -i clam`. 

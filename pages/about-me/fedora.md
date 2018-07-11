@@ -1,0 +1,9 @@
+Fedora is interesting to me, in that installing software packages in its software repositories is usually at least as easy as it is on Ubuntu, but installing software manually from source code or setting up web applications (e.g. MediaWiki or WordPress) tends to be substantially more difficult than on other more user-friendly distributions.
+
+It is also interesting to me in that its system software and desktop environment-related software is usually the most up-to-date of any distribution following a fixed-release cycle, yet the rest of its software tends to lag behind the latest available release, in my experience, anyway.
+
+It has its own equivalent to the OBS, Copr (although unlike the OBS it can only build packages for Fedora), which does afford packages Internet access during their build, if the packager grants them this. Copr also like the OBS, has strong licensing restrictions (namely, that they have to be FOSS) on any packages built and distributed through it.
+
+Fedora is also a very touchy distribution. Not sure why but I have my suspicions it is due to safety measures related to SELinux. By touchy I mean if you chroot into a Fedora distribution (after mounting up all the necessary parts of your system like /proc, /dev and /sys) and run `dnf update` or any other package management command (e.g. `dnf install vim`) you will find that if you boot Fedora several systemd services will fail and the system will often not reach its graphical interface target (that is, GNOME will not start). I have also found that moving folders around in a Fedora root partition, even in the home folder, from another system (e.g. mounting the Fedora root partition to say /mnt) will also cause major problems when you try to start Fedora.  Likewise I have also found that manually compiling software and installing it to /usr/local also tends to cause major problems.
+
+

@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2018-07-06 21:04:40 +1000
+last_modified_at: 2018-07-11 17:34:40 +1000
 permalink:        /about-me/
 ---
 
@@ -10,178 +10,74 @@ permalink:        /about-me/
 
 My journey through the world of Linux began in mid 2012, when I first tried [Ubuntu](http://www.ubuntu.com) 12.04 as a dual-boot with Windows 7 on my Dell laptop. At first, I must admit I was not impressed, as it was like I had landed on an alien planet, as I had never had any need to use a terminal emulator (or command prompt as it is called under Microsoft Windows) before. Fortunately, I persevered (although, I did return to Windows on-and-off) and after a while I became almost addicted to Linux. A couple of years later I decided to delete the Windows 7 partition on my Dell laptop and make the laptop 100% pure Linux. Since then, I have never regretted making the transition to Linux. Although, I eventually outgrew Ubuntu as it was essentially preschool with so much hand-holding that I was left out of many of the important decisions about my own system.
 
-When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/), KVM/QEMU and live USB I tried a variety of free (of monetary cost) operating systems, including:
+{% include_relative about-me/list-of-distros-tried.md %}
 
-{% capture my_capture %}
-* [Android-x86 6.0-r1/7.1-rc2/7.1](http://www.android-x86.org/)
-* [Antergos](https://antergos.com/)
-* [antiX 15/15-MX/16.1/16.2/17](http://antix.mepis.org/index.php?title=Main_Page)
-* [ArchBang](http://bbs.archbang.org/)
-* [Arch Linux](https://www.archlinux.org/)
-* [Arya Linux 2017/1.0](http://aryalinux.org/)
-* [Black Lab Linux 8](http://www.blacklablinux.org/)
-* [Bodhi Linux 3.10/4.3.1](http://www.bodhilinux.com/)
-* [Calculate Linux 15.17/17.6](http://www.calculate-linux.org/)
-* [CentOS 6/7](https://www.centos.org/)
-* [Chakra](https://chakralinux.org/)
-* [Chapeau 22.1](http://chapeaulinux.org/)
-* [Chromixium 1.5](http://chromixium.org/)
-* [Debian 8.x/9.x/testing/unstable](https://www.debian.org/)
-* [deepin 2014.3/15/15.3/15.4/15.5/15.6](http://www.deepin.org/?lang=en)
-* [Devuan 1.0/2.0 (beta)](https://devuan.org/)
-* [DragonFlyBSD 4.8](https://www.dragonflybsd.org/)
-* [elementary OS 0.3.x/0.4.x/5.0-beta1](https://elementary.io/)
-* [Exherbo Linux](http://exherbo.org/)
-* [Fedora 22-28/Rawhide](https://getfedora.org/)
-* [feren OS 2017.08](http://ferenos.weebly.com/)
-* [FreeBSD 10.2/10.3/10.4/11.0/11.1/11-STABLE/12-CURRENT](https://www.freebsd.org/)
-* [FreeDOS 1.2](http://www.freedos.org/)
-* [Frugalware Linux 2.1](http://frugalware.org/)
-* [Funtoo Linux](http://www.funtoo.org/Welcome)
-* [Gecko Linux](http://geckolinux.github.io/)
-* [Gentoo Linux](https://www.gentoo.org/)
-* [GhostBSD 10.1/10.2](http://ghostbsd.org/)
-* [GhostOS 0.5.6](https://ghostkernel.org/)
-* [gNewSense 3.1](http://www.gnewsense.org/index.html)
-* [GNOME Next 3.27.2-Build1.10 (23 Nov 2017)](http://download.opensuse.org/repositories/GNOME:/Medias/images/iso/)
-* [GoboLinux 016.01](http://www.gobolinux.org/)
-* [GuixSD 0.13.0/0.14.0](https://www.gnu.org/software/guix/)
-* [Haiku OS rev 51133](https://www.haiku-os.org/)
-* [Icaros Desktop 2.2](http://icarosdesktop.org/)
-* [Kali Linux 2](https://www.kali.org/)
-* [KDE Neon stable/git-unstable](https://neon.kde.org/)
-* [Korora 21/22/23/24](https://kororaproject.org/)
-* [Linux From Scratch 8.1](http://www.linuxfromscratch.org/lfs/)
-* [Linux Lite 3.6](https://linuxliteos.com/)
-* [Linux Mint 17.2/17.3/18.1/18.2/18.3/19-beta/19](http://linuxmint.com/)
-* [Lunar Linux](http://www.lunar-linux.org/)
-* [LXLE 14.04](http://lxle.net/)
-* [Mageia 5/6 sta2/6/Cauldron](http://www.mageia.org/en/)
-* [Manjaro Linux](https://manjaro.github.io/)
-* [MidnightBSD 0.8.5](http://www.midnightbsd.org/)
-* [MINIX 3.3](http://www.minix3.org/)
-* [MX 16.1](https://mxlinux.org/)
-* [NetBSD 7/7.1](https://www.netbsd.org)
-* [NixOS 17.03/17.09/18.03/unstable](https://nixos.org/)
-* [NuTyX 9.0/10.0](http://www.nutyx.org/)
-* [Oracle Linux 7](https://www.oracle.com/linux/index.html)
-* [OpenBSD 5.9/6.0/6.1/6.2](https://www.openbsd.org/)
-* [OpenIndiana 201604/201610/201704](https://www.openindiana.org/)
-* [OpenMandriva Lx 2014.2/3/3.01](https://www.openmandriva.org/en)
-* [openSUSE 13.2/42.1/42.2/42.3/15.0-beta/15.0/Tumbleweed](https://www.opensuse.org/)
-* [Oracle Linux 7](http://www.oracle.com/us/technologies/linux/index.html)
-* [Parabola GNU/Linux](https://www.parabola.nu/)<sup>1</sup>
-* [Parrot Security OS 3.8](https://www.parrotsec.org/)
-* [PC-BSD 10.1/10.2/TrueOS](https://www.trueos.org/)
-* [PCLinuxOS](http://www.pclinuxos.com/)
-* [Peppermint OS 8](https://peppermintos.com/)
-* [Pisi Linux 2.0-beta2](http://www.pisilinux.org/en/)
-* [Puppy Linux 6.0/6.3](http://puppylinux.com/)
-* [Q4OS 1.6.x/2.3.x/2.4.x](http://q4os.org/)
-* [Quirky Linux 6.x/7.x/8.2](http://barryk.org/quirky/)
-* [ReactOS 0.4.2/0.4.4/0.4.5/0.4.7](https://www.reactos.org/)
-* [Remix OS 3](http://www.jide.com/remixos)
-* [ROSA R8](http://en.rosalinux.com/)
-* [Sabayon Linux](https://www.sabayon.org/)
-* [Scientific Linux 6.7/7.3/7.5](https://www.scientificlinux.org/)
-* [SmartOS](https://www.joyent.com/smartos)
-* [Solus OS 1.0-RC1/1.2.1/3](https://solus-project.com/)
-* [Slackware Linux 14.2-RC2/14.2](http://www.slackware.com/)
-* [Tails 3.1](https://tails.boum.org/)
-* [Trisquel GNU/Linux 7](https://trisquel.info/)
-* [Ubuntu 12.04-18.04](http://www.ubuntu.com) (and its official flavours)
-* [Uruk GNU/Linux 2.0](https://urukproject.org/dist/en.html)<sup>2</sup>
-* [Vector Linux 7.1](http://vectorlinux.com/)
-* [Void Linux glibc/musl](http://www.voidlinux.eu/)
-* [Zorin OS 7/12](http://zorinos.com/)
-{% endcapture %}
-<div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
-{{ my_capture | markdownify }}
-</div>
+{% include_relative about-me/distribution-difficulty.md %}
 
-**Footnotes**
-1. Specifically the MATE OpenRC 20170930 image. 
-2. The installer crashed on me, maybe it does not like to play nice with VirtualBox, but I used its live image, at least. 
-
-## Linux From Scratch
-I have also repeatedly tried to build a Linux From Scratch system but it failed almost every time. The second last time it failed (on 28 May 2017) with Manjaro Linux 17.0 live session as the host (or bootstrap) OS and I was building LFS 8.0 and the failure was due to glibc 2.25 issues. Namely its test suite failed during [this stage](http://www.linuxfromscratch.org/lfs/view/stable/chapter06/glibc.html) (chapter 6.9) giving [this log](https://pastebin.com/Skvn0k8j). After this running:
-
-```bash
-echo 'int main(){}' > dummy.c
-cc dummy.c -v -Wl,--verbose &> dummy.log
-readelf -l a.out | grep ': /lib'
-```
-
-per chapter 6.10 of the manual failed as the compiler was malfunctioning. Also tried using ALFS with jhalfs-2.4 and that still failed due to kernel issues. The #lfs IRC channel was not really helpful people just said to try the manual way over and over (doing a clean start from the beginning the LFS guide) again until it magically works. I did manage to install Linux From Scratch with this effort starting on 6 October 2017 and ending 7 October 2017 and it finally booted fine, except one minor networking issue. This issue was quickly resolved. 
-
-I cloned this LFS image so I would not have to build it again. Then on 6 December 2017 I decided to rebuild with makepkg and re-install each package with pacman. That way I could track package files easier. 
-
-## Distribution difficulty
-I have ranked the distributions I have tried by how challenging they are to set up and use on a scale from 0 to 5. 0 are beginner-friendly distributions no more challenging to set up and use than Windows. I am unaware of any distribution that is exactly 0 on this scale. 1 are beginner-friendly distributions that are usually as easy as Windows to install, but may be a little more challenging to use post-install for beginners. Ubuntu is an example of a distribution with a difficulty score of 1. 2 have automated installers and may be as easy to set up as Windows, but post-installation they are significantly more challenging to use than Windows. Usually due to things like bugs, small repositories, poor out-of-the-box support for devices with proprietary drivers and/or difficult package management. 3 have no automated installers, but have a simple installation process, are usually installed from the command-line. Initial system configuration post-install is done from the command-line. Package management is not too easy for beginners, but it also is not too complex. Alternatively some distributions may fit this category that have an installer but with very complicated package management. 4 have no automated installer and a complicated installation process and are installed from the command-line. The package manager is complicated and builds from source by default. 5 is Linux From Scratch (LFS). 
-
-1 includes: Ubuntu and most of its derivatives like Linux Mint. Along with Chapeau, deepin, Korora, Manjaro Linux, Q4OS and Sabayon Linux. 
-2 includes: CentOS, Debian, Fedora, Mageia, OpenMandriva, openSUSE and TrueOS. 
-3 includes: Arch Linux, NixOS, Parabola GNU/Linux and Slackware Linux. It has an installer but its package management is complicated as it has no high-level package manager, by default, that is one that resolves dependencies, manages repositories and downloads packages automatically for you. 
-4 includes: Exherbo Linux, Funtoo Linux and Gentoo Linux. 
-5 is mostly just LFS. 
-
-## Operating systems installed on my actual hard disk
-Of the operating systems listed before I have also installed the following nine on my PC, outside a VM and live session:
-{% capture my_capture %}
-* Arch Linux
-* CentOS 7
-* Black Lab Linux 8
-* Debian 9 / sid
-* deepin 15.5
-* elementary OS 0.4.1
-* Fedora 22/25/26/27
-* Funtoo Linux (testing)
-* Gecko Linux
-* Gentoo Linux (stable / testing, including with Btrfs, systemd, runit)
-* KDE Neon git unstable
-* Linux Mint 18.2 / 18.3
-* Mageia 6
-* Manjaro Linux
-* NixOS 17.09
-* OpenMandriva Lx 3.03
-* openSUSE Leap 15.0 (when in beta) / openSUSE Tumbleweed
-* Sabayon Linux
-* Slackware 14.2 and current
-* Ubuntu 12.04-15.04 / 16.04 / 18.04
-* Void Linux (glibc)
-* Void Linux (musl)
-{% endcapture %}
-<div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
-{{ my_capture | markdownify }}
-</div>
-
-I have also tried Android-x86 6.0/7.1-rc2, Peppermint OS 8 (20171130), RemixOS 3.0, ROSA R10 (only in live session as the installer crashed on me), Ubuntu 17.10, Ubuntu Kylin 17.10 (installer crashed on me too, as it was expecting to run grub-install and I was going to use another distribution's GRUB to boot it) in live sessions.
-
-my favourite were, in ascending order:
-
+My favourite were, in ascending order:
 
 {% capture openmandriva %}
-Started fine and I did not notice any stability issues, although its packages were more bleeding edge than Mageia at least. Found it odd that a distribution with the word 'open' in its name would include a nonfree repository (containing things like Broadcom drivers) by default. Felt like its Broadcom wireless drivers package was barely being maintained though. I installed it and got errors mentioned in [this forum thread](https://forum.openmandriva.org/t/dkms-broadcom-wl-a-missing-file-dkms-was-expecting-and-erroneous-sed-command/1550), an earlier (by less than 2 months) [thread](https://forum.openmandriva.org/t/cant-configure-my-wireless/1477) relating to this package, [another in Italian](https://forum.openmandriva.org/t/omv-i586-32-aggiornata-a-3-02-non-collega-il-wifi-scambia-linterfaccia-wifi-per-interfaccia-ethernet/1207) and a [fourth in French](https://forum.openmandriva.org/t/la-lx3-0-rc1-est-arrivee/555) with all but the French one being within the past six months (as of 11 December 2017), indicates to me that maybe this package is less maintained on OpenMandriva Lx than on other distributions, or maybe just plain buggy. To be clear this is not me biting at its developers, I realize they owe me and everyone else nothing, just commenting on my impressions and experience. So I essentially gave up on this interesting distribution that for me is best used only in a virtual machine. 
+{% include_relative about-me/openmandriva.md %}
 {% endcapture %}
 
 {% capture blacklab %}
-[Their website](http://www.blacklablinux.org/p/why-black-lab-linux.html) and DistroWatch say they have better multimedia support, must admit I do not see how they could do better than most beginner-friendly distributions, at least in the way I play videos (in VLC and to a lesser extent in the browser), which is fairly basic. Despite this if you have complex multimedia needs it might help you. Its website says it also comes with Steam pre-installed, which I hardly use, but might be advantageous to some. It also has an antivirus (presumably ClamAV given how popular, free and ubiquitous it is) pre-installed according to their website, although I cannot see ClamAV installed based on the output of `dpkg -L | grep -i clam`. 
+{% include_relative about-me/blacklab.md %}
 {% endcapture %}
 
 {% capture nixos %}
-NixOS is a fascinating distribution, in principle, but in practice it is a pain in the rear to set up for the first time, especially if you have a Broadcom WiFi chip. One pain with is the bootloader. On 17 November 2017 I set it up to use OS prober via the option:
-
-```nix
-boot.loader.grub.useOSProber = true;
-```
-
-and it caused GRUB2 to be only set up to boot Gentoo and NixOS properly, Arch Linux's entry in the GRUB2 menu actually booted NixOS, not Arch. Likewise if I use Arch to manage the bootloader it did not recognize NixOS and omitted a NixOS entry in the GRUB2 configuration file. I asked for help on this on Unix & Linux StackExchange [here](https://unix.stackexchange.com/questions/405255/is-it-possible-to-get-arch-linuxs-grub2-to-recognize-and-correctly-boot-nixos).
+{% include_relative about-me/nixos.md %}
 {% endcapture %}
 
 {% capture sabayon %}
-It is the distribution that I once decided to keep on my {% include Layouts/path.html path="/dev/sda1" %} partition permanently, because it is a good fallback distribution in case the distro on my {% include Layouts/path.html path="/dev/sda3" %} partition fails to boot or otherwise has serious issues. It is a Gentoo derivative that has a beginner-friendly binary package manager, Entropy, alongside the complicated yet powerful package manager (oriented towards experienced Linux users) of Gentoo, Portage.
+{% include_relative about-me/sabayon.md %}
+{% endcapture %}
 
-Its software is usually fairly up-to-date (e.g. its website claims that its software is "bleeding-edge"), although sometimes you will see a lag, sometimes due to upstream issues (see most packages in its repositories come from the Portage Tree of Gentoo. e.g. GNOME 3.18 was released 23 September 2015, yet it was not until 15 November 2015 that the GNOME Shell 3.18 was finally added to the Portage Tree) and sometimes because only two people directly maintain the Entropy Store and as there are over 13,100 software packages in the Entropy Store it is sometimes impossible for them, from a practical standpoint, to keep all of them up-to-date.
+{% capture elementary %}
+{% include_relative about-me/elementary.md %}
+{% endcapture %}
+
+{% capture ubuntu %}
+{% include_relative about-me/ubuntu.md %}
+{% endcapture %}
+
+{% capture mageia %}
+{% include_relative about-me/mageia.md %}
+{% endcapture %}
+
+{% capture fedora %}
+{% include_relative about-me/fedora.md %}
+{% endcapture %}
+
+{% capture deepin %}
+{% include_relative about-me/deepin.md %}
+{% endcapture %}
+
+{% capture mint %}
+{% include_relative about-me/mint.md %}
+{% endcapture %}
+
+{% capture void-musl %}
+{% include_relative about-me/void-musl.md %}
+{% endcapture %}
+
+{% capture void-glibc %}
+{% include_relative about-me/void-glibc.md %}
+{% endcapture %}
+
+{% capture funtoo %}
+{% include_relative about-me/funtoo.md %}
+{% endcapture %}
+
+{% capture gentoo %}
+{% include_relative about-me/gentoo.md %}
+{% endcapture %}
+
+{% capture opensuse %}
+{% include_relative about-me/opensuse.md %}
+{% endcapture %}
+
+{% capture arch %}
+{% include_relative about-me/arch.md %}
 {% endcapture %}
 
 <ul>
@@ -189,34 +85,16 @@ Its software is usually fairly up-to-date (e.g. its website claims that its soft
 {{ openmandriva | markdownify }}
 
 <li><b>Black Lab Linux 8</b></li>
-Must admit I was having a hard time determining what this distribution had that Ubuntu MATE LTS did not (I was using the MATE edition). The only things I came up with was:
-<ul>
-   <li>Its own branding, including its own unique artwork.</li>
-   <li>Chromium web browser</li>
-   <li>No bcmwl-kernel-source package, nor its dependencies, in its package cache. So I could not connect to the WiFi in its live session. I ran <code>sudo apt-get install -y bcmwl-kernel-source</code> and I got <a href='https://gist.github.com/fusion809/47ba090e433227606737494771695e91' link="_blank">this error</a> in the live session.</li>
-</ul>
-
 {{ blacklab | markdownify }}
 
-<li><b>Linux Mint</b></li>
-It started fine, thanks to its Ubuntu base it was easy to set up Broadcom wireless in the live session, even without inserting an ethernet cable as the required packages were already in the package cache. I disliked the outdated software though (but it is something it shares with Ubuntu LTS and is needed for its stability so it is not something I hold against it personally) and I hear distribution upgrades between major releases (e.g. 16.x, 17.x, 18.x, <i>etc.</i>) often causes major breaks. I also experienced some weird bugs with the Cinnamon applet installer. I only used it for a few hours though before I gave up.<br/><br/>
-
 <li><b>elementary OS</b></li>
-I never noticed any bugs in it, it was unique among Ubuntu-based distributions I have tried so far as it had out-of-the-box support for my Broadcom chip, never had to install any drivers for it myself. That was not just in the live session either, post-install it had it and the WiFi credentials I had entered in the live session were kept in the hard disk installation (that is, I did not have to re-enter them in order to access the network's WiFi).<br/><br/>
-
-It was stable, had its base, Ubuntu LTS', old outdated software, so that part was no different from Linux Mint. It also had decent aesthetics (not quite as beautiful as deepin, but still pasts muster). The thing that infuriated me with it is that often it can seem like you have to pay something to use certain applications, or even to use the system itself. Its website makes it seem like you have to pay, in the eyes of so many, that an <a href='https://www.quora.com/How-can-I-get-elementary-OS-A-fast-and-open-replacement-for-Windows-and-macOS-%E2%8B%85-elementary-OS-for-free/answer/Brenton-Horne' link='_blank'>answer of mine</a> on Quora informing people of how to download it for free has received over seventy upvotes, the second most of any answer of mine as of 11 December 2017 (~2 & 1/2 months after I wrote the answer).<br/><br/>
+{{ elementary | markdownify }}
 
 <li><b>Ubuntu</b></li>
-Ubuntu was my first distro so I feel very comfortable with it, despite the fact that package development under it is difficult and tedious compared to how it is on other distributions I have used. I do not presently use it but it is fairly stable.<br/><br/>
-
-I also tried Ubuntu 18.04, while still in pre-release development, around 23-24 January 2018. Not surprisingly it was buggy, with a bug wherein Ubiquity (the installer) froze at the stage wherein I ticked the boxes to install third-party WiFi drivers, codecs, <i>etc.</i> during system installation, along with updates. It also had an issue with Broadcom WiFi support after I installed it with debootstrap (<a href='https://bugs.launchpad.net/ubuntu/+source/bcmwl/+bug/1745256' link='_blank'>here</a> be the bug report).<br/><br/>
+{{ ubuntu | markdownify }}
 
 <li><b>Mageia</b></li>
-Mageia was surprisingly a rather pleasant experience for me. Everything 'just worked' rather well with it, I have noticed no bugs in the few days I have used it so far. I personally think it would probably make for a great system to run on a desktop PC with hardware entirely compatible with open-source software (no need for proprietary drivers, not even for better performance) used by the technologically-inept, or at least less skilled, so long as their computing needs are fairly basic. As expected, based on my virtual machine experience with it and basic research I have done on it, its software was a little outdated (e.g. using KDE Plasma LTS which is presently 5.8.x, as well as Firefox ESR), but still well-tested, usable and stable.<br/><br/>
-
-The problems I noticed with it was what I expected, namely that Broadcom drivers were not pre-installed, neither in the live session nor fresh installation. Although this problem, like usual, is simple to fix, merely install them and they are ready to go. That and I must admit I am not the biggest fan of urpmi, thankfully there is DNF pre-installed which I favour as its syntax is simpler.<br/><br/>
-
-Arch Linux's GRUB bootloader (as I triple booted Arch Linux / Gentoo Linux / Void Linux at the time and was using a fourth partition to test distributions out on ) did not play nice with it, it used an old kernel (the one Mageia 6 comes with in a fresh install) of Mageia's (for which I had not installed Broadcom wireless) as the default instead of the latest kernel (and yes I had updated the configuration file with <code>grub-mkconfig -o /boot/grub/grub.cfg</code> since the install of the newer kernel). The newer kernel was in the advanced options list of Mageia, but having to go there every time I wanted to boot it was irritating.<br/><br/>
+{{ mageia | markdownify }}
 
 <li><b>NixOS</b></li>
 {{ nixos | markdownify }}
@@ -224,61 +102,29 @@ Arch Linux's GRUB bootloader (as I triple booted Arch Linux / Gentoo Linux / Voi
 <li><b>Sabayon Linux</b></li>
 {{ sabayon | markdownify }}
 
-<li><b>Gecko Linux</b> / <b>openSUSE</b></li>
-openSUSE Leap uses RPM packages like Fedora, but unlike Fedora its system software and desktop environments are usually nowhere near as bleeding edge. This is likely because openSUSE is designed to be compatible with both servers and desktops/laptops, with the former usually valuing stability over being up-to-date, while Fedora is mostly geared towards desktops/laptops.<br/><br/>
-
-I tend to find that installing programs on openSUSE is similar to installing them on Fedora, in terms of difficulty. Its chief advantage over Fedora is that it has a Tumbleweed edition that is essentially like a simpler (less compiling software not in the repositories from source code) version of Arch Linux, thanks to the Open Build Service (OBS). The OBS is a system whereby users can freely build and distribute packages of their choosing for any one of a variety of different distributions (including Arch Linux, Fedora, openSUSE, <i>etc.</i>), the main problem with it is that it cannot build packages that require Internet access during the build (like the Atom text editor, for example). I initially thought OT had fewer bugs than Arch Linux, but, regrettably, I found OT definitely has its fair share of bugs (especially with respect to GNOME, for example ca. January 2018 GNOME on Xorg would not launch from SDDM, while GNOME on Wayland launched but after 2 & 1/2 hours it consistently froze the whole system (even preventing accessing agetty terminals), requiring a reboot), as does its derivative Gecko Linux (Rolling edition).<br/><br/>
-
-For example, when I booted Gecko Linux (Rolling) for the first time, after installing it, I typed in my credentials to access the WiFi (which did not require any extra packages installed as Gecko comes with Broadcom firmware pre-installed from the unofficial Packman repository of openSUSE), from the network section of the KDE Plasma 5 system tray, and while it seemed to connect to the WiFi (i.e., no errors were mentioned) the WiFi was not available to any of my applications, including my web browser (Google Chrome, which I installed manually as it does not come with Gecko, by default) and command-line programs like <code>ping</code> and <code>zypper</code>.<br/><br/>
-
 <li><b>Fedora</b></li>
-Fedora is interesting to me, in that installing software packages in its software repositories is usually at least as easy as it is on Ubuntu, but installing software manually from source code or setting up web applications (e.g. MediaWiki or WordPress) tends to be substantially more difficult than on other more user-friendly distributions.<br/><br/>
-
-It is also interesting to me in that its system software and desktop environment-related software is usually the most up-to-date of any distribution following a fixed-release cycle, yet the rest of its software tends to lag behind the latest available release, in my experience, anyway.<br/>
-
-It has its own equivalent to the OBS, Copr (although unlike the OBS it can only build packages for Fedora), which does afford packages Internet access during their build, if the packager grants them this. Copr also like the OBS, has strong licensing restrictions (namely, that they have to be FOSS) on any packages built and distributed through it.<br/><br/>
-
-Fedora is also a very touchy distribution. Not sure why but I have my suspicions it is due to safety measures related to SELinux. By touchy I mean if you chroot into a Fedora distribution (after mounting up all the necessary parts of your system like /proc, /dev and /sys) and run <code>dnf update</code> or any other package management command (e.g. <code>dnf install vim</code>) you will find that if you boot Fedora several systemd services will fail and the system will often not reach its graphical interface target (that is, GNOME will not start). I have also found that moving folders around in a Fedora root partition, even in the home folder, from another system (e.g. mounting the Fedora root partition to say /mnt) will also cause major problems when you try to start Fedora.  Likewise I have also found that manually compiling software and installing it to /usr/local also tends to cause major problems.<br/><br/>
+{{ fedora | markdownify }}
 
 <li><b>deepin</b></li>
-This distribution has more outdated software than Fedora and Tumbleweed yet there is some part of me that likes it more than both. The reason why is several fold:
-<ul>
-<li>It has out-of-the-box support for my Broadcom WiFi chip (BCM4352), which is not too common among distributions and is a nice touch.</li>
-<li>Has out-of-the-box support for using fingerprints to sign in.</li>
-<li>It has several extra applications that its basis, Debian (unstable), simply does not have (e.g. Atom and Visual Studio Code). Many of which are there because users requested them (<a href='https://bbs.deepin.org/forum.php?mod=viewthread&tid=133777' link='_blank'>here</a> is the forum thread where you can), or because deepin's developers just thought its users might like it (cannot rule out the possibility they are paid some sort of commission with some of the proprietary applications like Spotify though, since deepin is developed by a company). It also has a far more up-to-date version of Eclipse than its basis Debian (unstable) has. Debian (all branches) uses a really ancient (by computing standards) version of Eclipse, namely version 3.8.1 which was released in 2012! deepin, however, at the time of writing (11 December 2017) has version 4.7.0, which is one bug fix release short of being the latest (4.7.1).</li>
-<li>While their site could do with a little extra "internationalization" as some parts are still in Chinese regardless of the language you have selected to view the site in, it is clear they are trying and doing fairly well.</li>
-<li>It comes with the single most popular web browser on the desktop/laptop: Google Chrome, instead of most distribution's default, Firefox. Firefox is used by most other distributions not so much because their developers think that it will be what most of their users are used to using but because it is open-source. deepin's developers decided to focus more on making its users happy than keeping to the idea that distributions should be as open-source as possible. I personally favour Firefox, but I like the fact they are putting users first over ideology.</li>
-<li>They have several home-grown open-source applications they have developed just to make their users like it and enjoy their experience with it. This includes their desktop environment (DE), sure they have borrowed some components of GNOME but their DE is still quite distinct from all other DEs. Frankly I would call it the single most innovative Debian-based distribution I am aware of. Even more so than Ubuntu.</li>
-</ul>
+{{ deepin | markdownify }}
 
-The only thing I dislike about it is that you cannot choose to use the Btrfs file system from its installer and I have been experimenting with it lately.<br/><br/>
+<li><b>Linux Mint</b></li>
+{{ mint | markdownify }}
 
-<li><b>Void Linux (musl)</b>
-I had serious runit issues and many of the more important daemons would not start including:
-<ul>
-<li>cgmanager</li>
-<li>DBus</li>
-<li>LightDM</li>
-<li>NetworkManager</li>
-</ul>
-even though I set up the symlinks properly, even the {% include Links/irc.html channel="#voidlinux" %} Freenode group seemed to agree I did everything right, it is just for some reason some supervise files in {% include Layouts/path.html path="/run/runit" %} did not exist. I did like the fast boot times, though, and fast package management times.<br/><br/>
-
-I also had to install it from the minimal ISO (musl) as the Cinnamon ISO (musl) had the Cinnamon DE crash repeatedly on me. A dialog box kept asking me whether I wanted to restart it and I did so about four times before I said, "To ... with this!"<br/><br/>
-
-I gave it another go though and everything went fine and dandy. I met the consequences of using the musl C standard library, namely that several characters are not rendered properly due to poor locale support. I think the problem the first time I installed it was that I was doing some package management stuff like installing NetworkManager and LightDM from a chroot so some of the symlinks were set up improperly. In retrospect I should have looked at <a href='https://wiki.voidlinux.eu/Installing_alongside_Arch_Linux#Install_Void_from_Arch' link='_blank'>this article</a>) on the Void Wiki.<br/><br/>
+<li><b>Void Linux (musl)</b></li>
+{{ void-musl | markdownify }}
 
 <li><b>Void Linux (glibc)</b></li>
-runit issues dominated the picture for the first couple hours after I had installed it. I eventually got it up and running, with a little help from the #voidlinux Freenode channel.<br/><br/>
+{{ void-glibc | markdownify }}
 
 <li><b>Funtoo Linux</b></li>
-Funtoo Linux was the first source-based distribution I had successfully set up on my computer, outside a VM. It, for the most part, was quite an enlightening experience and it gave me the confidence to re-try installing Gentoo Linux on my PC outside a VM, after my first attempt failed quite miserably.<br/><br/>
+{{ funtoo | markdownify }}
 
 <li><b>Gentoo Linux</b></li>
-I successfully installed Gentoo Linux around early April 2017 and with what I learnt from installing Funtoo Linux I found it fairly easy. I ended up switching my init system from OpenRC to systemd and using git to control my local Portage tree copy (as opposed to the default of rsync). Around late April 2017 my hard disk on which Gentoo was installed crashed and I had to re-install it. Took about two days to set up a basic, usable system with a GUI (namely KDE Plasma). I learnt that a Gentoo (testing) is quite buggy, mostly with respect to building packages. I found myself filing at least one bug report per day, until my system was fully set up (which took roughly a fortnight), with all the packages I wanted.<br/><br/>
+{{ gentoo | markdownify }}
 
-I have also tried musl and runit, both musl and runit together and runit by itself, in it. They were a bit of work but I managed to get them to work, with help, of course.<br/><br/>
+<li><b>Gecko Linux</b> / <b>openSUSE</b></li>
+{{ opensuse | markdownify }}
 
 <li><b>Arch Linux / Manjaro Linux</b></li>
-Manjaro Linux is a beginner-friendly derivative of Arch Linux, a Linux distribution based on the "Keep It Simple, Stupid" (KISS) principle, that is geared towards more experienced Linux users. The way it interprets the KISS principle, is that a fresh Arch install should be the barebones and that automation (e.g. there is no automated installer for Arch, by default) should be kept to a minimum. For this reason, Arch Linux was previously out of my reach, until I found some scripts for automating its installation process. Unfortunately, installing Arch on my removable drive did not go well at first (I forgot to install and configure a boot loader for it, I think), so I then opted to use Manjaro Linux in its place on this drive.<br/><br/>
-
-Later I managed to install Arch Linux on this removable drive and successfully boot it and then I successfully installed it on my internal hard drive (namely on my {% include Layouts/path.html path="/dev/sda3" %} partition, with {% include Layouts/path.html path="/dev/sda1" %} being my Sabayon partition and {% include Layouts/path.html path="/dev/sda2" %} being my swap partition). Graphics issues caused me to delete this internal drive installation and install OT in its place. Later I deleted this installation and installed Arch in its place. Manjaro Linux uses its own repositories, which are updated approximately once a week, this is apparently to ensure the system's stability.<br/><br/>
+{{ arch | markdownify }}
