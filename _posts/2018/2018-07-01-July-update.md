@@ -1,7 +1,7 @@
 ---
 date:             2018-07-01
 layout:           post4
-last_modified_at: 2018-07-04 22:02:00 +1000
+last_modified_at: 2018-07-24 20:44:50 +1000
 title:            "July update: what I've been up to"
 redirect_from:    /2018-07-01-july-update/
 permalink:        /july-update/
@@ -42,9 +42,9 @@ I have been very active on [Quora](https://www.quora.com/profile/Brenton-Horne),
 on of my favourite answers has not received any upvotes yet (93 views, however) and it was to, "What are the best free Linux games of all time?" [Here](https://www.quora.com/What-are-the-best-free-Linux-games-of-all-time/answer/Brenton-Horne) is said answer.
 
 ## My hopping adventures
-I have been distro-hopping a little, due to bugs and mere curiosity. I had an issue where in serveral systemd services (I think udev-related) failed on boot for newer kernel. For older kernels everything ran fine and for systemd-free distros everything booted fine. Re-installing these problem distros did not fix anything, I still received the exact same systemd failures. After I dd'ed my disk and re-installed my favourite distros these errors went away. 
+I have been distro-hopping a little, due to bugs and mere curiosity. I had an issue wherein serveral systemd services (I think udev-related) failed on boot for newer kernels. For older kernels everything ran fine and for systemd-free distros everything booted fine. Re-installing these problem distros did not fix anything, I still received the exact same systemd failures. After I dd'ed my disk and re-installed my favourite distros these errors went away. 
 
-I also experimented with Btrfs and found it simply was not worth it. Its own tools do not report file system usage, snapshots take up a lot of space and its only real advantage I liked (as snapshots were practically unusable for me) was that file system resizing was easier. LVM can be used as an alternative, with similarly easy file system resizing and if I ever really missed that feature I would probably now use LVM instead. 
+I also experimented with Btrfs and found it simply was not worth it. Its own tools do not report file system usage accurately; snapshots take up a lot of space and its only real advantage I liked (as snapshots were practically unusable for me) was that file system resizing was easier. LVM can be used as an alternative, with similarly easy file system resizing and if I ever really missed that feature I would probably now use LVM instead. 
 
 There is one distribution that has always been usable for me, never having any major issues (not affected by that odd systemd newer kernel issue) and it is Gentoo. It almost experienced a deal-breaking issue, that is its [net-wireless/broadcom-sta](https://packages.gentoo.org/packages/net-wireless/broadcom-sta) package was going to be dropped making it impossible for my WiFi to work on my HP laptop with a Broadcom BCM4352 chip, but fortunately someone rescued this package. Debian had a major Broadcom wireless issue for a while where the broadcom-sta-dkms package would not build against newer kernels, so that meant Debian was disqualified from being "always usable" for me. I do not use Gentoo as my primary distribution anymore, however, as it takes forever to build up a full desktop environment so that I can try it out and when new releases of a desktop environment come out the builds can take even a matter of days, that is, if I use j values (in `make -j[Number]`) low enough to let my system still be reasonably responsive. 
 

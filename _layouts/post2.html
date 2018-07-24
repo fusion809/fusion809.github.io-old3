@@ -7,7 +7,7 @@ layout: default2
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><b>First published</b>: {{ page.date | date: "%A, %-d %B %Y" }}</time>
-      <time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y" }}" itemprop="dateModified"><br/><b>Last modified</b>: {{ page.last_modified_at | date:"%I:%M %p %A, %d %B %Y" }}</time>
+      <time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y" }}" itemprop="dateModified"><br/><b><abbr title="Note that most modifications past the publication date will be largely cosmetic, like fixing spelling, grammar and links, not necessarily updating the content itself.">Last modified</abbr></b>: {{ page.last_modified_at | date:"%I:%M %p %A, %d %B %Y" }}</time>
     </p>
   </header>
 
