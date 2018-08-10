@@ -25,7 +25,7 @@ So to determine how many open-source games were in my enabled overlays I ran:
 
 {% include Code/codeu.html line1='eix -Cc games --not -L "EULA" | grep "games\-[a-z]*\/" | grep -v "util\|engine" | wc -l' %}
 
-and it returned: 943. I should explain what this command does; `eix -Cc games` specifies to search for "games" in the category name of packages. `--not -L "EULA"` specifies that the packages should be licensed under an End-User License Agreement (EULA), the most common type of proprietary software license. 
+and it returned: 943. I should explain what this command does; `eix -Cc games` specifies to search for "games" in the category name of packages. `--not -L "EULA"` specifies that the packages should not be licensed under an End-User License Agreement (EULA), the most common type of proprietary software license. 
 
 In an Arch Linux Docker container (the [`dock0/arch`](https://hub.docker.com/r/dock0/arch/) container to be precise) with `pacaur` installed I ran: 
 
