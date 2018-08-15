@@ -9,6 +9,7 @@ Of the operating systems listed before I have also installed the following nine 
 * deepin 15.5/15.6
 * elementary OS 0.4.1/5.0-beta1
 * Fedora 22, 25-28
+* FreeBSD 11.2
 * Funtoo Linux (testing)
 * Gecko Linux
 * Gentoo Linux (stable / testing, including with Btrfs, systemd, runit)
@@ -31,5 +32,5 @@ Of the operating systems listed before I have also installed the following nine 
 {{ my_capture | markdownify }}
 </div>
 
-I have also tried Android-x86 6.0/7.1-rc2, Peppermint OS 8 (20171130), RemixOS 3.0, ROSA R10 (only in live session as the installer crashed on me), Ubuntu 17.10, Ubuntu Kylin 17.10 (installer crashed on me too, as it was expecting to run grub-install and I was going to use another distribution's GRUB to boot it) in live sessions.
+I have also tried Android-x86 6.0/7.1-rc2/7.1, Peppermint OS 8 (20171130), RemixOS 3.0, ROSA R10 (only in live session as the installer crashed on me), Ubuntu 17.10, Ubuntu Kylin 17.10 (installer crashed on me too, as it was expecting to run grub-install and I was going to use another distribution's GRUB to boot it) in live sessions.
 

@@ -2,7 +2,7 @@
 layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2018-07-21 02:54:20 +1000
+last_modified_at: 2018-08-15 17:12:40 +1000
 permalink:        /about-me/
 ---
 
@@ -18,6 +18,10 @@ My favourite were, in ascending order:
 
 {% capture openmandriva %}
 {% include_relative about-me/openmandriva.md %}
+{% endcapture %}
+
+{% capture freebsd %}
+{% include_relative about-me/freebsd.md %}
 {% endcapture %}
 
 {% capture blacklab %}
@@ -83,6 +87,9 @@ My favourite were, in ascending order:
 <ul>
 <li><b>OpenMandriva Lx 3.03</b></li>
 {{ openmandriva | markdownify }}
+
+<li><b>FreeBSD 11.2</b></li>
+{{ freebsd | markdownify }}
 
 <li><b>Black Lab Linux 8</b></li>
 {{ blacklab | markdownify }}

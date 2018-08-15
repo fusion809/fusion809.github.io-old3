@@ -22,7 +22,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Exherbo Linux](http://exherbo.org/)
 * [Fedora 22-28/Rawhide](https://getfedora.org/)
 * [feren OS 2017.08](http://ferenos.weebly.com/)
-* [FreeBSD 10.2/10.3/10.4/11.0/11.1/11-STABLE/12-CURRENT](https://www.freebsd.org/)
+* [FreeBSD 10.2/10.3/10.4/11.0/11.1/11.2/11-STABLE/12-CURRENT](https://www.freebsd.org/)
 * [FreeDOS 1.2](http://www.freedos.org/)
 * [Frugalware Linux 2.1](http://frugalware.org/)
 * [Funtoo Linux](http://www.funtoo.org/Welcome)
