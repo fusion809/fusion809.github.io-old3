@@ -32,6 +32,22 @@ body:
     description:
             "Shell scripts automatically loaded (as they are referenced in `~/.bashrc` for both root and standard users) in Bash sessions that are designed to automate common system administration tasks under CentOS (and other systems using the yum package manager) like package management."
 
+# common-scripts
+  - repo:
+            "common-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts that automate tasks I frequently perform on a variety of different distributions."
+
 # debian-scripts
   - repo:
             "debian-scripts"
@@ -81,6 +97,20 @@ body:
             "y"
     description:
             "Shell scripts automatically loaded on Zsh startup designed to automate common tasks on [FreeBSD](https://www.freebsd.org/)."
+
+# freebsd-scripts
+  - repo:
+            "freebsd-zfs-manual-install"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    working:
+            "y"
+    description:
+            "Scripts and instructions on how to install FreeBSD 11.2 on ZFS, alongside Arch Linux. While this is not a fork, half or so of the credit is owed to [this post](https://forums.freebsd.org/threads/installing-freebsd-manually-no-installer.63201/#post-365155) on the FreeBSD forums."
 
 # funtoo-scripts
   - repo:
@@ -241,3 +271,19 @@ body:
             "y"
     description:
             "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Slackware machine, that automate some common tasks I perform on Slackware, especially package management tasks."
+
+# void-scripts
+  - repo:
+            "void-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Shell scripts that should be loaded on shell start up on Void Linux, in order to help automate tasks I frequently do."

@@ -29,7 +29,7 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
             "y"
     description:
@@ -99,7 +99,7 @@ body:
     readme:
             "n"
     maintained:
-            "y"
+            "n"
     working:
             "y"
     description:
