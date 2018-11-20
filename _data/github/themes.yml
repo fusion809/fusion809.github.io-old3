@@ -1,6 +1,6 @@
 body:
 # MacBuntu-Remix
-  - repo: 
+  - repo:
             "MacBuntu-Remix"
     fork:
             "n"
@@ -15,7 +15,7 @@ body:
 
 # osx-arc-white
   - repo:
-            "osx-arc-white"
+            "macOS-Arc-White"
     fork:
             "n"
     readme:
@@ -29,7 +29,7 @@ body:
 
 # osx-white
   - repo:
-            "osx-white"
+            "OSX-White"
     fork:
             "n"
     readme:

@@ -47,7 +47,7 @@ body:
     readme-file:
             "README.adoc"
     maintained:
-            "y"
+            "n"
     working:
             "y"
     description:

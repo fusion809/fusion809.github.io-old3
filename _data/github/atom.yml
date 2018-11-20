@@ -178,7 +178,7 @@ body:
     readme:
             "y"
     registered:
-            "y"
+            "n"
     description:
             "My fork of the `platformio-ide-terminal` package, that is localized to Linux platforms. It has lost the platform-independence of its parent package (i.e., `platformio-ide-terminal`), due to a fix for [tensor5/arch-atom#12](https://github.com/tensor5/arch-atom/issues/12) being applied that breaks its macOS and Windows NT compatibility. This fix also gave rise to my [pty.js](https://github.com/fusion809/pty.js) fork."
 

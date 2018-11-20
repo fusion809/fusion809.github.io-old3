@@ -12,9 +12,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "An automated shell script installer for the [Atom text editor](https://atom.io) that should work on most Linux distributions."
 
@@ -30,9 +30,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "An automated quick installer for Atom using only official Linux binaries."
 
@@ -48,9 +48,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "A shell script for running (technically not installing, but I class installers and runners together) Atom on 64-bit Linux using AppImages."
 
@@ -66,9 +66,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "An automated shell script installer for the [Brackets text editor](http://brackets.io) that should work on most Linux distributions."
 
@@ -82,9 +82,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "An automated shell script installer for [Komodo Edit](http://komodoide.com/komodo-edit/) on Linux."
 
@@ -98,9 +98,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "An automated shell script installer for the [LightTable IDE](http://www.lighttable.com) that should work on most Linux distributions."
 
@@ -114,8 +114,8 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "An automated shell script installer for the [Visual Studio Code text editor](http://code.visualstudio.com) that should work on most Linux distributions."

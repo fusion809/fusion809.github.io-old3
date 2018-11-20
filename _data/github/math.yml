@@ -68,6 +68,22 @@ body:
     description:
             "Contains assorted JavaScript scripts written primarily for scientific computing."
 
+# Julia scripts
+  - repo:
+            "julia-scripts"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Contains assorted Julia scripts written primarily for scientific computing."
+
 # python-scripts
   - repo:
             "python-scripts"

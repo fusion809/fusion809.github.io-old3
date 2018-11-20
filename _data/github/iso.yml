@@ -1,5 +1,5 @@
 # These repos have no licenses.
-# archiso provides proprietary Broadcom drivers, so that is why. 
+# archiso provides proprietary Broadcom drivers, so that is why.
 body:
 # archiso
   - repo:
@@ -9,9 +9,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "Tools for automating the generation of ISOs for Arch Linux with out-of-the-box support for Broadcom Wireless."
 

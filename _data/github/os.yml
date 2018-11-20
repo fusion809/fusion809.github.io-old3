@@ -12,6 +12,6 @@ body:
     maintained:
             "n"
     working:
-            "y"
+            "n"
     description:
             "Scripts for automating the installation of Arch Linux on laptops with Broadcom WiFi chips."

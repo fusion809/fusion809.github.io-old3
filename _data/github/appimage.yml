@@ -11,9 +11,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     permalink:
             "/appimages/"
     description:
@@ -27,9 +27,9 @@ body:
     readme:
            "y"
     maintained:
-           "y"
+           "n"
     working:
-           "y"
+           "n"
     description:
            "A repository that, using Travis CI, is used to build a Code (OSS) AppImage and upload it to the continuous tag of this very repository."
 
@@ -45,9 +45,9 @@ body:
     readme:
            "y"
     maintained:
-           "y"
+           "n"
     working:
-           "y"
+           "n"
     description:
            "A repository that, using Travis CI, is used to build a Emacs AppImage and upload it to Bintray."
 
@@ -61,8 +61,8 @@ body:
     license:
            "GPLv3"
     maintained:
-           "y"
+           "n"
     working:
-           "y"
+           "n"
     description:
            "A repository that, using Travis CI, is used to build a GVim AppImage and upload it to the continuous tag of this very repository."

@@ -41,9 +41,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "Files for building RPM packages for Fedora and openSUSE."
 
@@ -57,8 +57,8 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "My Portage overlay for Funtoo, Gentoo and Sabayon Linux, with ebuilds for programs not (or at least not at the time of me writing them) provided by the Portage Tree or official `sabayon` overlay. This overlay has an `-old` version too."

@@ -14,9 +14,9 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
-            "y"
+            "n"
     description:
             "Packer template for building Arch Linux VMs."
 
@@ -36,6 +36,6 @@ body:
     maintained:
             "n"
     working:
-            "y"
+            "n"
     description:
             "A repository of scripts for the setting up of a Gentoo VM. Originally designed to be used by Packer (by its original developer, Elasticdog), but if you try to use this fork of mine to build a Packer image odds are it will fail."
