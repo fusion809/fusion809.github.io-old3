@@ -1,4 +1,4 @@
-<h2>My <a href="https://atom.io" link="_blank">Atom</a> Packages</h2>
+<h2>My <a href="https://atom.io" link="_blank">Atom</a> packages</h2>
 
 <ul class="post-list">
   {% for row in site.data.github.atom.body %}
@@ -13,7 +13,7 @@
 {% endfor %}
 </ul>
 
-<h2>My Other GitHub Repositories</h2>
+<h2>My other GitHub repositories</h2>
 <h3><a href="http://appimage.org/" link="_blank">AppImage</a></h3>
 
 <ul class="post-list">
@@ -88,7 +88,7 @@
 {% endfor %}
 </ul>
 
-<h3><a href="https://en.wikipedia.org/wiki/Operating_system" link="_blank">Operating System</a>-setup</h3>
+<h3><a href="https://en.wikipedia.org/wiki/Operating_system" link="_blank">Operating system</a> setup</h3>
 
 <ul class="post-list">
 {% for row in site.data.github.os.body %}
@@ -126,7 +126,7 @@
   <a href = "https://github.com/fusion809/{{ row.repo }}/network/members" link="_blank"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers" link="_blank"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers" link="_blank"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}" link="_blank">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
   <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
   <span style="font-weight: normal;"><b><u>Forked</u></b>: {% if row.fork == "n" %}No.{% else %}Yes, from <a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}" link="_blank">{{ row.orig-user }}/{{ row.orig-repo }}</a>.{% endif %}</span><br/>
-  <span style="font-weight: normal;"><b><u>License</u></b>: <a href="https://github.com/fusion809/{{ row.repo }}/blob/master/LICENSE" link="_blank">{% if row.license %}{{ row.license }}{% else %}GPLv3{% endif %}</a>.</span><br/>
+  <span style="font-weight: normal;"><b><u>License</u></b>: <a href="https://github.com/fusion809/{{ row.repo }}/blob/master/{% if row.license-file %}{{ row.license-file }}{% else %}LICENSE{% endif %}" link="_blank">{% if row.license %}{{ row.license }}{% else %}GPLv3{% endif %}</a>.</span><br/>
   <span style="font-weight: normal;"><b><u>README</u></b>: {% if row.readme == "n" %}No.{% else %}<a href="https://github.com/fusion809/{{ row.repo }}/blob/msater/README.md" link="_blank">Yes</a>.{% endif %}</span><br/>
   {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
 </li>
@@ -148,7 +148,7 @@
 {% endfor %}
 </ul>
 
-<h3><a href="https://en.wikipedia.org/wiki/Unix_shell" link="_blank">Shell Profiles</a></h3>
+<h3><a href="https://en.wikipedia.org/wiki/Unix_shell" link="_blank">Shell profiles</a></h3>
 
 <ul class="post-list">
 {% for row in site.data.github.shell-profiles.body %}

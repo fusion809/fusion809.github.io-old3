@@ -29,7 +29,7 @@ body:
     working:
             "y"
     description:
-            "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable. To help keep its repository size down and make it easier to tag releases of individual packages I have split this repository into a series of submodules &mdash; one for each individual PKGBUILD."
+            "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable. To help keep its repository size down and make it easier to tag releases of individual packages I have split this repository into a series of submodules &mdash; one for each individual PKGBUILD. The packages are placed within git submodules within it."
 
 # rpmbuild
   - repo:
@@ -62,3 +62,25 @@ body:
             "n"
     description:
             "My Portage overlay for Funtoo, Gentoo and Sabayon Linux, with ebuilds for programs not (or at least not at the time of me writing them) provided by the Portage Tree or official `sabayon` overlay. This overlay has an `-old` version too."
+
+
+  - repo:
+            "void-packages"
+    fork:
+            "y"
+    orig-user:
+            "void-linux"
+    orig-repo:
+            "void-packages"
+    license:
+            "Not sure the name"
+    license-file:
+            "COPYING"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "My fork of the official Void packages repository; I used it for when "
