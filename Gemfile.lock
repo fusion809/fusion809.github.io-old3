@@ -35,7 +35,7 @@ GEM
     eventmachine (1.2.5)
     faraday (0.14.0)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.23)
+    ffi (1.9.25)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     hen (0.8.3)
@@ -116,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
+  ffi (>= 1.9.24)
   hen
   jekyll!
   jekyll-feed
@@ -134,4 +135,4 @@ DEPENDENCIES
   ruby-nuggets
 
 BUNDLED WITH
-   1.16.1
+   1.17.1
