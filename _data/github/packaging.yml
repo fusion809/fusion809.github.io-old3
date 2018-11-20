@@ -4,6 +4,10 @@ body:
             "fusion809-overlay"
     fork:
             "y"
+    orig-user:
+            "funtoo"
+    orig-repo:
+            "skeletal-overlay"
     license:
             "GPLv3"
     readme:
