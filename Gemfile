@@ -17,3 +17,4 @@ gem 'pygments.rb'
 gem 'rdiscount'
 gem 'RedCloth'
 gem "ffi", ">= 1.9.24"
+gem "nokogiri", ">= 1.8.5"
