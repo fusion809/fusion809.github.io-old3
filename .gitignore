@@ -13,3 +13,6 @@ vendor
 *.jpeg
 *.gif
 *.xpm
+*.svg
+*.svgz
+octave-workspace
