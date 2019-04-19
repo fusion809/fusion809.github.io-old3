@@ -1,4 +1,5 @@
 <div style="width:100%; font-size:120%; text-align:left; padding-bottom: 20px;">
-    <img src="{{ include.img }}" alt="{{ include.text }}" width="100%" />
-    <b>{{ include.text }}</b>
+    <a href="https://fusion809.github.io/images/Maps/Forms%20of%20government%20(shorter%20desc;%20more%20descriptive).svg" link="_blank"><img src="{{ include.img }}" alt="{{ include.text }}" width="{% if include.width %}{{ include.width }}{% else %}100%{% endif %}" /></a>
+    <br/><b>{{ include.text }}</b>
+    <br/><span style="font-size: 60%">{{ include.subtext }}</span>
 </div>
