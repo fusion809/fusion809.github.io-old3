@@ -6,6 +6,8 @@ last_modified_at: 2019-03-10 02:27:00 +1000
 permalink:        /politics/systems-of-government/
 ---
 
+This article is more for my benefit than anyone else's, it is mostly so that I can write my thoughts and knowledge on the various systems of government. A recent interest of mine has been systems of government. 
+
 Terminology
 ===========
 
