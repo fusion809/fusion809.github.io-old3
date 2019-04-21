@@ -1,7 +1,7 @@
 Organizational structure
 ========================
 
-{% include_relative governance/image-with-caption.html text="Figure 1: Federal and unitary states of the world" img="https://upload.wikimedia.org/wikipedia/commons/4/46/Map_of_unitary_and_federal_states.svg" width="60%" %}
+<!--{% include_relative governance/image-with-caption.html text="Figure 1: Federal and unitary states of the world" img="https://upload.wikimedia.org/wikipedia/commons/4/46/Map_of_unitary_and_federal_states.svg" width="60%" %}-->
 
 Some countries comprise a union of many smaller partially self-governing regions under a central federal government; such countries are referred to as <!--{% include Links/wp.html art="Federation" link="federal states" f="b" %}--> (**federations**). These partially self-governing regions may be called, among other things, states, cantons or provinces. The alternative type of country is referred to as a <!--{% include Links/wp.html link="unitary state" f="b" %}-->, where there is a national government that has ultimate authority in the land. It is important to note that while some unitary states, like China, have regions referred to as provinces, these nations are still considered unitary as while these regions may be partially self-governing, the national government has supreme authority over the entire nation and has the ability to unilaterally dissolve the regional government at will and govern the region all by itself.
 
