@@ -17,7 +17,7 @@ This article is more for my benefit than anyone else's, it is mostly so that I c
 {% endcapture %}
 {{ systemsgovsec | markdownify }}
 
-{% capture orgsstr %}
+<!--{% capture orgsstr %}
 {% include_relative governance/organization-structure.md %}
 {% endcapture %}
-{{ orgsstr | markdownify }}
+{{ orgsstr | markdownify }}-->
