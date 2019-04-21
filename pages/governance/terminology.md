@@ -1,8 +1,9 @@
-<h2>Terminology</h2>
+Terminology
+===========
 
-There are **three branches**, or powers of government: the **legislative** branch (legislature), that creates, modifies and repeals laws; the **judicial** branch (judiciary/judicature), that interprets and applies the law; and, the **executive** branch that executes and enforces the law. In the presidential system of the US there is a fairly clean separation of these three branches, in an attempt to ensure a dictatorship cannot take hold.
+There are **three branches**, or powers of government: the **{% include wp.html art="Legislature" link="legislative" %}** branch (legislature), that creates, modifies and repeals laws; the **{% include wp.html art="Judiciary" link="judicial" %}** branch (judiciary/judicature), that interprets and applies the law; and, the **{% include wp.html art="Executive_(government)" link="executive" %}** branch that executes and enforces the law. In the presidential system of the US there is a fairly clean separation of these three branches, in an attempt to ensure a dictatorship cannot take hold.
 
-A [**head of state**](https://en.wikipedia.org/wiki/Head_of_state) is the person who officially represents a [sovereign country](https://en.wikipedia.org/wiki/Sovereign_state), like at international meetings. They are usually either a [monarch](https://en.wikipedia.org/wiki/Monarch) or a [president](https://en.wikipedia.org/wiki/President).
+A **{% include wp.html link="head of state" %}** is the person who officially represents a {% include wp.html link="sovereign country" %}, like at international meetings. They are usually either a {% include wp.html link="monarch" %} or a {% include wp.html link="president" puncr="." %}
 
 A [**head of government**](https://en.wikipedia.org/wiki/Head_of_government) is the highest ranking official in the executive branch of a government (usually a president, premier, chancellor, prime minister or monarch), like of a federated state (e.g. Qld) or a sovereign nation.
 
@@ -10,7 +11,7 @@ A [**head of government**](https://en.wikipedia.org/wiki/Head_of_government) is 
 
 A [**cabinet**](https://en.wikipedia.org/wiki/Cabinet_(government)) (often spelt with a capital c) is a body of officials, usually referred to as secretaries or ministers, that are the top leaders of the executive branch of government.
 
-A proposed law is called a [**bill**](https://en.wikipedia.org/wiki/Bill_(law)) until it is passed by the legislature and written into law. Legislatures may comprise a single chamber wherein members vote on a bill as a single unit, or they may comprise multiple chambers (sometimes referred to as *houses*) that debate and vote separately and have different roles. Legislatures with a single chamber are usually referred to as [**unicameral**](https://en.wikipedia.org/wiki/Unicameralism), while those with two chambers are called [**bicameral**](https://en.wikipedia.org/wiki/Bicameralism). Historically, legislatures with more chambers have existed (e.g. a [three-chamber legislature](https://en.wikipedia.org/wiki/Tricameralism) existed for a time during late apartheid South Africa).
+A proposed law is called a [**bill**](https://en.wikipedia.org/wiki/Bill_(law)) until it is passed by the legislature and written into law. Legislatures may comprise a single chamber wherein members vote on a bill as a single unit, or they may comprise multiple chambers (sometimes referred to as *houses*) that debate and vote separately and have different roles. Legislatures with a single chamber are usually referred to as [**unicameral**](https://en.wikipedia.org/wiki/Unicameralism), while those with two chambers are called [**bicameral**](https://en.wikipedia.org/wiki/Bicameralism). Historically, legislatures with more chambers have existed (e.g. a [three-chamber legislature](https://en.wikipedia.org/wiki/Tricameralism) existed for a time during late apartheid South Africa), but presently there are none in existence.
 
 In bicameral legislatures one chamber is often called the lower house and the other, the upper house. Legislatures modelled after that of the UK usually have a far stronger lower house than upper house, while in others both have approximately equal power (e.g. the Australian Senate) and in others the upper house has some unique powers the lower house does not have (e.g. the US Senate). 
 
