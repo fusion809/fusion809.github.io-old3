@@ -16,8 +16,3 @@ This article is more for my benefit than anyone else's, it is mostly so that I c
 {% include_relative governance/systems-of-government-section.md %}
 {% endcapture %}
 {{ systemsgovsec | markdownify }}
-
-<!--{% capture orgsstr %}
-{% include_relative governance/organization-structure.md %}
-{% endcapture %}
-{{ orgsstr | markdownify }}-->
