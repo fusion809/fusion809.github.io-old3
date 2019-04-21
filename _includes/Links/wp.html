@@ -1,1 +1,1 @@
-<a href = "https://en.wikipedia.org/wiki/{{ include.art }}">{{ include.link }}</a>
+{{ include.puncl }}<a href = "https://en.wikipedia.org/wiki/{% if include.art %}{{ include.art }}{% else %}{{ include.link }}{% endif %}">{{ include.link }}</a>{{ include.puncr }}
