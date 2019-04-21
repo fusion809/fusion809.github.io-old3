@@ -1,9 +1,9 @@
 Terminology
 ===========
 
-There are **three branches**, or powers of government: the **{% include Links/wp.html art="Legislature" link="legislative" %}** branch (legislature), that creates, modifies and repeals laws; the **{% include Links/wp.html art="Judiciary" link="judicial" %}** branch (judiciary/judicature), that interprets and applies the law; and, the **{% include Links/wp.html art="Executive_(government)" link="executive" %}** branch that executes and enforces the law. In the presidential system of the US there is a fairly clean separation of these three branches, in an attempt to ensure a dictatorship cannot take hold.
+There are **three branches**, or powers of government: the **{% include wp.html art="Legislature" link="legislative" %}** branch (legislature), that creates, modifies and repeals laws; the **{% include wp.html art="Judiciary" link="judicial" %}** branch (judiciary/judicature), that interprets and applies the law; and, the **{% include wp.html art="Executive_(government)" link="executive" %}** branch that executes and enforces the law. In the presidential system of the US there is a fairly clean separation of these three branches, in an attempt to ensure a dictatorship cannot take hold.
 
-A **{% include Links/wp.html link="head of state" %}** is the person who officially represents a {% include Links/wp.html link="sovereign country" %}, like at international meetings. They are usually either a {% include Links/wp.html link="monarch" %} or a {% include Links/wp.html link="president" puncr="." %}
+A **{% include wp.html link="head of state" %}** is the person who officially represents a {% include wp.html link="sovereign country" %}, like at international meetings. They are usually either a {% include wp.html link="monarch" %} or a {% include wp.html link="president" puncr="." %}
 
 A [**head of government**](https://en.wikipedia.org/wiki/Head_of_government) is the highest ranking official in the executive branch of a government (usually a president, premier, chancellor, prime minister or monarch), like of a federated state (e.g. Qld) or a sovereign nation.
 
